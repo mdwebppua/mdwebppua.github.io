@@ -7,6 +7,7 @@ dima_melnyk@mail.ru
 html, body {
 	background: url("../images/cobra_bg.jpg") no-repeat center top fixed;
 	font-family: 'MyriadPro-Regular';
+	    background-size: cover;
 }
 
 a {

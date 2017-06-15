@@ -1,0 +1,246 @@
+/*media css desctop mobile*/
+@media only screen and (max-width: 1170px) {
+	.width {
+		width: 960px;
+	}
+	.onlineClub {
+		width: 660px;
+	}
+	.whatList {
+		width: 490px;
+	}
+	.whatList li p {
+		width: 390px;
+	}
+	.is {
+		width: 410px;
+	}
+	.isName p {
+		width: 310px;
+	}
+	.bsList li {
+		width: 300px;
+		margin: 30px 15px 0 0;
+	}
+	.bsList li p {
+		width: 190px;
+	}
+	.bsInfo {
+		margin: 0 100px 0 0;
+	}
+	#block6 .nameBox {
+		margin: 0;
+	}
+	.descAlong {
+		margin: 20px 0 0 0;
+	}
+	.listAlong1 li, .listAlong2 li {
+		width: 170px;
+	}
+	.listMade li {
+		width: 220px;
+	}
+	.listMade li p {
+		width: auto;
+		margin: 20px 0 0 0;
+		display: block;
+	}
+	.paket {
+		width: 430px;
+	}
+	.listHapp li {
+		margin: 50px 10px 0;
+	}
+	.events {
+		margin: 50px 0 0 0;
+	}
+	.fotoFound {
+		width: 390px;
+	}
+	.was {
+	    width: 290px;
+	    margin: 0 10px;
+	}
+	.was.play {
+		width: 290px;
+	}
+	.infoRev {
+		width: 830px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.left {
+		float: none;
+	}
+	.right {
+		float: none;
+	}
+	.width {
+		width: auto;
+		max-width: 600px;
+		padding: 0 10px;
+	}
+	.bigVideo {
+		width: 100%;
+		margin: 0;
+	}
+	.onlineClub {
+		width: 100%;
+		padding: 30px;
+		margin: 0;
+	}
+	.onlineClub:before, .onlineClub:after {
+		display: none;
+	}
+	.formBox {
+		margin: 50px 0 0 0;
+	}
+	.whatList {
+		width: 100%;
+	}
+	.whatList li {
+		position: relative;
+		overflow: hidden;
+	}
+	.whatList li:before {
+		display: block;
+		float: left;
+	}
+	.whatList li p {
+		width: auto;
+		margin: 0 0 0 95px;
+		display: block;
+	}
+	.whatInfo {
+		display: block;
+		width: 100%;
+		margin: 50px 0 0 0;
+	}
+	.is {
+		width: 100%;
+		margin: 50px 0 0 0;
+	}
+	.isName p {
+		width: auto;
+	}
+	#block5 .nameBox {
+		margin: 0;
+	}
+	.bsInfo {
+		margin: 0;
+		width: 100%;
+	}
+	.listAlong1 li, .listAlong2 li {
+		margin: 0 10px 20px 0;
+	}
+	.descAlong2 {
+		margin: 50px 0 0 0;
+	}
+	.listMade li {
+		width: 270px;
+	}
+	.listJoin {
+		width: auto;
+	}
+	.paket {
+		width: auto;
+	}
+	.infoPaket {
+		min-height: auto;
+	}
+	.listTheme {
+		width: auto;
+	}
+	.fotoFound {
+		width: 100%;
+		display: block;
+	}
+	.infoFound {
+		display: block;
+		width: 100%;
+	}
+	.none_pda {
+		display: none;
+	}
+	.toRev {
+		position: relative;
+		overflow: hidden;
+	}
+	.fotoRev {
+		display: block;
+		float: left;
+	}
+	.infoRev {
+		width: auto;
+		display: block;
+		margin: 0 0 0 110px;
+	}
+	.itWas {
+		margin: 0;
+	}
+	.was {
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+	.was.play {
+		width: 100%;
+	}
+	#block10 .nameBox {
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.width {
+		width: auto;
+		max-width: 600px;
+	}
+	#block1 {
+		text-align: center;
+	}
+	.formBox {
+		width: 100%;
+	}
+	.nameBox {
+		font-size: 32px;
+	}
+	.isName {
+		position: relative;
+		overflow: hidden;
+	}
+	.isName:before {
+		display: block;
+		float: left;
+	}
+	.isName p {
+		display: block;
+		margin: 0 0 0 95px;
+	}
+	.bsList li {
+		width: auto;
+		margin: 30px 0 0 0;
+		overflow: hidden;
+		display: block;
+	}
+	.bsList li:before {
+		display: block;
+		float: left;
+	}
+	.bsList li p {
+		display: block;
+		margin: 0 0 0 95px;
+		width: auto;
+	}
+	.paket {
+		margin: 50px 0 0 0;
+	}
+	.listHapp li {
+		width: 100%;
+		margin: 50px 0 0 0;
+		text-align: center;
+	}
+	#block11 .nameBox, #block13 .nameBox {
+		margin: 0;
+	}
+}

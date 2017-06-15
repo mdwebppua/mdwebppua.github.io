@@ -1,0 +1,1077 @@
+﻿/*************************
+Автор: MDWeb
+Skype: biotar666
+Услуги: html, css, js, jquery, dle, ucoz, wordpress, opencart, landing page
+Site: http://mdweb.com.ua
+*************************/
+
+* {
+	box-sizing: border-box;
+	position: relative;
+	transition: 0.3s;
+	font-family: 'Proxima Nova Rg';
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+html, body {
+	font-size: 18px;
+	color: #191919;
+	font-weight: 500;
+}
+
+a {
+	color: #000;
+	transition: background 0.3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	-o-transition: background 0.3s;
+	-ms-transition: background 0.3s;
+}
+
+img {
+	max-width: 100%;
+}
+
+.block {
+	display: block;
+}
+
+.none {
+	display: none;
+}
+
+.ps_a {
+	position: absolute;
+}
+
+.ps_r {
+	position: relative;
+}
+
+.ps_f {
+	position: fixed;
+}
+
+.mr_b {
+	margin-bottom: 20px;
+}
+
+.mr_t {
+	margin-top: 20px;
+}
+
+.mr_l {
+	margin-left: 20px;
+}
+
+.mr_r {
+	margin-right: 20px;
+}
+
+.mr_n {
+	margin: none;
+}
+
+.txt_i {
+	text-indent: 30px;
+}
+
+.txt_r {
+	text-align: right;
+}
+
+.txt_l {
+	text-align: left;
+}
+
+.txt_s {
+	font-style: italic;
+}
+
+.txt_th {
+	text-decoration: line-through;;
+}
+
+.txt_up {
+	text-transform: uppercase;
+}
+
+.txt_un {
+	text-decoration: underline;
+}
+
+.txt_nu {
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+.width {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#block1 {
+	background: url("../images/bx1.jpg") no-repeat center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 50px 0 250px 0;
+	position: relative;
+	z-index: 1;
+	margin: 0 0 -200px 0;
+}
+
+.logo1 {
+}
+
+.namePage {
+	margin: 50px 0 0 0;
+}
+
+.specPage {
+	font-size: 36px;
+	font-weight: bold;
+	color: #ff572a;
+}
+
+.titlePage {
+	margin: 10px 0 0 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#block2 {
+	position: relative;
+	text-align: center;
+	z-index: 2;
+}
+
+.bigVideo {
+	width: 615px;
+	height: 350px;
+	margin: 0 0 0 75px;
+}
+
+.bigVideo iframe, .bigVideo object {
+	width: 100%;
+	height: 350px;
+}
+
+#block3 {
+	padding: 70px 0;
+}
+
+.nameBox {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.nameBox.txt_l {
+	text-align: left;
+}
+
+
+.nameBox span {
+	color: #ff572a;
+}
+
+.descPage {
+	font-size: 24px;
+	text-align: center;
+	margin: 15px 0 0 0;
+}
+
+.whatBox {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.whatList {
+	display: inline-block;
+	vertical-align: middle;
+	width: 500px;
+	text-align: left;
+}
+
+.whatList li {
+	margin: 30px 0;
+}
+
+.whatList li p {
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    margin: 0 0 0 30px;
+}
+
+.whatList li:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 65px;
+	height: 65px;
+
+}
+
+.wh1:before {
+	background: url("../images/how_ico1.png") no-repeat center;
+}
+
+.wh2:before {
+	background: url("../images/how_ico2.png") no-repeat center;
+}
+
+.wh3:before {
+	background: url("../images/how_ico3.png") no-repeat center;
+}
+
+.whatInfo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 430px;
+	border: 3px solid #eff1f5;
+	padding: 30px;
+	margin: 0 0 0 30px;
+}
+
+.whatInfo p {
+}
+
+.whatInfo p:first-child:after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 1px;
+	background: #000;
+	margin: 20px auto;
+}
+
+#block4 {
+	background: url("../images/bx2.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 70px 0;
+}
+
+.descBox {
+	font-size: 21px;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+.isBox {
+	text-align: center;
+}
+
+.is {
+	width: 430px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px 30px 0;
+	text-align: left;
+
+}
+
+.isName:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 75px;
+	height: 75px;
+}
+
+.is1:before {
+	background: url("../images/is_cio1.png") no-repeat center;
+}
+
+.is2:before {
+	background: url("../images/is_cio2.png") no-repeat center;
+}
+
+.isName p {
+	width: 320px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 20px;
+}
+
+.isInfo {
+	margin: 30px 0 0 0;
+}
+
+#block5 {
+	padding: 70px 0;
+}
+
+#block5 .nameBox {
+	margin: 0 0 0 80px;
+}
+
+.bsList {
+	text-align: center;
+}
+
+.bsList li {
+	width: 330px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 30px 30px 0 0;
+	text-align: left;
+}
+
+.bsList li p {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0 0 30px;
+}
+
+.bsList li:before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	height: 70px;
+}
+
+.bs1:before {
+	background: url("../images/bs_ico1.png") no-repeat center;
+}
+
+.bs2:before {
+	background: url("../images/bs_ico2.png") no-repeat center;
+}
+
+.bs3:before {
+	background: url("../images/bs_ico3.png") no-repeat center;
+}
+
+.bsAbout {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.bsInfo {
+	width: 400px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin: 0 150px 0 0;
+}
+
+.bsInfo b {
+	font-size: 24px;
+}
+
+.bsGram {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#block6 {
+	background: url("../images/bx3.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 70px 0;
+}
+
+#block6 .nameBox {
+	margin: 0 0 0 80px;
+}
+
+.descAlong {
+	font-size: 21px;
+	margin: 20px 0 0 50px;
+}
+
+.descAlong1 {
+	font-size: 21px;
+}
+
+.mr_t20 {
+	margin: 20px 0 0 0;
+}
+
+.listAlong1 {
+	text-align: center;
+	margin: 30px 0 0 0;
+}
+
+.listAlong1 li {
+	width: 200px;
+	display: inline-table;
+	vertical-align: top;
+	background: url("../images/along.png") repeat-x top;
+	font-weight: bold;
+	padding: 15px;
+	min-height: 100px;
+	margin: 0 10px 0 0;
+}
+
+.listAlong1 li p {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.listAlong2 {
+	text-align: center;
+	margin: 30px 0 0 0;
+}
+
+.listAlong2 li {
+	border: 3px solid #ff572a;
+	width: 200px;
+	display: inline-table;
+	vertical-align: top;
+	padding: 15px;
+	margin: 0 10px 0 0;
+    font-style: italic;
+    text-align: left;
+}
+
+.listAlong2 li:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -20px;
+    top: -35px;
+    border: 20px solid transparent;
+    border-bottom: 15px solid #ff572a;
+}
+
+//.listAlong2 li::after {
+    border-bottom: 15px solid #F6F7FB;
+    top: -31px;
+}
+
+.listAlong2 li p {
+}
+
+.descAlong2 {
+	margin: -50px 0 0 50px;
+	font-size: 21px;
+}
+
+#block7 {
+	padding: 70px 0;
+}
+
+.listMade {
+	text-align: center;
+}
+
+.listMade li {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    margin: 50px 15px 0 0;
+}
+
+.listMade li.made_line {
+	display: block;
+    width: 100%;
+    border-bottom: 3px solid #f6f7fb;
+    margin: 0;
+}
+
+.listMade li p {
+	display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 15px;
+    width: 200px;
+}
+
+.listMade li:before {
+	content: "";
+	display: inline-block;
+	vertical-align: top;
+	width: 50px;
+	height: 50px;
+}
+
+.made1:before {
+	background: url("../images/rs_ico1.png") no-repeat center;
+}
+
+.made2:before {
+	background: url("../images/rs_ico2.png") no-repeat center;
+}
+
+.made3:before {
+	background: url("../images/rs_ico3.png") no-repeat center;
+}
+
+.made4:before {
+	background: url("../images/rs_ico4.png") no-repeat center;
+}
+
+.made5:before {
+	background: url("../images/rs_ico5.png") no-repeat center;
+}
+
+.made6:before {
+	background: url("../images/rs_ico6.png") no-repeat center;
+}
+
+.made7:before {
+	background: url("../images/rs_ico7.png") no-repeat center;
+}
+
+.made8:before {
+	background: url("../images/rs_ico8.png") no-repeat center;
+}
+
+#block8 {
+	background: url("../images/bx4.jpg") no-repeat left, #f6f7f9;
+	padding: 70px 0;
+}
+
+.listJoin {
+	width: 710px;
+	margin: 50px 0 0 0;
+}
+
+.listJoin > li {
+    background: url(../images/chek1.png) no-repeat left top;
+    padding: 0px 0 10px 40px;
+}
+
+.subJoin {
+	margin: 10px 0 0 0px;
+}
+
+.subJoin > li {
+	background: url(../images/chek3.png) no-repeat left;
+	padding: 0 0 0 20px;
+}
+
+#block9 {
+	padding: 70px 0;
+}
+
+.selectBox {
+	text-align: center;
+}
+
+.paket {
+	display: inline-block;
+	vertical-align: top;
+	width: 490px;
+	background: #fff;
+	text-align: left;
+	
+	margin: 50px 20px 0;
+}
+
+.infoPaket {
+	min-height: 832px;
+	margin: 0 0 -35px 0;
+	box-shadow: 0px 15px 50px rgba(0,0,0,0.2);
+}
+
+.namePaket {
+	font-size: 40px;
+    font-weight: bold;
+    padding: 30px 30px 0;
+}
+
+.listPaket {
+	counter-reset:li;
+	padding: 30px;
+	margin: 0px 0 0px 25px;
+}
+
+.listPaket li {
+	position: relative;
+	margin: 5px 0;
+}
+
+.listPaket li:before {
+	content:counter(li)  '. ';
+	counter-increment:li;
+	color: #ff572a;
+	font-weight: bold;
+    position: absolute;
+    left: -25px;
+    top: 0;
+}
+
+.bonusPaket {
+	background: #f6f7f9;
+	padding: 0 30px 55px 30px;
+}
+
+.bonusPaket p {
+	padding: 30px 0 0 0;
+}
+
+.bonusPaket p b {
+	color: #ff572a;
+}
+
+.btnBox {
+	text-align: center;
+	position: relative;
+    z-index: 5;
+}
+
+.btnPaket {
+	display: inline-block;
+    background: #ff572a;
+    border: none;
+    font-family: 'Proxima Nova Rg';
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 8px 8px rgba(255, 0, 0, 0.2);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btnPaket:hover {
+	box-shadow: none;
+}
+
+.salePaket {
+	box-shadow: 0px 15px 50px rgba(0,0,0,0.2);
+	margin: -35px 0 0 0;
+	padding: 65px 30px 30px;
+	text-align: center;
+}
+
+.cenaPaket {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 72px;
+}
+
+.cenaPaket span {
+	display: inline-block;
+    vertical-align: top;
+    font-size: 40px;
+}
+
+.pricePaket {
+	display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 15px;
+    text-align: left;
+}
+
+#block10 {
+	background: url("../images/bx5.jpg") no-repeat center;
+	padding: 70px 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+#block10 .nameBox {
+	margin: 0 0 0 80px;
+}
+
+.listHapp {
+	text-align: center;
+}
+
+.listHapp li {
+	width: 165px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px 20px 0;
+	text-align: left;
+}
+
+.listHapp li p {
+	margin: 30px 0 0 0;
+}
+
+.listHapp li:before {
+	content: "";
+	display: block;
+	width: 65px;
+	height: 65px;
+	margin: 0 auto;
+}
+
+.hap1:before {
+	background: url("../images/af_ico1.png") no-repeat center;
+}
+
+.hap2:before {
+	background: url("../images/af_ico2.png") no-repeat center;
+}
+
+.hap3:before {
+	background: url("../images/af_ico3.png") no-repeat center;
+}
+
+.hap4:before {
+	background: url("../images/af_ico4.png") no-repeat center;
+}
+
+.hap5:before {
+	background: url("../images/af_ico5.png") no-repeat center;
+}
+
+#block11 {
+	padding: 70px 0;
+}
+
+#block11 .nameBox {
+	margin: 0 0 0 80px;
+}
+
+.eventsBox {
+	text-align: center;
+}
+
+.events {
+	display: inline-block;
+	vertical-align: top;
+	margin: 50px 50px 0;
+}
+
+#block12 {
+	background: url(../images/bx6.jpg) no-repeat left, #f6f7f9;
+    padding: 70px 0;
+}
+
+.listTheme {
+	margin: 50px 0 0 0;
+	width: 700px;
+}
+
+.listTheme li {
+	background: url("../images/chek2.png") no-repeat left;
+	padding: 5px 0 5px 45px;
+}
+
+#block13 {
+	padding: 70px 0;
+}
+
+#block13 .nameBox {
+	margin: 0 0 0 80px;
+}
+
+.founder {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.fotoFound {
+	width: 460px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.infoFound {
+	text-align: left;
+	width: 560px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nameFound {
+	font-size: 40px;
+    font-weight: bold;
+	color: #ff572a;
+}
+
+.descFound {
+	margin: 10px 0 20px 0;
+}
+
+.listFound {
+}
+
+.listFound li {
+	background: url(../images/chek2.png) no-repeat left top;
+    padding: 0px 0 20px 45px;
+}
+
+.none_web {
+	display: none;
+}
+
+.none_pda {
+}
+
+#block14 {
+	padding: 70px 0;
+	background: #f6f7f9;
+}
+
+.reviews {
+	background: url("../images/qq.png") no-repeat center;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.toRev {
+	text-align: left;
+}
+
+.fotoRev {
+	display: inline-block;
+	vertical-align: middle;
+	width: 90px;
+}
+
+.infoRev {
+	display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 30px;
+}
+
+.thatRev {
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.nameRev {
+	margin: 10px 0 0 0;
+}
+
+.nameRev p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.nmR1 {
+	font-size: 21px;
+	font-weight: bold;
+	margin: 0 30px 0 0;
+}
+
+.nmR2 {
+	font-style: italic;
+}
+
+.itWas {
+	margin: 20px 0 0 0;
+
+	text-align: left;
+}
+
+.was {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin: 0 20px;
+}
+
+.was.play {
+	width: 400px;
+}
+
+.nameWas {
+	font-weight: bold;
+}
+
+.listWas {
+	margin: 20px 0 0 0;
+}
+
+.listWas li {
+    background: url(../images/chek1.png) no-repeat left top;
+    padding: 0px 0 10px 40px;
+}
+
+.playWas {
+	margin: 20px 0 0 0;
+}
+
+.playWas iframe, .playWas object {
+	width: 100%;
+	height: 230px;
+}
+
+#block15 {
+	background: url("../images/bx7.jpg") no-repeat center;
+	padding: 70px 0;
+}
+
+.descBox2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 0 0 0;
+}
+
+.closeCode {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.logo2 {
+	text-align: center;
+	margin: 50px 0 0 0;
+}
+
+.closeOp9 {
+	opacity: 0.9;
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+/*animation*/
+.listNubmer li, .listAbout li, .listService li, .listVideo li, .listFoto li, .weWork li, .hViza, .jobsBox {
+	visibility: hidden;
+}
+
+.listHelp li {
+	opacity: 0;
+}
+
+. {
+}
+
+. {
+}
+
+. {
+}
+
+
+/*MODAL OKNO*/
+.box_window{width:700px;background:#fff;position:fixed;top:100px;left:50%;overflow-y:auto;margin-left:-350px;z-index:35;display:none;-webkit-border-radius:4px 4px 4px;border-radius:4px 4px 4px;padding:20px}
+.bw_close{background:url(../images/close.png) no-repeat;width:22px;height:21px;position:absolute;top:20px;right:20px;cursor:pointer; z-index: 10;}
+.mask{position:fixed;background-image:url(../images/mask.png);width:100%;display:none;height:100%;z-index:30}
+.showwind{cursor:pointer}
+/* END MODAL OKNO */
+
+/*POLITIKA*/
+.politica {
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+
+.politica span {
+	color: #fff;
+	font-size: 12px;
+}
+
+.politika-txt {
+	height: 300px;
+}
+
+.politika-txt p {
+margin-bottom: 15px;
+}
+
+.politika-txt strong {
+font-weight: bold;
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="109" height="30" viewBox="0 0 109 30">
+    <g>
+        <g>
+            <path d="M209.665 253.931a2.165 2.165 0 0 0-.928 4.121v3.314h1.856v-3.314a2.165 2.165 0 0 0-.928-4.121z" transform="translate(-629 -1694) translate(559 1694) translate(-128.995 -238.224)"/>
+            <path d="M87.01 10.753V6.34a6.34 6.34 0 0 0-12.68 0v4.413a10.67 10.67 0 1 0 12.68 0zM76.186 6.34a4.485 4.485 0 1 1 8.969 0v3.309a10.656 10.656 0 0 0-8.969 0zm4.485 21.8a8.814 8.814 0 1 1 8.814-8.814 8.824 8.824 0 0 1-8.815 8.818z" transform="translate(-629 -1694) translate(559 1694)"/>
+        </g>
+        <text fill="#182947" font-family="Jost-SemiBold, Jost" font-size="16px" font-weight="600" transform="translate(-629 -1694) translate(659 1715)">
+            <tspan x="0" y="0">Secure</tspan><tspan y="0" fill="#8f8f8f" font-family="Jost-Medium, Jost" font-weight="500">Doc</tspan>
+        </text>
+    </g>
+</svg>

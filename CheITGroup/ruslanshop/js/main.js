@@ -2,7 +2,7 @@ $( document ).ready(function() {
     $(".open-basket, .warenkorb-close").click(function() {
         $("body, .open-basket, .basket-short").toggleClass("active");
     });
-    $('.summer-items').slick({
+    $('.summer-slider').slick({
         infinite: true,
         dots: true,
         arrows: false,

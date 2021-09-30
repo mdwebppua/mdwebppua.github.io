@@ -21,7 +21,8 @@ img {
     max-width: 100%;
 }
 input,
-button {
+button,
+textarea{
     outline: none;
     font-family: 'Inter', sans-serif;
 }
@@ -462,12 +463,16 @@ body {
     padding: 65px 0;
 }
 .summer-slider {}
+
+.summer-slider .slick-list {
+    margin: -30px -30px 0 0;
+}
+.summer-slider .slick-track {
+
+}
 .summer-items {
 
-    margin: -25px 0 0 0;
-}
-.summer-items .slick-list {
-    padding: 25px 0 0 0;
+    padding: 30px 30px 0 0;
 }
 .summer-poster {
     background: #0045FF;
@@ -935,8 +940,127 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 15px;
 }
 .warenkorb-confirm__button:hover {
-    text-display: none;
+    text-decoration: none;
     color: #0045FF;
     background: #fff;
     cursor: pointer;
+}
+
+/* chekout PAGE css */
+.chekout-page {
+    padding: 65px 0;
+}
+.chekout-inform {}
+.chekout-inform__item {
+    border: 1px solid #DBDEE7;
+    background: #F5F8FD;
+    border-radius: 6px;
+    margin: 0 0 15px 0;
+    padding: 0 15px;
+}
+.chekout-inform__item a {
+    color: #0045FF;
+}
+.chekout-inform__item a:hover {
+    font-weight: 500;
+}
+.chekout-form {}
+.chekout-form__title {
+    font-weight: bold;
+}
+.chekout-type {
+    margin: 15px 0 0 0;
+}
+.chekout-type__input {
+    width: 100%;
+    border: 1px solid #DBDEE7;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.chekout-type__textarea {
+    width: 100%;
+    border: 1px solid #DBDEE7;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.chekout-deine {}
+.chekout-listen {}
+.chekout-short {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 0 0;
+    border-top: 2px solid #F0F2F5;
+    padding: 15px 0 0;
+}
+.chekout-delete {
+    font-size: 15px;
+    color: #0B1D49;
+    line-height: 0;
+    cursor: pointer;
+    margin: 0 15px 0 0
+}
+.chekout-sale {
+    font-size: 18px;
+    white-space: nowrap;
+    margin: 0 0 0 15px;
+}
+.chekout-rabattcode {
+    margin: 15px 0 0 0;
+    border-top: 2px solid #F0F2F5;
+    padding: 15px 0 0;
+    display: flex;
+}
+.chekout-rabattcode__input {
+    width: 100%;
+    border: 1px solid #DBDEE7;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-size: 14px;
+    margin: 0 15px 0 0;
+}
+.chekout-rabattcode__button {
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    background: #0045FF;
+    text-align: center;
+    padding: 0 25px;
+    border: 1px solid #0045FF;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.chekout-rabattcode__button:hover {
+    color: #0045FF;
+    background: #fff;
+    cursor: pointer;
+}
+.chekout-total {}
+.chekout-total li {
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 10px 0 0 0;
+}
+.chekout-total__title {}
+.chekout-total__price {
+    width: 25%;
+}
+.chekout-total__buy {
+    font-weight: bold;
+}
+.chekout-buylist {
+    margin: 15px 0 0 0;
+    border-top: 2px solid #F0F2F5;
+    padding: 15px 0 0;
+}
+.chekout-bestellen {
+    display: block;
+    width: 100%;
+    margin: 15px 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
 }

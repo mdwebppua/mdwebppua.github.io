@@ -1,0 +1,735 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #6665DD;
+    position: relative;
+    transition: 0.3s;
+}
+a:hover {
+    color: #0cbfbf;
+}
+img {
+    max-width: 100%;
+}
+input,
+button {
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+button:hover {
+    cursor: pointer;
+}
+p {
+    margin: 14px 0;
+}
+
+/* wp html tag content */
+.content a {
+    color: #6665DD;
+    text-decoration: underline;
+
+}
+.content a:hover {
+    text-decoration: none;
+    color: #0cbfbf;;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    margin-bottom: 15px;
+}
+.content ol,
+.content ul {
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.content p {
+    margin-bottom: 15px;
+}
+.content figure {
+    margin-bottom: 15px;
+}
+.content blockquote {
+    background: #f9fafc;
+    padding: 15px;
+    margin: 0 0 15px 15px;
+    border-left: 3px solid #182947;
+}
+.content blockquote p {}
+.content blockquote cite {
+    background: #fff;
+    padding: 15px;
+    display: block;
+}
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.content th,
+.content td {
+    border: 1px solid;
+    padding: 5px 10px;
+}
+/* end wp styles*/
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 46px;
+}
+h2 {
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 41px;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 56px;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 90px 0 0 0;
+}
+.container {
+    max-width: 1112px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    padding: 15px 0;
+}
+.logo-top {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.logo-top:hover {
+    text-decoration: none;
+    color: #000;
+}
+.header-nav {
+    display: flex;
+}
+.header-nav li {
+    margin: 0 20px 0 0;
+}
+.header-nav li:last-child {
+    margin: 0;
+}
+.header-nav li a {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header-nav li a:hover {}
+.user-box {
+    display: flex;
+}
+.user-box li {
+    margin: 0 0 0 20px;
+}
+.user-box li a {
+    color: #000;
+    font-size: 18px;
+}
+.user-box li a:hover {}
+
+.geschmack {
+    padding: 65px 0;
+}
+.geschmack .container .row {
+    justify-content: space-between;
+}
+.geschmak-info {}
+.geschmak-title {
+    font-size: 27px;
+    font-weight: 900;
+    line-height: 41px;
+}
+.geschmak-description {}
+.geschmak-short {
+    margin: 0 0 30px 0;
+}
+.geschmak-poster {
+    background: #0045FF;
+    border-radius: 6px;
+    height: 260px;
+}
+.limited:before {
+    content: "LIMITED EDITION";
+    color: #0045FF;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #0045FF;
+    width: 72px;
+    height: 72px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: -25px;
+    right: -10px;
+}
+.personali:before {
+    content: "PERSONALI-SIERBAR!";
+    color: #0045FF;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+    border-radius: 100%;
+    border: 1px solid #0045FF;
+    width: 90px;
+    height: 90px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: -30px;
+    right: -5px;
+}
+.geschmak-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.geschmak-art {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0045FF;
+    text-transform: uppercase;
+}
+.geshmak-link {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 6px;
+    background: #0045FF;
+    padding: 0 15px;
+}
+.geshmak-link:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.subscribe {
+    background: #0045FF;
+    color: #fff;
+    padding: 10px 0;
+}
+.subscribe .container {
+}
+.subscribe .container .row {
+    align-items: center;
+}
+.subscribe-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+.subscribe-description {}
+.button-subscribe {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0045FF;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 6px;
+    border: none;
+}
+.button-subscribe:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.action-box {
+    background: #F5F8FD;
+    padding: 65px 0;
+}
+.action-box .container > .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.action-poster {
+    background: #0045FF;
+    border-radius: 6px;
+    height: 330px;
+    overflow: hidden;
+}
+.action-title {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 46px;
+}
+.action-description {
+    margin: 0 0 30px 0;
+}
+.action-link {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 6px;
+    background: #0045FF;
+    padding: 0 15px;
+}
+.action-link:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.probier {
+    padding: 65px 0;
+}
+.probier .container .row {
+    justify-content: space-around;
+    align-items: center;
+}
+.probier-info {}
+.probier-title {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 46px;
+}
+.probier-description {
+    margin: 0 0 30px 0;
+}
+.probier-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+    background: url("img");
+    padding: 0 20px 0 0;
+    display: inline-block;
+}
+.probier-link:hover {
+    text-decoration: none;
+}
+.probier-thumb {
+    text-align: center;
+}
+.probier-poster {
+    background: #0045FF;
+    border-radius: 6px;
+    height: 225px;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+.probier-sorten {}
+.probier-art {
+    color: #0045FF;
+    margin: 0 0 20px 0;
+}
+.probier-button {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 6px;
+    background: #0045FF;
+    padding: 0 15px;
+    border: none;
+}
+.probier-button:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.limited-box {
+    padding: 65px 0;
+}
+.limited-box .row {}
+
+.geschenk-box {
+    background: #F5F8FD;
+    padding: 65px 0;
+}
+
+.abeau-box {
+    padding: 65px 0;
+}
+.abeau-description {
+    margin: 0 0 30px 0;
+}
+.geschmak-button {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 6px;
+    background: #0045FF;
+    padding: 10px 15px;
+    border: none;
+}
+.geschmak-button:hover {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.abeau-poster {
+    background: #0045FF;
+    border-radius: 6px;
+    height: 260px;
+    position: relative;
+}
+.abeau-list {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.abeau-list li {
+    margin: 0 0 15px 0;
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.abeau-list li:before {
+    content: "";
+    display: flex;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background: #0045FF;
+    border-radius: 100%;
+}
+
+.abeau-list li .fa-check-circle {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    background: #0045FF;
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* product page */
+.speedbar {
+    color: #0045FF;
+}
+.speedbar a {
+    color: #000;
+}
+.speedbar a:hover {}
+.speedbar span {
+    color: #0045FF;
+}
+.summer {
+    padding: 65px 0;
+}
+.summer-slider {}
+.summer-items {
+
+    margin: -25px 0 0 0;
+}
+.summer-items .slick-list {
+    padding: 25px 0 0 0;
+}
+.summer-poster {
+    background: #0045FF;
+    border-radius: 6px;
+    height: 260px;
+    position: relative;
+}
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li {
+    margin: 10px;
+    line-height: 0;
+}
+.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #0045FF;
+    border-radius: 100%;
+    background: #fff;
+    text-indent: -99999px;
+}
+.slick-active {}
+.slick-dots li.slick-active button {
+    background: #0045FF;
+}
+
+.summer-main {}
+.summer-title {}
+.summer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.summer-list li {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+.summer-ico {
+    min-width: 39px;
+    height: 39px;
+    background: #0045FF;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+.summer-description {
+    margin: 15px 0 0 0;
+}
+.summer-bullet {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.summer-bullet li {
+    width: 25%;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    color: #0045FF;
+    line-height: 14px;
+}
+.rectangle-box {
+    display: flex;
+    justify-content: space-between;
+}
+.rectangle-item {
+    width: 270px;
+    background: #0045FF;
+    border-radius: 6px;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin: 30px 0 0 0;
+}
+.rectangle-title {
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 1px solid #fff;
+    padding: 0 15px 15px;
+    text-align: left;
+    margin: 0 -15px;
+}
+.rectangle-title span {
+    font-size: 16px;
+    font-weight: 500;
+}
+.rectangle-price {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+.rectangle-sach {
+    font-size: 13px;
+}
+.rectangle-form {
+
+}
+.rectangle-type {
+    border: 1px solid #DBDEE7;
+    border-radius: 4px;
+    display: flex;
+    margin: 15px 0;
+}
+.rectangle-minus {
+    background: #0045FF;
+    color: #fff;
+    min-width: 35px;
+    border: none;
+    border-right: 1px solid #DBDEE7;
+}
+.rectangle-minus:hover {}
+.rectangle-input {
+    background: #0045FF;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    text-align: center;
+    width: 100%;
+}
+.rectangle-input:focus {}
+.rectangle-pluse {
+    background: #0045FF;
+    color: #fff;
+    min-width: 35px;
+    border: none;
+    border-left: 1px solid #DBDEE7;
+}
+.rectangle-pluse:hover {}
+.rectangle-button {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0045FF;
+    padding: 0 15px;
+    background: #fff;
+    border-radius: 6px;
+    border: none;
+}
+.rectangle-button:hover {}
+.rectangle-list {
+    margin: 15px 0;
+}
+.rectangle-list li {
+    font-size: 15px;
+    font-weight: bold;
+}
+.base-select {
+    margin: 30px 0 0 0;
+}
+.base-select select {
+    border: 1px solid #0045FF;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.passt-box {
+    background: #F5F8FD;
+    padding: 65px 0;
+}
+.passt-title {
+    text-align: center;
+}
+.passt-items {
+    margin: 50px 0;
+}
+.passt-slider {
+    padding: 0 30px;
+}
+.passt-items .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    background: #0045FF;
+}
+.passt-items .slick-dots li.slick-active button {
+    background: none;
+}
+
+.review-box {
+    padding: 65px 0;
+}
+.review-slider {
+    margin: 50px 0;
+}
+.review-slider .slick-dots {
+    margin: 30px 0 0 0;
+}
+.review-slider .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    background: #0045FF;
+}
+.review-slider .slick-dots li.slick-active button {
+    background: none;
+}
+.review-item {
+    background: #0045FF;
+    border-radius: 6px;
+    padding: 15px;
+    color: #fff;
+}
+.review-description {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    min-height: 120px;
+}
+.review-info {
+    display: flex;
+    justify-content: space-between;
+}
+.review-name {
+    font-weight: bold;
+}
+.review-name p {
+    font-weight: normal;
+    margin: 0;
+}
+.review-rating {}
+.review-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: -85px 0 0 0;
+}
+.review-prev,
+.review-next {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #0045FF;
+    color: #fff;
+    position: relative;
+    z-index: 5;
+}
+.review-prev {}
+.review-prev:hover {}
+.review-next {}
+.review-next:hover {}
+
+/* hidden style basket */
+.basket-short {}
+.warenkorb-head {}
+.warenkorb-title {}
+.warenkorb-close {}
+.warenkorb-close div {}
+.warenkorb-insert {}
+.warenkorb-status {}
+.warenkorb-status div {}
+.warenkorb-status__info {}
+.warenkorb-main {}
+.warenkorb-short {}
+.warenkorb-thumb {}

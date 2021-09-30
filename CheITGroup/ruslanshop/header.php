@@ -18,7 +18,7 @@
             <div class="col-lg-2">
                 <ul class="user-box">
                     <li><a href="#"><i class="far fa-user"></i></a></li>
-                    <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a class="open-basket" href="#!"><i class="fas fa-shopping-basket"></i></a></li>
                     <li><a href="#"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </div>

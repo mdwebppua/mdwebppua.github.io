@@ -395,6 +395,8 @@
                 <div class="warenkorb-price">
                     CHF 1.25 / Stk.
                 </div>
+                <a href="#" class="warenkorb-flasche">Flasche personalisieren</a>
+
             </div>
             <div class="warenkorb-current">
                 <input class="warenkorb-input" type="number" min="0" value="1" readonly>
@@ -404,6 +406,10 @@
                 </div>
             </div>
         </div>
+
+        <button class="warenkorb-deine">
+            Möchtest du deine Flasche Personalisieren?
+        </button>
 
     </div>
 

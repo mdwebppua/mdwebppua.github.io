@@ -333,7 +333,7 @@
 <section class="basket-short">
     <div class="warenkorb-head">
         <div class="warenkorb-title">Warenkorb</div>
-        <div class="warenkorb-close"><div></div></div>
+        <div class="warenkorb-close"><i class="fas fa-times"></i></div>
     </div>
     <div class="warenkorb-insert">
         15 Beutel wählen
@@ -355,11 +355,146 @@
                 </div>
             </div>
             <div class="warenkorb-current">
-                <button class="number-minus" type="button">-</button>
-                <input type="number" min="0" value="1" readonly>
-                <button class="number-plus" type="button">+</button>
+                <input class="warenkorb-input" type="number" min="0" value="1" readonly>
+                <div class="warenkorb-current__button">
+                    <button class="warenkorb-plus" type="button"><i class="fas fa-angle-up"></i></button>
+                    <button class="warenkorb-minus" type="button"><i class="fas fa-angle-down"></i></button>
+                </div>
             </div>
         </div>
+
+        <div class="warenkorb-short">
+            <div class="warenkorb-thumb">
+                img
+            </div>
+            <div class="warenkorb-info">
+                <div class="warenkorb-name">
+                    Yellow Booster
+                </div>
+                <div class="warenkorb-price">
+                    CHF 1.25 / Stk.
+                </div>
+            </div>
+            <div class="warenkorb-current">
+                <input class="warenkorb-input" type="number" min="0" value="1" readonly>
+                <div class="warenkorb-current__button">
+                    <button class="warenkorb-plus" type="button"><i class="fas fa-angle-up"></i></button>
+                    <button class="warenkorb-minus" type="button"><i class="fas fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="warenkorb-short">
+            <div class="warenkorb-thumb">
+                img
+            </div>
+            <div class="warenkorb-info">
+                <div class="warenkorb-name">
+                    Yellow Booster
+                </div>
+                <div class="warenkorb-price">
+                    CHF 1.25 / Stk.
+                </div>
+            </div>
+            <div class="warenkorb-current">
+                <input class="warenkorb-input" type="number" min="0" value="1" readonly>
+                <div class="warenkorb-current__button">
+                    <button class="warenkorb-plus" type="button"><i class="fas fa-angle-up"></i></button>
+                    <button class="warenkorb-minus" type="button"><i class="fas fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="warenkorb-main">
+        <div class="warenkorb-title">
+            Hast du schon eine Flasche?
+        </div>
+        <div class="warenkorb-short">
+            <div class="warenkorb-thumb">
+                img
+            </div>
+            <div class="warenkorb-info">
+                <div class="warenkorb-name">
+                    Yellow Booster
+                </div>
+                <div class="warenkorb-price">
+                    CHF 1.25 / Stk.
+                </div>
+            </div>
+            <div class="warenkorb-current">
+                <input class="warenkorb-input" type="number" min="0" value="1" readonly>
+                <div class="warenkorb-current__button">
+                    <button class="warenkorb-plus" type="button"><i class="fas fa-angle-up"></i></button>
+                    <button class="warenkorb-minus" type="button"><i class="fas fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="warenkorb-short">
+            <div class="warenkorb-thumb">
+                img
+            </div>
+            <div class="warenkorb-info">
+                <div class="warenkorb-name">
+                    Yellow Booster
+                </div>
+                <div class="warenkorb-price">
+                    CHF 1.25 / Stk.
+                </div>
+            </div>
+            <div class="warenkorb-current">
+                <input class="warenkorb-input" type="number" min="0" value="1" readonly>
+                <div class="warenkorb-current__button">
+                    <button class="warenkorb-plus" type="button"><i class="fas fa-angle-up"></i></button>
+                    <button class="warenkorb-minus" type="button"><i class="fas fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="warenkorb-short">
+            <div class="warenkorb-thumb">
+                img
+            </div>
+            <div class="warenkorb-info">
+                <div class="warenkorb-name">
+                    Yellow Booster
+                </div>
+                <div class="warenkorb-price">
+                    CHF 1.25 / Stk.
+                </div>
+            </div>
+            <div class="warenkorb-current">
+                <input class="warenkorb-input" type="number" min="0" value="1" readonly>
+                <div class="warenkorb-current__button">
+                    <button class="warenkorb-plus" type="button"><i class="fas fa-angle-up"></i></button>
+                    <button class="warenkorb-minus" type="button"><i class="fas fa-angle-down"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="warenkorb-gratis">
+        <div class="warenkorb-gratis__title">
+            Lieferung gratis
+        </div>
+        <div class="warenkorb-gratis__price">
+            CHF 00.00
+        </div>
+    </div>
+
+    <div class="warenkorb-total">
+        <div class="warenkorb-total__title">
+            Total
+        </div>
+        <div class="warenkorb-total__price">
+            CHF 45.00
+        </div>
+    </div>
+
+    <div class="warenkorb-confirm">
+        <button class="warenkorb-confirm__button">Zur Zahlung</button>
     </div>
 </section>
 

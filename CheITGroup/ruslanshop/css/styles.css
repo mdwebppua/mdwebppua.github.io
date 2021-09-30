@@ -721,15 +721,191 @@ body {
 .review-next:hover {}
 
 /* hidden style basket */
-.basket-short {}
-.warenkorb-head {}
-.warenkorb-title {}
-.warenkorb-close {}
-.warenkorb-close div {}
-.warenkorb-insert {}
-.warenkorb-status {}
-.warenkorb-status div {}
-.warenkorb-status__info {}
-.warenkorb-main {}
-.warenkorb-short {}
-.warenkorb-thumb {}
+.basket-short {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 450px;
+    background: #F5F8FD;
+    border-left: 1px solid #0045FF;
+    padding: 15px;
+    overflow: auto;
+    z-index: 51;
+}
+.warenkorb-head {
+    display: flex;
+    align-items: center;
+}
+.warenkorb-title {
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 200px;
+    padding: 0 15px 0 0;
+}
+.warenkorb-close {
+    font-size: 20px;
+    line-height: 0;
+    color: #0045FF;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.warenkorb-close:hover {
+    color: #000;
+}
+.warenkorb-insert {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+.warenkorb-status {
+    background: #BBCDFD;
+    height: 3px;
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+.warenkorb-status div {
+    background: #0045FF;
+    height: 3px;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.warenkorb-status__info {
+    font-size: 8px;
+    color: #0045FF;
+    text-align: right;
+    font-weight: 600;
+}
+.warenkorb-main {
+    border-bottom: 2px solid #F0F2F5;
+    margin: 0 0 15px 0;
+    padding: 0 0 20px 0;
+}
+.warenkorb-short {
+    margin: 15px 0 0 0;
+    display: flex;
+}
+.warenkorb-thumb {
+    min-width: 50px;
+    max-width: 50px;
+    background: #0045FF;
+    border-radius: 4px;
+}
+.warenkorb-info {
+    padding: 0 15px;
+    width: 100%;
+}
+.warenkorb-name {
+    font-weight: bold;
+}
+.warenkorb-price {
+    font-size: 14px;
+
+}
+.warenkorb-current {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #DBDEE7;
+    min-width: 80px;
+    height: 40px;
+    display: flex;
+}
+.warenkorb-input {
+    max-width: 40px;
+    border: none;
+    background: none;
+    text-align: center;
+    padding: 5px;
+    border-right: 1px solid #DBDEE7;
+}
+.warenkorb-current__button {
+    min-width: 40px;
+}
+.warenkorb-plus,
+.warenkorb-minus {
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1B1B1C;
+    font-size: 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    justify-content: center;
+    line-height: 0;
+}
+.warenkorb-minus {
+    border-top: 1px solid #DBDEE7;
+    margin: -1px 0 0 0;
+}
+.warenkorb-plus:hover,
+.warenkorb-minus:hover {
+    color: #fff;
+    background: #1B1B1C;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+.warenkorb-gratis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+.warenkorb-gratis__title {
+    width: calc(100% - 120px);
+    padding: 0 15px 0 0;
+}
+.warenkorb-gratis__price {
+    width: 120px;
+    text-align: right;
+}
+.warenkorb-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+.warenkorb-total__title {
+    width: calc(100% - 120px);
+    padding: 0 15px 0 0;
+}
+.warenkorb-total__price {
+    width: 120px;
+    text-align: right;
+}
+.warenkorb-confirm {
+    text-align: right;
+    margin: 15px 0 0 0;
+}
+.warenkorb-confirm__button {
+    color: #FFFFFF;
+    border-radius: 6px;
+    background: #0045FF;
+    text-align: center;
+    padding: 10px 25px;
+    border: 1px solid #0045FF;
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+}
+.warenkorb-confirm__button:hover {
+    text-display: none;
+    color: #0045FF;
+    background: #fff;
+    cursor: pointer;
+}

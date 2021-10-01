@@ -181,6 +181,11 @@ body {
     border-radius: 6px;
     height: 260px;
 }
+.geschmak-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .limited:before {
     content: "LIMITED EDITION";
     color: #0045FF;
@@ -1045,6 +1050,9 @@ input[type="number"]::-webkit-inner-spin-button {
     text-align: right;
     margin: 10px 0 0 0;
 }
+.chekout-total li.active {
+    display: block;
+}
 .chekout-total__title {}
 .chekout-total__price {
     width: 25%;
@@ -1064,3 +1072,235 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* konfigurieren PAGE css */
+.konfigurieren-page {
+    padding: 65px 0;
+}
+.konfigurieren-page h1 {
+    text-align: center;
+}
+
+.konfigurieren-list {
+    display: flex;
+    justify-content: center;
+}
+.konfigurieren-list__item {
+    text-align: center;
+    margin: 15px 0 0 0;
+    width: 160px;
+}
+.konfigurieren-list__thumb {
+    width: 52px;
+    height: 52px;
+    background: #0045FF;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+.konfigurieren-list__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 0 0;
+}
+
+.konfigurieren-step {
+    justify-content: center;
+
+}
+.konfigurieren-stepline {
+    counter-reset: li;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 30px 0 0 0;
+}
+.konfigurieren-stepline:after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #B1C6FD;
+    position: absolute;
+    width: 100%;
+    top: 13px;
+}
+.konfigurieren-stepline li {
+    position:relative;
+    font-size: 13px;
+    font-weight: bold;
+}
+.konfigurieren-stepline li span {
+}
+.konfigurieren-stepline li:before {
+    content:counter(li);
+    counter-increment: li;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background: #B1C6FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+}
+.konfigurieren-stepline li.active {}
+.konfigurieren-stepline li.active:before {
+    background: #0045FF;
+}
+.konfigurieren-stepcol {
+    margin: 30px 0 0 0;
+}
+.konfigurieren-stepitem {
+    background: #F5F8FD;
+    border: 1px solid #F5F8FD;
+    border-radius: 6px;
+    padding: 15px;
+}
+.konfigurieren-step__title {
+    font-weight: bold;
+}
+.konfigurieren-stepform {
+
+}
+.konfigurieren-steptype {
+    margin: 15px 0 0 0;
+}
+.konfigurieren-steptype__radio {
+    font-weight: bold;
+
+}
+.konfigurieren-stepinfo {
+    margin: 15px 0 0 0;
+    position: relative;
+    padding: 0 0 0 20px;
+}
+.konfigurieren-stepinfo svg {
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+.konfigurieren-trinkst {
+    background: #F5F8FD;
+    border: 1px solid #F5F8FD;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+.konfigurieren-trinkst span {
+    color: #0045FF;
+    font-weight: bold;
+}
+.konfigurieren-trinkst b {}
+.konfigurieren-buttonbox {
+    text-align: center;
+    margin: 30px;
+}
+.konfigurieren-button {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+}
+/*STEP2*/
+.konfigurieren-step2 {
+    background: #F5F8FD;
+    border: 1px solid #DBDEE7;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 30px 0 0 0;
+}
+.konfigurieren-step2 .warenkorb-head {
+    margin: 0 0 30px 0;
+}
+/*STEP3*/
+.konfigurieren-total {
+    display: flex;
+    border-bottom: 2px solid #F0F2F5;
+    margin: 0 0 15px 0;
+    padding: 0 0 15px 0;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.konfigurieren-total:last-child {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.konfigurieren-total__name {}
+.konfigurieren-total__price {}
+
+/* page Vielen Dank css*/
+.vielendank-box {
+    padding: 65px 0;
+    text-align: center;
+}
+.vielendank-box h1 {}
+.vielendank-description {
+    margin: 30px 0 0 0;
+}
+.guten-box {
+    padding: 65px 0;
+    background: #F5F8FD;
+}
+.guten-box h2 {
+    text-align: center;
+}
+.guten-box .row {
+    justify-content: space-between;
+    align-items: center;
+}
+.guten-social {
+    margin: 30px 0 0 0;
+    display: flex;
+}
+.guten-social li {
+    margin: 0 25px;
+}
+.guten-social li a {
+    color: #fff;
+    display: flex;
+    line-height: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background: #0045FF;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.guten-social li a:hover {
+    opacity: 0.7;
+}
+.guten-newsletter {
+    margin: 30px 0 0 0;
+}
+.guten-newsletter__title {
+    font-weight: bold;
+}
+.guten-newsform {
+    border: 1px solid #0045FF;
+    border-radius: 6px;
+    padding: 5px 15px;
+    display: flex;
+}
+.guten-newsform__input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 0 15px 0 0;
+}
+.guten-newsform__input:focus {}
+.guten-newsform__button {
+    color: #0045FF;
+    background: none;
+    border: none;
+}
+.guten-newsform__button:hover {}

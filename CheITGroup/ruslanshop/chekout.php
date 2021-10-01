@@ -176,7 +176,7 @@
                                 55.40
                             </div>
                         </li>
-                        <li class="chekout-total__rabattcode">
+                        <li class="chekout-total__rabattcode active">
                             <div class="chekout-total__title">
                                 Rabatt:
                             </div>

@@ -112,6 +112,7 @@
                             <div class="konfigurieren-steptype">
                                 <input type="radio" id="allewoche" name="woche" value="Alle">
                                 <label for="allewoche">Alle <input class="allewoche" type="number" min="1" max="12"> Wochen</label>
+                                <div class="allewoche-max">max. 12 Wochen möglich</div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +120,14 @@
             </div>
 
             <div class="konfigurieren-tab">
-                box2
+                <div class="bittle-wahle">
+                    <div class="bittle-wahle__title">
+                        <span class="current">Bitte wähle 15 Beutel</span>
+                        <span class="current-none">Du hast 15 Beutel gwählt</span>
+                    </div>
+
+                </div>
+
             </div>
 
             <div class="konfigurieren-trinkst">

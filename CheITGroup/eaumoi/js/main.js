@@ -250,5 +250,22 @@ $( document ).ready(function() {
         $(this).addClass('current').siblings().removeClass('current').parents('.konfigurieren-step').find('.konfigurieren-tab').eq($(this).index()).fadeIn(150).siblings('.konfigurieren-tab').hide();
     })
 
+    /* abo max 12 Wochen */
+    $( ".allewoche" ).change(function() {
+        var max = parseInt($(this).attr('max'));
+        var min = parseInt($(this).attr('min'));
+        if ($(this).val() > max)
+        {
+            $(this).val(max);
+            $(".allewoche-max").addClass("active");
+        } else if ($(this).val() < max) {
+            $(".allewoche-max").removeClass("active");
+        }
+        else if ($(this).val() < min)
+        {
+            $(this).val(min);
+        }
+    });
+
 
 });

@@ -2095,6 +2095,21 @@ body.page-shop .header-shop {
     font-family: 'GTWalsheimProRegular';
     font-size: 17px;
 }
+.allewoche-max {
+    font-size: 10px;
+    color: #E27291;
+    font-family: 'GTWalsheimProMedium';
+    line-height: 14px;
+    margin: 0 0 0 42px;
+    position: relative;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+.allewoche-max.active {
+    opacity: 1;
+    z-index: 1;
+}
 .konfigurieren-stepinfo {
     font-size: 14px;
     margin: 25px 0 0 0;

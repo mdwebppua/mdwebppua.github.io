@@ -2,115 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home eaumoi</title>
 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/amy-slider.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="page-home">
 
 <?php include 'header.php'; ?>
 
 <div class="bg-head">
-    <section class="bublle-wiewasser">
+    <section class="bublle-wiewasser section-vs">
         <div class="container">
             <div class="title-wiewasser">
-                Wie Wasser
+                <div class="title-wiewasser__tofrom1">
+                    Wie Wasser
+                </div>
+                <div class="title-wiewasser__tofrom2">
+                    Aber besser
+                </div>
             </div>
-            <img src="img/wiewasser.png" alt="">
 
-            <div id="scene"
-            data-relative-input="true">
-                <div class="scene" data-depth="1" data-scalar-y="50">
-                    <div class="bublle-cir bublle-cir__1"></div>
-                </div>
-                <div class="scene" data-depth="2">
-                    <div class="bublle-cir bublle-cir__2"></div>
-                </div>
-                <div class="scene" data-depth="1">
-                    <div class="bublle-cir bublle-cir__3"></div>
-                </div>
-                <div class="scene" data-depth="3" data-scalar-y="30">
-                    <div class="bublle-cir bublle-cir__4"></div>
-                </div>
-                <div class="scene" data-depth="1.50">
-                    <div class="bublle-cir bublle-cir__5"></div>
-                </div>
+            <div class="wiewasser-cursor"></div>
+<!--
+top: 1200px !important;
+left: 25px !important;
+-->
+            <div class="scene-none">
+
+
+                <div class="bublle-cir bublle-cir__1"></div>
+<!--
+left: 1287px;
+bottom: -283px;
+-->
+                <div class="bublle-cir bublle-cir__2"></div>
+<!--
+right: 0%;
+top: 1100px;
+-->
+                <div class="bublle-cir bublle-cir__3"></div>
+<!--
+bottom: -130px;
+right: 95%;
+-->
+                <div class="bublle-cir bublle-cir__4"></div>
+<!--
+bottom: -800px;
+right: 76%;
+-->
             </div>
+
         </div>
+
+
     </section>
 
     <section class="wasser-aroma">
-        <div class="container clearfix">
-            <div class="wasser-container">
-                <h1 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
-                    Aromatisiertes Wasser.<br>
-                    <i>Viel trinken wird endlich leicht.</i>
-                </h1>
-                <div class="wasser-description" data-aos="fade-up" data-aos-duration="1500">
-                    Viel Wasser zu trinken, ist gesund. Aber auch schwierig. Weil es nach nichts schmeckt. Darum machen wir es dir jetzt ganz leicht. Und fruchtig. Mit natürlichen Früchtepürees. Mit denen du dein Wasser schwuppdiwupp köstlich aromatisierst.
+        <div class="wasser-aroma__container">
+            <div class="container">
+                <div class="wasser-aromatis">
+                    <div class="wasser-container">
+                        <h1 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+                            Aromatisiertes Wasser.<br>
+                            <span class="wasser-title__italic">Viel trinken wird endlich leicht.</span>
+                        </h1>
+                        <div class="wasser-description" data-aos="fade-up" data-aos-duration="1500">
+                            Viel Wasser zu trinken, ist gesund. Aber auch schwierig. Weil es nach nichts schmeckt. Darum machen wir es dir jetzt ganz leicht. Und fruchtig. Mit natürlichen Früchtepürees. Mit denen du dein Wasser schwuppdiwupp köstlich aromatisierst.
+                        </div>
+
+                        <ul class="wasser-list">
+                            <li class="wasser-item">
+                                <div class="wasser-item__ico">
+                                    <img src="img/wasser-item__1.svg" alt="">
+                                </div>
+                                <div class="wasser-item__text">
+                                    100% natürlich
+                                </div>
+                            </li>
+                            <li class="wasser-item">
+                                <div class="wasser-item__ico">
+                                    <img src="img/wasser-item__2.svg" alt="">
+                                </div>
+                                <div class="wasser-item__text">
+                                    In der Schweiz hergestellt
+                                </div>
+
+                            </li>
+                            <li class="wasser-item">
+                                <div class="wasser-item__ico">
+                                    <img src="img/wasser-item__3.svg" alt="">
+                                </div>
+                                <div class="wasser-item__text">
+                                    ohne Süssungsmittel
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <ul class="wasser-list">
-                    <li class="wasser-item__1">
-                        <div class="wasser-item__ico">
-                            <img src="img/wasser-item__1.svg" alt="">
-                        </div>
-                        <div class="wasser-item__text">
-                            100% natürlich
-                        </div>
-                    </li>
-                    <li class="wasser-item__2">
-                        <div class="wasser-item__ico">
-                            <img src="img/wasser-item__2.svg" alt="">
-                        </div>
-                        <div class="wasser-item__text">
-                            In der Schweiz hergestellt
-                        </div>
-
-                    </li>
-                    <li class="wasser-item__3">
-                        <div class="wasser-item__ico">
-                            <img src="img/wasser-item__3.svg" alt="">
-                        </div>
-                        <div class="wasser-item__text">
-                            ohne Süssungsmittel
-                        </div>
-
-                    </li>
-                </ul>
             </div>
 
-            <div class="wasser-rasp__1"></div>
-            <div class="wasser-rasp__2"></div>
-            <div class="wasser-rasp__3"></div>
-            <div class="wasser-rasp__4"></div>
-        </div>
-    </section>
+            <section class="wasser-banner">
+                <div class="container">
+                    <div class="wasser-banner__item">
+                        <img src="img/keine.svg" alt="">
+                        <b>keine</b> Versandkosten
+                    </div>
+                    <div class="wasser-banner__item">
+                        <span>100%</span> natürlich
+                    </div>
+                    <div class="wasser-banner__item">
+                        <img src="img/wasser-list__2.svg" alt="">
+                        in der Schweiz hergestellt
+                    </div>
+                    <div class="wasser-banner__item">
+                        <span>20%</span> Rabatt im Abo
+                    </div>
+                </div>
+            </section>
 
-    <section class="wasser-banner">
-        <div class="container">
-            <div class="wasser-banner__item">
-                <img src="img/keine.svg" alt="">
-                <span>Keine</span> Versandkosten
-            </div>
-            <div class="wasser-banner__item">
-                <span>100%</span> Natürlich
-            </div>
-            <div class="wasser-banner__item">
-                <img src="img/wasser-list__2.svg" alt="">
-                in der Schweiz hergestellt
-            </div>
-            <div class="wasser-banner__item">
-                <span>20%</span> Rabatt im Abeau
+            <div class="wasser-scene">
+                <div class="wasser-rasp wasser-rasp__1"></div>
+                <div class="wasser-rasp wasser-rasp__2"></div>
+                <div class="wasser-rasp wasser-rasp__3"></div>
+                <div class="wasser-rasp wasser-rasp__4"></div>
+                <div class="wasser-rasp wasser-drop__1"></div>
+                <div class="wasser-rasp wasser-drop__2"></div>
+                <div class="wasser-rasp wasser-drop__3"></div>
+                <div class="wasser-rasp wasser-drop__4"></div>
             </div>
         </div>
     </section>
+
+
 </div>
 
 <section class="wasserhahn">
@@ -119,15 +152,15 @@
             <div class="schritt" data-aos="fade-up" data-aos-duration="1000">
                 SCHRITT 1
             </div>
-            <h2 class="schritt-title" data-aos="fade-up" data-aos-duration="1000">
-                Wasserhahn <i>auf</i>
+            <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+                Wasserhahn <span class="wasser-title__italic">auf</span>
             </h2>
             <div class="schritt-description" data-aos="fade-up" data-aos-duration="1500">
                 Einfach perfekt, was da aus deinem Wasserhahn fliesst. Leitungswasser ist das meistgeprüfte Lebensmittel in der Schweiz und gemäss dem Schweizer Fachverband für Wasser mit Abstand das umweltfreundlichste Lebensmittel überhaupt.
             </div>
 
             <ul class="wasserhahn-list">
-                <li class="wasserhahn-item__1">
+                <li class="wasserhahn-item">
                     <div class="wasserhahn-item__ico">
                         <img src="img/wasserhahn_1.svg" alt="">
                     </div>
@@ -135,7 +168,7 @@
                         kein schweres Schleppen
                     </div>
                 </li>
-                <li class="wasserhahn-item__2">
+                <li class="wasserhahn-item">
                     <div class="wasserhahn-item__ico">
                         <img src="img/wasserhahn_2.svg" alt="">
                     </div>
@@ -143,17 +176,17 @@
                         natürliches Hahnenwasser
                     </div>
                 </li>
-                <li class="wasserhahn-item__3">
+                <li class="wasserhahn-item">
                     <div class="wasserhahn-item__ico">
-                        <img src="img/wasserhahn_3.svg" alt="">
+                        <img width="150" height="150" src="img/wasserhahn_3.svg" alt="">
                     </div>
                     <div class="wasserhahn-item__text">
                         ohne mühsames Entsorgen
                     </div>
                 </li>
-                <li class="wasserhahn-item__4">
+                <li class="wasserhahn-item">
                     <div class="wasserhahn-item__ico">
-                        <img src="img/wasserhahn_4.svg" alt="">
+                        <img width="150" height="150" src="img/wasserhahn_4.svg" alt="">
                     </div>
                     <div class="wasserhahn-item__text">
                         kein Pet-Verbrauch
@@ -181,14 +214,14 @@
             <div class="schritt" data-aos="fade-up">
                 SCHRITT 2
             </div>
-            <h2 class="schritt-title" data-aos="fade-up" data-aos-duration="1000">
-                Früchtepüree <i>rein!</i>
+            <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+                Früchtepüree <span class="wasser-title__italic">rein!</span>
             </h2>
             <div class="schritt-description" data-aos="fade-up" data-aos-duration="1500">
                 Für dich haben wir das Köstlichste aus deinen liebsten Früchten, Kräutern und Gewürzen herausgeholt und püriert. Rein damit ins Wasser und du hast ein natürliches Getränk mit leichtem Aroma. Um jeden Tag ausreichend und gut zu trinken.
             </div>
             <ul class="fruchtepuree-list">
-                <li class="fruchtepuree-item__1">
+                <li class="fruchtepuree-item">
                     <div class="fruchtepuree-item__ico">
                         <img src="img/wasser-item__1.svg" alt="">
                     </div>
@@ -196,7 +229,7 @@
                         100% natürliches Aroma
                     </div>
                 </li>
-                <li class="fruchtepuree-item__2">
+                <li class="fruchtepuree-item">
                     <div class="fruchtepuree-item__ico">
                         <img src="img/wasser-item__3.svg" alt="">
                     </div>
@@ -204,7 +237,7 @@
                         ohne Süssungsmittel
                     </div>
                 </li>
-                <li class="fruchtepuree-item__3">
+                <li class="fruchtepuree-item">
                     <div class="fruchtepuree-item__ico">
                         <img src="img/fruchtepuree_2.svg" alt="">
                     </div>
@@ -212,7 +245,7 @@
                         Fast ohne Kalorien
                     </div>
                 </li>
-                <li class="fruchtepuree-item__4">
+                <li class="fruchtepuree-item">
                     <div class="fruchtepuree-item__ico">
                         <img src="img/fruchtepuree_4.svg" alt="">
                     </div>
@@ -225,122 +258,390 @@
 
         <div class="kleiner-banner">
             <div class="kleiner-banner__text">
-                <span>kleiner Beutel,</span> grosse Wirkung!
+                <span>kleiner Beutel,</span> <br> grosse Wirkung!
             </div>
         </div>
     </div>
 </section>
 
 <section class="zoomshop">
-    <div class="container">
-        <div class="picker-wrap">
-            <div id="picker" class="picker">
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide1.jpg" alt="">
+    <div class="ct_amy_holder">
+        <div id="ct_amy_main1">
+            <ct_amy_article class="ct_as_amy_slider">
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+                <ct_amy_section class="ct_amy_grid">
+                    <div class="layer ct_amy_cn_style center-content " data-depth="1">
+                        <div class="zumshop-slick__item" data-bg="#FAF188">
+                            <div class="zumshop-slick__thumb">
+                                <img src="img/slidenew.jpg" alt="">
+                            </div>
+                            <div class="zumshop-hidden">
+                                <div class="zumshop-slick__name">
+                                    Yellow Booster
+                                </div>
+                                <div class="zumshop-slick__tag">
+                                    Mango • Yuzu • Kurkuma
+                                </div>
+                                <div class="zumshop-slick__buyer">
+                                    <div class="zumshop-slick__price">
+                                        CHF 1.25
+                                    </div>
+                                    <div class="ntweder-item__numform">
+                                        <form action="#" class="ntweder-form">
+                                            <div class="ntweder-type">
+                                                <button class="ntweder-minus productCountDown">-</button>
+                                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                                <button class="ntweder-pluse productCountUp">+</button>
+                                            </div>
+                                            <div class="ntweder-button">
+                                                <button class="ntweder-submit"></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ct_amy_section>
+
+
+
+            </ct_amy_article>
+
+            <div id="arrownav9" class="ct_as_arrow_nav ">
+                <div class="ct_amy_arrows_next">
+                    <i class="fa fa-angle-right next-arrow">ів</i>
                 </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="cell-content">
-                        <img src="img/slide3.jpg" alt="">
-                    </div>
+                <div class="ct_amy_arrows_prev">
+                    <i class="fa fa-angle-left prev-arrow">ів</i>
                 </div>
             </div>
+
+            <!-- START LOADING CIRCLE -->
+            <div class="ct_amy_initloader ct_amy_animated ct_amy_fadeinup">
+                <div class="ct_amy_slider_loading"></div>
+            </div>
+            <!-- END LOADING CIRCLE -->
         </div>
+        <!-- END SLIDER HOLDER -->
+    </div>
+    <!-- END MAIN HOLDER -->
 
-        <!--
-        <div class="zumshop-slider rotating-slider">
-            <ul class="zumshop-slick slides">
-                <li>
-                    <div class="zumshop-slick__item active" data-bg="#FAF188">
-                        <div class="zumshop-slick__thumb">
-                            <img src="img/slide_2.png" alt="">
-                        </div>
-                        <div class="zumshop-slick__name">
-                            Yellow Booster
-                        </div>
-                        <div class="zumshop-slick__tag">
-                            Mango • Yuzu • Kurkuma
-                        </div>
-                        <div class="zumshop-slick__buyer">
-                            <div class="zumshop-slick__price">
-                                CHF 1.25
-                            </div>
-                            <div class="zumshop-slick__numform">
-
-                            </div>
-                            <div class="zumshop-slick__button">
-                                <button class=""></button>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="zumshop-slick__item" data-bg="#000">
-                        <div class="zumshop-slick__thumb">
-                            <img src="img/slide1.jpg" alt="">
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="zumshop-slick__item" data-bg="#000">
-                        <div class="zumshop-slick__thumb">
-                            <img src="img/slide3.jpg" alt="">
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="zumshop-slick__item" data-bg="#000">
-                        <div class="zumshop-slick__thumb">
-                            <img src="img/slide1.jpg" alt="">
-                        </div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="zumshop-slick__item" data-bg="#000">
-                        <div class="zumshop-slick__thumb">
-                            <img src="img/slide3.jpg" alt="">
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        -->
-
+    <div class="container">
         <div class="button-inline button-center">
             <a href="#" class="button-link">zum Shop</a>
         </div>
@@ -351,23 +652,25 @@
     <div class="container">
         <div class="aktion-ten">
             <button class="aktion-close"></button>
-            <div class="aktion-img">
-                <img src="img/aktion.png" alt="">
-            </div>
-            <div class="aktion-info">
-                <div class="aktion-title">
-                    Aktion 10 + 2 Gratis
+            <div class="aktion-tenbody">
+                <div class="aktion-img">
+                    <img src="img/aktion.png" alt="">
                 </div>
-                <div class="aktion-gratis">
-                    <div class="aktion-description">
-                        Es fühlt sich so gut an, etwas geschenkt zu erhalten. Nimm dir 10 Sachets und du erhältst 2 gratis dazu. Cool? Cool!
-                        <br>
-                        <b>Aktion gültig bis 31.12.2021</b>
+                <div class="aktion-info">
+                    <div class="aktion-title">
+                        Aktion 10 + 2 Gratis
                     </div>
-                    <div class="aktion-button">
-                        <a href="#" class="button-link button-hover">Jetzt sichern!</a>
-                    </div>
+                    <div class="aktion-gratis">
+                        <div class="aktion-description">
+                            Es fühlt sich so gut an, etwas geschenkt zu erhalten. Nimm dir 10 Sachets und du erhältst 2 gratis dazu. Cool? Cool!
+                            <br>
+                            <b>Aktion gültig bis 31.12.2021</b>
+                        </div>
+                        <div class="aktion-button">
+                            <a href="#" class="button-link">jetzt sichern!</a>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -378,7 +681,7 @@
     <div class="container">
         <div class="gutschein">
             <h2 class="gutschein-title" data-aos="fade-up" data-aos-duration="1000">
-                <i>Ein Gutschein,</i> der guttut?
+                <span class="wasser-title__italic">Ein Gutschein,</span> der guttut?
             </h2>
             <div class="gutschein-description" data-aos="fade-up" data-aos-duration="1500">
                 Etwas Gutes zu trinken geht natürlich noch leichter mit einem guten Gutschein. Woher auch immer du ihn hast – er wird dir guttun.
@@ -401,14 +704,15 @@
 
             </div>
             <div class="trink-info">
-                <h2 class="trink-title" data-aos="fade-up" data-aos-duration="1000">
-                    <i>Dein Trink</i> Abeau: 100% <i>Früchte,</i> 20% <i>günstiger</i>
+                <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="wasser-title__italic">Dein Trink</span> Abo: <br>
+                    100% <span class="wasser-title__italic">Früchte,</span> 20% <span class="wasser-title__italic">günstiger</span>
                 </h2>
                 <div class="trink-description" data-aos="fade-up" data-aos-duration="1500">
                     Wir haben es dir versprochen: mehr Leichtigkeit beim Wassertrinken. Lass dir also deine bevorzugten Fruchtpürees zur Aromatisierung deines Wassers automatisch nach Hause senden. Dann klappt das auch mit deinem Vorsatz, viel zu trinken.
                 </div>
                 <div class="button-inline">
-                    <a href="#" class="button-link">Abeau abschliessen</a>
+                    <a href="#" class="button-link">Abo abschliessen</a>
                 </div>
             </div>
         </div>
@@ -417,27 +721,32 @@
 
 <section class="entweder-man">
     <div class="container">
-        <h2 class="entweder-title" data-aos="fade-up" data-aos-duration="1000">
-            <i>Entweder</i> man ist eine. <i>Oder</i> man hat eine.
+        <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+            <span class="wasser-title__italic">Entweder</span> man ist eine. <br>
+            <span class="wasser-title__italic">Oder</span> man hat eine.
         </h2>
         <div class="entweder-description" data-aos="fade-up" data-aos-duration="1500">
             Eine Flasche. Musst du einfach haben. Der Natur zuliebe. Deiner Gesundheit zuliebe. Und dir zuliebe sogar personalisierbar.
         </div>
         <div class="entweder-list">
             <div class="entweder-item">
-                <div class="entweder-item__img">
-                    <img src="img/entweder_1.png" alt="">
-                    <div class="entweder-perso">
-                        <div class="entweder-perso__text">
-                            PERSO-NALISIERBAR!
+                <div class="entweder-body">
+                    <div class="entweder-item__img">
+                        <img src="img/entweder_1.png" alt="">
+                        <!--
+                        <div class="entweder-perso">
+                            <div class="entweder-perso__text">
+                                PERSO-NALISIERBAR!
+                            </div>
                         </div>
+                        -->
                     </div>
-                </div>
-                <div class="entweder-item__name">
-                    Edelstahlflasche
-                </div>
-                <div class="entweder-item__tag">
-                    hält dein Getränk warm oder kalt
+                    <div class="entweder-item__name">
+                        Edelstahlflasche
+                    </div>
+                    <div class="entweder-item__tag">
+                        hält dein Getränk warm oder kalt
+                    </div>
                 </div>
                 <div class="entweder-item_buyer">
                     <div class="ntweder-item__price">
@@ -447,7 +756,40 @@
                         <form action="#" class="ntweder-form">
                             <div class="ntweder-type">
                                 <button class="ntweder-minus productCountDown">-</button>
-                                <input type="number" value="1" class="ntweder-input productCount">
+                                <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                <button class="ntweder-pluse productCountUp">+</button>
+                            </div>
+                            <div class="ntweder-button">
+                                <button class="ntweder-submit"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="entweder-item">
+                <div class="entweder-body">
+                    <div class="entweder-item__img person">
+                        <img src="img/entweder_2.png" alt="">
+
+                    </div>
+                    <div class="entweder-item__name">
+                        Glasflasche
+                    </div>
+                    <div class="entweder-item__tag">
+                        mit Bügelverschluss
+                    </div>
+                </div>
+                <div class="entweder-item_buyer">
+                    <div class="ntweder-item__price">
+                        CHF 1.25
+                    </div>
+                    <div class="ntweder-item__numform">
+                        <form action="#" class="ntweder-form">
+                            <div class="ntweder-type">
+                                <button class="ntweder-minus productCountDown">-</button>
+                                <input type="number" value="1" class="ntweder-input productCount" min="0">
                                 <button class="ntweder-pluse productCountUp">+</button>
                             </div>
                             <div class="ntweder-button">
@@ -459,19 +801,16 @@
             </div>
 
             <div class="entweder-item">
-                <div class="entweder-item__img person">
-                    <img src="img/entweder_2.png" alt="">
-                    <div class="entweder-perso">
-                        <div class="entweder-perso__text">
-                            text testing test
-                        </div>
+                <div class="entweder-body">
+                    <div class="entweder-item__img">
+                        <img src="img/entweder_3.png" alt="">
                     </div>
-                </div>
-                <div class="entweder-item__name">
-                    Glasflasche
-                </div>
-                <div class="entweder-item__tag">
-                    mit Bügelverschluss
+                    <div class="entweder-item__name">
+                        Edelstahlsieb
+                    </div>
+                    <div class="entweder-item__tag">
+                        für Glasflasche
+                    </div>
                 </div>
                 <div class="entweder-item_buyer">
                     <div class="ntweder-item__price">
@@ -481,36 +820,7 @@
                         <form action="#" class="ntweder-form">
                             <div class="ntweder-type">
                                 <button class="ntweder-minus productCountDown">-</button>
-                                <input type="number" value="1" class="ntweder-input productCount">
-                                <button class="ntweder-pluse productCountUp">+</button>
-                            </div>
-                            <div class="ntweder-button">
-                                <button class="ntweder-submit"></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-            <div class="entweder-item">
-                <div class="entweder-item__img">
-                    <img src="img/entweder_3.png" alt="">
-                </div>
-                <div class="entweder-item__name">
-                    Edelstahlsieb
-                </div>
-                <div class="entweder-item__tag">
-                    für Glasflasche
-                </div>
-                <div class="entweder-item_buyer">
-                    <div class="ntweder-item__price">
-                        CHF 1.25
-                    </div>
-                    <div class="ntweder-item__numform">
-                        <form action="#" class="ntweder-form">
-                            <div class="ntweder-type">
-                                <button class="ntweder-minus productCountDown">-</button>
-                                <input type="number" value="1" class="ntweder-input productCount">
+                                <input type="number" value="1" class="ntweder-input productCount" min="0">
                                 <button class="ntweder-pluse productCountUp">+</button>
                             </div>
                             <div class="ntweder-button">
@@ -527,14 +837,14 @@
 <section class="das-prinzip">
     <div class="container">
         <div class="prinzip-info">
-            <h2 class="prinzip-title" data-aos="fade-up" data-aos-duration="1000">
-                <i>Das Prinzip:</i> Nachhaltigkeit & Achtsamkeit
+            <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+                <span class="wasser-title__italic">Das Prinzip:</span> Nachhaltigkeit & Achtsamkeit
             </h2>
             <div class="prinzip-description" data-aos="fade-up" data-aos-duration="1500">
                 eau moi sind zwei gute Gedanken in einem. Nämlich umweltschonendes Wasser aus dem Hahn. Und fruchtiges Aroma, damit du ausreichend trinkst. Nachhaltigkeit Achtsamkeit. eau moi.
             </div>
             <div class="button-inline">
-                <a href="#" class="button-link">Mehr über uns</a>
+                <a href="#" class="button-link">mehr über uns</a>
             </div>
         </div>
         <div class="prinzip-foto">
@@ -548,15 +858,15 @@
 
 <section class="wie-schmeckt">
     <div class="container">
-        <h2 class="wie-title" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
             Und? <br>
-            <i>Wie schmeckt’s?</i>
+            <span class="wasser-title__italic">Wie schmeckt’s?</span>
         </h2>
     </div>
 
-    <div class="wie-review">
-        <div class="wie-list">
-            <div>
+    <div class="wie-review swiper">
+        <div class="wie-list swiper-wrapper">
+            <div class="swiper-slide">
                 <div class="wie-item">
                     <div class="wie-enter">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.
@@ -571,13 +881,15 @@
                             </div>
                         </div>
                         <div class="wie-rating">
-                            rating
+                            <div class="wie-rating__star">
+                                <div class="wie-rating__num" data-wierating="3"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <div class="wie-item">
                     <div class="wie-enter">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.
@@ -592,13 +904,15 @@
                             </div>
                         </div>
                         <div class="wie-rating">
-                            rating
+                            <div class="wie-rating__star">
+                                <div class="wie-rating__num" data-wierating="4"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <div class="wie-item">
                     <div class="wie-enter">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.
@@ -613,13 +927,15 @@
                             </div>
                         </div>
                         <div class="wie-rating">
-                            rating
+                            <div class="wie-rating__star">
+                                <div class="wie-rating__num" data-wierating="3.5"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <div class="wie-item">
                     <div class="wie-enter">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.
@@ -634,13 +950,15 @@
                             </div>
                         </div>
                         <div class="wie-rating">
-                            rating
+                            <div class="wie-rating__star">
+                                <div class="wie-rating__num" data-wierating="4.5"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <div class="wie-item">
                     <div class="wie-enter">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.
@@ -655,13 +973,15 @@
                             </div>
                         </div>
                         <div class="wie-rating">
-                            rating
+                            <div class="wie-rating__star">
+                                <div class="wie-rating__num" data-wierating="5"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div>
+            <div class="swiper-slide">
                 <div class="wie-item">
                     <div class="wie-enter">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget.
@@ -676,13 +996,16 @@
                             </div>
                         </div>
                         <div class="wie-rating">
-                            rating
+                            <div class="wie-rating__star">
+                                <div class="wie-rating__num" data-wierating="3.5"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!--
         <div class="container">
             <div class="wie-navigation">
                 <button class="wie-prev"></button>
@@ -690,6 +1013,7 @@
                 <button class="wie-next"></button>
             </div>
         </div>
+        -->
     </div>
 
 </section>
@@ -700,8 +1024,8 @@
             <img src="img/dem-guten.jpg" alt="">
         </div>
         <div class="guten-folgen">
-            <h2 class="guten-title" data-aos="fade-up" data-aos-duration="1000">
-                Dem Guten <i>sollst du folgen.</i>
+            <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
+                Dem Guten <span class="wasser-title__italic">sollst du folgen.</span>
             </h2>
             <div class="gutten-newslatter">
                 <div class="gutten-newstlatter__title">

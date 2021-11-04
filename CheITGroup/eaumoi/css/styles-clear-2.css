@@ -187,9 +187,8 @@ body.page-home {
 
 .header {
     position: fixed;
-    /*background: #F4F8FF;*/
+    background: #F4F8FF;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 50;
     padding: 12px 0;
@@ -206,9 +205,7 @@ body.page-home {
     margin: 0px 0 0 68px;
     float: left;
 }
-.logo-top img {
-    display: block;
-}
+.logo-top img {}
 .header-nav {}
 .header-shop {
     position: absolute;
@@ -325,14 +322,16 @@ body.page-home {
     height: 3px;
 }
 
-.bg-head {}
+.bg-head {
+    background: #F4F8FF;
+    padding: 0 0 343px 0;
+    background: url("../img/wasser-aroma.png") no-repeat bottom, #F4F8FF;
+    background-size: contain;
+}
 .bg-head:after {
     content: "";
     display: block;
-    background: url("../img/wasser-aroma.png") no-repeat center bottom;
-    width: 100%;
-    min-height: 306px;
-    background-size: cover;
+    background: url("../img/wasser-aroma.png") no-repeat bottom;
 }
 .bublle-wiewasser {
     background: #F4F8FF;
@@ -347,31 +346,22 @@ body.page-home {
     font-size: 177px;
     font-family: 'FarnhamDisplay';
     text-align: center;
+    /*left: 177px;*/
     position: relative;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     line-height: 1;
 }
 .title-wiewasser__tofrom1 {
     position: absolute;
     width: 100%;
-    -webkit-transition: 2s;
-    -o-transition: 2s;
     transition: 2s;
 }
 .title-wiewasser__tofrom2 {
     position: absolute;
     width: 100%;
-    -webkit-transition: 2s;
-    -o-transition: 2s;
     transition: 2s;
     opacity: 0;
 }
@@ -379,32 +369,11 @@ body.page-home {
     background: url("../img/droplet-big.png") no-repeat center;
     width: 317px;
     height: 295px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: calc(-295px / 2);
-    margin-left: calc(-317px / 2);
-
+    position: fixed;
+    transition: all 0s ease-in-out, top 0s, left 0s;
+    display: none;
     z-index: 51;
-    /*transform: translate(-50%, -50%);*/
-    pointer-events: none;
-}
-.wiewasser-cursor.active {
-    display: block;
-}
-.wiewasser-cursor.absolute {
-    /*position: absolute;*/
-    top: 170% !important;
-    left: 0 !important;
-    /*transform: translate(815px, 1750px) !important;*/
-
-    top: 1125px !important;
-    left: 25px !important;
-}
-.wiewasser-cursor.transition {
-    -webkit-transition: all 5.5s ease;
-    -o-transition: all 5.5s ease;
-    transition: all 5.5s ease;
+    margin: -188px 0 0 -159px;
 }
 #scene,
 .scene {
@@ -414,8 +383,6 @@ body.page-home {
     top: 0;
     left: 0;
     z-index: 9;
-    -webkit-transition: 3s;
-    -o-transition: 3s;
     transition: 3s;
 }
 .bublle-cir {
@@ -423,7 +390,6 @@ body.page-home {
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
-    z-index: 9;
 }
 @-webkit-keyframes bublle-float {
     0% {
@@ -487,24 +453,42 @@ body.page-home {
     height: 46px;
     bottom: 15%;
     left: 4%;
+
+    /*
+    bottom: 156px;
+    left: 15px;
+     */
+    */
+
     -webkit-transition-delay: .5s;
     -o-transition-delay: .5s;
     transition-delay: .5s;
     -webkit-transition: all 5.5s ease;
     -o-transition: all 5.5s ease;
     transition: all 5.5s ease;
+
     -webkit-animation: bublle-float 4s linear infinite;
     animation: bublle-float 4s linear infinite;
+
+
 }
 .bublle-cir__2 {
     background: url("../img/drop-1.png") no-repeat center;
     width: 69px;
     height: 65px;
+
     right: 4%;
     top: 24%;
+
+    /*
+    right: 86px;
+    top: 153px;
+     */
+
     -webkit-transition: all 5.5s ease;
     -o-transition: all 5.5s ease;
     transition: all 5.5s ease;
+
     -webkit-animation: bublle-float 5s linear infinite;
     animation: bublle-float 5s linear infinite;
 
@@ -514,11 +498,19 @@ body.page-home {
     background: url("../img/droplet-1.png") no-repeat center;
     width: 103px;
     height: 109px;
+
     right: 22%;
     bottom: 13%;
+
+    /*
+    right: 328px;
+    bottom: 145px;
+    */
+
     -webkit-transition: all 5.5s ease;
     -o-transition: all 5.5s ease;
     transition: all 5.5s ease;
+
     -webkit-animation: bublle-float 3s linear infinite;
     animation: bublle-float 3s linear infinite;
 
@@ -528,13 +520,23 @@ body.page-home {
     background: url("../img/droplet-2.png") no-repeat center;
     width: 276px;
     height: 269px;
+
     right: 0;
     bottom: -20%;
+
+    /*
+    right: -58px;
+    bottom: -124px;
+    */
+
     -webkit-transition: all 5.5s ease;
     -o-transition: all 5.5s ease;
     transition: all 5.5s ease;
+
     -webkit-animation: bublle-float 4s linear infinite;
     animation: bublle-float 4s linear infinite;
+
+
 }
 .bublle-cir__5 {}
 
@@ -620,21 +622,19 @@ body.page-home {
 
 .wasser-aroma {
     position: relative;
+    background: url("../img/wasser-aroma.svg") no-repeat center bottom;
     background: #F4F8FF;
-    padding: 141px 0 158px 0;
 }
-
 .wasser-aromatis {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    padding: 141px 0 160px 0;
 }
 .wasser-aroma .container {
-    position: relative;
-    z-index: 10;
 }
 .wasser-container {
     max-width: 818px;
+    float: right;
+    margin: 163px 62px 0 0;
     margin: 0 62px 0 0;
     position: relative;
     z-index: 11;
@@ -663,7 +663,7 @@ body.page-home {
     font-family: 'GTWalsheimProMedium';
     font-size: 12px;
     text-align: center;
-    margin: 67px 0 20px 276px;
+    margin: 67px 0 0 276px;
 }
 .wasser-list li {
     width: 100px;
@@ -690,21 +690,12 @@ body.page-home {
 }
 .wasser-item__ico {
     height: 65px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 .wasser-item__ico img {
-    -o-object-fit: none;
     object-fit: none;
-    width: 100%;
-    height: 100%;
 }
 .wasser-item__text {
     line-height: 1.1666;
@@ -738,91 +729,63 @@ body.page-home {
     }
 }
 
-.wasser-scene {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 1368px;
-    margin: 0 auto;
-    height: 100%;
-    z-index: 5;
-}
-.wasser-rasp {
-    position: absolute;
-}
 .wasser-rasp__1 {
     background: url("../img/grapefruit-1.png") no-repeat center;
     width: 516px;
     height: 503px;
+    position: absolute;
     left: -43px;
     top: -29px;
+
+    /*left: -45px;*/
+    /*top: -170px;*/
 }
 .wasser-rasp__2 {
     background: url("../img/raspberry.png") no-repeat center;
     width: 230px;
     height: 224px;
+    position: absolute;
     right: -53px;
     top: 29px;
+
+    /*top: -110px;*/
 }
 .wasser-rasp__3 {
     background: url("../img/blueberry.png") no-repeat center;
     width: 218px;
     height: 147px;
-    bottom: -25px;
+    position: absolute;
+    bottom: -58px;
     left: -25px;
+
+    /*bottom: -205px;*/
 }
 .wasser-rasp__4 {
     background: url("../img/pineapple.png") no-repeat center;
     width: 651px;
     height: 414px;
-    bottom: -112px;
+    position: absolute;
+    bottom: -145px;
     left: 280px;
-}
-.wasser-drop__1 {
-    background: url("../img/droplet/drop-1.png") no-repeat center;
-    width: 100px;
-    height: 91px;
-    bottom: -230px;
-    left: -90px;
-}
-.wasser-drop__2 {
-    background: url("../img/droplet/drop-2.png") no-repeat center;
-    width: 43px;
-    height: 38px;
-    bottom: -150px;
-    left: 307px;
-}
-.wasser-drop__3 {
-    background: url("../img/droplet/drop-3.png") no-repeat center;
-    width: 30px;
-    height: 27px;
-    bottom: -191px;
-    right: 139px;
-}
-.wasser-drop__4 {
-    background: url("../img/droplet/drop-4.png") no-repeat center;
-    width: 46px;
-    height: 53px;
-    bottom: -95px;
-    right: -24px;
 }
 
 .wasser-banner {
     background: #C9EDE8;
     padding: 6px 0;
+    z-index: 5;
+    position: relative;
 
     position: absolute;
     width: 100%;
     left: 0;
+    bottom: 77px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     z-index: 10;
-    opacity: 1;
 }
 .wasser-banner.fadeout {
-    opacity: 0;
+    left: -100%;
 }
 .wasser-banner .container {
     display: -webkit-box;
@@ -851,9 +814,6 @@ body.page-home {
 }
 .wasser-banner__item img {
     margin: 0 5px 0 0;
-    width: 44px;
-    height: 33px;
-    object-fit: contain;
 }
 .wasser-banner__item b {
     font-family: 'FarnhamDisplay';
@@ -878,13 +838,12 @@ body.page-home {
     font-size: 14px;
     text-transform: uppercase;
     font-family: 'GTWalsheimProMedium';
-    letter-spacing: 0.56px;
 }
 .wasserhahn .wasser-title {
-    margin: 2px 0 0 0;
+    margin: 11px 0 0 0;
 }
 .schritt-description {
-    margin: 28px 0 0 0;
+    margin: 37px 0 0 0;
     line-height: 1.75;
 }
 .wasserhahn-list {
@@ -895,8 +854,6 @@ body.page-home {
     font-size: 12px;
     text-align: center;
     margin: 68px 0 0 6px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .wasserhahn-list li {
@@ -934,18 +891,11 @@ body.page-home {
 }
 .wasserhahn-item__ico {
     height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: end;
 }
 .wasserhahn-item__ico img {
-    -o-object-fit: none;
     object-fit: none;
     width: 100%;
     height: 100%;
@@ -968,7 +918,7 @@ body.page-home {
     left: -170px;
 }
 .wasserhahn-buttle__img {
-    margin: -30px 0 0 8px;
+    margin: -34px 0 0 8px;
     position: relative;
     z-index: 2;
 }
@@ -982,7 +932,7 @@ body.page-home {
 }
 .fruchtepuree-buttle {
     position: relative;
-    margin: 0 -212px 0 0;
+    margin: 0 -215px 0 0;
 }
 .fruchtepuree-buttle:after {
     content: "";
@@ -991,11 +941,11 @@ body.page-home {
     width: 973px;
     height: 833px;
     position: absolute;
-    top: 79px;
+    top: 90px;
     left: 10px;
 }
 .fruchtepuree-buttle__img {
-    margin: 108px 0 0 16px;
+    margin: 116px 0 0 19px;
     width: 846px;
     position: relative;
     z-index: 2;
@@ -1003,7 +953,7 @@ body.page-home {
 .fruchtepuree-buttle__img img {}
 .fruchtepuree-rein {
     width: 630px;
-    margin: 157px 0 0 0;
+    margin: 165px 0 0 0;
     position: relative;
     z-index: 5;
 }
@@ -1015,8 +965,6 @@ body.page-home {
     font-size: 12px;
     text-align: center;
     margin: 59px 0 0 22px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 .fruchtepuree-list li {
@@ -1055,14 +1003,8 @@ body.page-home {
 
 .fruchtepuree-item__ico {
     height: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
     align-items: flex-end;
 }
 .fruchtepuree-item__text {
@@ -1092,7 +1034,7 @@ body.page-home {
     flex-direction: column;
     font-weight: 500;
     right: -265px;
-    bottom: 90px;
+    bottom: 85px;
     -webkit-transform: rotate(-5deg);
     -ms-transform: rotate(-5deg);
     transform: rotate(-5deg);
@@ -1102,7 +1044,7 @@ body.page-home {
     transition: 0.3s;
 }
 .kleiner-banner.active {
-    right: 69px;
+    right: 63px;
     opacity: 1;
 }
 .kleiner-banner span {
@@ -1116,12 +1058,10 @@ body.page-home {
     text-align: center;
 }
 
-.zoomshop {
-    padding: 0 0 465px 0;
-}
+.zoomshop {}
 /* slider amy */
 #ct_amy_main1 {
-    height: 705px;
+    height: 800px;
 }
 /*end slider amy */
 .zumshop-slider {}
@@ -1154,8 +1094,6 @@ body.page-home {
     max-height: 0;
     overflow: hidden;
     position: relative;
-    -webkit-transition: max-height 0.5s;
-    -o-transition: max-height 0.5s;
     transition: max-height 0.5s;
 }
 .bespoke-active .zumshop-hidden {
@@ -1187,8 +1125,6 @@ body.page-home {
     margin: 25px 0 0 0;
     opacity: 0;
     position: relative;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .zumshop-slick__item:hover .zumshop-slick__buyer {
@@ -1269,19 +1205,11 @@ body.page-home {
     height: 100%;
     left: 0;
     top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     z-index: -1;
     opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
 }
 .aktion-box.active {
@@ -1296,6 +1224,9 @@ body.page-home {
     box-shadow: 0px 15px 15px #0000000B;
     border-radius: 11px;
     height: 194px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     max-width: 1232px;
     margin: 0 auto;
@@ -1320,11 +1251,6 @@ body.page-home {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-}
-.aktion-tenbody {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
 }
 .aktion-img {
     min-width: 320px;
@@ -1400,7 +1326,7 @@ body.page-home {
     margin: 30px 0 70px 0;
 }
 .gutschein .button-link {
-    padding: 11px 14px;
+    padding: 16px 14px;
 }
 .gutschein-img {
     position: absolute;
@@ -1425,8 +1351,7 @@ body.page-home {
 }
 .trink-info {
     width: 715px;
-    width: 760px;
-    margin: 34px 0 0 49px;
+    margin: 34px 0 0 94px;
 }
 .trink-box .wasser-title {
     font-size: 60px;
@@ -1441,7 +1366,7 @@ body.page-home {
     padding: 77px 0;
 }
 .entweder-man .wasser-title {
-    /*max-width: 590px;*/
+    max-width: 590px;
     margin: 0 auto;
     text-align: center;
     letter-spacing: -0.72px;
@@ -1480,13 +1405,11 @@ body.page-home {
     height: 71px;
     position: fixed;
     z-index: 999;
-    margin: -35px 0 0 -35px;
     display: none;
-    pointer-events: none;
+    transition: transform 0.2s;
+    margin: -35px 0 0 -35px;
 }
-.entweder-cursor.active  {
-    display: block;
-}
+
 .entweder-item:after {
     /*content: "";*/
     display: block;
@@ -2482,11 +2405,6 @@ body.page-shop .header-shop {
 .hast-gutschein  .ein-gutschein__container {
     padding: 104px 0;
 }
-.hast-gutschein .wasser-title {
-    font-size: 80px;
-    letter-spacing: -1.6px;
-    line-height: 1.1875;
-}
 
 .das-probierpaket {
     margin: -137px 0 0 0;
@@ -2517,10 +2435,7 @@ body.page-shop .header-shop {
 .probierpaket-info {
     max-width: 475px;
 }
-.probierpaket-info .wasser-title {
-    font-size: 50px;
-    line-height: 1.24;
-}
+.probierpaket-title {}
 .probierpaket-description {
     margin: 30px 0 80px 0;
 }
@@ -2681,9 +2596,6 @@ body.page-shop .header-shop {
 .konfigurieren-stepline li:nth-child(3) a span {
     right: 0;
 }
-.konfigurieren-stepline li.current a {
-    color: #0D2330;
-}
 .konfigurieren-tab {
     display: none;
     margin: 65px 0 0 0;
@@ -2805,9 +2717,6 @@ body.page-shop .header-shop {
 .konfigurieren-button button.button-link {
     font-family: 'GTWalsheimProMedium';
     padding: 15px 56px;
-}
-.konfigurieren-button li.current {
-    display: none;
 }
 
 /* STEP 2 */
@@ -2940,19 +2849,11 @@ body.page-shop .header-shop {
     font-family: 'FarnhamDisplay';
     font-weight: 300;
     font-size: 24px;
-    line-height: 1.45833;
 }
-.warenkorb-price {
-    font-size: 16px;
-    line-height: 1.625;
-}
+.warenkorb-price {}
 .warenkorb-current {}
 .warenkorb-type {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 .warenkorb-minus {}
@@ -2977,229 +2878,6 @@ body.page-shop .header-shop {
     text-align: center;
 }
 
-/* STEP 3 */
-.konfigurieren-total {
-    display: flex;
-    border-bottom: 2px solid #F0F2F5;
-    margin: 0 0 15px 0;
-    padding: 0 0 15px 0;
-    justify-content: space-between;
-    font-family: 'GTWalsheimProBold';
-    font-size: 16px;
-}
-.konfigurieren-total:last-child {
-    margin: 0;
-    padding: 0;
-    border: none;
-}
-.konfigurieren-total__name {
-}
-.konfigurieren-total__price {
-    font-family: 'GTWalsheimProMedium';
-    font-weight: 500;
-}
-
-/* BASKET CSS */
-body.ov-hidden {
-    overflow: hidden;
-}
-.warenkorb-basket {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    transition: 1s;
-    z-index: 99;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: end;
-}
-.warenkorb-basket.ov-hidden {
-    right: 0;
-}
-.basket-mask {
-    position: fixed;
-    right: -100%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(13 35 48 / 55%);
-    transition: 0.6s;
-}
-.warenkorb-basket.ov-hidden .basket-mask {
-    right: 0;
-}
-.basket-container {
-    background: #C9EDE8;
-    width: 535px;
-    position: relative;
-    z-index: 100;
-    overflow: auto;
-}
-.warenkorb-head {
-    background: #F4F8FF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-}
-.warenkorb-title {
-    margin: 0 20px 0 20px;
-    font-family: 'GTWalsheimProBold';
-    font-size: 14px;
-    text-transform: uppercase;
-    order: 2;
-}
-.warenkorb-close {
-    display: block;
-    background: url(../img/close.svg) no-repeat center;
-    width: 16px;
-    height: 16px;
-    border: none;
-    cursor: pointer;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    background-size: contain;
-    order: 1;
-}
-.warenkorb-close:hover {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-.aboshort-header {
-    border-bottom: 1px solid #CED5DD;
-    background: #F4F8FF;
-}
-.aboshort-item {
-    display: flex;
-    border-bottom: 1px solid #CED5DD;
-    padding: 0 25px 15px 25px;
-    margin: 0 0 15px 0;
-    align-items: center;
-}
-.aboshort-item:last-child {
-    border: none;
-    padding: 0 25px;
-    margin: 0;
-}
-.aboshort-header .aboshort-item {
-    border: none;
-    padding: 0 25px;
-    margin: 0;
-}
-.aboshort-thumb {
-    min-width: 54px;
-    max-width: 54px;
-    height: 62px;
-    text-align: center;
-}
-.aboshort-thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-.aboshort-info {
-    width: 100%;
-    margin: 0 0 0 15px;
-}
-.aboshort-name {
-    font-size: 24px;
-    font-family: 'FarnhamDisplay';
-    font-weight: 300;
-    line-height: 1.41666;
-}
-.aboshort-flasche {
-    font-size: 13px;
-    font-family: 'GTWalsheimProRegular';
-}
-.aboshort-flasche a {
-    color: #E27291;
-    text-decoration: none;
-}
-.aboshort-flasche a:hover {
-    text-decoration: underline;
-}
-.aboshort-rabatt {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'GTWalsheimProRegular';
-    font-size: 14px;
-    align-items: center;
-}
-.aboshort-rabatt__inkl {}
-.aboshort-form {
-    display: flex;
-    align-items: center;
-}
-.aboshort-preis {
-    display: flex;
-    justify-content: space-between;
-    font-family: 'GTWalsheimProBold';
-    font-weight: bold;
-    font-size: 15px;
-    padding: 15px 25px;
-}
-.aboshort-rabattcode {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 25px 15px 25px;
-}
-.aboshort-rabattcode__input {
-    border-radius: 3px;
-    border: 1px solid #0D2330;
-    font-size: 14px;
-    background: none;
-    width: 280px;
-    height: 40px;
-    padding: 10px;
-    font-family: 'GTWalsheimProRegular';
-}
-.aboshort-rabattcode__input:focus {}
-.aboshort-rabattcode__button {
-    padding: 10px 28px;
-    font-size: 14px;
-    height: 40px;
-    font-family: 'GTWalsheimProMedium';
-}
-.aboshort-rabattcode__button:hover {}
-.basket-totallist {
-    padding: 15px 25px;
-}
-.basket-totalitem {
-    font-size: 15px;
-    display: flex;
-    justify-content: flex-end;
-    font-family: 'GTWalsheimProRegular';
-
-}
-.basket-totalitem__name {
-    width: 25%;
-}
-.basket-totalitem__price {
-    width: 25%;
-    text-align: right;
-}
-.basket-totalitem__last {
-    font-size: 18px;
-    font-family: 'GTWalsheimProBold';
-}
-.basket-totalitem__last .basket-totalitem__name {}
-.basket-totalitem__last .basket-totalitem__name span {
-    font-size: 12px;
-    font-family: 'GTWalsheimProMedium';
-}
-.basket-buttonbox {
-    padding: 0 25px 15px 25px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.aboshort-body {
-    background: #F4F8FF;
-}
 /* end css page-abo.php */
 
 /* custom cursor */
@@ -3222,7 +2900,4 @@ body.ov-hidden {
     width: 100vw;
     height: 100vh;
     z-index: 12000;
-}
-.cursor--canvas.active {
-    display: none;
 }

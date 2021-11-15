@@ -136,84 +136,64 @@ jQuery(document).ready(function () {
             //Navigation
             //==================================================
             function initButtons() {
-                jQuery(sliderID + ' .ct_as_arrow_nav .next-arrow').click(function () {
-                    gonext();
-                });
-                jQuery(sliderID + ' .ct_as_arrow_nav .prev-arrow').click(function () {
-                    goprev();
-                });
-
-
-                // $('.ct_amy_holder').on('mousedown', function(e) {
-                //     gonext();
-                // }).on('mouseup', function(e) {
-                //     goprev();
-                // })
-
-                $('.ct_amy_holder').swipe({
-                    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-                        if (direction == "right") {
-                            goprev();
-                        }
-                        if (direction == "left") {
-                            gonext();
-                        }
-                    }
-                });
-
-                var ts;
-                $(document).bind('touchstart', function(e) {
-                    ts = e.originalEvent.touches[0].clientY;
-                });
-
-                $(document).bind('touchmove', function(e) {
-                    e.preventDefault();
-                    if (ts > te) {
-                        gonext();
-                    } else {
-                        goprev();
-                    }
-                });
-
-                /*
-                $(".ct_amy_circle").on('wheel', function(e) {
-
-                    e.preventDefault();
-
-                    if (e.originalEvent.deltaY < 0) {
-                        gonext();
-                    } else {
-                        goprev();
-                    }
-                });
-
-
-
-                 */
-                $(".slider-prev").click(function() {
-                    goprev();
-                });
+                jQuery(sliderID+' .ct_as_arrow_nav  .next-arrow').click(function(){ gonext();});
+                jQuery(+sliderID+' .ct_as_arrow_nav  .prev-arrow').click(function(){ goprev();});
             }
+
+            $('.ct_amy_holder').swipe({
+                swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+                    if (direction == "right") {
+                        goprev();
+                    }
+                    if (direction == "left") {
+                        gonext();
+                    }
+                }
+            });
+        /*
+            $(".ct_amy_circle").on('wheel', function(e) {
+
+                e.preventDefault();
+
+                if (e.originalEvent.deltaY < 0) {
+                    gonext();
+                } else {
+                    goprev();
+                }
+            });
+        */
+
             var stopnextslide = 0;
 
             function gonext() {
                 var stopnextslide = 0;
-                var n = jQuery(sliderID + ' ct_amy_section').length;
-                jQuery(sliderID + ' ct_amy_section').each(function () {
-                    if (jQuery(this).hasClass('bespoke-active') && Number(jQuery(this).attr('rel')) + 2 == n) {
-                        if (initajax(sliderID) !== false) {
-                            /* deck.slide(0);
-					       stopnextslide = 1;*/
-                        }
+                var n = jQuery(sliderID+' ct_amy_section').length;
+                jQuery(sliderID+' ct_amy_section').each(function () {
+                    if (jQuery(this).hasClass('bespoke-active') && Number(jQuery(this).attr('rel'))+1 == n) {
+                        deck.slide(0);
+                        stopnextslide = 1;
                     }
                 });
-                if (stopnextslide != 1) {
+                if(stopnextslide != 1){
                     deck.next();
                 }
             };
+
             function goprev() {
-                deck.prev();
+                var stopnextslide = 0;
+                var n = jQuery(sliderID+' ct_amy_section').length;
+
+                jQuery(sliderID+' ct_amy_section').each(function () {
+                    if (jQuery(this).hasClass('bespoke-active') && Number(jQuery(this).attr('rel')) == 0) {
+                        deck.slide(n-1);
+                        stopnextslide = 1;
+                    }
+                });
+                if(stopnextslide != 1){
+                    deck.prev();
+                }
             };
+
             //Keyboard navigation
             //==================================================
             function initKeys(e) {

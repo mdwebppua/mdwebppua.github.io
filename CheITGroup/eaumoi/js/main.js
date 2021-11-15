@@ -6,36 +6,39 @@ $( document ).ready(function() {
 
     /* custom change cursor hover buble */
     $('.bublle-wiewasser').on("mousemove", function(e) {
+        var offsetBubller = $('.bublle-wiewasser').offset();
+        mouseX2 = e.pageX - offsetBubller.left;
+        mouseY2 = e.pageY - offsetBubller.top;
 
-        $('.wiewasser-cursor').css({
-            opacity: 1
+        $('.wiewasser-cursor:not(.nomouse)').css({
+            opacity: 1,
+            left: mouseX2,
+            top: mouseY2
         });
 
     }).on('mouseenter', function () {
-        $('.wiewasser-cursor, .cursor--canvas').addClass('active');
-        $('.wiewasser-cursor').removeClass('transition');
+        $('.cursor--canvas').addClass('active');
     }).on('mouseleave', function () {
-        $(".wiewasser-cursor, .cursor--canvas").removeClass("active");
+        $(".cursor--canvas").removeClass("active");
     });
+
+    // cache the selector
+    //var xp = 0, yp = 0;
+    // var loop = setInterval(function(){
+    //     xp += (mouseX2 - xp) / 5;
+    //     yp += (mouseY2 - yp) / 5;
+    //     $(".wiewasser-cursor").css({left:xp, top:yp});
+    //
+    // }, 30);
 
     /* custom change cursor hover sale */
     $(document).on("mousemove", function(e) {
-        var offsetBubller = $('.container').offset();
-        mouseX2 = e.pageX - offsetBubller.left;
-        mouseY2 = e.pageY - offsetBubller.top;
+
         mouseX = e.pageX;
         mouseY = e.pageY - $(window).scrollTop();
         TweenLite.to('.entweder-cursor', 0, {left: mouseX, top: mouseY});
     });
-    // cache the selector
-    var xp = 0, yp = 0;
-    var loop = setInterval(function(){
-        // change 12 to alter damping higher is slower
-        xp += (mouseX2 - xp) / 5;
-        yp += (mouseY2 - yp) / 5;
-        $(".wiewasser-cursor").css({left:xp, top:yp});
 
-    }, 30);
 
     $(document).on('mouseenter', '.entweder-body', function () {
         $('.entweder-cursor, .cursor--canvas').addClass('active');
@@ -49,89 +52,116 @@ $( document ).ready(function() {
         });
     })
 
-    if ($(".wasser-aroma").length) {
-        var wasserAroma = $(".wasser-aroma").offset().top / 2;
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= wasserAroma) {
-                $(".wiewasser-cursor").addClass("absolute transition");
-            } else if ($(window).scrollTop() <= wasserAroma * 2) {
-                $(".wiewasser-cursor").removeClass("absolute");
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const timelineBubble = gsap.timeline({
+        defaults: {
+            autoAlpha: 1,
+        },
+        scrollTrigger: {
+            trigger: ".bublle-wiewasser",
+            start: "top top",
+            end: "bottom 80%",
+            scrub: 2,
+            pinSpacing: false,
+            onLeave: function() {
+                $(".wiewasser-cursor").addClass('nomouse');
+                gsap.to(".wiewasser-cursor", {
+                    top: '90%',
+                    left: '5%',
+                    duration: 1,
+                });
+                $(".bublle-cir__1").css({
+                    left: '1287px',
+                    bottom: '-283px',
+                });
+                $(".bublle-cir__2").css({
+                    right: '0%',
+                    top: '1100px',
+                });
+                $(".bublle-cir__3").css({
+                    bottom: '-130px',
+                    right: '95%',
+                });
+                $(".bublle-cir__4").css({
+                    bottom: '-800px',
+                    right: '76%',
+                });
+            },
+            onEnterBack: function() {
+                /*
+                let positionT = parseInt($('.entweder-cursor').css('top'));
+                let positionL = parseInt($('.entweder-cursor').css('left'));
+                let offsetScr = $(window).scrollTop();
+                gsap.to(".wiewasser-cursor", {
+                    top: positionT+offsetScr,
+                    left: positionL,
+                    duration: .5,
+                    onComplete: function () {
+                    }
+                }); */
+                $(".wiewasser-cursor").removeClass('nomouse');
+                $(".bublle-cir__1").css({
+                    bottom: '15%',
+                    left: '4%'
+                });
+                $(".bublle-cir__2").css({
+                    right: '4%',
+                    top: '24%',
+                });
+                $(".bublle-cir__3").css({
+                    right: '22%',
+                    bottom: '13%',
+                });
+                $(".bublle-cir__4").css({
+                    right: '0',
+                    bottom: '-20%',
+                });
+            },
+            onUpdate: function(e) {
+                let positionT = parseInt($('.entweder-cursor').css('top'));
+                let positionL = parseInt($('.entweder-cursor').css('left'));
+                let offsetScr = $(window).scrollTop();
+                gsap.to(".wiewasser-cursor:not(.nomouse)", {
+                    top: positionT+offsetScr,
+                    left: positionL,
+                    duration: 0
+                });
             }
-        });
-    }
+        }
+    });
 
 
-
-    /* Animation view scroll home page bubble following */
-    var controller = new ScrollMagic.Controller();
-
-    var timeline1 = new TimelineMax();
-
-    timeline1
-        .to('.title-wiewasser__tofrom1', {
-            scale: '0',
-            y: '-100vh'
-        })
-        .fromTo(".title-wiewasser__tofrom2", 1, {
-            y: '100vh',
-            scale: 0
-        }, {
-            y: 0,
+    let titleAnim = gsap.timeline()
+        .to(".title-wiewasser__tofrom1", {
+            yPercent: -100,
+            scale: 0.5,
+            ease: "slow",
+        }, "+=1%")
+        .to(".title-wiewasser__tofrom2", {
+            yPercent: -100,
             scale: 1,
-            opacity: 1,
-        }, '>')
+            ease: "slow",
+        },"<-30%")
+        .to(".title-wiewasser__tofrom2", {
+            yPercent: -200,
+            scale: 0.5,
+            ease: "slow",
+        },"+=40%")
 
-        .to('.bublle-cir__1', {
-            //bottom: '45%',
-            //left: '6%'
-            left: '1287px',
-            bottom: '-283px',
-        })
-        .to('.bublle-cir__2', {
-            //top: '20%',
-            //right: '10%'
-            right: '0%',
-            top: '1100px',
-        })
-        .to('.bublle-cir__3', {
-            //right: '53%',
-            //bottom: '22%'
-            bottom: '-130px',
-            right: '95%',
-        })
-        .to('.bublle-cir__4', {
-            //right: '-8%',
-            //bottom: '8%'
-            bottom: '-800px',
-            right: '76%',
-        })
-        .to('.bublle-cir__1', {
-            bottom: '-45%',
-            left: '94%'
-        })
-        .to('.bublle-cir__2', {
-            top: '163%',
-            right: '0%'
-        })
-        .to('.bublle-cir__3', {
-            right: '95%',
-            bottom: '-22%'
-        })
-        .to('.bublle-cir__4', {
-            right: '76%',
-            bottom: '-127%'
-        })
-
-    var scene1 = new ScrollMagic.Scene({
-        triggerElement: '.section-vs',
-        duration: '50%',
-        triggerHook: "onLeave",
-        offset: '0'
+    ScrollTrigger.create({
+        trigger: ".bublle-wiewasser",
+        endTrigger: '.title-wiewasser__tofrom1',
+        pin: ".title-wiewasser",
+        animation: titleAnim,
+        anticipatePin: 1,
+        fastScrollEnd: false,
+        pinSpacing: false,
+        start: 'top top',
+        end: "+=200%",
+        scrub: true,
     })
-        .setTween(timeline1)
-        .setPin('.section-vs')
-        .addTo(controller)
-
 
 
 
@@ -160,7 +190,6 @@ $( document ).ready(function() {
 
     if ($(".aktion-box").length) {
         var aktionBoxHeigh = ($(window).height() / 1.25);
-        console.log(aktionBoxHeigh);
         var aktionBox = $(".aktion-box").offset().top - aktionBoxHeigh;
         $(window).scroll(function () {
             if ($(window).scrollTop() >= aktionBox) {
@@ -196,26 +225,32 @@ $( document ).ready(function() {
     });
 
     if ($(".wie-review").length) {
-        const swiper = new Swiper('.wie-review', {
+        const wieReview = new Swiper('.wie-review', {
+
             loop: true,
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            spaceBetween: 50,
-            speed: 5000,
-            //slidesPerGroupAuto: true,
             autoplay: {
                 delay: 0,
-                waitForTransition: false,
-                pauseOnMouseEnter: true,
                 disableOnInteraction: false,
+                pauseOnMouseEnter: true,
             },
+            speed: 5000,
+            grabCursor: true,
+            slidesPerView: "auto",
+            centeredSlides: true,
+            spaceBetween: 50,
+
+            loopPreventsSlide: false,
+            freeModeMomentum: false,
+            freeMode: true,
+
+            //slidesPerGroupAuto: true,
+
 
         });
     };
 
     if ($(".aromen-slider").length) {
-        const swiper = new Swiper('.aromen-slider', {
+        const aromenSlider = new Swiper('.aromen-slider', {
             loop: true,
             grabCursor: true,
             centeredSlides: true,
@@ -225,6 +260,9 @@ $( document ).ready(function() {
 
         });
     };
+
+
+
 
     var trinkLottie = lottie.loadAnimation({
         container: document.getElementById('trink-lottie'),
@@ -391,11 +429,85 @@ $( document ).ready(function() {
     });
 
 
-    $(".open-basket, .warenkorb-close, .basket-mask").click(function() {
-        $("body, .warenkorb-basket").toggleClass("ov-hidden");
+    $(".open-basket").click(function() {
+        $("body, .warenkorb-basket").addClass("ov-hidden");
+    });
+    $(".warenkorb-close, .basket-mask").click(function() {
+        $("body, .warenkorb-basket").removeClass("ov-hidden");
+    });
+
+    const zumshopSlider = new Swiper('.zumshop-slider', {
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        speed: 5000,
+        grabCursor: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 0,
+        loopPreventsSlide: false,
+        freeModeMomentum: false,
+        freeMode: true,
+        effect: 'creative',
+        creativeEffect: {
+            prev: {
+                translate: ['-70%', 120, 0],
+                rotate: [0, 0, -15],
+                scale: .85,
+                origin: `50% 100%`
+            },
+            next: {
+                translate: ['70%', 120, 0],
+                rotate: [0, 0, 15],
+                scale: .85,
+                origin: `50% 100%`
+            },
+            perspective: false,
+            limitProgress: 6,
+            progressMultipler: 1,
+            //transformEl: '.item'
+        }
+    });
+
+    $(".bezahlung-lieferung").click(function() {
+        $(".bezahlung-lieferung__eine").toggleClass("active");
+    });
+
+    /* product page JS */
+    const productSlider = new Swiper('.product-slider', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+
+    $(window).load(function(){
+        $(".product-maskload, .product-maskload2").addClass("active");
+    });
+    setTimeout(function() {
+
+    }, 1000);
+
+    $(".link-load").click(function(e) {
+        e.preventDefault();
+        $(".page-maskload").addClass("active");
+        var loadBg = $(this).data('bg');
+        $(".page-maskload path").css({
+            fill: loadBg
+        });
+        var url = $(this).attr('href');
+        setInterval(function() {
+            window.location = url;
+        }, 1000);
     });
 
 
 
 
 });
+
+$(".product-maskload").addClass("load");
+$(".page-maskload").removeClass("none");

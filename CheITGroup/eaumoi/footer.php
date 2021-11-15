@@ -57,9 +57,9 @@
 
                         <form action="#" class="aboshort-form">
                             <div class="aboshort-type">
-                                <button class="ntweder-minus productCountDown">-</button>
-                                <input type="number" value="1" class="ntweder-input productCount" min="0" max="20">
-                                <button class="ntweder-pluse productCountUp">+</button>
+                                <button class="aboshort-minus productCountDown">-</button>
+                                <input type="number" value="1" class="aboshort-input productCount" min="0" max="20">
+                                <button class="aboshort-pluse productCountUp">+</button>
                             </div>
                             <div class="aboshort-button">
                                 CHF 39.90
@@ -257,7 +257,12 @@
     </div>
 </footer>
 
-
+<svg class="page-maskload none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1544.324" height="663.518" viewBox="0 0 1544.324 663.518">
+    <g transform="translate(67.162 -247.501)">
+        <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.873 668.499) rotate(180)" fill="#faf188"/>
+        <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(-67.162 786.663)" fill="#faf188"/>
+    </g>
+</svg>
 
 <!-- The cursor elements -->
 <div class="entweder-cursor"></div>
@@ -266,59 +271,23 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
-
-
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
 
 <!-- plugin custom cursor -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 
 <!-- scroll bubble animation -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+<!-- scroll GSAP bubble animation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
 
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="js/jquery.touchSwipe.min.js"></script>
 
-<!-- zommshop slider -->
-<script src="js/jquery-migrate.min.js"></script>
-<script src="js/amyslider.js"></script>
-<script src="js/amybs.js"></script>
-<script src="js/jquery.parallax.js"></script>
-
-<script src="js/jquery.change-cursor.js"></script>
 <script src="js/customcursor.js"></script>
 <script src="js/magnetizecursor.js"></script>
 
 <script src="js/main.js"></script>
 
-<script>
-    jQuery(document).ready(function ($) {
-        /*$("a[rel^='prettyPhotoImages']").prettyPhoto({
-            theme: 'dark_square',
-            allow_resize: true
-        });*/
-        /* LEGEND
-            1. SCROLL ID WITH HASTAG #: '#ct_amy_main1'
-            2. SCROLL EFFECT: 'ct_amy_circle','ct_amy_cube', 'ct_amy_carousel', 'ct_amy_concave', 'ct_amy_coverflow', 'ct_amy_coverflow2d', 'ct_amy_spiraltop', 'ct_amy_spiralbottom', 'ct_amy_classic'
-            3. NUMBER OF AJAX LOADED PAGES (PAGES MUST BE IN "PAGES" FOLDER WIHT NAME 2.html, 3.html AND SO ON). '1' MEANS NO ADDITIONAL PAGES .
-            4. NAME OF FOLDER THAT CONTAINS PAGES.
-            5. SELECT WHICH SLIDE TO BE ON FOCUS WHEN THE SLIDER IS LOADED. '0' - MEANS FIRST SLIDE '1' - SECOND AND SO ON.
-            6. NORMAL OR BIGGER SLIDES: 'normalthumpsize' or 'bigthumpsize'
-            7. SLIDESHOW: 'yes' or 'no'
-            8. SLIDESHOW SPEED IN MILLISECONDS: '4000' FOR 4sec
-            9. MOUSE PARALLAX EFFECT: 'yes' or 'no'
-        */
-        //scrollinit("9","4", "0", "0", "4000","yes");
-        var sliderPosition = jQuery('#ct_amy_main1 ct_amy_section').height() / 2;
-        jQuery('#ct_amy_main1 ct_amy_section').css({"margin-bottom":'-'+sliderPosition+'px', "margin-left":"-175px"});
-
-        scrollinit(/*1*/"#ct_amy_main1", /*2*/"ct_amy_circle", "0", "0", "3");
-    });
-
-
-</script>

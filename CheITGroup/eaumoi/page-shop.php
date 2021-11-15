@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop - eaumoi</title>
 
-    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -31,7 +31,7 @@
         <div class="aromen-list swiper-wrapper">
             <div class="swiper-slide">
                 <div class="aromen-item" style="background: #EBEEBA;">
-                    <div class="entweder-body">
+                    <a href="page-product.php" class="link-load entweder-body" data-bg="#EBEEBA">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
                             <!--
@@ -48,7 +48,7 @@
                         <div class="aromen-item__tag">
                             Ananas • Passionfrucht • Lemongrass
                         </div>
-                    </div>
+                    </a>
                     <div class="aromen-item_buyer">
                         <div class="aromen-item__price">
                             CHF 1.25
@@ -71,7 +71,7 @@
 
             <div class="swiper-slide">
                 <div class="aromen-item" style="background: #F6D1A0;">
-                    <div class="entweder-body">
+                    <a href="page-product.php" class="link-load entweder-body" data-bg="#F6D1A0">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
                             <!--
@@ -88,7 +88,7 @@
                         <div class="aromen-item__tag">
                             Ananas • Passionfrucht • Lemongrass
                         </div>
-                    </div>
+                    </a>
                     <div class="aromen-item_buyer">
                         <div class="aromen-item__price">
                             CHF 1.25
@@ -111,7 +111,7 @@
 
             <div class="swiper-slide">
                 <div class="aromen-item" style="background: #CDEDA9;">
-                    <div class="entweder-body">
+                    <a href="page-product.php" class="link-load entweder-body" data-bg="#CDEDA9">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
 
@@ -122,7 +122,7 @@
                         <div class="aromen-item__tag">
                             Ananas • Passionfrucht • Lemongrass
                         </div>
-                    </div>
+                    </a>
                     <div class="aromen-item_buyer">
                         <div class="aromen-item__price">
                             CHF 1.25
@@ -145,7 +145,7 @@
 
             <div class="swiper-slide">
                 <div class="aromen-item" style="background: #FAF188;">
-                    <div class="entweder-body">
+                    <a href="page-product.php" class="link-load entweder-body" data-bg="#FAF188">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
 
@@ -156,7 +156,7 @@
                         <div class="aromen-item__tag">
                             Ananas • Passionfrucht • Lemongrass
                         </div>
-                    </div>
+                    </a>
                     <div class="aromen-item_buyer">
                         <div class="aromen-item__price">
                             CHF 1.25
@@ -179,7 +179,7 @@
 
             <div class="swiper-slide">
                 <div class="aromen-item" style="background: #EA9DB2;">
-                    <div class="entweder-body">
+                    <a href="page-product.php" class="link-load entweder-body" data-bg="#EA9DB2">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
                         </div>
@@ -189,7 +189,7 @@
                         <div class="aromen-item__tag">
                             Ananas • Passionfrucht • Lemongrass
                         </div>
-                    </div>
+                    </a>
                     <div class="aromen-item_buyer">
                         <div class="aromen-item__price">
                             CHF 1.25

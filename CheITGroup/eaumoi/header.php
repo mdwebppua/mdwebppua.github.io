@@ -4,7 +4,7 @@
             <img src="img/logo.svg" alt="">
         </a>
 
-        <a class="header-shop link" href="page-shop.php">Shop</a>
+        <a class="header-shop" href="page-shop.php">Shop</a>
 
         <ul class="shop-nav">
             <li><a href="#">SORTEN</a></li>

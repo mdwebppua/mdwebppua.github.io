@@ -101,7 +101,7 @@
                                     <img src="img/home/svgico/wasser-item__3.svg" alt="">
                                 </div>
                                 <div class="wasser-item__text">
-                                    ohne Süssungsmittel
+                                    ohne Zucker und Süssungsmittel
                                 </div>
 
                             </li>
@@ -607,10 +607,10 @@
             </div>
         </div>
         <div class="prinzip-foto">
-            <img data-aos="zoom-out-left" data-aos-delay="600" data-aos-offset="300" src="img/das-prinzip-1.png" alt="">
-            <img data-aos="zoom-out-left" data-aos-delay="1200" data-aos-offset="300" src="img/das-prinzip-2.png" alt="">
-            <img data-aos="zoom-out-left" data-aos-delay="1800" data-aos-offset="300" src="img/das-prinzip-3.png" alt="">
-            <img data-aos="zoom-out-left" data-aos-delay="2400" data-aos-offset="300" src="img/das-prinzip-4.png" alt="">
+            <img data-aos="zoom-out-left" data-aos-duration="1500" data-aos-delay="600" data-aos-offset="300" src="img/das-prinzip-1.png" alt="">
+            <img data-aos="zoom-out-left" data-aos-duration="1500" data-aos-delay="1200" data-aos-offset="300" src="img/das-prinzip-2.png" alt="">
+            <img data-aos="zoom-out-left" data-aos-duration="1500" data-aos-delay="1800" data-aos-offset="300" src="img/das-prinzip-3.png" alt="">
+            <img data-aos="zoom-out-left" data-aos-duration="1500" data-aos-delay="2400" data-aos-offset="300" src="img/das-prinzip-4.png" alt="">
         </div>
     </div>
 </section>

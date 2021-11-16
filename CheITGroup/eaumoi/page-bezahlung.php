@@ -21,8 +21,8 @@
         <div class="bezahlung-container">
             <div class="bezahlung-sale">
                 <ul class="bezahlung-inform">
-                    <li><a href="#">Hast du bereits ein Kundenkonto?</a></li>
-                    <li><a href="#">Neues Kundenkonto eröffnen</a></li>
+                    <li><a href="page-login.php">Hast du bereits ein Kundenkonto?</a></li>
+                    <li><a href="page-neueskonto.php">Neues Kundenkonto eröffnen</a></li>
                     <li><a href="#">Als Gast fortfahren</a></li>
                 </ul>
 

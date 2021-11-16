@@ -28,6 +28,22 @@
         <li><a href="page-product-3.php">Product Summer Breeze</a></li>
         <li><a href="page-product-4.php">Product Probierpaket</a></li>
         <li><a href="page-product-5.php">Product Give me 5</a></li>
+        <li><a href="page-product-6.php">Product 5 x Yellow Booster</a></li>
+        <li><a href="page-login.php">Page Login</a></li>
+        <li><a href="page-passwort.php">Page Passwort vegessen?</a></li>
+        <li><a href="page-neuespasswort.php">Page Neues Passwort setzen</a></li>
+        <li><a href="page-newsletter.php">Page Newsletter Anmeldung</a></li>
+        <li><a href="page-vielendank.php">Page Vielen Dank</a></li>
+        <li><a href="page-neueskonto.php">Page Neues Konto</a></li>
+        <li><a href="page-konto-1.php">Page Konto Dashboard</a></li>
+        <li><a href="page-konto-2.php">Page Konto Bestellungen</a></li>
+        <li><a href="page-konto-3.php">Page Konto Abo</a></li>
+        <li><a href="page-konto-3-1.php">Page Konto Abo 1</a></li>
+        <li><a href="page-konto-3-2.php">Page Konto Abo 2</a></li>
+        <li><a href="page-konto-3-3.php">Page Konto Abo 3</a></li>
+        <li><a href="page-konto-4.php">Page Konto Adressen</a></li>
+        <li><a href="page-konto-4-1.php">Page Konto Adressen Anpassen</a></li>
+        <li><a href="page-konto-5.php">Page Konto Details</a></li>
     </ul>
 </div>
 

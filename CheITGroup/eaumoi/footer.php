@@ -243,10 +243,10 @@
         <div class="footer-bottom">
             <ul class="footer-link">
                 <li><a href="#">Impressum</a></li>
-                <li><a href="#">AGB's</a></li>
+                <li><a href="#">AGB</a></li>
                 <li><a href="#">Datenschutz</a></li>
                 <li><a href="#">Versand</a></li>
-                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">FAQ</a></li>
             </ul>
             <ul class="footer-paysystem">
                 <li><img src="img/pay_1.svg" alt=""></li>

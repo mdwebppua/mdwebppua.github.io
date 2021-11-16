@@ -86,7 +86,7 @@
                                         <label for="beutel10">10 Beutel</label>
                                     </div>
                                     <div class="konfigurieren-steptype">
-                                        <input type="radio" id="beutel15" name="beutel" value="15">
+                                        <input type="radio" id="beutel15" name="beutel" value="15" checked>
                                         <label for="beutel15">15 Beutel</label>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                 </div>
                                 <div class="konfigurieren-stepform">
                                     <div class="konfigurieren-steptype">
-                                        <input type="radio" id="jedewoche" name="woche" value="Jede">
+                                        <input type="radio" id="jedewoche" name="woche" value="Jede" checked>
                                         <label for="jedewoche">Jede Woche</label>
                                     </div>
                                     <div class="konfigurieren-steptype">
@@ -269,7 +269,7 @@
 
                 <div class="konfigurieren-tab">
                     <div class="bittle-wahle">
-                        <div class="konfigurieren-step2">
+                        <div class="konfigurieren-step3">
                             <div class="konfigurieren-total">
                                 <div class="konfigurieren-total__name">
                                     Start Abo

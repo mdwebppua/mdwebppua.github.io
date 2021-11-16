@@ -252,11 +252,19 @@ $( document ).ready(function() {
     if ($(".aromen-slider").length) {
         const aromenSlider = new Swiper('.aromen-slider', {
             loop: true,
-            grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
             //freeMode: true,
             spaceBetween: 50,
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            speed: 5000,
+            loopPreventsSlide: false,
+            freeModeMomentum: false,
+            freeMode: true,
 
         });
     };
@@ -308,7 +316,7 @@ $( document ).ready(function() {
             if ($(window).scrollTop() >= kleinerBanner) {
                 setTimeout(function() {
                     $(".kleiner-banner").addClass("active");
-                }, 1000);
+                }, 500);
 
                 return false;
             }
@@ -430,10 +438,10 @@ $( document ).ready(function() {
 
 
     $(".open-basket").click(function() {
-        $("body, .warenkorb-basket").addClass("ov-hidden");
+        $("html, body, .warenkorb-basket").addClass("ov-hidden");
     });
     $(".warenkorb-close, .basket-mask").click(function() {
-        $("body, .warenkorb-basket").removeClass("ov-hidden");
+        $("html, body, .warenkorb-basket").removeClass("ov-hidden");
     });
 
     const zumshopSlider = new Swiper('.zumshop-slider', {
@@ -504,7 +512,16 @@ $( document ).ready(function() {
         }, 1000);
     });
 
-
+    $('.show-password').on('click', function(){
+        if ($(this).parent('.login-form__password').find('input').attr('type') == 'password'){
+            $(this).addClass('view');
+            $(this).parent('.login-form__password').find('input').attr('type', 'text');
+        } else {
+            $(this).removeClass('view');
+            $(this).parent('.login-form__password').find('input').attr('type', 'password');
+        }
+        return false;
+    });
 
 
 });

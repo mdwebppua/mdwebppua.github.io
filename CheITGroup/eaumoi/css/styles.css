@@ -26,6 +26,10 @@ a {
 a:hover {
     /*color: #0cbfbf;*/
 }
+th {
+    text-align: inherit;
+    text-align: -webkit-match-parent;
+}
 img {
     max-width: 100%;
 }
@@ -224,7 +228,7 @@ body.page-home {
 }
 .logo-top {
     display: block;
-    margin: 0px 0 0 68px;
+    margin: 0 0 0 68px;
     float: left;
 }
 .logo-top img {
@@ -418,6 +422,9 @@ background-size: cover;
     z-index: 51;
     /*transform: translate(-50%, -50%);*/
     pointer-events: none;
+
+    -webkit-animation: bob-about 10s infinite alternate;
+    animation: bob-about 10s infinite alternate
 }
 .wiewasser-cursor.active {
     display: block;
@@ -514,6 +521,7 @@ background-size: cover;
 }
 .bublle-cir__1 {
     background: url("../img/drop.png") no-repeat center;
+    background-size: cover;
     width: 50px;
     height: 46px;
     bottom: 15%;
@@ -529,6 +537,7 @@ background-size: cover;
 }
 .bublle-cir__2 {
     background: url("../img/drop-1.png") no-repeat center;
+    background-size: cover;
     width: 69px;
     height: 65px;
     right: 4%;
@@ -543,6 +552,7 @@ background-size: cover;
 }
 .bublle-cir__3 {
     background: url("../img/droplet-1.png") no-repeat center;
+    background-size: cover;
     width: 103px;
     height: 109px;
     right: 22%;
@@ -557,6 +567,7 @@ background-size: cover;
 }
 .bublle-cir__4 {
     background: url("../img/droplet-2.png") no-repeat center;
+    background-size: cover;
     width: 276px;
     height: 269px;
     right: 0;
@@ -1162,7 +1173,7 @@ background-size: cover;
 }
 
 .zoomshop {
-    padding: 0 0 465px 0;
+    padding: 0 0 150px 0;
 }
 /* slider amy */
 #ct_amy_main1 {
@@ -1271,6 +1282,8 @@ background-size: cover;
 
 .button-link {
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     text-decoration: none;
     border: none;
@@ -1292,6 +1305,7 @@ background-size: cover;
     -webkit-transition: 1.5s ease;
     -o-transition: 1.5s ease;
     transition: 1.5s ease;
+    text-align: center;
     /*filter: hue-rotate(360deg);*/
 }
 .button-link:hover {
@@ -1301,10 +1315,12 @@ background-size: cover;
 }
 .button-dark {
     display: inline-block;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     text-decoration: none;
     border: none;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
     font-size: 20px;
     border: 1px solid #0D2330;
@@ -1320,11 +1336,14 @@ background-size: cover;
     -webkit-transition: 1.5s ease;
     -o-transition: 1.5s ease;
     transition: 1.5s ease;
+    background-color: transparent;
+    text-align: center;
 }
 .button-dark:hover {
     /*background: #0D2330;*/
     color: #0D2330;
     background-position: 500% -100%;
+    background-color: transparent;
 }
 .button-hover {
     background: #0D2330;
@@ -1349,9 +1368,9 @@ background-size: cover;
     align-items: center;
     z-index: -1;
     opacity: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
@@ -1477,7 +1496,6 @@ background-size: cover;
 .gutschein-img {
     position: absolute;
     overflow: hidden;
-    height: 420px;
     top: 20px;
 }
 #gutschein-lottie {}
@@ -1938,7 +1956,7 @@ background-size: cover;
 }
 .gutten-input:focus {}
 .gutten-button {
-    font-family: 'GTWalsheimProBold';
+    font-weight: bold;
     font-size: 16px;
     border: none;
     background: none;
@@ -2045,6 +2063,8 @@ background-size: cover;
     color: #fff;
     background: #0D2330;
     padding: 76px 0;
+    z-index: 3;
+    position: relative;
 }
 .footer .container {
     max-width: 1226px;
@@ -2095,9 +2115,6 @@ background-size: cover;
     position: absolute;
     bottom: -5px;
     width: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
 }
 .footer-nav li a:hover:after {
     width: 100%;
@@ -2124,8 +2141,6 @@ background-size: cover;
     position: absolute;
     right: 0;
     top: 6px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
 }
 .footer-kontakt__link:hover:after {
@@ -2237,9 +2252,6 @@ background-size: cover;
     position: absolute;
     bottom: -5px;
     width: 0;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
 }
 .footer-link li a:hover:after {
     width: 100%;
@@ -2388,6 +2400,10 @@ body.page-shop .header-shop {
 .link-load {
     color: #0D2330;
 }
+.entweder-body:hover,
+.link-load:hover {
+    cursor: none;
+}
 .aromen-item__img {
     position: relative;
     margin: -50px 0 0 0;
@@ -2437,9 +2453,14 @@ body.page-shop .header-shop {
     font-size: 23px;
     font-family: 'FarnhamDisplay';
     margin: 13px 0 0 0;
+    padding: 0 10px;
+    line-height: 1.5217;
 }
 .aromen-item__tag {
     font-size: 16px;
+    padding: 0 15px;
+    line-height: 1.125;
+    min-height: 36px;
 }
 .aromen-item_buyer {
     display: -webkit-box;
@@ -2470,8 +2491,17 @@ body.page-shop .header-shop {
     position: relative;
 }
 .free-price:before {
-    height: 6px;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #E27291;
+    display: block;
+    position: absolute;
+    transform: rotate(-15deg);
+    top: 15px;
 }
+.aromen-item__price .free-price {}
+.aromen-item__price .free-price:before {}
 .aromen-item__numform {
     font-weight: 500;
     font-size: 18px;
@@ -2615,6 +2645,11 @@ body.page-shop .header-shop {
     background: #FBFDFF;
     padding: 245px 0 50px 0;
 }
+.flotte-description {
+    max-width: 1040px;
+    text-align: center;
+    margin: 23px auto 0;
+}
 
 .als-geschenk {
     padding: 120px 0;
@@ -2623,15 +2658,25 @@ body.page-shop .header-shop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1066px;
+    max-width: 1125px;
+    justify-content: space-between;
 }
-.geschenk-info {}
+.geschenk-info {
+    max-width: 443px;
+    width: 100%;
+}
 .geschenk-title {}
 .geschenk-description {}
 .geschenk-sale {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+}
+.geschenk-item {
+    margin: 0;
+}
+.geschenk-item:nth-child(2) {
+    margin: 0 0 0 30px;
 }
 
 .das-kostlichste {
@@ -2713,10 +2758,11 @@ body.page-shop .header-shop {
 .konfigurieren-stepline li a:before {
     content: counter(li);
     counter-increment: li;
-    font-family: 'GTWalsheimProBold';
+    font-family: 'GTWalsheimPro';
+    font-weight: bold;
     font-size: 15px;
     color: #798D93;
-    background: url("../img/step-bg-h.png") no-repeat center;
+    background: url("../img/step-bg.png") no-repeat center;
     width: 39px;
     height: 38px;
     display: -webkit-box;
@@ -2730,11 +2776,13 @@ body.page-shop .header-shop {
     justify-content: center;
     position: relative;
     z-index: 2;
+    background-size: cover;
 }
 .konfigurieren-stepline li a:hover:before,
 .konfigurieren-stepline li.current a:before {
-    background: url("../img/step-bg.png") no-repeat center;
+    background: url("../img/step-bg-h.png") no-repeat center;
     color: #0D2330;
+    background-size: cover;
 }
 .konfigurieren-stepline li a:hover,
 .konfigurieren-stepline li.active a {
@@ -2778,7 +2826,7 @@ body.page-shop .header-shop {
     width: 285px;
     border-radius: 6px;
     background: #F4F8FF;
-    padding: 15px;
+    padding: 30px 15px;
 }
 .konfigurieren-stepitem {}
 .konfigurieren-step__title {
@@ -2795,6 +2843,7 @@ body.page-shop .header-shop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
 }
 .konfigurieren-steptype input[type=radio] {
     display: none;
@@ -2876,7 +2925,6 @@ body.page-shop .header-shop {
     text-align: center;
 }
 .konfigurieren-button button.button-link {
-    font-weight: 500;
     padding: 15px 56px;
 }
 .konfigurieren-button li.current {
@@ -2887,10 +2935,12 @@ body.page-shop .header-shop {
 .bittle-wahle {
     border-radius: 6px;
     background: #F4F8FF;
-    padding: 20px 40px;
+    padding: 20px 40px 0 40px;
+    position: relative;
+    overflow: hidden;
 }
 .bittle-wahle__title {
-    font-family: 'GTWalsheimProBold';
+    font-weight: bold;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -2938,7 +2988,7 @@ body.page-shop .header-shop {
     transition: 0.3s;
 }
 .warenkorb-status__info {
-    font-family: 'GTWalsheimProBold';
+    font-weight: bold;
     font-size: 9px;
     -webkit-transform: translate(-3%, 3px);
     -ms-transform: translate(-3%, 3px);
@@ -3049,13 +3099,16 @@ body.page-shop .header-shop {
 }
 
 /* STEP 3 */
+.konfigurieren-step3 {
+    padding: 0 0 15px 0;
+}
 .konfigurieren-total {
     display: flex;
     border-bottom: 2px solid #F0F2F5;
     margin: 0 0 15px 0;
     padding: 0 0 15px 0;
     justify-content: space-between;
-    font-family: 'GTWalsheimProBold';
+    font-weight: bold;
     font-size: 16px;
 }
 .konfigurieren-total:last-child {
@@ -3070,7 +3123,8 @@ body.page-shop .header-shop {
 }
 
 /* BASKET CSS */
-body.ov-hidden {
+body.ov-hidden,
+html.ov-hidden{
     overflow: hidden;
 }
 .warenkorb-basket {
@@ -3117,7 +3171,7 @@ body.ov-hidden {
 }
 .warenkorb-title {
     margin: 0 20px 0 20px;
-    font-family: 'GTWalsheimProBold';
+    font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
     order: 2;
@@ -3224,7 +3278,6 @@ body.ov-hidden {
 .aboshort-preis {
     display: flex;
     justify-content: space-between;
-    font-family: 'GTWalsheimProBold';
     font-weight: bold;
     font-size: 15px;
     padding: 15px 25px;
@@ -3332,7 +3385,7 @@ body.ov-hidden {
 }
 .bezahlung-form__title {
     font-size: 16px;
-    font-family: 'GTWalsheimProBold';
+    font-weight: bold;
 }
 .bezahlung-type {
     margin: 20px 0 0 0;
@@ -3657,40 +3710,47 @@ body.ov-hidden {
 }
 
 .product-maskload {
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 60px;
+    top: 50%;
     pointer-events: none;
-    transform: translate(-50%, 0) scale(10);
+    transform: translate(-50%, -50%) scale(1, 5);
     z-index: 0;
     width: 110%;
-
+    height: 100%;
 }
 .product-maskload.load {
 
 }
 .product-maskload.active {
-    transform: translate(-50%, 0) scale(1);
+    transform: translate(-50%, 0) scale(1, 1);
     transition: 1s;
+    position: absolute;
+    top: 60px;
+    height: auto;
 }
 .product-maskload2 {
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 60px;
+    top: 50%;
     pointer-events: none;
-    transform: translate(-50%, 0) scale(10);
+    transform: translate(-50%, -50%) scale(1, 5);
     z-index: 500;
     width: 110%;
+    height: 100%;
     opacity: 1;
-    transition: 1s;
+
 }
 .product-maskload2.load {
 
 }
 .product-maskload2.active {
-    transform: translate(-50%, 0) scale(1);
+    transform: translate(-50%, 0) scale(1, 1);
+    position: absolute;
+    top: 60px;
+    height: auto;
     opacity: 0;
-
+    transition: 1s;
 }
 .page-maskload {
     width: 110%;
@@ -3774,6 +3834,10 @@ body.ov-hidden {
     letter-spacing: -0.3px;
     font-family: 'FarnhamDisplay';
     margin: 15px 0 0 0;
+}
+.productfull-price .free-price:before {
+    transform: rotate(-25deg);
+    top: 18px;
 }
 .productfull-descritpion {
     font-size: 18px;
@@ -3957,6 +4021,480 @@ body.ov-hidden {
     margin: 30px auto 0;
 }
 
+/* start css page-login.php */
+.login-shop {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container-shop {
+    max-width: 600px;
+    width: 100%;
+}
+.login-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.register-header {
+    flex-direction: row-reverse;
+}
+.login-title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.64285;
+}
+.login-nochkein {
+    font-size: 26px;
+    color: #0D2330;
+    position: relative;
+    line-height: 1.538;
+}
+.login-nochkein:before {
+    content: "";
+    display: block;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: 0px;
+    background: #0D2330;
+    transition: 0.3s;
+}
+.login-nochkein:hover:before {
+    height: 1px;
+}
+.login-description {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 12px 0 0 0;
+}
+.vielen-description {
+    font-size: 16px;
+    margin: 20px 0 0 0;
+}
+.login-form {
+    margin: 12px 0 0 0;
+}
+.register-person {
+    display: flex;
+    margin: 0 0 25px 0;
+}
+.register-person .login-bleiben {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0 35px 0 0;
+}
+.login-form__type {}
+.login-form__password {
+    position: relative;
+}
+.show-password {
+    display: block;
+    position: absolute;
+    background: url("../img/konto/konto-ico-8.svg") no-repeat center;
+    background-size: contain;
+    width: 17px;
+    height: 10px;
+    right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: 0.3s;
+    border: none;
+    text-decoration: none;
+}
+.show-password.view,
+.show-password:hover {
+    background: url("../img/konto/konto-ico-8h.svg") no-repeat center;
+    background-size: contain;
+}
+.login-form__type.col-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.login-form__type.col-2 input {
+    width: calc(50% - 15px);
+}
+.login-form__input {
+    border: 1px solid #B7B7B7;
+    background: #F4F8FF;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 0 0 25px 0;
+    padding: 0 25px;
+}
+.login-form__input:focus {}
+.login-form__col-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-bleiben {
+    font-weight: normal;
+    font-size: 18px;
+}
+.login-bleiben input {
+    display: none;
+}
+.login-bleiben__checkbox {}
+.login-bleiben label {
+    display: flex;
+    align-items: center;
+}
+.login-bleiben label:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: 1px solid #0D2330;
+    background: #fff;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+.login-bleiben input:checked + label:before {
+    background: #0D2330;
+    -webkit-box-shadow: inset 0 0 0 5px #fff;
+    box-shadow: inset 0 0 0 5px #fff;
+}
+.login-vegessen {
+    color: #0D2330;
+    position: relative;
+    font-weight: normal;
+}
+.login-vegessen:hover {
+    text-decoration: underline;
+}
+.login-enter {}
+.login-button {
+    margin: 35px 0 0 0;
+    width: 100%;
+    border-radius: 4px;
+}
+/* ==================================================== */
+
+/* start css style page page-konto-*.php */
+.konto-dashboard {
+    min-height: 100vh;
+    padding: 145px 0 0 0;
+}
+.konto-dashboard .container-xl {
+    position: relative;
+    z-index: 5;
+}
+.konto-dashboard:after {
+    content: "";
+    display: block;
+    width: calc(100% + 390px);
+    background: #F4F8FF;
+    position: fixed;
+    left: calc((-100vw - 1440px) / 2);
+    top: 0;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+.konto-container {
+    display: flex;
+}
+.konto-sidebar {
+    width: 100%;
+    max-width: 275px;
+}
+.konto-nav {}
+.konto-nav li {
+    margin: 0 0 25px 0;
+}
+.konto-nav li:last-child {
+    margin: 0;
+}
+.konto-nav li a {
+    color: #0D2330;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.konto-nav li a:hover {
+    text-decoration: none;
+    color: #E27291;
+}
+.konto-nav li.active a {
+    text-decoration: none;
+    color: #E27291;
+    font-weight: 500;
+}
+.konto-nav li a:before {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    margin: 0 25px 0 0;
+    position: relative;
+    transition: 0.3s;
+}
+.konto-nav li.konto-nav__ico-1 a:before {
+    background: url("../img/konto/konto-ico-1.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-2 a:before {
+    background: url("../img/konto/konto-ico-2.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-3 a:before {
+    background: url("../img/konto/konto-ico-3.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-4 a:before {
+    background: url("../img/konto/konto-ico-4.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-5 a:before {
+    background: url("../img/konto/konto-ico-5.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-6 a:before {
+    background: url("../img/konto/konto-ico-6.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-7 a:before {
+    background: url("../img/konto/konto-ico-7.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-1.active a:hover:before,
+.konto-nav li.konto-nav__ico-1 a:hover:before {
+    background: url("../img/konto/konto-ico-1h.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-2.active a:hover:before,
+.konto-nav li.konto-nav__ico-2 a:hover:before {
+    background: url("../img/konto/konto-ico-2h.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-3.active a:hover:before,
+.konto-nav li.konto-nav__ico-3 a:hover:before {
+    background: url("../img/konto/konto-ico-3h.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-4.active a:hover:before,
+.konto-nav li.konto-nav__ico-4 a:hover:before {
+    background: url("../img/konto/konto-ico-4h.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-5.active a:hover:before,
+.konto-nav li.konto-nav__ico-5 a:hover:before {
+    background: url("../img/konto/konto-ico-5h.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-6.active a:hover:before,
+.konto-nav li.konto-nav__ico-6 a:hover:before {
+    background: url("../img/konto/konto-ico-6h.svg") no-repeat center;
+}
+.konto-nav li.konto-nav__ico-7.active a:hover:before,
+.konto-nav li.konto-nav__ico-7 a:hover:before {
+    background: url("../img/konto/konto-ico-7h.svg") no-repeat center;
+}
+.konto-logout {
+    color: #0D2330;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+    font-size: 18px;
+    margin: 170px 0 0 0;
+}
+.konto-logout:hover {
+    text-decoration: none;
+    color: #E27291;
+}
+.konto-logout:before {
+    content: "";
+    display: inline-block;
+    width: 29px;
+    height: 25px;
+    margin: 0 25px 0 0;
+    position: relative;
+    transition: 0.3s;
+    background: url("../img/konto/konto-ico-9.svg") no-repeat center;
+}
+.konto-logout:hover:before {
+    background: url("../img/konto/konto-ico-9h.svg") no-repeat center;
+}
+
+.konto-body {
+    width: 100%;
+    max-width: 810px;
+    margin: 0 0 0 135px;
+}
+.konto-hello {}
+
+.bestellung-box {
+    background: #F4F8FF;
+    padding: 15px;
+}
+.bestellung-box table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.bestellung-box thead {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid rgb(13 35 48 / 50%);
+}
+.bestellung-box thead th {
+    padding: 0 0 10px 0;
+}
+.bestellung-box tbody {
+    font-size: 13px;
+    font-weight: normal;
+}
+.bestellung-box tbody td {
+    padding: 10px 0;
+    border: none;
+}
+.bestellung-box tbody td.td-bestellung,
+.bestellung-box tbody td.td-datum,
+.bestellung-box tbody td.td-status,
+.bestellung-box tbody td.td-summe,
+.bestellung-box tbody td.td-details,
+.bestellung-box tbody td.td-produkt,
+.bestellung-box tbody td.td-artikle,
+.bestellung-box tbody td.td-abostart,
+.bestellung-box tbody td.td-aboend {
+    border-bottom: 1px solid rgb(13 35 48 / 50%);
+    vertical-align: top;
+}
+.button-detail {
+    font-size: 12px;
+    max-width: 81px;
+    height: 31px;
+    border-radius: 4px;
+    display: flex;
+    padding: 0;
+}
+
+.bestellung-title {
+    font-size: 23px;
+    font-weight: 500;
+}
+.bestellung-description {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0 0 25px 0;
+}
+.bestelldetails-table .td-produkt {
+    width: 50%;
+}
+.bestellung-item__bold {
+    font-size: 14px;
+}
+.bestelldetails-table b {
+    font-weight: bold;
+}
+.erneut-box {
+    margin: 20px 0 0 0;
+}
+.button-erneut {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 0 13px;
+    height: 34px;
+    border-radius: 4px;
+    line-height: 34px;
+    margin: 0 20px 0 0;
+}
+.bestellung-adresse {
+    display: flex;
+    justify-content: space-between;
+}
+.adresse-box {
+    width: calc(50% - 15px);
+    margin: 35px 0 0 0;
+}
+.adresse-title {
+    font-size: 23px;
+    font-weight: 500;
+}
+.adresse-item {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px;
+    background: #F5F8FD;
+    margin: 15px 0 0 0;
+}
+.konto-aboinfo {
+    font-size: 18px;
+}
+.konto-abolove {
+    font-size: 18px;
+    font-weight: normal;
+}
+.konto-abothead {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.td-abostart {
+    font-size: 16px;
+    font-weight: bold;
+    width: 25%;
+}
+.td-aboend {
+    font-size: 16px;
+    font-weight: normal;
+}
+.konto-body .konfigurieren-step {
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+}
+.konto-body .konfigurieren-tab {
+    margin: 0;
+}
+.konto-body .konfigurieren-tab .konto-abolove {
+    margin: 0 0 25px 0;
+}
+.konfigurieren-button button.button-link.button-erneut {
+    padding: 0 25px;
+}
+.konto-adressen {
+    max-width: 495px;
+    width: 100%;
+    margin: 0 0 65px 0;
+}
+.adressen-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+    align-items: center;
+}
+.adressen-top__title {
+    font-size: 23px;
+    font-weight: 500;
+}
+.adressen-top a,
+.adressen-top__neue {
+    font-size: 16px;
+}
+.adressen-top a:hover,
+.adressen-top__neue:hover {
+    text-decoration: underline;
+}
+.adressen-body {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    background: #F5F8FD;
+}
+.konto-npassen {
+    max-width: 600px;
+    width: 100%;
+}
+.konto-npassen .login-form__input {
+    font-size: 16px;
+    height: 44px;
+    margin: 0 0 20px 0;
+}
+/* ==================================================== */
+
 /* custom cursor */
 .cursor {
     position: fixed;
@@ -3980,4 +4518,73 @@ body.ov-hidden {
 }
 .cursor--canvas.active {
     display: none;
+}
+
+/* animation css */
+@-webkit-keyframes bob-about {
+    0% {
+        -webkit-transform: translate(0) scale(1);
+        transform: translate(0) scale(1)
+    }
+
+    25% {
+        -webkit-transform: translate(2px, -1px) scale(1.1) rotate(2deg);
+        transform: translate(2px, -1px) scale(1.1) rotate(2deg)
+    }
+
+    50% {
+        -webkit-transform: translate(-1px, 1px) scale(1);
+        transform: translate(-1px, 1px) scale(1)
+    }
+
+    75% {
+        -webkit-transform: translate(1, 1px) scale(1) rotate(-1deg);
+        transform: translate(1, 1px) scale(1) rotate(-1deg)
+    }
+}
+
+@keyframes bob-about {
+    0% {
+        -webkit-transform: translate(0) scale(1);
+        transform: translate(0) scale(1)
+    }
+
+    25% {
+        -webkit-transform: translate(2px, -1px) scale(1.1) rotate(2deg);
+        transform: translate(2px, -1px) scale(1.1) rotate(2deg)
+    }
+
+    50% {
+        -webkit-transform: translate(-1px, 1px) scale(1);
+        transform: translate(-1px, 1px) scale(1)
+    }
+
+    75% {
+        -webkit-transform: translate(1, 1px) scale(1) rotate(-1deg);
+        transform: translate(1, 1px) scale(1) rotate(-1deg)
+    }
+}
+
+@keyframes bubble-flowUp-large {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        height: 10px;
+        width: 10px;
+        opacity: 0
+    }
+
+    50% {
+        height: 60px;
+        width: 60px;
+        opacity: 1
+    }
+
+    to {
+        -webkit-transform: translate3d(-100%, -100vh, 0);
+        transform: translate3d(-100%, -100vh, 0);
+        height: 160px;
+        width: 160px;
+        opacity: 0
+    }
 }

@@ -37,17 +37,17 @@ let group, stuckX, stuckY, fillOuterCursor;
 const initCanvas = () => {
     const canvas = document.querySelector(".cursor--canvas");
     const shapeBounds = {
-        width: 75,
-        height: 75
+        width: 55,
+        height: 55
     };
     paper.setup(canvas);
-    const strokeColor = "rgba(255, 0, 0, 0.5)";
+    const strokeColor = "#CAEEE8";
     const strokeWidth = 1;
     const segments = 8;
     const radius = 15;
 
     // we'll need these later for the noisy circle
-    const noiseScale = 150; // speed
+    const noiseScale = 100; // speed
     const noiseRange = 4; // range of distortion
     let isNoisy = false; // state
 
@@ -100,7 +100,7 @@ const initCanvas = () => {
 
         if (isStuck && polygon.bounds.width < shapeBounds.width) {
             // scale up the shape
-            polygon.scale(1.08);
+            polygon.scale(1.03);
         } else if (!isStuck && polygon.bounds.width > 30) {
             // remove noise
             if (isNoisy) {

@@ -286,14 +286,14 @@
     </div>
 </section>
 
-<section class="entweder-man entweder-flotte" id="flaschen">
+<section class="entweder-man entweder-flotte">
     <div class="entweder-flotte__container">
-    <div class="container">
+    <div class="container" id="flaschen">
         <h2 class="wasser-title">
             <span class="wasser-title__italic">Flotte Flaschen.</span> <br>
             Für dich und die Umwelt.
         </h2>
-        <div class="entweder-description">
+        <div class="flotte-description">
             Immer dabei. Bereit für den nächsten Schluck. Ohne die Umwelt zu belasten. Personalisiere sie, damit sie dir niemand schnappt. Und nimm das Sieb, wenn du es gefiltert lieber magst. Für dein Wasser mit Geschmack in der Flasche.
         </div>
         <div class="entweder-list">
@@ -417,7 +417,7 @@
             </div>
         </div>
         <div class="geschenk-sale">
-            <div class="aromen-item" style="background: #CAEEE8;">
+            <div class="aromen-item geschenk-item" style="background: #CAEEE8;">
                 <div class="entweder-body">
                     <div class="aromen-item__img">
                         <img src="img/entweder_1.png" alt="">
@@ -453,7 +453,7 @@
                 </div>
             </div>
 
-            <div class="aromen-item" style="background: #CAEEE8;">
+            <div class="aromen-item geschenk-item" style="background: #CAEEE8;">
                 <div class="entweder-body">
                     <div class="aromen-item__img">
                         <img src="img/entweder_1.png" alt="">

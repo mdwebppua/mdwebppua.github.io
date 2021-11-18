@@ -523,6 +523,44 @@ $( document ).ready(function() {
         return false;
     });
 
+    var dpMin, dpMax;
+    var localeDe = {
+        days: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
+        daysShort: ['Son', 'Mon', 'Die', 'Mit', 'Don', 'Fre', 'Sam'],
+        daysMin: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
+        months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+        monthsShort: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+        today: 'Heute',
+        clear: 'Aufräumen',
+        dateFormat: 'dd.MM.yyyy',
+        timeFormat: 'HH:ii',
+        firstDay: 1,
+    };
+
+    dpMin = new AirDatepicker('.input-time__min', {
+        locale: localeDe,
+        dateFormat: 'yyyy-MM-dd',
+        onSelect({date}) {
+            dpMax.update({
+                minDate: date
+            })
+        }
+    });
+
+    dpMax = new AirDatepicker('.input-time__max', {
+        locale: localeDe,
+        dateFormat: 'yyyy-MM-dd',
+        onSelect({date}) {
+            dpMin.update({
+                maxDate: date
+            })
+        }
+    });
+    const inputTime = new AirDatepicker('.input-time__enter', {
+        locale: localeDe,
+        dateFormat: 'yyyy-MM-dd'
+    });
+
 
 });
 

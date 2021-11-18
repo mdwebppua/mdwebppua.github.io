@@ -34,13 +34,12 @@
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#EBEEBA">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
-                            <!--
+
                             <div class="aromen-perso">
                                 <div class="aromen-perso__text">
-                                    PERSO-NALISIERBAR!
+                                    limited <br> edition
                                 </div>
                             </div>
-                            -->
                         </div>
                         <div class="aromen-item__name">
                             Exotische Erfrischung
@@ -73,14 +72,12 @@
                 <div class="aromen-item" style="background: #F6D1A0;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#F6D1A0">
                         <div class="aromen-item__img">
-                            <img src="img/entweder_1.png" alt="">
-                            <!--
+                            <img src="img/product/5kostliche-1.png" alt="">
                             <div class="aromen-perso">
                                 <div class="aromen-perso__text">
                                     PERSO-NALISIERBAR!
                                 </div>
                             </div>
-                            -->
                         </div>
                         <div class="aromen-item__name">
                             Exotische Erfrischung
@@ -113,7 +110,7 @@
                 <div class="aromen-item" style="background: #CDEDA9;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#CDEDA9">
                         <div class="aromen-item__img">
-                            <img src="img/entweder_1.png" alt="">
+                            <img src="img/product/5kostliche-2.png" alt="">
 
                         </div>
                         <div class="aromen-item__name">
@@ -147,7 +144,7 @@
                 <div class="aromen-item" style="background: #FAF188;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#FAF188">
                         <div class="aromen-item__img">
-                            <img src="img/entweder_1.png" alt="">
+                            <img src="img/product/5kostliche-3.png" alt="">
 
                         </div>
                         <div class="aromen-item__name">
@@ -181,7 +178,7 @@
                 <div class="aromen-item" style="background: #EA9DB2;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#EA9DB2">
                         <div class="aromen-item__img">
-                            <img src="img/entweder_1.png" alt="">
+                            <img src="img/product/5kostliche-4.png" alt="">
                         </div>
                         <div class="aromen-item__name">
                             Exotische Erfrischung

@@ -30,20 +30,32 @@
                 <div class="konto-npassen">
                     <form action="#" class="login-form">
                         <div class="login-form__type col-2">
-                            <input class="login-form__input" type="text" placeholder="Vorname*" required>
-                            <input class="login-form__input" type="text" placeholder="Name*" required>
+                            <div class="col">
+                                <input class="login-form__input" type="text" placeholder="Vorname*" required>
+                            </div>
+                            <div class="col">
+                                <input class="login-form__input" type="text" placeholder="Name*" required>
+                            </div>
                         </div>
                         <div class="login-form__type col-2">
-                            <input class="login-form__input" type="text" placeholder="Firma">
-                            <input class="login-form__input" type="number" placeholder="Telefnonummer*" required>
+                            <div class="col">
+                                <input class="login-form__input" type="text" placeholder="Firma">
+                            </div>
+                            <div class="col">
+                                <input class="login-form__input" type="number" placeholder="Telefnonummer*" required>
+                            </div>
                         </div>
                         <div class="login-form__type">
                             <input class="login-form__input" type="text" placeholder="Adresse*">
                             <input class="login-form__input" type="text" placeholder="Adresszusatz">
                         </div>
                         <div class="login-form__type col-2">
-                            <input class="login-form__input" type="text" placeholder="Ort*" required>
-                            <input class="login-form__input" type="number" placeholder="PLZ*" required>
+                            <div class="col">
+                                <input class="login-form__input" type="text" placeholder="Ort*" required>
+                            </div>
+                            <div class="col">
+                                <input class="login-form__input" type="number" placeholder="PLZ*" required>
+                            </div>
                         </div>
 
                         <div class="erneut-box">

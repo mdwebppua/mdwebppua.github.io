@@ -44,6 +44,12 @@
         <li><a href="page-konto-4.php">Page Konto Adressen</a></li>
         <li><a href="page-konto-4-1.php">Page Konto Adressen Anpassen</a></li>
         <li><a href="page-konto-5.php">Page Konto Details</a></li>
+        <li><a href="page-konto-pause.php">Page Konto Abos – Pausieren</a></li>
+        <li><a href="page-konto-schade.php">Page Konto Abos – Künden</a></li>
+        <li><a href="page-firmen.php">Page Für Unternehmen</a></li>
+        <li><a href="page-blog.php">Page Blog Magazin</a></li>
+        <li><a href="page-about.php">Page About Magazin</a></li>
+        <li><a href="page-post.php">Page Blog Post</a></li>
     </ul>
 </div>
 

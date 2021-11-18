@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.1/air-datepicker.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,7 +24,7 @@
             <?php include 'sidebar-konto.php'; ?>
 
             <div class="konto-body">
-                <div class="konto-npassen">
+                <div class="konto-npassen konto-details">
                     <form action="#" class="login-form">
                         <div class="register-person">
                             <div class="login-bleiben">
@@ -39,35 +41,77 @@
                             </div>
                         </div>
                         <div class="login-form__type col-2">
-                            <input class="login-form__input" type="text" placeholder="Vorname*" required>
-                            <input class="login-form__input" type="text" placeholder="Name*" required>
+                            <div class="col">
+                                <div class="login-form__type-name">
+                                    Vorname*
+                                </div>
+                                <input class="login-form__input" type="text" placeholder="Vorname*" required>
+                            </div>
+                            <div class="col">
+                                <div class="login-form__type-name">
+                                    Name*
+                                </div>
+                                <input class="login-form__input" type="text" placeholder="Name*" required>
+                            </div>
+
                         </div>
-                        <div class="login-form__type">
-                            <input class="login-form__input" type="text" placeholder="Firma">
-                        </div>
-                        <div class="register-person">
-                            <div class="login-bleiben">
-                                <input type="checkbox" class="login-bleiben__checkbox" id="MwSt" name="MwSt">
-                                <label for="MwSt">MwSt-Kunde</label>
+                        <div class="login-form__type col-2">
+                            <div class="col">
+                                <div class="login-form__type-name">
+                                    Firma
+                                </div>
+                                <input class="login-form__input" type="text" placeholder="Firma">
+                            </div>
+                            <div class="col">
+                                <div class="login-bleiben">
+                                    <input type="checkbox" class="login-bleiben__checkbox" id="MwSt" name="MwSt">
+                                    <label for="MwSt">MwSt-Kunde</label>
+                                </div>
                             </div>
                         </div>
                         <div class="login-form__type">
-                            <input class="login-form__input" type="text" placeholder="Adresse*">
-                            <input class="login-form__input" type="text" placeholder="Adresszusatz">
-                        </div>
-                        <div class="login-form__type col-2">
-                            <input class="login-form__input" type="text" placeholder="Ort*" required>
-                            <input class="login-form__input" type="text" placeholder="PLZ*" required>
+                            <div class="login-form__type-name">
+                                Geburtsdatum
+                            </div>
+                            <input class="login-form__input input-time__enter" type="text" placeholder="0000-00-00">
                         </div>
                         <div class="login-form__type">
+                            <div class="login-form__type-name">
+                                Email*
+                            </div>
                             <input class="login-form__input" type="text" placeholder="Email*" required>
-                            <input class="login-form__input" type="text" placeholder="Passwort*" required>
-                            <input class="login-form__input" type="text" placeholder="Passwort wiederholen*" required>
+                        </div>
+                        <div class="login-form__type">
+                            <div class="login-form__type-name">
+                                Aktuelles Passwort
+                            </div>
+                            <div class="login-form__password">
+                                <input class="login-form__input" type="password">
+                                <button class="show-password"></button>
+                            </div>
+                        </div>
+                        <div class="login-form__type">
+                            <div class="login-form__type-name">
+                                Neues Passwort
+                            </div>
+                            <div class="login-form__password">
+                                <input class="login-form__input" type="password">
+                                <button class="show-password"></button>
+                            </div>
+                        </div>
+                        <div class="login-form__type">
+                            <div class="login-form__type-name">
+                                Neues Passwort bestätigen
+                            </div>
+                            <div class="login-form__password">
+                                <input class="login-form__input" type="password">
+                                <button class="show-password"></button>
+                            </div>
                         </div>
 
                         <div class="login-enter">
-                            <button class="button-dark login-button">
-                                Neues Kundenkonto anlegen
+                            <button class="button-dark button-erneut">
+                                Änderungen speichern
                             </button>
                         </div>
 

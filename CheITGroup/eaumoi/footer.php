@@ -4,6 +4,19 @@
             <div class="warenkorb-title">Warenkorb</div>
             <div class="warenkorb-close"></div>
         </div>
+
+        <div class="warenkorb-buttelmax">
+            <div class="warenkorb-buttelbar__title">
+                15 Beutel wählen
+            </div>
+            <div class="warenkorb-buttelbar">
+                <div class="warenkorb-buttelstatus">
+                    <div class="warenkorb-buttelstatus__ico"></div>
+                </div>
+                <div class="warenkorb-buttelstatus__info"><span>0</span> von 15</div>
+            </div>
+        </div>
+
         <div class="aboshort-header">
             <div class="aboshort-item">
                 <div class="aboshort-thumb">
@@ -204,9 +217,9 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="page-shop.php">Shop</a></li>
                     <li><a href="page-abo.php">Abo</a></li>
-                    <li><a href="#">Für Unternehmen</a></li>
-                    <li><a href="#">Magazin</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="page-firmen.php">Für Unternehmen</a></li>
+                    <li><a href="page-blog.php">Magazin</a></li>
+                    <li><a href="page-about.php">About</a></li>
                 </ul>
             </div>
 
@@ -288,6 +301,8 @@
 
 <script src="js/customcursor.js"></script>
 <script src="js/magnetizecursor.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.1/air-datepicker.min.js"></script>
 
 <script src="js/main.js"></script>
 

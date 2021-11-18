@@ -25,8 +25,12 @@
         </div>
         <form action="#" class="login-form">
             <div class="login-form__type col-2">
-                <input class="login-form__input" type="text" placeholder="Vorname">
-                <input class="login-form__input" type="text" placeholder="Name">
+                <div class="col">
+                    <input class="login-form__input" type="text" placeholder="Vorname">
+                </div>
+                <div class="col">
+                    <input class="login-form__input" type="text" placeholder="Name">
+                </div>
             </div>
             <div class="login-form__type">
                 <input class="login-form__input" type="text" placeholder="Email">

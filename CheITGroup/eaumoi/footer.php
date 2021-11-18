@@ -19,6 +19,7 @@
 
         <div class="aboshort-header">
             <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
                 <div class="aboshort-thumb">
                     <img src="img/aboshort-1.png" alt="">
                 </div>
@@ -53,6 +54,7 @@
             </div>
 
             <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
                 <div class="aboshort-thumb">
                     <img src="img/aboshort-2.png" alt="">
                 </div>
@@ -84,6 +86,7 @@
             </div>
 
             <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
                 <div class="aboshort-thumb">
                     <img src="img/aboshort-3.png" width="150" height="150" alt="">
                 </div>
@@ -103,6 +106,7 @@
             </div>
 
             <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
                 <div class="aboshort-thumb">
                     <img src="img/aboshort-4.png" width="150" height="150" alt="">
                 </div>
@@ -167,6 +171,17 @@
 
         <div class="basket-buttonbox">
             <button class="button-link basket-button">zur Zahlung</button>
+        </div>
+
+        <!-- basket empty -->
+        <div class="warenkorb-deinem">
+            <div class="deinem-leere">
+                <div class="deinm-title">
+                    <em>In deinem Warenkorb</em> <br>
+                    herrscht gähnende Leere.
+                </div>
+                <a href="" class="button-dark deimn-button">zum Shop</a>
+            </div>
         </div>
 
     </div>

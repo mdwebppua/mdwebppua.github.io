@@ -93,32 +93,18 @@
                     <p>
                         Am besten trinkst du kontinuierlich über den ganzen Tag verteilt Wasser. Und damit du immer dran denkst, genug zu trinken, stellst du am besten eine stets gefüllte Wasserflasche neben dich, diese kannst du immer und überall auffüllen. Wenn du zu den Menschen gehörst, die sich schwertun, nur Wasser zu trinken, dann haben wir die perfekte Lösung für dich, deinem Wasser zuckerfrei und natürlich aufzupeppen: eau&moi: für Wasser mit Geschmack. Magst du Wasser mit Lemon Geschmack oder mit Himbeergeschmack oder gar mit Birnengeschmack? Et voilà: Mit ihren 100% echten und natürlichen Fruchtpürees zum Aromatisieren des Hahnenwassers, bringt eau&moi Geschmack ins Wasser. Und stylisch ist es auch, mit den hochwertigen und praktischen Glasflaschen. Und das Beste: eau&moi ist Aroma für das Wasser, ohne Zucker.
                     </p>
-                    <h1>test singl page</h1>
-                    <h2>test singl page</h2>
-                    <h3>test singl page</h3>
-                    <h4>test singl page</h4>
-                    <blockquote>
-                        <p>sddfsdf asdas</p>
-                        <p>asdasdasd</p>
-                        <cite>dsfsdfsdf asd asd as saddasdasd</cite>
-                    </blockquote>
-                    <ul>
-                        <li>text test li 1</li>
-                        <li>text test li 2</li>
-                        <li>text test li 3</li>
-                        <li>text test li 4</li>
-                        <li>text test li 5</li>
-                    </ul>
-                    <ol>
-                        <li>text test li 1</li>
-                        <li>text test li 2</li>
-                        <li>text test li 3</li>
-                        <li>text test li 4</li>
-                        <li>text test li 5</li>
-                    </ol>
+
                 </div>
                 <div class="fullpost-pagation">
-
+                    <div class="fullpost-pagation__prev">
+                        <a href="">Letzter Beitrag</a>
+                    </div>
+                    <div class="fullpost-pagation__item">
+                        <a href="">Zurück zur Übersicht</a>
+                    </div>
+                    <div class="fullpost-pagation__nav">
+                        <a href="">Nächster Beitrag</a>
+                    </div>
                 </div>
             </div>
         </article>

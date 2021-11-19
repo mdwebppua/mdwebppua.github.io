@@ -3261,7 +3261,7 @@ html.ov-hidden{
 }
 .aboshort-header .aboshort-item {
     border: none;
-    padding: 0 25px;
+    padding: 0 25px 15px 25;
     margin: 0;
 }
 .aboshort-thumb {
@@ -3335,6 +3335,10 @@ html.ov-hidden{
 .aboshort-minus,
 .aboshort-pluse {
     padding: 0 5px;
+}
+.aboshort-button {
+    width: 90px;
+    text-align: right;
 }
 .aboshort-preis {
     display: -webkit-box;

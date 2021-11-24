@@ -251,7 +251,7 @@
             <div class="aromen-item" style="background: #FFBFBF;">
                 <div class="entweder-body">
                     <div class="aromen-item__img">
-                        <img src="img/entweder_1.png" alt="">
+                        <img src="img/shop/shop-alles.png" alt="">
                     </div>
                     <div class="aromen-item__name">
                         Probierpaket
@@ -418,11 +418,13 @@
                 <div class="entweder-body">
                     <div class="aromen-item__img">
                         <img src="img/entweder_1.png" alt="">
+                        <!--
                         <div class="aromen-perso">
                             <div class="aromen-perso__text">
                                 PERSO-NALISIERBAR!
                             </div>
                         </div>
+                        -->
                     </div>
                     <div class="aromen-item__name">
                         Exotische Erfrischung
@@ -454,11 +456,13 @@
                 <div class="entweder-body">
                     <div class="aromen-item__img">
                         <img src="img/entweder_1.png" alt="">
+                        <!--
                         <div class="aromen-perso">
                             <div class="aromen-perso__text">
                                 PERSO-NALISIERBAR!
                             </div>
                         </div>
+                        -->
                     </div>
                     <div class="aromen-item__name">
                         Exotische Erfrischung

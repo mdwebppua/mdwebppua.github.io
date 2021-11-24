@@ -19,32 +19,6 @@
 
 <?php include 'header.php'; ?>
 
-<style>
-    .section-vs{
-        height: auto
-    }
-    .title-wiewasser {
-        height: 200vh;
-        max-height: 100%;
-    }
-    .section-trigger {
-        width: 100%;
-        height: 100vh;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .title-wiewasser__tofrom2 {
-        transform: scale(.5);
-    }
-</style>
-
 <div class="bg-head">
     <section class="bublle-wiewasser">
         <div class="title-wiewasser">
@@ -56,7 +30,9 @@
             </div>
         </div>
 
-        <div class="wiewasser-cursor"></div>
+        <div class="wiewasser-cursor">
+            <div class="wiewasser-cursor__bubble"></div>
+        </div>
         <div class="scene" style="height: 100%">
             <div class="bublle-cir bublle-cir__1"></div>
             <div class="bublle-cir bublle-cir__2"></div>

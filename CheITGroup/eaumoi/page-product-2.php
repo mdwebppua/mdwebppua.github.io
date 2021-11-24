@@ -29,20 +29,44 @@
 </section>
 
 <section class="product">
-    <svg class="product-maskload load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1544.324" height="663.518" viewBox="0 0 1544.324 663.518">
-        <g transform="translate(67.162 -247.501)">
-            <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.873 668.499) rotate(180)" fill="#CAEEE8"/>
-            <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(-67.162 786.663)" fill="#CAEEE8"/>
+    <svg class="product-maskload load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
+        <defs>
+            <clipPath id="clip-path">
+                <rect y="-3" width="1439.873" height="510.534" fill="none"/>
+            </clipPath>
+            <clipPath id="clip-path-2">
+                <rect x="68" width="1439.324" height="156.517" fill="none"/>
+            </clipPath>
+        </defs>
+        <g transform="translate(0 -244.501)">
+            <g transform="translate(0 247.501)" clip-path="url(#clip-path)" style="isolation: isolate">
+                <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.872 420.998) rotate(180)" fill="#CAEEE8"/>
+            </g>
+            <g transform="translate(-67.162 754.502)" clip-path="url(#clip-path-2)" style="isolation: isolate">
+                <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(0 32.161)" fill="#CAEEE8"/>
+            </g>
         </g>
-
     </svg>
-    <svg class="product-maskload2 load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1544.324" height="663.518" viewBox="0 0 1544.324 663.518">
-        <g transform="translate(67.162 -247.501)">
-            <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.873 668.499) rotate(180)" fill="#CAEEE8"/>
-            <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(-67.162 786.663)" fill="#CAEEE8"/>
+
+    <svg class="product-maskload2 load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
+        <defs>
+            <clipPath id="clip-path">
+                <rect y="-3" width="1439.873" height="510.534" fill="none"/>
+            </clipPath>
+            <clipPath id="clip-path-2">
+                <rect x="68" width="1439.324" height="156.517" fill="none"/>
+            </clipPath>
+        </defs>
+        <g transform="translate(0 -244.501)">
+            <g transform="translate(0 247.501)" clip-path="url(#clip-path)" style="isolation: isolate">
+                <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.872 420.998) rotate(180)" fill="#CAEEE8"/>
+            </g>
+            <g transform="translate(-67.162 754.502)" clip-path="url(#clip-path-2)" style="isolation: isolate">
+                <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(0 32.161)" fill="#CAEEE8"/>
+            </g>
         </g>
-
     </svg>
+
     <div class="container-xl">
         <div class="product-full">
             <div class="product-gallery">
@@ -70,7 +94,7 @@
                         </div>
                     </div>
 
-
+                    <div class="product-pagination"></div>
                 </div>
 
             </div>
@@ -86,7 +110,7 @@
                     CHF 56.90
                 </div>
                 <div class="productfull-descritpion">
-                    Schenke deinen Liebsten nicht alte Trauben – als Wein – sondern lieber frische Früchte – als eau&moi.  Macht aus jedem Wasserhahn eine Quelle für aromatisiertes Wasser. Wenn du lieber ein reingesiebtes Aromawasser trinkst, ohne natürliche Fruchtbestandteile, dann nimm dir die Geschenkbox mit Sieb.
+                    Schenke deinen Liebsten nicht alte Trauben – als Wein – sondern lieber frische Früchte – als eauspan<em>&</em>moi.  Macht aus jedem Wasserhahn eine Quelle für aromatisiertes Wasser. Wenn du lieber ein reingesiebtes Aromawasser trinkst, ohne natürliche Fruchtbestandteile, dann nimm dir die Geschenkbox mit Sieb.
                 </div>
 
                 <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
@@ -95,7 +119,7 @@
                             <b>Geschenkbox ohne Sieb</b>
                         </div>
                         <div class="einim-description">
-                            Glasflasche, Probierset und Gutschein
+                            CHF 56.90
                         </div>
                         <form action="#" class="einim-sale">
                             <div class="einim-type">
@@ -114,10 +138,10 @@
                             <b>Geschenkbox mit Sieb</b>
                         </div>
                         <div class="einim-description">
-                            Glasflasche, Sieb, Probierset und Gutschein
+                            CHF 74.30
                         </div>
                         <form action="#" class="einim-sale">
-                            <div class="einim-type">
+                            <div class="einim-type einim-type__dark">
                                 <button class="einim-minus productCountDown">-</button>
                                 <input type="number" value="1" class="einim-input productCount" min="0" max="20">
                                 <button class="einim-pluse productCountUp">+</button>

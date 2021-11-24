@@ -18,6 +18,7 @@
             <li><a class="open-basket link" href="#!"><i class="ico-basket"></i></a></li>
             <li><a class="link" href="#"><i class="ico-profile"></i></a></li>
             <li><a class="menu-button link" href="#">Menu <i class="ico-bars"></i></a></li>
+            <li class="close-menu"></li>
         </ul>
     </div>
 </header>

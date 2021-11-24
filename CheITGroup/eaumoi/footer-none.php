@@ -24,5 +24,7 @@
 <script src="js/magnetizecursor.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.1/air-datepicker.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
 
 <script src="js/main.js"></script>

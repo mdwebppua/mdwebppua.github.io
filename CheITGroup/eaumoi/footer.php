@@ -170,7 +170,7 @@
         </div>
 
         <div class="basket-buttonbox">
-            <button class="button-link basket-button">zur Zahlung</button>
+            <button class="button-dark basket-button">zur Zahlung</button>
         </div>
 
         <!-- basket empty -->
@@ -213,11 +213,53 @@
         </div>
         <div class="wasser-banner__item">
             <img src="img/wasser-list__2.svg" alt="">
-            in der Schweiz hergestellt
+            in der <b> Schweiz </b> hergestellt
         </div>
         <div class="wasser-banner__item">
             <span>20%</span> Rabatt im Abo
         </div>
+    </div>
+</section>
+
+<section class="navigation-page">
+    <div class="container-xl navigation-container">
+        <div class="navigation-body">
+            <ul class="navigation-menu">
+                <li><a href="home.php">Home</a></li>
+                <li><a href="page-shop.php">Shop</a></li>
+                <li><a href="page-abo.php">Abo</a></li>
+                <li><a href="page-firmen.php">Für Unternehmen</a></li>
+                <li><a href="page-blog.php">Magazin</a></li>
+                <li><a href="page-about.php">About</a></li>
+                <li><a href="page-kontakt.php">Kontakt</a></li>
+            </ul>
+            <div class="navigation-search">
+                <input type="text" class="navigation-search__input" placeholder="Suchst du etwas?">
+                <button type="submit" class="navigation-search__button"></button>
+            </div>
+            <div class="navigation-sosialbox">
+                <div class="navigation-socialbox__title">
+                    Folge deinem Durst
+                </div>
+                <ul class="gutten-social navigation-social">
+                    <li><a class="social social-facebook" href="#"></a></li>
+                    <li><a class="social social-instagram" href="#"></a></li>
+                    <li><a class="social social-linkedin" href="#"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-scene">
+        <div class="menu-buble menu-buble__1"></div>
+        <div class="menu-buble menu-buble__2"></div>
+        <div class="menu-buble menu-buble__3"></div>
+        <div class="menu-buble menu-buble__4"></div>
+        <div class="menu-buble menu-buble__5"></div>
+
+        <div class="menu-buble menu-rasp__1"></div>
+        <div class="menu-buble menu-rasp__2"></div>
     </div>
 </section>
 
@@ -245,7 +287,7 @@
                 <div class="footer-kontakt">
                     Hei, wir sind gerne für dich da!
                 </div>
-                <a href="#" class="footer-kontakt__link">Kontaktiere uns</a>
+                <a href="page-kontakt.php" class="footer-kontakt__link">Kontaktiere uns</a>
             </div>
 
             <div class="footer-col footer-col__3">
@@ -270,25 +312,39 @@
         </div>
         <div class="footer-bottom">
             <ul class="footer-link">
-                <li><a href="#">Impressum</a></li>
-                <li><a href="#">AGB</a></li>
-                <li><a href="#">Datenschutz</a></li>
-                <li><a href="#">Versand</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="page-eau.php">Impressum</a></li>
+                <li><a href="page-eau-2.php">AGB</a></li>
+                <li><a href="page-eau-4.php">Datenschutz</a></li>
+                <li><a href="page-eay-3.php">Versand</a></li>
+                <li><a href="page-eau-1.php">FAQ</a></li>
             </ul>
             <ul class="footer-paysystem">
-                <li><img src="img/pay_1.svg" alt=""></li>
-                <li><img src="img/pay_2.svg" alt=""></li>
-                <li><img src="img/pay_3.svg" alt=""></li>
+                <li><img src="img/pay-1.svg" alt=""></li>
+                <li><img src="img/pay-2.svg" alt=""></li>
+                <li><img src="img/pay-4.svg" alt=""></li>
+                <li><img src="img/pay-5.svg" alt=""></li>
+                <li><img src="img/pay-3.svg" alt=""></li>
             </ul>
         </div>
     </div>
 </footer>
 
-<svg class="page-maskload none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="1544.324" height="663.518" viewBox="0 0 1544.324 663.518">
-    <g transform="translate(67.162 -247.501)">
-        <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.873 668.499) rotate(180)" fill="#faf188"/>
-        <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(-67.162 786.663)" fill="#faf188"/>
+<svg class="page-maskload none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
+    <defs>
+        <clipPath id="clip-path">
+            <rect y="-3" width="1439.873" height="510.534" fill="none"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <rect x="68" width="1439.324" height="156.517" fill="none"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(0 -244.501)">
+        <g transform="translate(0 247.501)" clip-path="url(#clip-path)" style="isolation: isolate">
+            <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.872 420.998) rotate(180)" fill="#faf188"/>
+        </g>
+        <g transform="translate(-67.162 754.502)" clip-path="url(#clip-path-2)" style="isolation: isolate">
+            <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(0 32.161)" fill="#faf188"/>
+        </g>
     </g>
 </svg>
 
@@ -318,6 +374,8 @@
 <script src="js/magnetizecursor.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.1/air-datepicker.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
 <script src="js/main.js"></script>
 

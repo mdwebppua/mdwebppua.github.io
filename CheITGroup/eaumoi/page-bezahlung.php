@@ -247,10 +247,10 @@
                     </li>
                     <li class="bezahlung-total__total">
                         <div class="chekout-total__title">
-                            Total <span>inkl. MwSt.</span>
+                            <strong>Total</strong> <span>inkl. MwSt.</span>
                         </div>
                         <div class="chekout-total__price">
-                            CHF 67.65
+                            <strong>CHF 67.65</strong>
                         </div>
                     </li>
                 </ul>
@@ -275,9 +275,34 @@
                             <img src="img/visa-3.png" alt="">
                         </div>
                     </li>
+                    <li class="bezahlung-buylist__twint">
+                        <div class="bezahlung-type checkbox">
+                            <input type="checkbox" class="bezahlung-type__checkbox" id="PostFinance" name="PostFinance">
+                            <label for="PostFinance">PostFinance</label>
+                        </div>
+                        <div class="bezahlung-buylist__ico">
+                            <img src="img/visa-5.png" alt="">
+                        </div>
+                    </li>
+                    <li class="bezahlung-buylist__twint">
+                        <div class="bezahlung-type checkbox">
+                            <input type="checkbox" class="bezahlung-type__checkbox" id="POWERPAY" name="POWERPAY">
+                            <label for="POWERPAY">POWERPAY</label>
+                        </div>
+                        <div class="bezahlung-buylist__ico">
+                            <img src="img/visa-4.png" alt="">
+                        </div>
+                    </li>
                 </ul>
+                <div class="mit-dieser">
+                    <div class="bezahlung-type checkbox">
+                        <input type="checkbox" class="bezahlung-type__checkbox" id="Mit" name="Mit">
+                        <label for="Mit">Mit dieser Bestellung akzeptierst du unsere AGB.</label>
+                    </div>
+                </div>
+
                 <div class="bezahlung-formsubmit">
-                    <button class="button-link bezahlung-sumit">
+                    <button class="button-dark bezahlung-sumit">
                         jetzt bestellen
                     </button>
                 </div>

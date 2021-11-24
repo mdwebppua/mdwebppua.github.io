@@ -19,9 +19,9 @@
 <section class="kostliche5-aromen">
     <div class="container">
         <div class="wasser-title">
-            Give me 5! Du hast
+            Give me 5! <span class="wasser-title__italic">Du hast
             <br>
-            <span class="wasser-title__italic">5 Sachets gratis.</span>
+            5 Sachets gratis.</span>
         </div>
 
         <div class="description">

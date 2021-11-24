@@ -95,7 +95,7 @@
                         </div>
                     </div>
 
-
+                    <div class="product-pagination"></div>
                 </div>
                 <ul class="product-naturlich">
                     <li>
@@ -108,16 +108,15 @@
                     </li>
                     <li>
                         <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-2.svg" alt="">
+                            <img src="img/product/naturlich-3.svg" alt="">
                         </div>
                         <div class="product-naturlich__text">
-                            ohne <br>
-                            Zuckerzusatz
+                            ohne Zucker und Süssungsmittel
                         </div>
                     </li>
                     <li>
                         <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-3.svg" alt="">
+                            <img src="img/product/naturlich-2.svg" alt="">
                         </div>
                         <div class="product-naturlich__text">
                             fast ohne Kalorien
@@ -197,7 +196,7 @@
                             </ul>
                         </div>
                         <div class="einim-sale">
-                            <a href="" class="button-dark einim-abo">
+                            <a href="page-abo.php" class="button-dark einim-abo">
                                 Abo konfigurieren
                             </a>
                         </div>
@@ -249,13 +248,13 @@
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#EFF5FF">
                         <div class="aromen-item__img">
                             <img src="img/entweder_1.png" alt="">
-                            <!--
+
                             <div class="aromen-perso">
                                 <div class="aromen-perso__text">
-                                    PERSO-NALISIERBAR!
+                                    PERSO- <br>
+                                    NALISIERBAR!
                                 </div>
                             </div>
-                            -->
                         </div>
                         <div class="aromen-item__name">
                             Edelstahlflasche
@@ -330,6 +329,12 @@
                         <div class="aromen-item__img">
                             <img src="img/product/5kostliche-5.png" alt="">
 
+                            <div class="aromen-perso">
+                                <div class="aromen-perso__text">
+                                    LIMITED <br>
+                                    EDITION
+                                </div>
+                            </div>
                         </div>
                         <div class="aromen-item__name">
                             Summer Breeze

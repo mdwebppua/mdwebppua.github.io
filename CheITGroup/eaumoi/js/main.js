@@ -17,9 +17,9 @@ $( document ).ready(function() {
         });
 
     }).on('mouseenter', function () {
-        $('.cursor--canvas').addClass('active');
+        $('.cursor--canvas, .cursor--small').addClass('active');
     }).on('mouseleave', function () {
-        $(".cursor--canvas").removeClass("active");
+        $(".cursor--canvas, .cursor--small").removeClass("active");
     });
 
     // cache the selector
@@ -68,7 +68,7 @@ $( document ).ready(function() {
             onLeave: function() {
                 $(".wiewasser-cursor").addClass('nomouse');
                 gsap.to(".wiewasser-cursor", {
-                    top: '90%',
+                    top: '140%',
                     left: '5%',
                     duration: 1,
                 });
@@ -103,20 +103,20 @@ $( document ).ready(function() {
                 }); */
                 $(".wiewasser-cursor").removeClass('nomouse');
                 $(".bublle-cir__1").css({
-                    bottom: '15%',
-                    left: '4%'
+                    left: '5%',
+                    top: '42%'
                 });
                 $(".bublle-cir__2").css({
-                    right: '4%',
-                    top: '24%',
+                    right: '7%',
+                    top: '16%',
                 });
                 $(".bublle-cir__3").css({
-                    right: '22%',
-                    bottom: '13%',
+                    right: '24%',
+                    top: '38%',
                 });
                 $(".bublle-cir__4").css({
-                    right: '0',
-                    bottom: '-20%',
+                    right: '-3%',
+                    top: '42%',
                 });
             },
             onUpdate: function(e) {
@@ -261,7 +261,7 @@ $( document ).ready(function() {
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
             },
-            speed: 5000,
+            speed: 7000,
             loopPreventsSlide: false,
             freeModeMomentum: false,
             freeMode: true,
@@ -296,17 +296,26 @@ $( document ).ready(function() {
         renderer: 'svg',
         loop: false,
         autoplay: false,
+        hover: true,
         path: 'img/lottie/gutschein.json'
     });
 
 
+    // if ($(".ein-gutschein").length) {
+    //     var einGutschein = $(".ein-gutschein").offset().top - 400;
+    //     $(window).scroll(function () {
+    //         if ($(window).scrollTop() >= einGutschein) {
+    //             gutscheinLottie.play();
+    //             return false;
+    //         }
+    //     });
+    // }
+
     if ($(".ein-gutschein").length) {
-        var einGutschein = $(".ein-gutschein").offset().top - 400;
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= einGutschein) {
-                gutscheinLottie.play();
-                return false;
-            }
+        $(".ein-gutschein").on('mouseenter', function () {
+            gutscheinLottie.play();
+        }).on('mouseleave', function () {
+            gutscheinLottie.stop();
         });
     }
 
@@ -324,7 +333,7 @@ $( document ).ready(function() {
     }
 
     if ($(".wasser-banner").length) {
-        var wasserBanner = $(".wasser-banner").offset().top - 200;
+        var wasserBanner = $(".wasser-banner").offset().top / 1.25;
         $(window).scroll(function () {
             if ($(window).scrollTop() >= wasserBanner) {
                 $(".wasser-banner").addClass("fadeout");
@@ -387,6 +396,9 @@ $( document ).ready(function() {
         if(stepNum == 2) {
             $('.konfigurieren-step').addClass('step-num'+stepNum);
             $('.step-form').text($(this).data("submit"));
+            if(valueEnter <= 15) {
+                $(".du-musst, .step-form").addClass("active");
+            }
         }
         console.log(stepNum);
     })
@@ -421,15 +433,17 @@ $( document ).ready(function() {
         $(".warenkorb-status__ico").css("width", procent + "%");
         $(".warenkorb-status__info").css("left", procent + "%");
 
-        $(".warenkorb-status__info span").html(total);
+        $(".warenkorb-status__info span, .min-15").html(total);
 
         if (total >= 15) {
-            $(".bittle-wahle__title span ").addClass("active");
+            $(".bittle-wahle__title span").addClass("active");
+            $(".du-musst, .step-form").removeClass("active");
             $(".warenkorb-pluse").removeClass("productCountUp");
             $(".warenkorb-pluse").attr("disabled", true);
 
         } else {
-            $(".bittle-wahle__title span ").removeClass("active");
+            $(".bittle-wahle__title span, .du-musst").removeClass("active");
+            $(".du-musst, .step-form").addClass("active");
             $(".warenkorb-pluse").addClass("productCountUp");
             $(".warenkorb-pluse").removeAttr("disabled");
         }
@@ -488,7 +502,8 @@ $( document ).ready(function() {
     const productSlider = new Swiper('.product-slider', {
         loop: true,
         pagination: {
-            el: '.swiper-pagination',
+            el: '.product-pagination',
+            clickable: true,
         },
     });
 
@@ -561,6 +576,114 @@ $( document ).ready(function() {
         dateFormat: 'yyyy-MM-dd'
     });
 
+    const kommtBody = new Swiper('.kommt-body', {
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        speed: 5000,
+        grabCursor: true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 0,
+        loopPreventsSlide: false,
+        freeModeMomentum: false,
+        freeMode: true,
+    });
+
+    $('.freude-input').on('blur', function () {
+        if ($(this).val() !== '') {
+            $(this).next('.freude-label').addClass('blur');
+        } else {
+            $(this).next('.freude-label').removeClass('blur');
+        }
+    });
+
+    $("textarea").each(function () {
+        this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+    }).on("input", function () {
+        this.style.height = "auto";
+        this.style.height = (this.scrollHeight) + "px";
+    });
+
+    $('.freude-kontaktform').validate({
+        rules: {
+            Vorname: "required",
+            Name: "required",
+            Email: {
+                required: true,
+                email: true
+            },
+            Nachricht: "required"
+        },
+        errorLabelContainer: ".freude-formerror"
+    });
+
+
+    /* validator kontakt form
+
+
+    $('.freude-kontaktform').on('submit', function(e) {
+        if ( validateForm() ) { // если есть ошибки возвращает true
+            e.preventDefault();
+        }
+    });
+
+    function validateForm() {
+        $('.error').removeClass('error');
+
+        var rqVorname = $('.rq-vorname').val();
+        var rqName = $('.rq-name').val();
+        var rqEmail = $('.rq-email').val();
+        var rqNachricht = $('.rq-nachricht').val();
+
+        // Проверка
+        if ( rqVorname.length < 4 ) {
+            $('.rq-vorname').parent('.freude-forminput').addClass('error').find('.freude-formerror').addClass('error');
+        } else {
+            var regEx = /^[a-z A-Z._%+-]{0,63}$/;
+            var validName = regEx.test(rqVorname);
+            if (!validName) {
+                $('.rq-vorname').parent('.freude-forminput').addClass('error').find('.freude-formerror').addClass('error');
+            }
+        }
+        if ( rqName.length < 4 ) {
+            $('.rq-name').parent('.freude-forminput').addClass('error').find('.freude-formerror').addClass('error');
+        }
+        if ( rqEmail.length < 4 ) {
+            $('.rq-email').parent('.freude-forminput').addClass('error').find('.freude-formerror').addClass('error');
+        }
+        if ( rqNachricht.length < 4 ) {
+            $('.rq-nachricht').parent('.freude-forminput').addClass('error').find('.freude-formerror').addClass('error');
+        }
+    }
+
+     */
+
+    $('.faq-item__name').click(function () {
+        $(this).toggleClass('active').next().slideToggle();
+        $('.faq-item__name').not(this).removeClass('active').next().slideUp();
+    });
+    //$('.faq-name:eq(0)').addClass('active');
+    //$('.faq-about:eq(0)').show();
+
+    $(".menu-button").click(function (e) {
+        e.preventDefault();
+        $(".navigation-page, .header, .header-shop, .user-box").addClass("menu");
+        $("html, body").addClass("ov-hidden");
+        $(".page-maskload").addClass("active");
+
+        $(".page-maskload path").css({
+            fill: '#F4F8FF'
+        });
+    });
+    $(".close-menu").click(function () {
+        $(".navigation-page, .header, .header-shop, .user-box").removeClass("menu");
+        $("html, body").removeClass("ov-hidden");
+        $(".page-maskload").removeClass("active");
+    });
 
 });
 

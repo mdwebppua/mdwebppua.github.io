@@ -35,7 +35,8 @@
                     <img src="img/abo-2.svg" alt="">
                 </div>
                 <div class="konfigurieren-item__name">
-                    Jederzeit anpassbar
+                    jederzeit <br>
+                    anpassbar
                 </div>
             </div>
             <div class="konfigurieren-item">
@@ -43,7 +44,8 @@
                     <img src="img/abo-3.svg" alt="">
                 </div>
                 <div class="konfigurieren-item__name">
-                    Jederzeit kündbar
+                    jederzeit <br>
+                    kündbar
                 </div>
             </div>
             <div class="konfigurieren-item">
@@ -51,7 +53,8 @@
                     <img src="img/abo-4.svg" alt="">
                 </div>
                 <div class="konfigurieren-item__name">
-                    keine Versandkosten
+                    keine <br>
+                    Versandkosten
                 </div>
             </div>
 
@@ -60,7 +63,7 @@
                     <img src="img/abo-5.svg" alt="">
                 </div>
                 <div class="konfigurieren-item__name">
-                    mit Kreditkarte bezahlbar
+                    nur mit Kreditkarte bezahlbar
                 </div>
             </div>
         </div>
@@ -122,7 +125,7 @@
                     </div>
 
                     <div class="konfigurieren-trinkst">
-                        Tipp: Mit 10 Beuteln pro Woche trinkst du <i>ca. 50% der empfohlenen Trinkmenge pro Tag</i> mit feinem und natürlichem Aroma.
+                        Tipp: Mit 10 Beuteln pro Woche trinkst du <strong>ca. 50% der empfohlenen Trinkmenge pro Tag</strong> mit feinem und natürlichem Aroma.
                     </div>
 
                     <div class="konfigurieren-button">
@@ -258,6 +261,10 @@
                             </div>
                         </div>
 
+                    </div>
+
+                    <div class="konfigurieren-trinkst du-musst">
+                        Du musst noch <span class="min-15">0</span> von 15 Beutel wählen
                     </div>
 
                     <div class="konfigurieren-button">

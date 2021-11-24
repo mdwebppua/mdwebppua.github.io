@@ -14,6 +14,7 @@
 
 <?php include 'header.php'; ?>
 
+<section class="index-page">
 <div class="container-xl">
     <ul class="list-page">
         <li><a href="home.php">Home</a></li>
@@ -40,7 +41,6 @@
         <li><a href="page-konto-3.php">Page Konto Abo</a></li>
         <li><a href="page-konto-3-1.php">Page Konto Abo 1</a></li>
         <li><a href="page-konto-3-2.php">Page Konto Abo 2</a></li>
-        <li><a href="page-konto-3-3.php">Page Konto Abo 3</a></li>
         <li><a href="page-konto-4.php">Page Konto Adressen</a></li>
         <li><a href="page-konto-4-1.php">Page Konto Adressen Anpassen</a></li>
         <li><a href="page-konto-5.php">Page Konto Details</a></li>
@@ -50,8 +50,18 @@
         <li><a href="page-blog.php">Page Blog Magazin</a></li>
         <li><a href="page-about.php">Page About Magazin</a></li>
         <li><a href="page-post.php">Page Blog Post</a></li>
+        <li><a href="page-kontakt.php">Page Kotakt</a></li>
+        <li><a href="page-danke.php">Page Danke fur</a></li>
+        <li><a href="page-eau.php">Page Impressum</a></li>
+        <li><a href="page-eau-1.php">Page FAQ</a></li>
+        <li><a href="page-eau-2.php">Page AGB</a></li>
+        <li><a href="page-eay-3.php">Page Versand</a></li>
+        <li><a href="page-eau-4.php">Page Datenschutz </a></li>
+        <li><a href="page-404.php">Page 404</a></li>
+        <li><a href="page-search.php">Page search</a></li>
     </ul>
 </div>
+</section>
 
 <?php include 'footer.php'; ?>
 

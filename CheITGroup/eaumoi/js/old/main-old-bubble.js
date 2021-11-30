@@ -40,9 +40,9 @@ $( document ).ready(function() {
     });
 
 
-    $(document).on('mouseenter', '.entweder-body, .zumshop-swiper.swiper-slide-active .zumshop-slick__thumb', function () {
+    $(document).on('mouseenter', '.entweder-body', function () {
         $('.entweder-cursor, .cursor--canvas').addClass('active');
-    }).on('mouseleave', '.entweder-body, .zumshop-swiper.swiper-slide-active .zumshop-slick__thumb', function () {
+    }).on('mouseleave', '.entweder-body', function () {
         $(".entweder-cursor, .cursor--canvas").removeClass("active");
     });
 
@@ -61,33 +61,33 @@ $( document ).ready(function() {
         },
         scrollTrigger: {
             trigger: ".bublle-wiewasser",
-            start: "100% 100%",
-            end: "100% 50%",
-            scrub: 1,
+            start: "top top",
+            end: "bottom 80%",
+            scrub: 2,
             pinSpacing: false,
             onLeave: function() {
                 $(".wiewasser-cursor").addClass('nomouse');
                 gsap.to(".wiewasser-cursor", {
-                    top: '137%',
-                    left: '4%',
+                    top: '140%',
+                    left: '5%',
                     duration: 1,
                 });
                 $(".bublle-cir__1").css({
                     left: '92%',
-                    top: '118%',
-                }).addClass('no-animation');
+                    top: '75%',
+                });
                 $(".bublle-cir__2").css({
-                    right: '3%',
-                    top: '130%',
-                }).addClass('no-animation');
+                    right: '0%',
+                    top: '1100px',
+                });
                 $(".bublle-cir__3").css({
-                    right: '93%',
-                    top: '102%',
-                }).addClass('no-animation');
+                    bottom: '-130px',
+                    right: '95%',
+                });
                 $(".bublle-cir__4").css({
-                    right: '75%',
-                    top: '141%'
-                }).addClass('no-animation');
+                    bottom: '-800px',
+                    right: '76%',
+                });
             },
             onEnterBack: function() {
                 /*
@@ -104,20 +104,20 @@ $( document ).ready(function() {
                 $(".wiewasser-cursor").removeClass('nomouse');
                 $(".bublle-cir__1").css({
                     left: '5%',
-                    top: '50%'
-                }).removeClass('no-animation');
+                    top: '42%'
+                });
                 $(".bublle-cir__2").css({
                     right: '7%',
-                    top: '50%',
-                }).removeClass('no-animation');
+                    top: '16%',
+                });
                 $(".bublle-cir__3").css({
                     right: '24%',
-                    top: '50%',
-                }).removeClass('no-animation');
+                    top: '38%',
+                });
                 $(".bublle-cir__4").css({
                     right: '-3%',
-                    top: '50%',
-                }).removeClass('no-animation');
+                    top: '42%',
+                });
             },
             onUpdate: function(e) {
                 let positionT = parseInt($('.entweder-cursor').css('top'));
@@ -134,63 +134,33 @@ $( document ).ready(function() {
 
 
     let titleAnim = gsap.timeline()
-        // .to(".title-wiewasser__tofrom1", {
-        //     yPercent: -100,
-        //     scale: 0.5,
-        //     ease: "slow",
-        // }, "+=1%")
-        // .to(".title-wiewasser__tofrom2", {
-        //     yPercent: -100,
-        //     scale: 1,
-        //     ease: "slow",
-        // },"<-10%")
-        // .to(".title-wiewasser__tofrom2", {
-        //     yPercent: -200,
-        //     scale: 0.5,
-        //     ease: "slow",
-        // },"-=70%")
-
-        // .to(".title-wiewasser__tofrom1", {
-        //     opacity: 0,
-        // }, ".title-wiewasser__tofrom2-=2")
-        // .to(".title-wiewasser__tofrom2", {
-        //     opacity: 1,
-        // }, ".title-wiewasser__tofrom1-=2")
-        //.to(".title-wiewasser__tofrom2", {
-        //    opacity: 0,
-        //}, ".title-wiewasser__tofrom1-=1.2")
-
-        .to(".title-wiewasser__tofrom1", 1, {
-            opacity: 0,
-        })
-        .to(".title-wiewasser__tofrom2", 2, {
-            opacity: 1,
-        }, "-=50%")
-        .to(".title-wiewasser__tofrom2", 2, {
-            opacity: 0,
-        }, "-=30%")
+        .to(".title-wiewasser__tofrom1", {
+            yPercent: -100,
+            scale: 0.5,
+            ease: "slow",
+        }, "+=1%")
+        .to(".title-wiewasser__tofrom2", {
+            yPercent: -100,
+            scale: 1,
+            ease: "slow",
+        },"<-30%")
+        .to(".title-wiewasser__tofrom2", {
+            yPercent: -200,
+            scale: 0.5,
+            ease: "slow",
+        },"+=40%")
 
     ScrollTrigger.create({
-        // trigger: ".bublle-wiewasser",
-        // endTrigger: '.title-wiewasser__tofrom1',
-        // pin: ".title-wiewasser",
-        // animation: titleAnim,
-        // anticipatePin: 1,
-        // fastScrollEnd: false,
-        // pinSpacing: false,
-        // start: 'top top',
-        // end: "+=200%",
-        // scrub: true,
-
+        trigger: ".bublle-wiewasser",
+        endTrigger: '.title-wiewasser__tofrom1',
+        pin: ".title-wiewasser",
         animation: titleAnim,
-        trigger: ".section-trigger",
-        start: "100% 100%",
-        end: "100% 50%",
-        scrub: 1,
-        //pin: ".title-wiewasser",
         anticipatePin: 1,
+        fastScrollEnd: false,
         pinSpacing: false,
-        //markers: true,
+        start: 'top top',
+        end: "+=200%",
+        scrub: true,
     })
 
 
@@ -219,7 +189,7 @@ $( document ).ready(function() {
     }
 
     if ($(".aktion-box").length) {
-        var aktionBoxHeigh = ($(window).height());
+        var aktionBoxHeigh = ($(window).height() / 1.25);
         var aktionBox = $(".aktion-box").offset().top - aktionBoxHeigh;
         $(window).scroll(function () {
             if ($(window).scrollTop() >= aktionBox) {
@@ -228,19 +198,25 @@ $( document ).ready(function() {
                     "z-index": 20,
                     "transform": "scale(1)",
                     "position": "fixed"
-                })
-                    .addClass("active");
+                });
                 return false;
             }
         });
     }
     $(".aktion-close").click(function() {
-        $(".aktion-box").removeClass("active").addClass("closed");
+        $(".aktion-box").addClass("closed");
     });
 
     /* animation */
     AOS.init({
         once: true
+    });
+
+    $(".zumshop-slick__item").mouseout(function() {
+        $(this).css("background", "transparent");
+    });
+    $(".zumshop-slick__item").mouseover(function() {
+        $(this).css("background", $(this).data("bg"));
     });
 
     $('.wie-rating__num').each(function () {
@@ -304,7 +280,6 @@ $( document ).ready(function() {
         path: 'img/lottie/dein-trink.json'
     });
 
-
     if ($(".dein-trink").length) {
         var triggerOne = $(".dein-trink").offset().top - 400;
         $(window).scroll(function () {
@@ -322,22 +297,9 @@ $( document ).ready(function() {
         loop: false,
         autoplay: false,
         hover: true,
-        path: 'img/lottie/gutschein.json',
+        path: 'img/lottie/gutschein.json'
     });
 
-    $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
-            gutscheinLottie.play();
-        } else {
-            if ($(".ein-gutschein").length) {
-                $(".ein-gutschein").on('mouseenter', function () {
-                    gutscheinLottie.play();
-                }).on('mouseleave', function () {
-                    gutscheinLottie.stop();
-                });
-            }
-        }
-    });
 
     // if ($(".ein-gutschein").length) {
     //     var einGutschein = $(".ein-gutschein").offset().top - 400;
@@ -349,6 +311,13 @@ $( document ).ready(function() {
     //     });
     // }
 
+    if ($(".ein-gutschein").length) {
+        $(".ein-gutschein").on('mouseenter', function () {
+            gutscheinLottie.play();
+        }).on('mouseleave', function () {
+            gutscheinLottie.stop();
+        });
+    }
 
     if ($(".fruchtepuree").length) {
         var kleinerBanner = $(".fruchtepuree").offset().top;
@@ -489,76 +458,43 @@ $( document ).ready(function() {
         $("html, body, .warenkorb-basket").removeClass("ov-hidden");
     });
 
-
-
-
-    $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
-            const zumshopSlider1 = new Swiper('.zumshop-slider', {
-                loop: true,
-                slidesPerView: "auto",
-                centeredSlides: true,
-                spaceBetween: 0,
-            });
-            $(".zumshop-slick__item").each(function() {
-                $(this).css({
-                    "background": $(this).data('bg')
-                });
-            });
-        } else {
-            const zumshopSlider2 = new Swiper('.zumshop-slider', {
-                loop: true,
-                // autoplay: {
-                //     delay: 0,
-                //     disableOnInteraction: false,
-                //     pauseOnMouseEnter: true,
-                // },
-                speed: 10000,
-                grabCursor: true,
-                slidesPerView: "auto",
-                centeredSlides: true,
-                spaceBetween: 0,
-                loopPreventsSlide: false,
-                freeModeMomentum: false,
-                freeMode: {
-                    enabled: true,
-                    momentum: false,
-                },
-                effect: 'creative',
-                creativeEffect: {
-                    prev: {
-                        translate: ['-70%', 120, 0],
-                        rotate: [0, 0, -15],
-                        scale: .85,
-                        origin: `50% 100%`
-                    },
-                    next: {
-                        translate: ['70%', 120, 0],
-                        rotate: [0, 0, 15],
-                        scale: .85,
-                        origin: `50% 100%`
-                    },
-                    perspective: false,
-                    limitProgress: 6,
-                    progressMultipler: 1,
-                    //transformEl: '.item'
-                },
-            });
-
-            $(".zumshop-slick__item").mouseout(function() {
-                $(this).css("background", "transparent");
-            });
-            $(".zumshop-slick__item").mouseover(function() {
-                $(this).css("background", $(this).data("bg"));
-            });
+    const zumshopSlider = new Swiper('.zumshop-slider', {
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        speed: 5000,
+        grabCursor: true,
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 0,
+        loopPreventsSlide: false,
+        freeModeMomentum: false,
+        freeMode: true,
+        effect: 'creative',
+        creativeEffect: {
+            prev: {
+                translate: ['-70%', 120, 0],
+                rotate: [0, 0, -15],
+                scale: .85,
+                origin: `50% 100%`
+            },
+            next: {
+                translate: ['70%', 120, 0],
+                rotate: [0, 0, 15],
+                scale: .85,
+                origin: `50% 100%`
+            },
+            perspective: false,
+            limitProgress: 6,
+            progressMultipler: 1,
+            //transformEl: '.item'
         }
     });
 
-
-
-
     $(".bezahlung-lieferung").click(function() {
-        $("this")
         $(".bezahlung-lieferung__eine").toggleClass("active");
     });
 
@@ -735,10 +671,7 @@ $( document ).ready(function() {
 
     $(".menu-button").click(function (e) {
         e.preventDefault();
-        $(".header, .header-shop, .user-box").addClass("menu");
-        setTimeout(function() {
-            $(".navigation-page").addClass("menu");
-        }, 1000);
+        $(".navigation-page, .header, .header-shop, .user-box").addClass("menu");
         $("html, body").addClass("ov-hidden");
         $(".page-maskload").addClass("active");
 
@@ -751,35 +684,6 @@ $( document ).ready(function() {
         $("html, body").removeClass("ov-hidden");
         $(".page-maskload").removeClass("active");
     });
-
-    /* mobile script */
-    var entwederMain = null;
-    function entwederMainInit () {
-        if (!entwederMain) {
-            entwederMain = new Swiper('.entweder-main', {
-                slidesPerView: "auto",
-                loop: true,
-                freeMode: false,
-                centeredSlides: true,
-            });
-        }
-    }
-    function entwederMainDestroy () {
-        if (entwederMain) {
-            entwederMain.destroy();
-            entwederMain = null;
-        }
-    }
-    $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
-            entwederMainInit();
-        } else {
-            entwederMainDestroy();
-        }
-    });
-    $('.wasserhahn-body').scrollLeft(52);
-    $('.fruchtepuree-main').scrollLeft(52);
-
 
 });
 

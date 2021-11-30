@@ -25,122 +25,126 @@
                 <div class="konto-abolove">
                     In love mit deinem Aroma-Abo? Dein Abo ist wie folgt konfiguriert:
                 </div>
-                <div class="konto-abothead">
-                    Abo 1
-                </div>
-                <div class="bestellung-box">
-                    <table class="bestelldetails-table">
-                        <tbody>
-                        <tr>
-                            <td class="td-abostart">Start Abo</td>
-                            <td class="td-aboend">30.09.2021</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Lieferrhythmus</td>
-                            <td class="td-aboend">Alle 2 Wochen</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Menge</td>
-                            <td class="td-aboend">5 x Yellow Booster, 5 x Exotische Fruchtmischung</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Preis</td>
-                            <td class="td-aboend">CHF 12.50</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">-20% Rabatt</td>
-                            <td class="td-aboend">CHF   -2.60</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Versandkosten</td>
-                            <td class="td-aboend">CHF   0.00</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Total im Abo</td>
-                            <td class="td-aboend">CHF   9.90</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Lieferadresse</td>
-                            <td class="td-aboend">
-                                Jane Doe<br>
-                                Musterstrasse 1<br>
-                                0000 Musterort
-                                <br><br>
-                                +78 000 00 00
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="erneut-box">
-                    <a href="page-konto-3-2.php" class="button-dark button-erneut">
-                        Abo anpassen
-                    </a>
-                    <a href="page-konto-3-2.php" class="button-link button-erneut">
-                        Abo pausieren
-                    </a>
-                    <a href="page-konto-3-2.php" class="button-link button-erneut">
-                        Abo künden
-                    </a>
+                <div class="konto-mainbox">
+                    <div class="konto-abothead">
+                        Abo 1
+                    </div>
+                    <div class="bestellung-box">
+                        <table class="bestelldetails-table">
+                            <tbody>
+                            <tr>
+                                <td class="td-abostart">Start Abo</td>
+                                <td class="td-aboend">30.09.2021</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Lieferrhythmus</td>
+                                <td class="td-aboend">Alle 2 Wochen</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Menge</td>
+                                <td class="td-aboend">5 x Yellow Booster, 5 x Exotische Fruchtmischung</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Preis</td>
+                                <td class="td-aboend">CHF 12.50</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">-20% Rabatt</td>
+                                <td class="td-aboend">CHF   -2.60</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Versandkosten</td>
+                                <td class="td-aboend">CHF   0.00</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Total im Abo</td>
+                                <td class="td-aboend">CHF   9.90</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Lieferadresse</td>
+                                <td class="td-aboend">
+                                    Jane Doe<br>
+                                    Musterstrasse 1<br>
+                                    0000 Musterort
+                                    <br><br>
+                                    +78 000 00 00
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="erneut-box">
+                        <a href="page-konto-3-2.php" class="button-dark button-erneut">
+                            Abo anpassen
+                        </a>
+                        <a href="page-konto-3-2.php" class="button-link button-erneut">
+                            Abo pausieren
+                        </a>
+                        <a href="page-konto-3-2.php" class="button-link button-erneut">
+                            Abo künden
+                        </a>
+                    </div>
                 </div>
 
-                <div class="konto-abothead">
-                    Abo 2
-                </div>
-                <div class="bestellung-box">
-                    <table class="bestelldetails-table">
-                        <tbody>
-                        <tr>
-                            <td class="td-abostart">Start Abo</td>
-                            <td class="td-aboend">30.09.2021</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Lieferrhythmus</td>
-                            <td class="td-aboend">Alle 2 Wochen</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Menge</td>
-                            <td class="td-aboend">5 x Yellow Booster, 5 x Exotische Fruchtmischung</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Preis</td>
-                            <td class="td-aboend">CHF 12.50</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">-20% Rabatt</td>
-                            <td class="td-aboend">CHF   -2.60</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Versandkosten</td>
-                            <td class="td-aboend">CHF   0.00</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Total im Abo</td>
-                            <td class="td-aboend">CHF   9.90</td>
-                        </tr>
-                        <tr>
-                            <td class="td-abostart">Lieferadresse</td>
-                            <td class="td-aboend">
-                                Jane Doe<br>
-                                Musterstrasse 1<br>
-                                0000 Musterort
-                                <br><br>
-                                +78 000 00 00
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="erneut-box">
-                    <a href="page-konto-3-2.php" class="button-dark button-erneut">
-                        Abo anpassen
-                    </a>
-                    <a href="page-konto-3-2.php" class="button-link button-erneut">
-                        Abo pausieren
-                    </a>
-                    <a href="page-konto-3-2.php" class="button-link button-erneut">
-                        Abo künden
-                    </a>
+                <div class="konto-mainbox">
+                    <div class="konto-abothead">
+                        Abo 2
+                    </div>
+                    <div class="bestellung-box">
+                        <table class="bestelldetails-table">
+                            <tbody>
+                            <tr>
+                                <td class="td-abostart">Start Abo</td>
+                                <td class="td-aboend">30.09.2021</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Lieferrhythmus</td>
+                                <td class="td-aboend">Alle 2 Wochen</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Menge</td>
+                                <td class="td-aboend">5 x Yellow Booster, 5 x Exotische Fruchtmischung</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Preis</td>
+                                <td class="td-aboend">CHF 12.50</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">-20% Rabatt</td>
+                                <td class="td-aboend">CHF   -2.60</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Versandkosten</td>
+                                <td class="td-aboend">CHF   0.00</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Total im Abo</td>
+                                <td class="td-aboend">CHF   9.90</td>
+                            </tr>
+                            <tr>
+                                <td class="td-abostart">Lieferadresse</td>
+                                <td class="td-aboend">
+                                    Jane Doe<br>
+                                    Musterstrasse 1<br>
+                                    0000 Musterort
+                                    <br><br>
+                                    +78 000 00 00
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="erneut-box">
+                        <a href="page-konto-3-2.php" class="button-dark button-erneut">
+                            Abo anpassen
+                        </a>
+                        <a href="page-konto-3-2.php" class="button-link button-erneut">
+                            Abo pausieren
+                        </a>
+                        <a href="page-konto-3-2.php" class="button-link button-erneut">
+                            Abo künden
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

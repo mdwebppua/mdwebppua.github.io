@@ -1,3 +1,5 @@
+
+
 <section class="warenkorb-basket">
     <div class="basket-container">
         <div class="warenkorb-head">
@@ -203,20 +205,22 @@
 </section>
 
 <section class="keine-banner">
-    <div class="container">
-        <div class="wasser-banner__item">
-            <img src="img/keine.svg" alt="">
-            <b>keine</b> Versandkosten
-        </div>
-        <div class="wasser-banner__item">
-            <span>100%</span> natürlich
-        </div>
-        <div class="wasser-banner__item">
-            <img src="img/wasser-list__2.svg" alt="">
-            in der <b> Schweiz </b> hergestellt
-        </div>
-        <div class="wasser-banner__item">
-            <span>20%</span> Rabatt im Abo
+    <div class="container-xl">
+        <div class="keine-body">
+            <div class="wasser-banner__item">
+                <img src="img/keine.svg" alt="">
+                <b>keine</b> Versandkosten
+            </div>
+            <div class="wasser-banner__item">
+                <span>100%</span> natürlich
+            </div>
+            <div class="wasser-banner__item">
+                <img src="img/wasser-list__2.svg" alt="">
+                in der <b> Schweiz </b> hergestellt
+            </div>
+            <div class="wasser-banner__item">
+                <span>20%</span> Rabatt im Abo
+            </div>
         </div>
     </div>
 </section>
@@ -264,7 +268,7 @@
 </section>
 
 <footer class="footer">
-    <div class="container">
+    <div class="container-xl">
         <div class="footer-main">
             <div class="footer-col footer-col__1">
                 <div class="footer-title">
@@ -331,18 +335,18 @@
 
 <svg class="page-maskload none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
     <defs>
-        <clipPath id="clip-path">
+        <clipPath id="maskload">
             <rect y="-3" width="1439.873" height="510.534" fill="none"/>
         </clipPath>
-        <clipPath id="clip-path-2">
+        <clipPath id="maskload-2">
             <rect x="68" width="1439.324" height="156.517" fill="none"/>
         </clipPath>
     </defs>
     <g transform="translate(0 -244.501)">
-        <g transform="translate(0 247.501)" clip-path="url(#clip-path)" style="isolation: isolate">
+        <g transform="translate(0 247.501)" clip-path="url(#maskload)" style="isolation: isolate">
             <path d="M2.109,105.111s-4.745,27.289,0,94.15C33.8,208.254,77.01,220.3,120.031,224.7c190.361,19.475,320.706-33.435,527.731-8.2s399.581,167,735.86,201.806c23.875,2.471,44.677,3.185,62.92,2.37.8.945-.111-281.265-.111-281.265s-.407-233.054,0-231.944-1444.324,0-1444.324,0Z" transform="translate(1446.872 420.998) rotate(180)" fill="#faf188"/>
         </g>
-        <g transform="translate(-67.162 754.502)" clip-path="url(#clip-path-2)" style="isolation: isolate">
+        <g transform="translate(-67.162 754.502)" clip-path="url(#maskload-2)" style="isolation: isolate">
             <path d="M55.739,40.418s-157.055,54.93,56.1,54.077S463.6,56.668,695.861,57.965s449.738,67.663,826.323,66.372c49.817-25.264,0-57.666,0-57.666s18.869-99-5.2-98.832-1472.54,0-1472.54,0Z" transform="translate(0 32.161)" fill="#faf188"/>
         </g>
     </g>

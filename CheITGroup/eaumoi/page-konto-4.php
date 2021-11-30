@@ -46,7 +46,7 @@
                 <div class="konto-adressen">
                     <div class="adressen-top">
                         <div class="adressen-top__title">
-                            Rechnungsadresse
+                            Lieferadresse
                         </div>
                         <a class="adressen-top__neue" href="#">neue Adresse hinzufügen</a>
                     </div>

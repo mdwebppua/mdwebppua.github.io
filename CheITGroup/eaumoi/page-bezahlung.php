@@ -41,12 +41,12 @@
                     <div class="bezahlung-type">
                         <input class="bezahlung-type__input" type="text" placeholder="Geburtsdatum">
                     </div>
-                    <div class="bezahlung-type radio dfcol-2">
+                    <div class="bezahlung-type radio-chekbox dfcol-2">
                         <div class="col">
                             <input class="bezahlung-type__input" type="text" placeholder="Firma">
                         </div>
                         <div class="col">
-                            <input type="radio" class="bezahlung-type__radio" id="MwSt-Kunde" name="MwSt-Kunde">
+                            <input type="checkbox" class="bezahlung-type__radio-chekbox" id="MwSt-Kunde" name="MwSt-Kunde">
                             <label for="MwSt-Kunde">MwSt-Kunde</label>
                         </div>
                     </div>

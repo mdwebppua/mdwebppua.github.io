@@ -162,6 +162,7 @@ body.page-home {
     padding: 0;
 }
 .description {
+    line-height: 1.75;
 }
 .container {
     max-width: 1368px;
@@ -170,7 +171,6 @@ body.page-home {
 .container-xl {
     max-width: 1230px;
     margin: 0 auto;
-    width: 100%;
 }
 
 .index-page {
@@ -201,7 +201,7 @@ body.page-shop .header.menu {
     z-index: 505;
     background: none;
 }
-.header-body {
+.header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -214,6 +214,7 @@ body.page-shop .header.menu {
 }
 .logo-top {
     display: block;
+    margin: 0 0 0 68px;
     float: left;
 }
 .logo-top img {
@@ -261,7 +262,7 @@ body.page-shop .header.menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 4px 0 0 0;
+    margin: 4px 68px 0 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -387,13 +388,10 @@ body.page-shop .header.menu {
 .section-vs{
     height: auto
 }
-
 .title-wiewasser {
-    height: 100vh;
+    height: 200vh;
     max-height: 100%;
 }
-
-
 .section-trigger {
     width: 100%;
     height: 100vh;
@@ -406,16 +404,9 @@ body.page-shop .header.menu {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-
-    position: fixed;
-    left: 0;
-    top: 0;
-}
-.title-wiewasser__tofrom1 {
 }
 .title-wiewasser__tofrom2 {
-    /*transform: scale(.5);*/
-    opacity: 0;
+    transform: scale(.5);
 }
 
 .section-vs > div.title-wiewasser__tofrom1 {
@@ -462,7 +453,7 @@ body.page-shop .header.menu {
 .scene {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: 9;
@@ -474,7 +465,13 @@ body.page-shop .header.menu {
     margin: 0 auto;
     right: 0;
 }
-
+.bublle-cir {
+    position: absolute;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    z-index: 9;
+}
 @-webkit-keyframes bublle-float {
     0% {
         -webkit-transform: translateY(0px);
@@ -531,94 +528,68 @@ body.page-shop .header.menu {
     }
 
 }
-.bublle-cir {
-    position: absolute;
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
-    z-index: 9;
-}
-.bublle-cir:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-}
 .bublle-cir__1 {
-    width: 50px;
-    height: 46px;
-    top: 50%;
-    left: 15%;
-    animation: bubble-flowUp-large 4s infinite ease-in -.03s;
-}
-.bublle-cir__1:before {
     background: url("../img/drop.png") no-repeat center;
     background-size: cover;
-    animation: bubble-animate 2s ease-out infinite;
+    width: 50px;
+    height: 46px;
+    /*bottom: 15%;*/
+    /*left: 4%;*/
+    top: 42%;
+    left: 5%;
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+    -webkit-animation: bublle-float 4s linear infinite;
+    animation: bublle-float 4s linear infinite;
 }
 .bublle-cir__2 {
+    background: url("../img/drop-1.png") no-repeat center;
+    background-size: cover;
     width: 69px;
     height: 65px;
     right: 7%;
-    top: 50%;
-    animation: bubble-flowUp-large 5s infinite ease-in -.03s;
-}
-.bublle-cir__2:before {
-    background: url("../img/drop-1.png") no-repeat center;
-    background-size: cover;
-    animation: bubble-animate 2s ease-out infinite;
+    top: 16%;
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+    -webkit-animation: bublle-float 5s linear infinite;
+    animation: bublle-float 5s linear infinite;
+
+
 }
 .bublle-cir__3 {
+    background: url("../img/droplet-1.png") no-repeat center;
+    background-size: cover;
     width: 103px;
     height: 109px;
     right: 24%;
-    top: 50%;
-    animation: bubble-flowUp-large 6s infinite ease-in -.03s;
-}
-.bublle-cir__3:before {
-    background: url("../img/droplet-1.png") no-repeat center;
-    background-size: cover;
-    animation: bubble-animate 2s ease-out infinite;
+    top: 38%;
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+    -webkit-animation: bublle-float 3s linear infinite;
+    animation: bublle-float 3s linear infinite;
+
+
 }
 .bublle-cir__4 {
+    background: url("../img/droplet-2.png") no-repeat center;
+    background-size: cover;
     width: 276px;
     height: 269px;
     right: -3%;
-    top: 50%;
-    animation: bubble-flowUp-large 7s infinite ease-in -.03s;
+    top: 42%;
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+    -webkit-animation: bublle-float 4s linear infinite;
+    animation: bublle-float 4s linear infinite;
 }
-.bublle-cir__4:before {
-    background: url("../img/droplet-2.png") no-repeat center;
-    background-size: cover;
-    animation: bubble-animate 2s ease-out infinite;
-}
-.bublle-cir__5 {
-    animation: bubble-flowUp-large 6s infinite ease-in -.03s;
-    top: 50%;
-    left: 20%;
-}
-.bublle-cir__5:before {
-    background: url("../img/menu/menu-buble-1.svg") no-repeat center;
-    background-size: 100%;
-    z-index: 2;
-    animation: bubble-animate 2s ease-out infinite;
-}
-.bublle-cir__6 {
-    animation: bubble-flowUp-large 4s infinite ease-in -3.03s;
-    top: 50%;
-    left: 25.5%;
-}
-.bublle-cir__6:before {
-    background: url("../img/menu/menu-buble-2.svg") no-repeat center;
-    background-size: 100%;
-    animation: bubble-animate 1s ease-out infinite;
-}
-.bublle-cir__1.no-animation,
-.bublle-cir__2.no-animation,
-.bublle-cir__3.no-animation,
-.bublle-cir__4.no-animation {
-    animation: none;
-}
+.bublle-cir__5 {}
 
 .cookie-zum {
     background: #C9EDE8;
@@ -700,13 +671,11 @@ body.page-shop .header.menu {
 }
 
 .wasser-aroma {
-
-}
-.wasser-main {
+    position: relative;
     background: #F4F8FF;
     padding: 141px 0 158px 0;
-    position: relative;
 }
+
 .wasser-aromatis {
     position: relative;
     display: -webkit-box;
@@ -740,6 +709,7 @@ body.page-shop .header.menu {
 .wasser-title span {}
 .wasser-description {
     margin: 30px 0 0 3px;
+    line-height: 1.75;
 }
 .wasser-list {
     display: -webkit-box;
@@ -904,7 +874,6 @@ body.page-shop .header.menu {
     transition: 0.3s;
     z-index: 10;
     opacity: 1;
-    overflow: auto;
 }
 .wasser-banner.fadeout {
     opacity: 0;
@@ -935,6 +904,7 @@ body.page-shop .header.menu {
     margin: 0 5px 0 0;
     font-family: 'GTWalsheimPro';
     letter-spacing: -1.25px;
+    display: contents;
 }
 .wasser-banner__item img {
     margin: 0 5px 0 0;
@@ -943,8 +913,7 @@ body.page-shop .header.menu {
     -o-object-fit: contain;
     object-fit: contain;
 }
-.wasser-banner__item b,
-.wasser-banner__item strong {
+.wasser-banner__item b {
     font-family: 'FarnhamDisplay';
     font-size: 19px;
     font-weight: 500;
@@ -958,8 +927,7 @@ body.page-shop .header.menu {
     display: flex;
 }
 .wasserhahn-auf {
-    max-width: 580px;
-    width: 100%;
+    width: 580px;
     margin: 159px 0 0 0;
     position: relative;
     left: 180px;
@@ -976,6 +944,7 @@ body.page-shop .header.menu {
 }
 .schritt-description {
     margin: 28px 0 0 0;
+    line-height: 1.75;
 }
 .wasserhahn-list {
     display: -webkit-box;
@@ -1063,9 +1032,6 @@ body.page-shop .header.menu {
 .fruchtepuree {}
 .fruchtepuree .container {
     position: relative;
-}
-.fruchtepuree-body {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1086,22 +1052,16 @@ body.page-shop .header.menu {
 }
 .fruchtepuree-buttle__img {
     margin: 108px 0 0 16px;
-    max-width: 846px;
-    width: 100%;
+    width: 846px;
     position: relative;
     z-index: 2;
 }
 .fruchtepuree-buttle__img img {}
 .fruchtepuree-rein {
-    max-width: 630px;
-    width: 100%;
+    width: 630px;
     margin: 157px 0 0 0;
     position: relative;
     z-index: 5;
-}
-.fruchtepuree-main {
-    margin: 0 -24px 0 -24px;
-    overflow: auto;
 }
 .fruchtepuree-list {
     display: -webkit-box;
@@ -1241,10 +1201,6 @@ body.page-shop .header.menu {
     -webkit-transition-timing-function:linear!important;
     -o-transition-timing-function:linear!important;
     transition-timing-function:linear!important;
-    max-width: 400px;
-}
-.zumshop-swiper.swiper-slide-active:hover {
-    cursor: none;
 }
 .zumshop-slick__item {
     width: 100%;
@@ -1262,15 +1218,10 @@ body.page-shop .header.menu {
     -o-transition: 0.3s;
     transition: 0.3s;
     padding: 25px;
+
+
 }
 .zumshop-slick__item:hover {
-}
-.zumshop-swiper.not-bg .zumshop-slick__item:hover{
-    background: none !important;
-}
-.swiper-slide-next:hover .zumshop-slick__item,
-.swiper-slide-prev:hover .zumshop-slick__item {
-    background: none !important;
 }
 .zumshop-slick__thumb {
     position: relative;
@@ -1290,7 +1241,6 @@ body.page-shop .header.menu {
 }
 .swiper-slide-active .zumshop-hidden {
     max-height: 10em;
-    opacity: 1;
 }
 .zumshop-slick__name {
     font-family: 'FarnhamDisplay';
@@ -1315,16 +1265,13 @@ body.page-shop .header.menu {
     align-items: center;
 
     margin: 25px 0 0 0;
-    opacity: 0;
+    opacity: 1;
     position: relative;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
 .zumshop-slick__item:hover .zumshop-hidden {
-    opacity: 1;
-}
-.zumshop-slick__item:hover .zumshop-slick__buyer {
     opacity: 1;
 }
 .zumshop-slick__price {
@@ -1363,7 +1310,6 @@ body.page-shop .header.menu {
     -o-transition: 1.5s ease;
     transition: 1.5s ease;
     text-align: center;
-    white-space: nowrap;
     /*filter: hue-rotate(360deg);*/
 }
 .button-link:hover {
@@ -1396,7 +1342,6 @@ body.page-shop .header.menu {
     transition: 1.5s ease;
     background-color: transparent;
     text-align: center;
-    white-space: nowrap;
 }
 .button-dark:hover {
     /*background: #0D2330;*/
@@ -1427,10 +1372,12 @@ body.page-shop .header.menu {
     align-items: center;
     z-index: -1;
     opacity: 0;
-    -webkit-transition: 2s;
-    -o-transition: 2s;
-    transition: 2s;
-    overflow: auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
 }
 .aktion-box.active {
     position: fixed;
@@ -1463,7 +1410,6 @@ body.page-shop .header.menu {
     right: 10px;
     top: 10px;
     background-size: contain;
-    z-index: 5;
 }
 .aktion-close:hover {
     -webkit-transform: rotate(90deg);
@@ -1476,21 +1422,12 @@ body.page-shop .header.menu {
     display: flex;
 }
 .aktion-img {
-    max-width: 320px;
-    width: 100%;
+    min-width: 320px;
     margin: -95px 27px 0 0;
-    position: absolute;
-    left: 0;
-    top: 0;
 }
-.aktion-img img {
-    height: auto;
-    width: auto;
-}
+.aktion-img img {}
 .aktion-info {
     width: 100%;
-    position: relative;
-    padding: 0 0 0 347px;
 }
 .aktion-title {
     font-size: 90px;
@@ -1504,6 +1441,7 @@ body.page-shop .header.menu {
     display: -ms-flexbox;
     display: flex;
     margin: 27px 0 0 -1px;
+    line-height: 1.75;
     letter-spacing: -0.1px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1530,13 +1468,11 @@ body.page-shop .header.menu {
 .ein-gutschein-body {
     background: #CAEEE8;
     position: relative;
-    display: flex;
-    padding: 0 0 45px 0;
 }
 .gutschein {
     position: relative;
     z-index: 5;
-    margin: -100px 0 0 0;
+    top: -100px;
 }
 .gutschein-title {
     font-family: 'FarnhamDisplay';
@@ -1544,14 +1480,11 @@ body.page-shop .header.menu {
     font-size: 80px;
     line-height: 1.1875;
     max-width: 600px;
-    position: relative;
-    z-index: 3;
 }
 .gutschein-description {
+    line-height: 1.75;
     margin: 30px 0 70px 0;
     max-width: 600px;
-    position: relative;
-    z-index: 3;
 }
 .gutschein .button-link {
     padding: 11px 14px;
@@ -1576,18 +1509,20 @@ body.page-shop .header.menu {
 
 }
 .trink-img {
-    max-width: 500px;
-    width: 100%;
+    width: 500px;
     text-align: center;
-    margin: 0 auto;
 }
 .trink-info {
-    max-width: 715px;
-    max-width: 760px;
-    width: 100%;
+    width: 715px;
+    width: 760px;
     margin: 34px 0 0 49px;
 }
+.trink-box .wasser-title {
+    font-size: 60px;
+    line-height: 1.25;
+}
 .trink-description {
+    line-height: 1.75;
     margin: 28px 0 73px 0;
 }
 
@@ -1670,12 +1605,8 @@ body.page-shop .header.menu {
 .entweder-item__img {
     position: relative;
     margin: -50px 0 0 0;
-    height: 267px;
 }
-.entweder-item__img img {
-    display: block;
-    margin: 0 auto;
-}
+.entweder-item__img img {}
 .entweder-item__img.person {}
 .entweder-item__img.person:before {
     content: "";
@@ -1812,7 +1743,7 @@ body.page-shop .header.menu {
 .das-prinzip {
     padding: 140px 0 94px 0;
 }
-.prinzip-body {
+.das-prinzip .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1828,12 +1759,12 @@ body.page-shop .header.menu {
     letter-spacing: -0.72px;
 }
 .prinzip-description {
+    line-height: 1.75;
     margin: 30px 0 71px 0;
 }
 .prinzip-foto {
     position: relative;
     min-height: 660px;
-    width: 100%;
 }
 .prinzip-foto img {
     max-width: initial;
@@ -1986,7 +1917,7 @@ body.page-shop .header.menu {
 .dem-guten {
     padding: 78px 0 208px 0;
 }
-.guten-body {
+.dem-guten .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2122,12 +2053,12 @@ body.page-shop .header.menu {
     position: relative;
     /*margin: 133px 0 0 0;*/
 }
-.keine-body {
+.keine-banner .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 
 .footer {
@@ -2406,6 +2337,7 @@ body.page-shop .header-shop {
 .aromen-description {
     text-align: center;
     margin: 30px 0 0 0;
+    line-height: 1.75;
 }
 .aromen-slider {
     margin: 130px 0 0 0;
@@ -2489,7 +2421,7 @@ body.page-shop .header-shop {
     display: inline-block;
     width: 100%;
     height: 100%;
-    object-fit: none;
+    object-fit: contain;
 }
 .aromen-item__img.person {}
 .aromen-item__img.person:before {
@@ -3697,36 +3629,6 @@ html.ov-hidden{
     -ms-flex-align: center;
     align-items: center;
 }
-.bezahlung-type input[type=radio],
-.bezahlung-type input[type=checkbox]{
-    display: none;
-}
-.bezahlung-type.radio-chekbox label:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    border: 1px solid #0D2330;
-    background: #fff;
-    display: inline-block;
-    margin: 0 10px 0 0;
-}
-.bezahlung-type.radio-chekbox input:checked + label:before {
-    background: #0D2330;
-    -webkit-box-shadow: inset 0 0 0 5px #fff;
-    box-shadow: inset 0 0 0 5px #fff;
-}
-.bezahlung-type.radio-chekbox input[type=checkbox] {
-    display: none;
-}
-.bezahlung-type label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
 .bezahlung-type.checkbox input[type=checkbox] {
     display: none;
 }
@@ -3762,7 +3664,6 @@ html.ov-hidden{
     -ms-flex-pack: justify;
     justify-content: space-between;
     font-size: 16px;
-    align-items: center;
 }
 .bezahlung-deine__title span {
     font-weight: 500;
@@ -3770,7 +3671,6 @@ html.ov-hidden{
 .bezahlung-deine__title a {
     color: #E27291;
     text-decoration: none;
-    padding: 5px 15px;
 }
 .bezahlung-deine__title a:hover {
     text-decoration: underline;
@@ -3848,7 +3748,7 @@ html.ov-hidden{
     border: 1px solid #0D2330;
     background: none;
     width: 100%;
-    max-width: 320px;
+    max-width: 285px;
     padding: 0 15px;
 }
 .bezahlung-rabattcode__input:focus {}
@@ -4053,26 +3953,28 @@ html.ov-hidden{
     opacity: 0;
 }
 .page-maskload {
-    width: 100%;
+    width: 110%;
     pointer-events: none;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
-    -webkit-transform: translate(0, 100vh) scale(0);
-    -ms-transform: translate(0, 100vh) scale(0);
-    transform: translate(0, 100vh) scale(0);
+    -webkit-transform: translate(-50%, 100%) scale(1);
+    -ms-transform: translate(-50%, 100%) scale(1);
+    transform: translate(-50%, 100%) scale(1);
     z-index: 500;
+    visibility: hidden;
 }
 .page-maskload.none {
     display: none;
 }
 .page-maskload.active {
-    -webkit-transform: translate(0, 0) scale(10);
-    -ms-transform: translate(0, 0) scale(10);
-    transform: translate(0, 0) scale(10);
+    -webkit-transform: translate(-50%, 0%) scale(10);
+    -ms-transform: translate(-50%, 0%) scale(10);
+    transform: translate(-50%, 0%) scale(10);
+    visibility: visible;
 }
 .product-full {
     display: -webkit-box;
@@ -4437,7 +4339,6 @@ html.ov-hidden{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 150px 0;
 }
 .container-shop {
     max-width: 600px;
@@ -4627,7 +4528,7 @@ html.ov-hidden{
 /* start css style page page-konto-*.php */
 .konto-dashboard {
     min-height: 100vh;
-    padding: 145px 0;
+    padding: 145px 0 0 0;
 }
 .konto-dashboard .container-xl {
     position: relative;
@@ -4788,9 +4689,6 @@ html.ov-hidden{
 }
 .konto-hello {}
 
-.konto-mainbox {
-    margin: 0 0 80px 0;
-}
 .bestellung-box {
     background: #F4F8FF;
     padding: 15px;
@@ -4851,9 +4749,6 @@ html.ov-hidden{
 .bestelldetails-table .td-produkt {
     width: 50%;
 }
-.bestelldetails-table tbody tr:last-child td {
-    border: none;
-}
 .bestellung-item__bold {
     font-size: 14px;
 }
@@ -4883,8 +4778,6 @@ html.ov-hidden{
 .adresse-box {
     width: calc(50% - 15px);
     margin: 35px 0 0 0;
-    display: flex;
-    flex-direction: column;
 }
 .adresse-title {
     font-size: 23px;
@@ -4896,7 +4789,6 @@ html.ov-hidden{
     padding: 20px;
     background: #F5F8FD;
     margin: 15px 0 0 0;
-    height: 100%;
 }
 .konto-aboinfo {
     font-size: 18px;
@@ -5132,7 +5024,6 @@ body.page-pausieren {
     width: 100%;
     min-width: 1440px;
     display: block;
-    margin-left: calc((-1440px + 100vw) / 2);
 }
 
 .firmen-platz {
@@ -6185,24 +6076,20 @@ textarea {
 }
 .navigation-page {
     position: fixed;
-    top: 0;
+    top: 100%;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 501;
-    transition: 1s;
+    transition: top 1s;
     overflow: auto;
     padding: 93px 0;
-    opacity: 0;
-    pointer-events: none;
 }
 .navigation-page.menu {
-    opacity: 1;
-    pointer-events: visible;
+    top: 0;
 }
 .navigation-container {
     position: relative;
-    z-index: 10;
 }
 .navigation-body {
     max-width: 395px;
@@ -6767,700 +6654,8 @@ textarea {
 }
 
 /* start css mobile version */
-@media (min-width: 1399.98px) {
-    .firmen-footer svg {
-        width: 100%;
-        min-width: 1440px;
-        display: block;
-        margin: 0 auto;
-    }
-}
 @media (max-width: 1299.98px) {}
-@media (max-width: 1199.98px) {
-    .container,
-    .container-xl {
-        padding: 0 24px;
-    }
-    .aktion-ten {
-        height: auto;
-    }
-}
-@media (max-width: 991.98px) {
-
-    .aktion-ten {
-        height: 100%;
-        padding: 15px;
-    }
-    .aktion-img {
-        margin: 0;
-        max-width: 220px;
-    }
-    .aktion-info {
-        padding: 0 0 0 247px;
-    }
-    .aktion-title {
-        margin: 0;
-        font-size: 60px;
-    }
-    .aktion-gratis {
-        align-items: end;
-    }
-    .aktion-button {
-        margin: 0;
-        margin-left: auto;
-    }
-    .prinzip-info {
-        margin: 26px 15px 0 0;
-    }
-    .guten-foto {
-        margin: 0 -350px 0 -250px;
-    }
-}
-@media (max-width: 767.98px) {
-    .title-wiewasser {
-        font-size: 90px;
-    }
-    .wasser-rasp__1 {
-        top: -230px;
-    }
-    .wasser-container {
-        margin: 0;
-    }
-    .wasser-list {
-        margin: 67px 0 20px 0;
-    }
-    .wasserhahn {
-        padding: 120px 0 0 0;
-    }
-    .wasserhahn-auf {
-        margin: 0;
-        left: 0;
-    }
-    .zumshop-slider {
-        height: auto;
-    }
-    .zumshop-swiper {
-        max-width: 280px;
-        margin: 0 11px 0;
-    }
-    .zumshop-slick {
-        margin: 100px 0;
-    }
-    .zumshop-slick__item {
-        padding: 0;
-        overflow: visible;
-    }
-    .zumshop-slick__thumb {
-        height: 260px;
-        margin: -50px 0 0 0;
-    }
-    .zumshop-slick__thumb img {
-        height: 100%;
-    }
-    .zumshop-hidden {
-        opacity: 1;
-        max-height: 10em;
-    }
-    .zumshop-slick__name {
-        margin: 13px 0;
-    }
-    .zumshop-slick__buyer {
-        padding: 15px;
-        justify-content: space-between;
-        margin: 0;
-    }
-
-    .gutschein-img {
-        position: relative;
-        top: 0;
-    }
-    #gutschein-lottie {
-        width: 1452px;
-        margin: -170px 0 -250px -790px;
-        height: 704px;
-    }
-
-    .entweder-list {
-        justify-content: inherit;
-    }
-    .entweder-item {
-        background: #F4F8FF;
-        cursor: none;
-    }
-    .entweder-item_buyer {
-        opacity: 1;
-    }
-    .aktion-box.active {
-        display: block;
-        padding: 70px 0;
-    }
-    .aktion-box.closed {
-        display: none;
-    }
-    .fruchtepuree {
-        padding: 120px 0;
-    }
-    .fruchtepuree-buttle {
-        margin: 0;
-    }
-    .fruchtepuree-buttle__img {
-        margin: 0;
-    }
-    .fruchtepuree-rein {
-        margin: 0;
-    }
-    .trink-box {
-        flex-direction: column;
-    }
-    .trink-info {
-        margin: 0;
-    }
-    .kleiner-banner {
-        position: relative;
-        bottom: 0;
-        margin: 50px 0 0 auto;
-    }
-    .prinzip-info {
-        margin: 26px -215px 0 0;
-    }
-    .keine-banner {
-        overflow: scroll;
-    }
-    .keine-body {
-        width: 1000px;
-    }
-    .footer-main {
-        flex-wrap: wrap;
-        align-items: baseline;
-    }
-    .footer-col__1 {
-        width: 100%;
-    }
-    .footer-nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .footer-nav li {}
-    .footer-col__2 {
-        margin: 50px 0;
-        order: 3;
-    }
-    .aktion-gratis {
-        flex-direction: column;
-        align-items: center;
-    }
-    .aktion-button {
-        margin: 15px 0 0 0;
-        margin-left: inherit;
-    }
-}
-@media (max-width: 575.98px) {
-    body {
-        line-height: 1.475;
-    }
-    .container,
-    .container-xl {
-        max-width: 416px;
-        width: 100%;
-    }
-    .button-dark {
-        display: inline-flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 500;
-        color: #0D2330;
-        font-size: 20px;
-        border: 1px solid #0D2330;
-        border-radius: 6px;
-        position: relative;
-        padding: 15px 35px;
-
-        background: transparent;
-        background-image: url("../img/nav-bg-fill-blue.png");
-        background-repeat: repeat-x;
-        background-position: 0 -100%;
-        -webkit-transition: 1.5s ease;
-        -o-transition: 1.5s ease;
-        transition: 1.5s ease;
-        text-align: center;
-        white-space: nowrap;
-        /*filter: hue-rotate(360deg);*/
-    }
-    .button-dark:hover {
-        /*background: #0D2330;*/
-        color: #fff;
-        background-position: 500% 100%;
-    }
-    .button-link {
-        display: inline-flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 500;
-        color: #fff;
-        font-size: 20px;
-        border: 1px solid #0D2330;
-        border-radius: 6px;
-        position: relative;
-        padding: 15px 35px;
-        background-image: url("../img/nav-bg-fill-blue.png");
-        background-repeat: repeat-x;
-        background-position: 0 100%;
-        -webkit-transition: 1.5s ease;
-        -o-transition: 1.5s ease;
-        transition: 1.5s ease;
-        background-color: transparent;
-        text-align: center;
-        white-space: nowrap;
-    }
-    .button-link:hover {
-        /*background: #0D2330;*/
-        color: #0D2330;
-        background-position: 500% -100%;
-        background-color: transparent;
-    }
-    .button-link {
-        font-size: 17.5px;
-        padding: 12px 33px;
-    }
-    .bg-head {
-        padding: 0 0 21px 0;
-    }
-    .wasser-main {
-        padding: 154px 0px 0
-    }
-    .wasser-title {
-        font-size: 40px;
-        line-height: 1.2;
-    }
-    .wasser-description {
-        line-height: 1.475;
-        margin: 27px 0 0 0px;
-    }
-    .header {
-        top: initial;
-        bottom: 0;
-        background: #fff;
-    }
-    .logo-top {
-        max-width: 106px;
-    }
-    .header-shop {
-        font-weight: bold;
-        background: none;
-    }
-    .header-shop:hover {
-        color: #0D2330;
-        background: none;
-    }
-    .menu-button span {
-        display: none;
-    }
-    .menu-button .ico-bars {
-        margin: 0;
-    }
-    .wasser-aromatis {
-        flex-direction: column;
-    }
-    .wasser-list {
-        flex-direction: column;
-        margin: 243px 0 20px 22px;
-    }
-    .wasser-list li:nth-child(2) {
-        margin: 21px 0;
-    }
-    .keine-body {
-        width: 690px;
-        margin: 0 0 0 -8px;
-    }
-    .wasser-banner {
-        bottom: 40.4%;
-    }
-    .wasser-banner__item,
-    .wasser-banner__item b,
-    .wasser-banner__item strong{
-        font-size: 14px;
-    }
-    .wasser-banner__item span {
-        font-size: 17px;
-    }
-    .wasser-banner__item img {
-        width: 33px;
-        height: 25px;
-    }
-    .wasser-rasp__1 {
-        left: -186px;
-        top: -214px;
-    }
-    .wasser-rasp__2 {
-        right: -15px;
-        top: 245px;
-        background-size: contain;
-        width: 160px;
-    }
-    .wasser-rasp__3 {
-        width: 168px;
-        bottom: 287px;
-        left: 149px;
-        background-size: contain;
-    }
-    .wasser-rasp__4 {
-        bottom: 20px;
-        left: 70px;
-    }
-    .wasserhahn {
-        padding: 0;
-    }
-    .schritt {
-        font-size: 11px;
-    }
-    .schritt-description {
-        margin: 29px 0 0 0;
-    }
-    .wasserhahn .container {
-        flex-direction: column;
-    }
-    .wasserhahn-body {
-        margin: 0 -24px 0 -24px;
-        overflow: auto;
-    }
-    .wasserhahn-list {
-        margin: 45px 0 0 0;
-        width: 520px;
-    }
-    .wasserhahn-list li:nth-child(1) {
-        margin: 26px 0 0 0;
-    }
-    .wasserhahn-list li:nth-child(3) {
-        margin: 28px 0 0 0;
-    }
-    .wasserhahn-buttle {
-        margin: 70px 0 0 0;
-    }
-    .wasserhahn-buttle:after {
-        width: 648px;
-        height: 530px;
-        position: absolute;
-        top: -25px;
-        left: -190px;
-        background-size: cover;
-    }
-    .wasserhahn-buttle__img {
-        margin: 0;
-        position: relative;
-        z-index: 2;
-        left: -65px;
-        top: -23px;
-    }
-    .wasserhahn-buttle__img img {
-        max-width: 500px;
-    }
-    .fruchtepuree {
-        padding: 97px 0;
-    }
-    .fruchtepuree-body {
-        flex-direction: column;
-    }
-    .fruchtepuree-rein {
-        order: 1;
-    }
-    .fruchtepuree .wasser-title {
-        margin: 16px 0 0 0;
-    }
-    .fruchtepuree .schritt-description {
-        margin: 16px 0 0 0;
-    }
-    .fruchtepuree-list {
-        margin: 48px 0 0 0;
-        width: 520px;
-    }
-    .fruchtepuree-list li:nth-child(1) {
-        margin: 23px 0 0 0;
-    }
-    .fruchtepuree-list li:nth-child(4) {
-        margin: 0;
-    }
-    .fruchtepuree-buttle {
-        order: 2;
-        margin: 22px -24px 0 -24px;
-    }
-    .fruchtepuree-buttle:after {
-        content: "";
-        display: block;
-        background: url(../img/fruchtepuree_bg.svg) no-repeat center;
-        width: 485px;
-        height: 701px;
-        background-size: cover;
-        position: absolute;
-        top: 0;
-        left: -40px;
-    }
-    .fruchtepuree-buttle__img img {
-        max-width: 700px;
-        margin: 30px 0 0 -193px;
-    }
-    .kleiner-banner {
-        margin: 0 auto;
-        right: 0;
-    }
-    .zoomshop {
-        padding: 42px 0 150px 0;
-    }
-    .zumshop-slick__name {
-        margin: 19px 0 0 0;
-    }
-    .zumshop-slick__tag {
-        font-size: 16px;
-        line-height: 1.125;
-        margin: 7px 0 0 0;
-        min-height: 36px;
-    }
-    .zumshop-slick__buyer {
-        padding: 30px;
-    }
-    .zumshop-slick {
-        margin: 100px 0 38px 0;
-    }
-    .zoomshop .button-link {
-        font-size: 20px;
-        padding: 15px 44px;
-    }
-    .ein-gutschein {
-        padding: 90px 0 0 0;
-    }
-    .gutschein {
-        margin: -284px 0 0 0;
-    }
-    .gutschein-title {
-        font-size: 60px;
-        line-height: 1.08;
-    }
-    .gutschein-img {
-        height: 244px;
-    }
-    .gutschein-description {
-        margin: 30px 0 43px 0;
-    }
-    .gutschein .button-link {
-        padding: 10px 31px;
-        font-size: 17.5px;
-    }
-    .ein-gutschein {
-        padding: 90px 0 0 0;
-    }
-
-    .dein-trink {
-        padding: 70px 0 73px 0;
-    }
-    .trink-img {
-        margin: 0 -24px;
-        width: initial;
-        height: 413px;
-    }
-    .trink-description {
-        margin: 26px 0 35px 0;
-    }
-    .trink-info .button-link {
-        padding: 12px 33px;
-        font-size: 17.5px;
-    }
-    .entweder-man .wasser-title {
-        text-align: left;
-    }
-    .entweder-description {
-        text-align: left;
-        margin: 20px auto 0;
-    }
-    .entweder-list {
-        margin: 127px 0 0 0;
-    }
-    .entweder-item__img {
-        position: relative;
-        margin: -60px 0 0 0;
-    }
-    .entweder-item__name {
-        margin: 18px 0 0 0;
-    }
-    .entweder-item__tag {
-        margin: 5px 0 0 0;
-        min-height: 36px;
-    }
-    .entweder-item_buyer {
-        padding: 30px 30px 22px 30px;
-    }
-    .das-prinzip {
-        padding: 60px 0 94px 0;
-    }
-    .prinzip-body {
-        flex-direction: column;
-    }
-    .prinzip-foto {
-        order: 1;
-    }
-    .prinzip-foto img {
-        min-height: auto;
-        width: auto;
-        margin: 0 -70px;
-    }
-    .prinzip-info {
-        order: 2;
-        max-width: 100%;
-        margin: 75px 0 0 0;
-        min-width: auto;
-    }
-    .prinzip-description {
-        margin: 20px 0 35px 0;
-    }
-    .wie-schmeckt {
-        padding: 69px 0;
-    }
-    .wie-review {
-        margin: 30px 0 0 0;
-    }
-    .wie-list .swiper-slide:nth-child(2n) {
-        margin: 0 0 0 0;
-    }
-    .guten-body {
-        flex-direction: column;
-    }
-    .guten-foto {
-        margin: 0;
-        order: 2;
-    }
-    .guten-folgen {
-        order: 1;
-        margin: 0;
-        width: auto;
-    }
-    .dem-guten {
-        padding: 98px 0 208px 0;
-    }
-    .dem-guten .wasser-title {
-        font-size: 55px;
-        letter-spacing: -0.5px;
-    }
-    .gutten-newslatter {
-        margin: 23px 0 0 0px;
-    }
-    .gutten-newslatter__form {
-        margin: 5px 0 0 0;
-    }
-    .gutten-input {
-        border: 1px solid #0D2330;
-        border-radius: 6px;
-        font-weight: normal;
-        font-size: 16px;
-        width: 100%;
-        padding: 13px 140px 13px 15px;
-        background: none;
-    }
-    .gutten-button {
-        top: 13px;
-    }
-    .gutten-social li {
-        margin: 0 18px 0 0;
-    }
-    .footer-bottom {
-        flex-direction: column;
-    }
-    .footer-link {
-        order: 2;
-    }
-    .footer-link li a {
-        font-size: 12px;
-        opacity: 0.5;
-    }
-    .footer-paysystem {
-        order: 1;
-        flex-wrap: wrap;
-    }
-    .footer-paysystem li {
-        margin: 0 15px 15px 0;
-        opacity: 0.5;
-    }
-    .footer-main {
-        flex-direction: column;
-    }
-    .footer-col__1 {
-        display: none;
-    }
-    .aktion-ten {
-        height: 100%;
-        padding: 45px 25px;
-    }
-    .aktion-tenbody {
-        flex-direction: column;
-    }
-    .aktion-close {
-        width: 20px;
-        height: 20px;
-        top: 15px;
-        right: 15px;
-    }
-    .aktion-info {
-        padding: 0;
-    }
-    .aktion-img {
-        max-width: inherit;
-        position: relative;
-        margin: 15px 0 0 0;
-    }
-    .aktion-title {
-        text-align: center;
-        line-height: 1.0833;
-    }
-    .aktion-gratis {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .aktion-description b {
-        font-weight: bold;
-        font-size: 12px;
-    }
-    .aktion-button {
-        margin: 45px 0 0 0;
-        margin-left: inherit;
-    }
-    body.page-shop .shop-nav {
-        position: absolute;
-        top: -23px;
-        background: #0D2330;
-        color: #fff;
-        left: 0;
-    }
-    .shop-nav li a {
-        color: #fff;
-        font-weight: 300;
-        opacity: 0.5;
-        padding: 20px 0;
-    }
-    .shop-nav li a:active,
-    .shop-nav li a:hover {
-        font-weight: 500;
-    }
-    .shop-nav li {
-        margin: 0 10px;
-    }
-    #gutschein-lottie {
-        width: 1000px;
-        margin: -200px 0 0 -550px;
-    }
-    .navigation-sosialbox {
-        display: none;
-    }
-}
+@media (max-width: 1199.98px) {}
+@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {}
+@media (max-width: 575.98px) {}

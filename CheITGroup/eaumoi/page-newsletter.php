@@ -26,14 +26,14 @@
         <form action="#" class="login-form">
             <div class="login-form__type col-2">
                 <div class="col">
-                    <input class="login-form__input" type="text" placeholder="Vorname">
+                    <input class="login-form__input" type="text" placeholder="Vorname*" required>
                 </div>
                 <div class="col">
-                    <input class="login-form__input" type="text" placeholder="Name">
+                    <input class="login-form__input" type="text" placeholder="Name*" required>
                 </div>
             </div>
             <div class="login-form__type">
-                <input class="login-form__input" type="text" placeholder="Email">
+                <input class="login-form__input" type="text" placeholder="Email*" required>
             </div>
 
             <div class="login-enter">

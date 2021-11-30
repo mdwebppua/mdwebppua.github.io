@@ -41,7 +41,7 @@
             </div>
 
             <div class="login-enter">
-                <button class="button-dark login-button">
+                <button class="button-link login-button">
                     Anmelden
                 </button>
             </div>

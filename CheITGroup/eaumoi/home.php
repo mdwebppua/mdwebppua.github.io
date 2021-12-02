@@ -120,10 +120,18 @@
                 <div class="wasser-rasp wasser-drop__3"></div>
                 <div class="wasser-rasp wasser-drop__4"></div>
             </div>
+
+            <div class="scene">
+                <div class="bublle-cir bublle-cir__1"></div>
+                <div class="bublle-cir bublle-cir__2"></div>
+                <div class="bublle-cir bublle-cir__3"></div>
+                <div class="bublle-cir bublle-cir__4"></div>
+                <div class="bublle-cir bublle-cir__5"></div>
+                <div class="bublle-cir bublle-cir__6"></div>
+                <div class="bublle-cir bublle-cir__7"></div>
+            </div>
         </div>
     </section>
-
-
 
 </div>
 <div class="firmen-footer">
@@ -394,6 +402,15 @@
             </div>
         </div>
     </div>
+
+    <div class="container-xl">
+        <div class="zumshop-navigation">
+            <div class="zumshop-prev"></div>
+            <div class="zumshop-dots"></div>
+            <div class="zumshop-next"></div>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="button-inline button-center" data-aos="fade-up">

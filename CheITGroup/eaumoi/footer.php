@@ -204,6 +204,10 @@
     <button class="cookie-close"></button>
 </section>
 
+<section class="button-top">
+    <button class="button-arrtop"></button>
+</section>
+
 <section class="keine-banner">
     <div class="container-xl">
         <div class="keine-body">
@@ -255,16 +259,27 @@
         </div>
     </div>
 
+
     <div class="menu-scene">
+        <!--
         <div class="menu-buble menu-buble__1"></div>
         <div class="menu-buble menu-buble__2"></div>
         <div class="menu-buble menu-buble__3"></div>
         <div class="menu-buble menu-buble__4"></div>
         <div class="menu-buble menu-buble__5"></div>
+-->
+        <div class="bublle-cir bublle-cir__1"></div>
+        <div class="bublle-cir bublle-cir__2"></div>
+        <div class="bublle-cir bublle-cir__3"></div>
+        <div class="bublle-cir bublle-cir__4"></div>
+        <div class="bublle-cir bublle-cir__5"></div>
+        <div class="bublle-cir bublle-cir__6"></div>
+        <div class="bublle-cir bublle-cir__7"></div>
 
         <div class="menu-buble menu-rasp__1"></div>
         <div class="menu-buble menu-rasp__2"></div>
     </div>
+
 </section>
 
 <footer class="footer">
@@ -298,19 +313,21 @@
                 <div class="footer-title">
                     Folge deinem Durst
                 </div>
-                <ul class="footer-social">
-                    <li><a class="social social-facebook" href="#"></a></li>
-                    <li><a class="social social-instagram" href="#"></a></li>
-                    <li><a class="social social-linkedin" href="#"></a></li>
-                </ul>
-                <div class="footer-newslatter">
-                    <div class="gutten-newstlatter__title">
-                        Allerfeinster Newsletter
+                <div class="footer-socmain">
+                    <ul class="footer-social">
+                        <li><a class="social social-facebook" href="#"></a></li>
+                        <li><a class="social social-instagram" href="#"></a></li>
+                        <li><a class="social social-linkedin" href="#"></a></li>
+                    </ul>
+                    <div class="footer-newslatter">
+                        <div class="gutten-newstlatter__title">
+                            Allerfeinster Newsletter
+                        </div>
+                        <from class="gutten-newslatter__form">
+                            <input type="text" class="gutten-input" placeholder="Deine Email">
+                            <button class="gutten-button">Anmelden</button>
+                        </from>
                     </div>
-                    <from class="gutten-newslatter__form">
-                        <input type="text" class="gutten-input" placeholder="Deine Email">
-                        <button class="gutten-button">Anmelden</button>
-                    </from>
                 </div>
             </div>
         </div>

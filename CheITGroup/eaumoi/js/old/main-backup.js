@@ -5,7 +5,7 @@ $( document ).ready(function() {
     });
 
     /* custom change cursor hover buble */
-    $('.bg-head').on("mousemove", function(e) {
+    $('.bublle-wiewasser').on("mousemove", function(e) {
         var offsetBubller = $('.bublle-wiewasser').offset();
         mouseX2 = e.pageX - offsetBubller.left;
         mouseY2 = e.pageY - offsetBubller.top;
@@ -16,11 +16,7 @@ $( document ).ready(function() {
             top: mouseY2
         });
 
-    })
-    if ($(".bublle-wiewasserx").length) {
-        $('.cursor--canvas, .cursor--small').addClass('active');
-    }
-    $('.bublle-wiewasser').on("mouseenter", function(e) {
+    }).on('mouseenter', function () {
         $('.cursor--canvas, .cursor--small').addClass('active');
     }).on('mouseleave', function () {
         $(".cursor--canvas, .cursor--small").removeClass("active");
@@ -50,97 +46,152 @@ $( document ).ready(function() {
         $(".entweder-cursor, .cursor--canvas").removeClass("active");
     });
 
-    $('.header, .aktion-box').on("mousemove", function(e) {
+    $('.header').on("mousemove", function(e) {
         $('.wiewasser-cursor').css({
             opacity: 0,
         });
-        $('.cursor--canvas, .cursor--small').removeClass('active');
     })
 
-    if($(".bg-head").length) {
-        gsap.registerPlugin(ScrollTrigger);
 
-        const timelineBubble = gsap.timeline({
-            defaults: {
-                autoAlpha: 1,
+    gsap.registerPlugin(ScrollTrigger);
+
+    const timelineBubble = gsap.timeline({
+        defaults: {
+            autoAlpha: 1,
+        },
+        scrollTrigger: {
+            trigger: ".bublle-wiewasser",
+            start: "100% 100%",
+            end: "100% 50%",
+            scrub: 1,
+            pinSpacing: false,
+            onLeave: function() {
+                $(".wiewasser-cursor").addClass('nomouse');
+                gsap.to(".wiewasser-cursor", {
+                    top: '137%',
+                    left: '4%',
+                    duration: 1,
+                });
+                $(".bublle-cir__1").css({
+                    left: '92%',
+                    top: '118%',
+                }).addClass('no-animation');
+                $(".bublle-cir__2").css({
+                    right: '3%',
+                    top: '130%',
+                }).addClass('no-animation');
+                $(".bublle-cir__3").css({
+                    right: '93%',
+                    top: '102%',
+                }).addClass('no-animation');
+                $(".bublle-cir__4").css({
+                    right: '75%',
+                    top: '141%'
+                }).addClass('no-animation');
             },
-            scrollTrigger: {
-                trigger: ".bg-head",
-                start: "0",
-                end: "70% bottom",
-                //markers: true,
-                scrub: 10,
-                pinSpacing: false,
-                onLeave: function() {
-                    $(".wiewasser-cursor").addClass('nomouse');
-                    $('.cursor--canvas, .cursor--small').removeClass('active');
-
-                    gsap.to(".wiewasser-cursor", {
-                        top: '177%',
-                        left: '4%',
-                        duration: 1,
-                    });
-                },
-                onEnterBack: function() {
-                    /*
-                    let positionT = parseInt($('.entweder-cursor').css('top'));
-                    let positionL = parseInt($('.entweder-cursor').css('left'));
-                    let offsetScr = $(window).scrollTop();
-                    gsap.to(".wiewasser-cursor", {
-                        top: positionT+offsetScr,
-                        left: positionL,
-                        duration: .5,
-                        onComplete: function () {
-                        }
-                    }); */
-
-                    $(".wiewasser-cursor").removeClass('nomouse');
-                    $('.cursor--canvas, .cursor--small').addClass('active');
-
-                },
-                onUpdate: function(e) {
-                    let positionT = parseInt($('.entweder-cursor').css('top'));
-                    let positionL = parseInt($('.entweder-cursor').css('left'));
-                    let offsetScr = $(window).scrollTop();
-                    gsap.to(".wiewasser-cursor:not(.nomouse)", {
-                        top: positionT+offsetScr,
-                        left: positionL,
-                        duration: 0
-                    });
-                    $('.cursor--canvas, .cursor--small').addClass('active');
-                }
+            onEnterBack: function() {
+                /*
+                let positionT = parseInt($('.entweder-cursor').css('top'));
+                let positionL = parseInt($('.entweder-cursor').css('left'));
+                let offsetScr = $(window).scrollTop();
+                gsap.to(".wiewasser-cursor", {
+                    top: positionT+offsetScr,
+                    left: positionL,
+                    duration: .5,
+                    onComplete: function () {
+                    }
+                }); */
+                $(".wiewasser-cursor").removeClass('nomouse');
+                $(".bublle-cir__1").css({
+                    left: '5%',
+                    top: '50%'
+                }).removeClass('no-animation');
+                $(".bublle-cir__2").css({
+                    right: '7%',
+                    top: '50%',
+                }).removeClass('no-animation');
+                $(".bublle-cir__3").css({
+                    right: '24%',
+                    top: '50%',
+                }).removeClass('no-animation');
+                $(".bublle-cir__4").css({
+                    right: '-3%',
+                    top: '50%',
+                }).removeClass('no-animation');
+            },
+            onUpdate: function(e) {
+                let positionT = parseInt($('.entweder-cursor').css('top'));
+                let positionL = parseInt($('.entweder-cursor').css('left'));
+                let offsetScr = $(window).scrollTop();
+                gsap.to(".wiewasser-cursor:not(.nomouse)", {
+                    top: positionT+offsetScr,
+                    left: positionL,
+                    duration: 0
+                });
             }
-        });
+        }
+    });
 
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".bg-head",
-                pin: ".title-wiewasser",
-                start: 0,
-                end: "80% bottom",
-                scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                //markers: true,
-                snap: {
-                    snapTo: 1/2, // snap to the closest label in the timeline
-                }
-            }
-        });
 
-        // add animations and labels to the timeline
-        tl.to(".title-wiewasser__tofrom1", {
+    let titleAnim = gsap.timeline()
+        // .to(".title-wiewasser__tofrom1", {
+        //     yPercent: -100,
+        //     scale: 0.5,
+        //     ease: "slow",
+        // }, "+=1%")
+        // .to(".title-wiewasser__tofrom2", {
+        //     yPercent: -100,
+        //     scale: 1,
+        //     ease: "slow",
+        // },"<-10%")
+        // .to(".title-wiewasser__tofrom2", {
+        //     yPercent: -200,
+        //     scale: 0.5,
+        //     ease: "slow",
+        // },"-=70%")
+
+        // .to(".title-wiewasser__tofrom1", {
+        //     opacity: 0,
+        // }, ".title-wiewasser__tofrom2-=2")
+        // .to(".title-wiewasser__tofrom2", {
+        //     opacity: 1,
+        // }, ".title-wiewasser__tofrom1-=2")
+        //.to(".title-wiewasser__tofrom2", {
+        //    opacity: 0,
+        //}, ".title-wiewasser__tofrom1-=1.2")
+
+        .to(".title-wiewasser__tofrom1", 1, {
             opacity: 0,
         })
-        .to(".title-wiewasser__tofrom2", {
+        .to(".title-wiewasser__tofrom2", 2, {
             opacity: 1,
-        })
-        .to(".title-wiewasser__tofrom2", {
+        }, "-=50%")
+        .to(".title-wiewasser__tofrom2", 2, {
             opacity: 0,
-        })
-        .to(".wasser-aroma", {
-            opacity: 1,
-            duration: 0.5,
-        })
-    }
+        }, "-=30%")
+
+    ScrollTrigger.create({
+        // trigger: ".bublle-wiewasser",
+        // endTrigger: '.title-wiewasser__tofrom1',
+        // pin: ".title-wiewasser",
+        // animation: titleAnim,
+        // anticipatePin: 1,
+        // fastScrollEnd: false,
+        // pinSpacing: false,
+        // start: 'top top',
+        // end: "+=200%",
+        // scrub: true,
+
+        animation: titleAnim,
+        trigger: ".section-trigger",
+        start: "100% 100%",
+        end: "100% 50%",
+        scrub: 1,
+        //pin: ".title-wiewasser",
+        anticipatePin: 1,
+        pinSpacing: false,
+        //markers: true,
+    })
 
 
 
@@ -189,9 +240,7 @@ $( document ).ready(function() {
 
     /* animation */
     AOS.init({
-        once: true,
-        duration: 1500,
-        offset: 50,
+        once: true
     });
 
     $('.wie-rating__num').each(function () {
@@ -231,11 +280,11 @@ $( document ).ready(function() {
             slidesPerView: "auto",
             //freeMode: true,
             spaceBetween: 50,
-            // autoplay: {
-            //     delay: 0,
-            //     disableOnInteraction: false,
-            //     pauseOnMouseEnter: true,
-            // },
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
             speed: 7000,
             loopPreventsSlide: false,
             freeModeMomentum: false,
@@ -315,7 +364,7 @@ $( document ).ready(function() {
     }
 
     if ($(".wasser-banner").length) {
-        var wasserBanner = $(".wasser-banner").offset().top + 200;
+        var wasserBanner = $(".wasser-banner").offset().top / 1.25;
         $(window).scroll(function () {
             if ($(window).scrollTop() >= wasserBanner) {
                 $(".wasser-banner").addClass("fadeout");
@@ -440,75 +489,61 @@ $( document ).ready(function() {
         $("html, body, .warenkorb-basket").removeClass("ov-hidden");
     });
 
-    function zumshopSlider1() {
-        var zumshopSlider1 = new Swiper('.zumshop-slider', {
-            loop: true,
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 0,
-        });
-    }
-    function zumshopSlider2() {
-        var zumshopSlider2 = new Swiper('.zumshop-slider', {
-            loop: true,
-            autoplay: {
-                delay: 1000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            speed: 500,
-            grabCursor: true,
-            slidesPerView: "auto",
-            centeredSlides: true,
-            spaceBetween: 0,
-            loopPreventsSlide: false,
-            freeModeMomentum: false,
-            freeMode: {
-                enabled: true,
-                momentum: false,
-            },
-            pagination: {
-                el: ".zumshop-dots",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".zumshop-next",
-                prevEl: ".zumshop-prev",
-            },
-            effect: 'creative',
-            creativeEffect: {
-                prev: {
-                    translate: ['-70%', 0, 0],
-                    rotate: [0, 0, -15],
-                    scale: .85,
-                    origin: `50% 100%`,
-                },
-                next: {
-                    translate: ['70%', 0, 0],
-                    rotate: [0, 0, 15],
-                    scale: .85,
-                    origin: `50% 100%`
-                },
-                perspective: false,
-                limitProgress: 6,
-                progressMultipler: 1,
-                //transformEl: '.item'
-            },
-        });
-    }
+
 
 
     $(window).on('load resize', function () {
         if ($(window).width() <= 767) {
-            zumshopSlider1();
-
+            const zumshopSlider1 = new Swiper('.zumshop-slider', {
+                loop: true,
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 0,
+            });
             $(".zumshop-slick__item").each(function() {
                 $(this).css({
                     "background": $(this).data('bg')
                 });
             });
         } else {
-            zumshopSlider2();
+            const zumshopSlider2 = new Swiper('.zumshop-slider', {
+                loop: true,
+                // autoplay: {
+                //     delay: 0,
+                //     disableOnInteraction: false,
+                //     pauseOnMouseEnter: true,
+                // },
+                speed: 10000,
+                grabCursor: true,
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 0,
+                loopPreventsSlide: false,
+                freeModeMomentum: false,
+                freeMode: {
+                    enabled: true,
+                    momentum: false,
+                },
+                effect: 'creative',
+                creativeEffect: {
+                    prev: {
+                        translate: ['-70%', 120, 0],
+                        rotate: [0, 0, -15],
+                        scale: .85,
+                        origin: `50% 100%`
+                    },
+                    next: {
+                        translate: ['70%', 120, 0],
+                        rotate: [0, 0, 15],
+                        scale: .85,
+                        origin: `50% 100%`
+                    },
+                    perspective: false,
+                    limitProgress: 6,
+                    progressMultipler: 1,
+                    //transformEl: '.item'
+                },
+            });
 
             $(".zumshop-slick__item").mouseout(function() {
                 $(this).css("background", "transparent");
@@ -745,23 +780,7 @@ $( document ).ready(function() {
     $('.wasserhahn-body').scrollLeft(52);
     $('.fruchtepuree-main').scrollLeft(52);
 
-    $(".navigation-page").css({
-       "display": "block"
-    });
 
-    $(window).scroll(function() {
-        if($(this).scrollTop() != 0) {
-            $('.button-arrtop').fadeIn();
-        } else {
-            $('.button-arrtop').fadeOut();
-        }
-    });
-
-    $('.button-arrtop').click(function() {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 2000);
-    });
 });
 
 $(".product-maskload").addClass("load");

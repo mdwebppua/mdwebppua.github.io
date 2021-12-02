@@ -7,13 +7,15 @@
 
             <a class="header-shop" href="page-shop.php">Shop</a>
 
-            <ul class="shop-nav">
-                <li><a href="#">SORTEN</a></li>
-                <li><a href="#probierpaket">PROBIERPAKET</a></li>
-                <li><a href="#flaschen">FLASCHEN</a></li>
-                <li><a href="#geschenk">GESCHENKE</a></li>
-                <li><a href="#abo">ABO</a></li>
-            </ul>
+            <div class="shop-navlist">
+                <ul class="shop-nav">
+                    <li><a href="#">SORTEN</a></li>
+                    <li><a href="#probierpaket">PROBIERPAKET</a></li>
+                    <li><a href="#flaschen">FLASCHEN</a></li>
+                    <li><a href="#geschenk">GESCHENKE</a></li>
+                    <li><a href="#abo">ABO</a></li>
+                </ul>
+            </div>
 
             <ul class="user-box">
                 <li><a class="open-basket link" href="#!"><i class="ico-basket"></i></a></li>

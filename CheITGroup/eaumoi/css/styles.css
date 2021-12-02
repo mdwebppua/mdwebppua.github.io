@@ -2808,7 +2808,7 @@ body.page-shop .header-shop {
 .als-geschenk {
     padding: 120px 0;
 }
-.als-geschenk .container {
+.geschenk-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2816,6 +2816,7 @@ body.page-shop .header-shop {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin: 0 auto;
 }
 .geschenk-info {
     max-width: 443px;
@@ -3311,7 +3312,7 @@ html.ov-hidden{
     -webkit-transition: 2s;
     -o-transition: 2s;
     transition: 2s;
-    z-index: 99;
+    z-index: 510;
     width: 100%;
     height: 100%;
     display: -webkit-box;
@@ -7599,12 +7600,17 @@ textarea {
         margin: 45px 0 0 0;
         margin-left: inherit;
     }
-    body.page-shop .shop-nav {
+    body.page-shop .shop-navlist {
+        overflow: auto;
+        width: 100%;
         position: absolute;
         top: -59px;
         background: #0D2330;
         color: #fff;
         left: 0;
+    }
+    body.page-shop .shop-nav {
+        width: 580px;
     }
     .shop-nav li a {
         color: #fff;
@@ -7617,7 +7623,7 @@ textarea {
         font-weight: 500;
     }
     .shop-nav li {
-        margin: 0 10px;
+        margin: 0 10px 0 25px;
     }
     #gutschein-lottie {
         width: 1000px;
@@ -7628,6 +7634,9 @@ textarea {
     }
 
     /* page shop 416px */
+    body.page-shop {
+        padding: 0 0 115px 0;
+    }
     .kostliche-aromen {
         padding: 63px 0 135px 0;
     }
@@ -7692,4 +7701,44 @@ textarea {
     .probierpaket-sale .aromen-item {
         margin: 0 auto;
     }
+    .entweder-flotte__container {
+        padding: 162px 0 100px 0;
+    }
+    .entweder-flotte .entweder-main {
+    }
+    .entweder-flotte  .entweder-list {
+        margin: 110px 0 0 0;
+    }
+    .entweder-flotte .firmen-footer {
+        display: none;
+    }
+    .als-geschenk {
+        padding: 55px 0;
+    }
+    .geschenk-main {
+        flex-direction: column;
+    }
+    .geschenk-description {
+        margin: 23px 0 0 0;
+    }
+    .geschenk-wrapper {
+        overflow: auto;
+        margin: 80px 0 0 0;
+    }
+    .geschenk-sale {
+        width: 600px;
+    }
+    .das-kostlichste {
+        padding: 86px 0 87px 0;
+    }
+    .das-kostlichste .trink-info {
+        margin: 7px 0 0 0;
+    }
+    .shop-schmeckt {
+        padding: 69px 0 156px;
+    }
+    .shop-navlist {
+        overflow: auto;
+    }
+
 }

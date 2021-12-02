@@ -314,108 +314,110 @@
             <div class="flotte-description">
                 Immer dabei. Bereit für den nächsten Schluck. Ohne die Umwelt zu belasten. Personalisiere sie, damit sie dir niemand schnappt. Und nimm das Sieb, wenn du es gefiltert lieber magst. Für dein Wasser mit Geschmack in der Flasche.
             </div>
-            <div class="entweder-list">
-                <div class="entweder-item">
-                    <div class="entweder-body">
-                        <div class="entweder-item__img">
-                            <img src="img/entweder_1.png" alt="">
-                            <div class="entweder-perso">
-                                <div class="entweder-perso__text">
-                                    PERSO-NALISIERBAR!
+            <div class="entweder-main swiper">
+                <div class="entweder-list swiper-wrapper">
+                    <div class="entweder-item swiper-slide">
+                        <div class="entweder-body">
+                            <div class="entweder-item__img">
+                                <img src="img/entweder_1.png" alt="">
+                                <div class="entweder-perso">
+                                    <div class="entweder-perso__text">
+                                        PERSO-NALISIERBAR!
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="entweder-item__name">
-                            Edelstahlflasche
-                        </div>
-                        <div class="entweder-item__tag">
-                            hält dein Getränk warm oder kalt
-                        </div>
-                    </div>
-                    <div class="entweder-item_buyer">
-                        <div class="ntweder-item__price">
-                            CHF 1.25
-                        </div>
-                        <div class="ntweder-item__numform">
-                            <form action="#" class="ntweder-form">
-                                <div class="ntweder-type">
-                                    <button class="ntweder-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="ntweder-input productCount" min="0">
-                                    <button class="ntweder-pluse productCountUp">+</button>
-                                </div>
-                                <div class="ntweder-button">
-                                    <button class="ntweder-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="entweder-item">
-                    <div class="entweder-body">
-                        <div class="entweder-item__img person">
-                            <img src="img/entweder_2.png" alt="">
-                            <div class="entweder-perso">
-                                <div class="entweder-perso__text">
-                                    text testing test
-                                </div>
+                            <div class="entweder-item__name">
+                                Edelstahlflasche
+                            </div>
+                            <div class="entweder-item__tag">
+                                hält dein Getränk warm oder kalt
                             </div>
                         </div>
-                        <div class="entweder-item__name">
-                            Glasflasche
-                        </div>
-                        <div class="entweder-item__tag">
-                            mit Bügelverschluss
+                        <div class="entweder-item_buyer">
+                            <div class="ntweder-item__price">
+                                CHF 1.25
+                            </div>
+                            <div class="ntweder-item__numform">
+                                <form action="#" class="ntweder-form">
+                                    <div class="ntweder-type">
+                                        <button class="ntweder-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                        <button class="ntweder-pluse productCountUp">+</button>
+                                    </div>
+                                    <div class="ntweder-button">
+                                        <button class="ntweder-submit"></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
 
                     </div>
-                    <div class="entweder-item_buyer">
-                        <div class="ntweder-item__price">
-                            CHF 1.25
-                        </div>
-                        <div class="ntweder-item__numform">
-                            <form action="#" class="ntweder-form">
-                                <div class="ntweder-type">
-                                    <button class="ntweder-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="ntweder-input productCount" min="0">
-                                    <button class="ntweder-pluse productCountUp">+</button>
-                                </div>
-                                <div class="ntweder-button">
-                                    <button class="ntweder-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="entweder-item">
-                    <div class="entweder-body">
-                        <div class="entweder-item__img">
-                            <img src="img/entweder_3.png" alt="">
+                    <div class="entweder-item swiper-slide">
+                        <div class="entweder-body">
+                            <div class="entweder-item__img person">
+                                <img src="img/entweder_2.png" alt="">
+                                <div class="entweder-perso">
+                                    <div class="entweder-perso__text">
+                                        text testing test
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entweder-item__name">
+                                Glasflasche
+                            </div>
+                            <div class="entweder-item__tag">
+                                mit Bügelverschluss
+                            </div>
+
                         </div>
-                        <div class="entweder-item__name">
-                            Edelstahlsieb
-                        </div>
-                        <div class="entweder-item__tag">
-                            für Glasflasche
+                        <div class="entweder-item_buyer">
+                            <div class="ntweder-item__price">
+                                CHF 1.25
+                            </div>
+                            <div class="ntweder-item__numform">
+                                <form action="#" class="ntweder-form">
+                                    <div class="ntweder-type">
+                                        <button class="ntweder-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                        <button class="ntweder-pluse productCountUp">+</button>
+                                    </div>
+                                    <div class="ntweder-button">
+                                        <button class="ntweder-submit"></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <div class="entweder-item_buyer">
-                        <div class="ntweder-item__price">
-                            CHF 1.25
+
+                    <div class="entweder-item swiper-slide">
+                        <div class="entweder-body">
+                            <div class="entweder-item__img">
+                                <img src="img/entweder_3.png" alt="">
+                            </div>
+                            <div class="entweder-item__name">
+                                Edelstahlsieb
+                            </div>
+                            <div class="entweder-item__tag">
+                                für Glasflasche
+                            </div>
                         </div>
-                        <div class="ntweder-item__numform">
-                            <form action="#" class="ntweder-form">
-                                <div class="ntweder-type">
-                                    <button class="ntweder-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="ntweder-input productCount" min="0">
-                                    <button class="ntweder-pluse productCountUp">+</button>
-                                </div>
-                                <div class="ntweder-button">
-                                    <button class="ntweder-submit"></button>
-                                </div>
-                            </form>
+                        <div class="entweder-item_buyer">
+                            <div class="ntweder-item__price">
+                                CHF 1.25
+                            </div>
+                            <div class="ntweder-item__numform">
+                                <form action="#" class="ntweder-form">
+                                    <div class="ntweder-type">
+                                        <button class="ntweder-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="ntweder-input productCount" min="0">
+                                        <button class="ntweder-pluse productCountUp">+</button>
+                                    </div>
+                                    <div class="ntweder-button">
+                                        <button class="ntweder-submit"></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -440,87 +442,91 @@
 
 <section class="als-geschenk" id="geschenk">
     <div class="container">
-        <div class="geschenk-info">
-            <h2 class="wasser-title">
-                <span class="wasser-title__italic">Als</span> Geschenk
-            </h2>
-            <div class="geschenk-description description">
-                Schenke nicht Wein. Schenke lieber Wasser. Aromatisiertes Wasser ohne Zuckerzusatz. Mit nachhaltiger Flasche, 2 x 4 Geschmackssorten und einem Gutschein für 5 weitere Fruchtpürees. Zum Wohl.
+        <div class="geschenk-main">
+            <div class="geschenk-info">
+                <h2 class="wasser-title">
+                    <span class="wasser-title__italic">Als</span> Geschenk
+                </h2>
+                <div class="geschenk-description description">
+                    Schenke nicht Wein. Schenke lieber Wasser. Aromatisiertes Wasser ohne Zuckerzusatz. Mit nachhaltiger Flasche, 2 x 4 Geschmackssorten und einem Gutschein für 5 weitere Fruchtpürees. Zum Wohl.
+                </div>
             </div>
-        </div>
-        <div class="geschenk-sale">
-            <div class="aromen-item geschenk-item" style="background: #CAEEE8;">
-                <div class="entweder-body">
-                    <div class="aromen-item__img">
-                        <img src="img/geschenk-1.jpg" alt="">
-                        <!--
-                        <div class="aromen-perso">
-                            <div class="aromen-perso__text">
-                                PERSO-NALISIERBAR!
+            <div class="geschenk-wrapper">
+                <div class="geschenk-sale">
+                    <div class="aromen-item geschenk-item" style="background: #CAEEE8;">
+                        <div class="entweder-body">
+                            <div class="aromen-item__img">
+                                <img src="img/geschenk-1.jpg" alt="">
+                                <!--
+                                <div class="aromen-perso">
+                                    <div class="aromen-perso__text">
+                                        PERSO-NALISIERBAR!
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                            <div class="aromen-item__name">
+                                Exotische Erfrischung
+                            </div>
+                            <div class="aromen-item__tag">
+                                Ananas • Passionfrucht • Lemongrass
                             </div>
                         </div>
-                        -->
-                    </div>
-                    <div class="aromen-item__name">
-                        Exotische Erfrischung
-                    </div>
-                    <div class="aromen-item__tag">
-                        Ananas • Passionfrucht • Lemongrass
-                    </div>
-                </div>
-                <div class="aromen-item_buyer">
-                    <div class="aromen-item__price">
-                        CHF 1.25
-                    </div>
-                    <div class="aromen-item__numform">
-                        <form action="#" class="aromen-form">
-                            <div class="aromen-type">
-                                <button class="aromen-minus productCountDown">-</button>
-                                <input type="number" value="1" class="aromen-input productCount">
-                                <button class="aromen-pluse productCountUp">+</button>
+                        <div class="aromen-item_buyer">
+                            <div class="aromen-item__price">
+                                CHF 1.25
                             </div>
-                            <div class="aromen-button">
-                                <button class="aromen-submit"></button>
+                            <div class="aromen-item__numform">
+                                <form action="#" class="aromen-form">
+                                    <div class="aromen-type">
+                                        <button class="aromen-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="aromen-input productCount">
+                                        <button class="aromen-pluse productCountUp">+</button>
+                                    </div>
+                                    <div class="aromen-button">
+                                        <button class="aromen-submit"></button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="aromen-item geschenk-item" style="background: #CAEEE8;">
-                <div class="entweder-body">
-                    <div class="aromen-item__img">
-                        <img src="img/geschenk-2.jpg" alt="">
-                        <!--
-                        <div class="aromen-perso">
-                            <div class="aromen-perso__text">
-                                PERSO-NALISIERBAR!
+                    <div class="aromen-item geschenk-item" style="background: #CAEEE8;">
+                        <div class="entweder-body">
+                            <div class="aromen-item__img">
+                                <img src="img/geschenk-2.jpg" alt="">
+                                <!--
+                                <div class="aromen-perso">
+                                    <div class="aromen-perso__text">
+                                        PERSO-NALISIERBAR!
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                            <div class="aromen-item__name">
+                                Exotische Erfrischung
+                            </div>
+                            <div class="aromen-item__tag">
+                                Ananas • Passionfrucht • Lemongrass
                             </div>
                         </div>
-                        -->
-                    </div>
-                    <div class="aromen-item__name">
-                        Exotische Erfrischung
-                    </div>
-                    <div class="aromen-item__tag">
-                        Ananas • Passionfrucht • Lemongrass
-                    </div>
-                </div>
-                <div class="aromen-item_buyer">
-                    <div class="aromen-item__price">
-                        CHF 1.25
-                    </div>
-                    <div class="aromen-item__numform">
-                        <form action="#" class="aromen-form">
-                            <div class="aromen-type">
-                                <button class="aromen-minus productCountDown">-</button>
-                                <input type="number" value="1" class="aromen-input productCount">
-                                <button class="aromen-pluse productCountUp">+</button>
+                        <div class="aromen-item_buyer">
+                            <div class="aromen-item__price">
+                                CHF 1.25
                             </div>
-                            <div class="aromen-button">
-                                <button class="aromen-submit"></button>
+                            <div class="aromen-item__numform">
+                                <form action="#" class="aromen-form">
+                                    <div class="aromen-type">
+                                        <button class="aromen-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="aromen-input productCount">
+                                        <button class="aromen-pluse productCountUp">+</button>
+                                    </div>
+                                    <div class="aromen-button">
+                                        <button class="aromen-submit"></button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -551,7 +557,7 @@
     </div>
 </section>
 
-<section class="wie-schmeckt">
+<section class="wie-schmeckt shop-schmeckt">
     <div class="container">
         <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
             Und? <br>

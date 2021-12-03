@@ -277,7 +277,7 @@ $( document ).ready(function() {
     });
 
     $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
+        if ($(window).width() <= 769) {
             gutscheinLottie.play();
         } else {
             if ($(".ein-gutschein").length) {
@@ -499,7 +499,7 @@ $( document ).ready(function() {
 
 
     $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
+        if ($(window).width() <= 769) {
             zumshopSlider1();
 
             $(".zumshop-slick__item").each(function() {
@@ -546,6 +546,7 @@ $( document ).ready(function() {
     $(".link-load").click(function(e) {
         e.preventDefault();
         $(".page-maskload").addClass("active");
+        $(".header").addClass("mask-active");
         var loadBg = $(this).data('bg');
         $(".page-maskload path").css({
             fill: loadBg
@@ -736,7 +737,7 @@ $( document ).ready(function() {
         }
     }
     $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
+        if ($(window).width() <= 769) {
             entwederMainInit();
         } else {
             entwederMainDestroy();

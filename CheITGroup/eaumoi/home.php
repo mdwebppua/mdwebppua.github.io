@@ -142,58 +142,60 @@
 
 <section class="wasserhahn">
     <div class="container">
-        <div class="wasserhahn-auf">
-            <div class="schritt" data-aos="fade-up">
-                SCHRITT 1
-            </div>
-            <h2 class="wasser-title" data-aos="fade-up">
-                Wasserhahn <span class="wasser-title__italic">auf</span>
-            </h2>
-            <div class="schritt-description" data-aos="fade-up">
-                Einfach perfekt, was da aus deinem Wasserhahn fliesst. Leitungswasser ist das meistgeprüfte Lebensmittel in der Schweiz und gemäss dem Schweizer Fachverband für Wasser mit Abstand das umweltfreundlichste Lebensmittel überhaupt.
+        <div class="wasserhahn-main">
+            <div class="wasserhahn-auf">
+                <div class="schritt" data-aos="fade-up">
+                    SCHRITT 1
+                </div>
+                <h2 class="wasser-title" data-aos="fade-up">
+                    Wasserhahn <span class="wasser-title__italic">auf</span>
+                </h2>
+                <div class="schritt-description" data-aos="fade-up">
+                    Einfach perfekt, was da aus deinem Wasserhahn fliesst. Leitungswasser ist das meistgeprüfte Lebensmittel in der Schweiz und gemäss dem Schweizer Fachverband für Wasser mit Abstand das umweltfreundlichste Lebensmittel überhaupt.
+                </div>
+
+                <div class="wasserhahn-body">
+                    <ul class="wasserhahn-list">
+                        <li class="wasserhahn-item">
+                            <div class="wasserhahn-item__ico">
+                                <img src="img/home/svgico/wasserhahn_1.svg" alt="">
+                            </div>
+                            <div class="wasserhahn-item__text">
+                                kein schweres Schleppen
+                            </div>
+                        </li>
+                        <li class="wasserhahn-item">
+                            <div class="wasserhahn-item__ico">
+                                <img src="img/home/svgico/wasserhahn_2.svg" alt="">
+                            </div>
+                            <div class="wasserhahn-item__text">
+                                natürliches Hahnenwasser
+                            </div>
+                        </li>
+                        <li class="wasserhahn-item">
+                            <div class="wasserhahn-item__ico">
+                                <img width="150" height="150" src="img/home/svgico/wasserhahn_3.svg" alt="">
+                            </div>
+                            <div class="wasserhahn-item__text">
+                                ohne mühsames Entsorgen
+                            </div>
+                        </li>
+                        <li class="wasserhahn-item">
+                            <div class="wasserhahn-item__ico">
+                                <img width="150" height="150" src="img/home/svgico/wasserhahn_4.svg" alt="">
+                            </div>
+                            <div class="wasserhahn-item__text">
+                                kein Pet-Verbrauch
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="wasserhahn-body">
-                <ul class="wasserhahn-list">
-                    <li class="wasserhahn-item">
-                        <div class="wasserhahn-item__ico">
-                            <img src="img/home/svgico/wasserhahn_1.svg" alt="">
-                        </div>
-                        <div class="wasserhahn-item__text">
-                            kein schweres Schleppen
-                        </div>
-                    </li>
-                    <li class="wasserhahn-item">
-                        <div class="wasserhahn-item__ico">
-                            <img src="img/home/svgico/wasserhahn_2.svg" alt="">
-                        </div>
-                        <div class="wasserhahn-item__text">
-                            natürliches Hahnenwasser
-                        </div>
-                    </li>
-                    <li class="wasserhahn-item">
-                        <div class="wasserhahn-item__ico">
-                            <img width="150" height="150" src="img/home/svgico/wasserhahn_3.svg" alt="">
-                        </div>
-                        <div class="wasserhahn-item__text">
-                            ohne mühsames Entsorgen
-                        </div>
-                    </li>
-                    <li class="wasserhahn-item">
-                        <div class="wasserhahn-item__ico">
-                            <img width="150" height="150" src="img/home/svgico/wasserhahn_4.svg" alt="">
-                        </div>
-                        <div class="wasserhahn-item__text">
-                            kein Pet-Verbrauch
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="wasserhahn-buttle">
-            <div class="wasserhahn-buttle__img">
-                <img src="img/wasserhahn_buttle.png" alt="">
+            <div class="wasserhahn-buttle">
+                <div class="wasserhahn-buttle__img">
+                    <img src="img/wasserhahn_buttle.png" alt="">
+                </div>
             </div>
         </div>
     </div>

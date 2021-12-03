@@ -558,7 +558,7 @@
 </section>
 
 <section class="wie-schmeckt shop-schmeckt">
-    <div class="container">
+    <div class="container-xl">
         <h2 class="wasser-title" data-aos="fade-up" data-aos-duration="1000">
             Und? <br>
             <span class="wasser-title__italic">Wie schmeckt’s?</span>

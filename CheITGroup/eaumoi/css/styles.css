@@ -193,8 +193,11 @@ body.page-home {
     background: #fff;
     padding: 5px 0;
 }
+.header.mask-active {
+    opacity: 0;
+}
 .header.menu {
-    z-index: 505;
+    z-index: 525;
     background: none;
 }
 body.page-shop .header.menu {
@@ -340,7 +343,6 @@ body.page-shop .header.menu {
 .bg-head {
     background: #F4F8FF;
     padding: 0 0 125px 0;
-    min-height: 200vh;
 }
 .bublle-wiewasser {
     background: #F4F8FF;
@@ -946,7 +948,7 @@ body.page-shop .header.menu {
 }
 
 .wasserhahn {}
-.wasserhahn .container {
+.wasserhahn-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2416,6 +2418,14 @@ body.page-shop .header.menu {
 body.page-shop {}
 body.page-shop .header {
     background: #fff;
+    transition: 1s;
+}
+.shop-navlist {
+    transition: 1s;
+}
+.header.menu .shop-navlist {
+    opacity: 0;
+    pointer-events: none;
 }
 .shop-nav {
     display: none;
@@ -2848,6 +2858,7 @@ body.page-shop .header-shop {
 .abo-konfigurieren .container {
     max-width: 600px;
 }
+.abo-mobilefirst {}
 .abo-description {
     text-align: center;
 }
@@ -2880,6 +2891,10 @@ body.page-shop .header-shop {
     font-size: 13px;
     font-weight: 500;
     line-height: 1.15384;
+}
+.abo-mobilebutton {
+    text-align: center;
+    display: none;
 }
 .konfigurieren-step {
     margin: 60px 0 0 0;
@@ -3343,7 +3358,8 @@ html.ov-hidden{
 }
 .basket-container {
     background: #C9EDE8;
-    width: 535px;
+    max-width: 535px;
+    width: 100%;
     position: relative;
     z-index: 100;
     overflow: auto;
@@ -4054,7 +4070,9 @@ html.ov-hidden{
 
 /* start css page-product.php */
 .breadcrumb {
-    padding: 138px 0 0 0;
+    padding: 133px 0 0 0;
+    position: relative;
+    z-index: 5;
 }
 .woocommerce-breadcrumb {
     font-size: 16px;
@@ -4088,7 +4106,7 @@ html.ov-hidden{
 .woocommerce-breadcrumb span {}
 
 .product {
-    margin: 25px 0 0 0;
+    margin: 19px 0 0 0;
     position: relative;
 }
 .product .container-xl {
@@ -4096,29 +4114,25 @@ html.ov-hidden{
     z-index: 2;
 }
 
-.product-maskload {
+.product-maskload,
+.product-maskload2 {
     position: absolute;
     top: 60px;
+    left: 0;
     min-width: 1440px;
     width: 100%;
     transition: 2s;
     transform: scale(5);
     pointer-events: none;
+    margin-left: calc((-1440px + 100vw) / 2);
 }
 .product-maskload.active {
     transform: scale(1);
 }
 .product-maskload2 {
-    position: absolute;
-    top: 60px;
-    min-width: 1440px;
-    width: 100%;
     transition: transform 2s, opacity 2s;
-    transform: scale(5);
-    z-index: 500;
+    z-index: 520;
     opacity: 10;
-    pointer-events: none;
-
 }
 .product-maskload2.active {
     transform: scale(1);
@@ -4136,7 +4150,7 @@ html.ov-hidden{
     -webkit-transform: translate(0, 100vh) scale(0);
     -ms-transform: translate(0, 100vh) scale(0);
     transform: translate(0, 100vh) scale(0);
-    z-index: 500;
+    z-index: 520;
 }
 .page-maskload.none {
     display: none;
@@ -4160,7 +4174,9 @@ html.ov-hidden{
     position: relative;
 }
 .product-slider {}
-.product-slider__wrapper {}
+.product-slider__wrapper {
+    align-items: center;
+}
 .product-slider__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4194,6 +4210,10 @@ html.ov-hidden{
 .product-pagination span.swiper-pagination-bullet-active {
     background: #0D2330;
 }
+.product-summary .naturlich-wrapper {
+    display: none;
+}
+.naturlich-wrapper {}
 .product-naturlich {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4201,16 +4221,15 @@ html.ov-hidden{
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    justify-content: space-between;
 }
 .product-naturlich li {
     max-width: calc(100% / 6);
-    width: 100%;
     font-size: 11px;
     line-height: 1.090909;
     font-weight: 500;
     text-align: center;
-    padding: 0 10px;
-    margin: 25px 0 0 0;
+    margin: 19px 0 0 0;
 }
 .product-naturlich__ico {
     width: 50px;
@@ -4233,21 +4252,23 @@ html.ov-hidden{
 
 .product-summary {
     width: 100%;
-    max-width: 505px;
+    max-width: 495px;
 }
 .productfull-title {
     font-size: 40px;
     letter-spacing: -0.48px;
     font-family: 'FarnhamDisplay';
     font-weight: 300;
+
 }
 .productfull-tag {
+    line-height: 1;
 }
 .productfull-price {
     font-size: 25px;
     letter-spacing: -0.3px;
     font-family: 'FarnhamDisplay';
-    margin: 15px 0 0 0;
+    margin: 17px 0 0 0;
     display: flex;
     align-items: center;
 }
@@ -4271,8 +4292,8 @@ html.ov-hidden{
 .productfull-descritpion {
     font-size: 18px;
     line-height: 1.9444;
-    margin: 35px 0 0 0;
-    min-height: 215px;
+    margin: 25px 0 0 0;
+    min-height: 226px;
 }
 .productfull-descritpion b,
 .productfull-descritpion strong {
@@ -4290,7 +4311,7 @@ html.ov-hidden{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 85px 0 0 0;
+    margin: 25px 0 0 0;
 }
 .einzelbeutel-imabo__col {}
 .einzelbeutel-box {
@@ -4411,13 +4432,10 @@ html.ov-hidden{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 45px 0 0 0;
+    margin: 37px 0 0 0;
 }
 .prdetails-thumb {
     display: -webkit-box;
@@ -4428,16 +4446,22 @@ html.ov-hidden{
     justify-content: center;
     max-width: 600px;
     width: 100%;
-    margin: 0 -40px 0 0;
+    margin: 0 -80px 0 0;
+    pointer-events: none;
+    position: relative;
+    z-index: 2;
 }
 .prdetails-thumb img {}
 .prdetails-info {
     max-width: 505px;
     width: 100%;
+    z-index: 5;
+    position: relative;
 }
 .prdetails-info__col {
-    max-width: 670px;
+    max-width: 705px;
     width: 100%;
+    margin: 87px 0 0 0;
 }
 .prdetail-title {
     font-size: 40px;
@@ -4448,7 +4472,7 @@ html.ov-hidden{
     font-size: 16px;
     line-height: 1.875;
     font-weight: normal;
-    margin: 25px 0 0 0;
+    margin: 20px 0 0 0;
 }
 .prdetails-info__col .prdetail-about {
     display: -webkit-box;
@@ -4480,6 +4504,9 @@ html.ov-hidden{
 .das-konnte .wasser-title {
     font-size: 40px;
     text-align: center;
+}
+.konnte-slider {
+
 }
 /* ==================================================== */
 
@@ -6261,7 +6288,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 501;
+    z-index: 521;
     transition: 1s;
     overflow-y: auto;
     overflow-x: hidden;
@@ -6852,7 +6879,20 @@ textarea {
 
     .product-maskload,
     .product-maskload2 {
-        min-height: 1000px;
+        /*min-height: 1000px;*/
+        /*margin-left: auto;*/
+
+        min-height: 960px;
+        margin-left: auto;
+        top: 200px;
+    }
+    .product-full {
+        /*min-height: calc(100vh - 183px);*/
+        /*align-items: center;*/
+
+        min-height: 100vh;
+        align-items: center;
+        margin: -180px 0 0 0;
     }
 }
 @media (max-width: 1299.98px) {
@@ -6866,11 +6906,53 @@ textarea {
     .aktion-ten {
         height: auto;
     }
+    .kleiner-banner {
+        position: relative;
+        bottom: 0;
+        margin: 50px 0 0 auto;
+    }
+    .prinzip-info {
+        margin: 26px 15px 0 0;
+    }
+    .guten-foto {
+        margin: 0 -350px 0 -250px;
+    }
+
+    /* page shop */
+    .product-gallery {
+        max-width: 470px;
+    }
 }
 @media (max-width: 991.98px) {
+    .bublle-wiewasser {
+        height: 500vh;
+    }
     .wiewasser-cursor {
         display: none;
     }
+    .title-wiewasser {
+        font-size: 90px;
+    }
+    .wasserhahn-auf {
+        margin: 0;
+        left: 0;
+        width: auto;
+        max-width: 70%;
+    }
+    .fruchtepuree-buttle {
+        margin: 0 -105px 0 -120px;
+    }
+    .zoomshop {
+        padding: 150px 0;
+    }
+
+    .trink-box {
+        flex-direction: column;
+    }
+    .trink-info {
+        margin: 0;
+    }
+
     .aktion-ten {
         height: 100%;
         padding: 15px;
@@ -6893,17 +6975,71 @@ textarea {
         margin: 0;
         margin-left: auto;
     }
-    .prinzip-info {
-        margin: 26px 15px 0 0;
+
+    .footer-main {
+        flex-wrap: wrap;
+        align-items: baseline;
     }
-    .guten-foto {
-        margin: 0 -350px 0 -250px;
+    .footer-col__1 {
+        width: 100%;
     }
+    .footer-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .footer-nav li {}
+    .footer-col__2 {
+        margin: 50px 0;
+        order: 3;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .footer-paysystem {
+        margin: 35px 0 0 0;
+    }
+
+    /* page shop */
+    .geschenk-main {
+        flex-direction: column;
+    }
+    .geschenk-info {
+        max-width: 100%;
+    }
+    .geschenk-description {
+        margin: 30px 0 0 0;
+    }
+    .geschenk-sale {
+        margin: 80px 0 0 0;
+    }
+    .product-full {
+        flex-direction: column;
+    }
+    .product-gallery {
+        margin: 0 auto;
+    }
+    .product-summary {
+        max-width: 100%;
+        margin: 35px 0 0 0;
+    }
+    .einim-button {
+        width: 100%;
+        margin: 0 0 0 15px;
+    }
+    .keine-banner {
+        overflow-x: auto;
+        overflow-y: none;
+    }
+    .keine-body {
+        width: 1000px;
+    }
+
+
 }
-@media (max-width: 767.98px) {
-    .title-wiewasser {
-        font-size: 90px;
-    }
+@media (max-width: 768.98px) {
+
     .wasser-rasp__1 {
         top: -230px;
     }
@@ -6916,10 +7052,7 @@ textarea {
     .wasserhahn {
         padding: 120px 0 0 0;
     }
-    .wasserhahn-auf {
-        margin: 0;
-        left: 0;
-    }
+
     .zumshop-slider {
         height: auto;
     }
@@ -6993,12 +7126,7 @@ textarea {
     .fruchtepuree-rein {
         margin: 0;
     }
-    .trink-box {
-        flex-direction: column;
-    }
-    .trink-info {
-        margin: 0;
-    }
+
     .kleiner-banner {
         position: relative;
         bottom: 0;
@@ -7007,30 +7135,8 @@ textarea {
     .prinzip-info {
         margin: 26px -215px 0 0;
     }
-    .keine-banner {
-        overflow: scroll;
-    }
-    .keine-body {
-        width: 1000px;
-    }
-    .footer-main {
-        flex-wrap: wrap;
-        align-items: baseline;
-    }
-    .footer-col__1 {
-        width: 100%;
-    }
-    .footer-nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .footer-nav li {}
-    .footer-col__2 {
-        margin: 50px 0;
-        order: 3;
-    }
+
+
     .aktion-gratis {
         flex-direction: column;
         align-items: center;
@@ -7229,13 +7335,16 @@ textarea {
     .wasserhahn {
         padding: 0;
     }
+    .wasserhahn-auf {
+        max-width: 100%;
+    }
     .schritt {
         font-size: 11px;
     }
     .schritt-description {
         margin: 29px 0 0 0;
     }
-    .wasserhahn .container {
+    .wasserhahn-main {
         flex-direction: column;
     }
     .wasserhahn-body {
@@ -7343,6 +7452,13 @@ textarea {
     .zoomshop .button-link {
         font-size: 20px;
         padding: 15px 44px;
+    }
+    .aktion-box.active {
+        display: block;
+        padding: 24px 0;
+    }
+    .aktion-box.closed {
+        display: none;
     }
     .ein-gutschein {
         padding: 90px 0 0 0;
@@ -7703,6 +7819,7 @@ textarea {
     }
     .entweder-flotte__container {
         padding: 162px 0 100px 0;
+        background: none;
     }
     .entweder-flotte .entweder-main {
     }
@@ -7723,7 +7840,7 @@ textarea {
     }
     .geschenk-wrapper {
         overflow: auto;
-        margin: 80px 0 0 0;
+        padding: 80px 0 0 0;
     }
     .geschenk-sale {
         width: 600px;
@@ -7737,8 +7854,151 @@ textarea {
     .shop-schmeckt {
         padding: 69px 0 156px;
     }
-    .shop-navlist {
-        overflow: auto;
+
+    /* page product 416px */
+    .breadcrumb {
+        padding: 21px 0 0 0;
+
+    }
+    .product-maskload,
+    .product-maskload2 {
+        height: 1150px;
+        margin-left: -300px;
+        top: 0;
+    }
+    .product-full {
+        flex-direction: column;
+    }
+    .naturlich-wrapper {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+    }
+    .product-gallery {
+        margin: 51px 0 0 0;
+    }
+    .product-slider__item {
+        height: 282px;
+    }
+    .product-slider__item img {
+        height: 100%;
+        object-fit: contain;
+    }
+    .product-pagination.swiper-pagination-bullets {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        margin: 24px 0 0 0;
+    }
+    .product-gallery .naturlich-wrapper {
+        display: none;
+    }
+    .product-naturlich {
+        width: 600px;
+    }
+    .product-summary {
+        margin: 83px 0 0 0;
+    }
+    .productfull-tag {
+        margin: 3px 0 0 0;
+    }
+    .productfull-descritpion {
+        font-size: 20px;
+        line-height: 1.475;
+        margin: 35px 0 0 0;
+    }
+    .product-summary .naturlich-wrapper {
+        display: block;
+    }
+    .product-naturlich li {
+        margin: 37px 0 0 0;
+    }
+    .einzelbeutel-imabo {
+        flex-direction: column;
+        margin: 116px 0 0 0;
+    }
+    .einim-description {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 5px 0 0 0;
+    }
+    .einzelbeutel-imabo__col .einzelbeutel-box {
+        width: 100%;
+    }
+    .imabo-box:before {
+        display: none;
+    }
+    .imabo-box {
+        border-top: 1px solid #585858;
+        margin: 25px 0 0 0;
+        padding: 25px 0 0 0;
+    }
+    .einim-button {
+        font-size: 15px;
+        width: 100%;
+        margin: 0 0 0 15px;
+    }
+    .einim-abo {
+        font-size: 15px;
+        max-width: 100%;
+    }
+    .product-details {
+        flex-direction: column;
+    }
+    .prdetails-info__col {
+        margin: 62px 0 0 0;
+    }
+    .prdetail-title {
+        font-size: 30px;
+    }
+    .prdetail-about {
+        line-height: 1.375;
+        margin: 0;
+    }
+    .prdetails-info__col .prdetail-about {
+        flex-direction: column;
+    }
+    .prdetails-info__col .prdetail-about__col {
+        width: 100%;
+        margin: 13px 0 9px 0;
+    }
+    .das-auch {
+        margin: 104px 0;
+    }
+    .das-auch .wasser-title {
+        font-size: 30px;
+        line-height: 1.433;
     }
 
+    /* menu 416px */
+    body.page-shop .header.menu {
+        background: #fff;
+    }
+    .navigation-body {
+        margin: 0 0 0 56px;
+    }
+    .navigation-menu li {
+        margin: 0 0 16px 0;
+    }
+    .navigation-menu li a {
+        font-size: 33px;
+    }
+    .navigation-search__input {
+        font-size: 20px;
+    }
+    .navigation-search {
+        margin: 35px 0 0 0;
+        max-width: 181px;
+    }
+    .menu-rasp__1,
+    .menu-rasp__2 {
+        display: none;
+    }
+    .navigation-search__button {
+        width: 17px;
+        height: 15px;
+        margin: -7px 0 0 0;
+        background-size: cover;
+    }
 }

@@ -115,7 +115,7 @@ $( document ).ready(function() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".bg-head",
-                pin: ".title-wiewasser",
+                pin: true,
                 start: 0,
                 end: "80% bottom",
                 scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
@@ -227,15 +227,15 @@ $( document ).ready(function() {
     if ($(".aromen-slider").length) {
         const aromenSlider = new Swiper('.aromen-slider', {
             loop: true,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
             centeredSlides: true,
             slidesPerView: "auto",
-            //freeMode: true,
             spaceBetween: 50,
-            // autoplay: {
-            //     delay: 0,
-            //     disableOnInteraction: false,
-            //     pauseOnMouseEnter: true,
-            // },
+
             speed: 7000,
             loopPreventsSlide: false,
             freeModeMomentum: false,
@@ -762,6 +762,11 @@ $( document ).ready(function() {
         $('body,html').animate({
             scrollTop: 0
         }, 2000);
+    });
+
+    $(".button-abo").click(function(){
+        $(".abo-mobilesecond").fadeIn();
+        $(".abo-mobilefirst").fadeOut();
     });
 });
 

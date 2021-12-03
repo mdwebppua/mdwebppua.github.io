@@ -343,6 +343,7 @@ body.page-shop .header.menu {
 .bg-head {
     background: #F4F8FF;
     padding: 0 0 125px 0;
+    min-height: 200vh;
 }
 .bublle-wiewasser {
     background: #F4F8FF;
@@ -361,6 +362,7 @@ body.page-shop .header.menu {
     text-align: center;
     position: relative;
     line-height: 1;
+    height: 100vh;
 }
 .section-vs {
     height: 500vh;
@@ -1217,7 +1219,7 @@ body.page-shop .header.menu {
 }
 /* slider amy */
 #ct_amy_main1 {
-    ;
+;
 }
 /*end slider amy */
 .zumshop-slider {
@@ -2855,11 +2857,13 @@ body.page-shop .header-shop {
 .abo-konfigurieren {
     padding: 152px 0;
 }
-.abo-konfigurieren .container {
+.abo-container {
     max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
 .abo-mobilefirst {}
-.abo-description {
+.abo-title {
     text-align: center;
 }
 .konfigurieren-list {
@@ -2994,7 +2998,7 @@ body.page-shop .header-shop {
 }
 .konfigurieren-stepcol {
 
-    width: 285px;
+    width: calc(50% - 20px);
     border-radius: 6px;
     background: #F4F8FF;
     padding: 30px 15px 30px 30px;
@@ -3125,7 +3129,6 @@ body.page-shop .header-shop {
     background: #F4F8FF;
     padding: 20px 40px 0 40px;
     position: relative;
-    overflow: hidden;
 }
 .bittle-wahle__title {
     font-weight: bold;
@@ -3244,9 +3247,14 @@ body.page-shop .header-shop {
     position: relative;
     top: 0;
 }
-.warenkorb-info {
+.warenkorb-inside {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.warenkorb-info {
 }
 .warenkorb-name {
     font-family: 'FarnhamDisplay';
@@ -7249,6 +7257,9 @@ textarea {
     .header.active {
         padding: 12px 0;
     }
+    body.page-shop .header-shop {
+        /*display: block;*/
+    }
     .logo-top {
         max-width: 106px;
     }
@@ -8000,5 +8011,85 @@ textarea {
         height: 15px;
         margin: -7px 0 0 0;
         background-size: cover;
+    }
+
+    /* page abo */
+    .abo-konfigurieren {
+        padding: 21px 0 100px 0;
+    }
+    .abo-mobilefirst {
+        padding: 70px 0 0 0;
+    }
+    .abo-title {
+        font-size: 60px;
+        line-height: 1.0833;
+    }
+    .konfigurieren-list {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 57px 0 0 0;
+    }
+    .konfigurieren-item {
+        text-align: center;
+        width: calc(100% / 3);
+        margin: 0 0 27px 0;
+    }
+    .konfigurieren-item__name {
+        margin: 6px 0 0 0;
+    }
+    .abo-mobilesecond {
+        display: none;
+    }
+    .abo-mobilebutton {
+        display: block;
+        margin: 50px 0 0 0;
+    }
+    .konfigurieren-step {
+        margin: 0;
+    }
+    .konfigurieren-stepline li a span {
+        top: 43px;
+    }
+    .konfigurieren-tab {
+        margin: 81px 0 0 0;
+    }
+    .konfigurieren-body {
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .konfigurieren-stepcol {
+        width: 100%;
+        padding: 15px 23px 12px 23px;
+        margin: 0 0 14px 0;
+    }
+    .konfigurieren-steptype {
+        margin: 27px 0 0 0;
+    }
+    .konfigurieren-trinkst {
+        margin: 10px 0 0 0;
+    }
+    .konfigurieren-button {
+        margin: 25px 0 0 0;
+    }
+    .konfigurieren-button button.button-link {
+        padding: 15px 36px;
+    }
+
+    /* step 2 */
+    .bittle-wahle {
+        padding: 20px 23px 0 23px;
+    }
+    .warenkorb-statusbar {
+        margin: 14px 0;
+    }
+    .warenkorb-name {
+        font-size: 20px;
+    }
+    .warenkorb-inside {
+        flex-direction: column;
+        align-items: normal;
+    }
+    .warenkorb-current {
+        margin-left: auto;
     }
 }

@@ -1101,6 +1101,10 @@ body.page-shop .header.menu {
     margin: 0 -24px 0 -24px;
     overflow: auto;
 }
+.fruchtepuree-main::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
 .fruchtepuree-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3211,6 +3215,9 @@ body.page-shop .header-shop {
 }
 .warenkorb-thumb {
     position: relative;
+    max-width: 47px;
+    width: 100%;
+    height: 90px;
 }
 .warenkorb-thumb img {
     position: relative;
@@ -3249,7 +3256,7 @@ body.page-shop .header-shop {
 }
 .warenkorb-inside {
     width: 100%;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -5818,6 +5825,52 @@ body .fullpost-wasser__aus {
     width: 100%;
     margin: 0 auto;
 }
+.vimeo-full-width {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1010;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s opacity, .3s visibility;
+    -moz-transition: .3s opacity, .3s visibility;
+    -ms-transition: .3s opacity, .3s visibility;
+    -o-transition: .3s opacity, .3s visibility;
+    transition: .3s opacity, .3s visibility;
+    background: #0D2330;
+}
+.open-video .vimeo-full-width {
+    opacity: 1;
+    visibility: visible;
+}
+.vimeo-full-width video {
+    width: 100%;
+    height: 100%;
+}
+.close-video {
+    display: block;
+    background: url("../img/close-video.svg") no-repeat center, #0D2330;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    background-size: cover;
+    border: none;
+}
+.close-video:hover {
+    transform: rotate(360deg);
+}
+body.open-video {
+    overflow: hidden;
+}
 
 .alles-begann {
     background: #FAFAFA;
@@ -5854,9 +5907,11 @@ body .fullpost-wasser__aus {
 }
 
 .das-team {
+    margin: -180px 0 0 0;
+}
+.team-body {
     background: #F4F8FF;
 }
-.team-body {}
 .team-title {
     font-size: 50px;
 }
@@ -7362,6 +7417,10 @@ textarea {
         margin: 0 -24px 0 -24px;
         overflow: auto;
     }
+    .wasserhahn-body::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
     .wasserhahn-list {
         margin: 45px 0 0 0;
         width: 520px;
@@ -8082,6 +8141,12 @@ textarea {
     .warenkorb-statusbar {
         margin: 14px 0;
     }
+    .warenkorb-short {
+        align-items: start;
+        margin: 0 -23px;
+        padding: 21px 23px 20px 23px;
+        border-bottom: 1px solid #DBDEE7;
+    }
     .warenkorb-name {
         font-size: 20px;
     }
@@ -8090,6 +8155,20 @@ textarea {
         align-items: normal;
     }
     .warenkorb-current {
+        margin: 21px 0 0 auto;
         margin-left: auto;
+    }
+    .warenkorb-price {
+        font-size: 14px;
+        line-height: 1;
+    }
+    .warenkorb-input {
+        font-size: 17px;
+    }
+    .konfigurieren-step3 {
+        padding: 7px 0 15px 0;
+    }
+    .konfigurieren-total {
+        padding: 7px 0 12px 0;
     }
 }

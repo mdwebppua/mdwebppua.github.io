@@ -247,10 +247,9 @@
             <div class="abvideo-body entweder-body">
                 <img src="img/about/about-3.jpg" alt="">
             </div>
-
-
         </div>
     </div>
+
     <div class="firmen-footer">
         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1439.699" height="95.579" viewBox="0 0 1439.699 95.579"><defs><clipPath id="a"><rect x="566" y="51" width="1439.699" height="95.579" fill="none"/></clipPath></defs><g transform="translate(-566 -51)" clip-path="url(#a)" style="isolation:isolate"><path d="M112.635,87.658s95.547-50.906,308.7-49.817S773.1,86.073,1005.358,84.418,1466.758-1.624,1843.342.024,2277.7,84.418,2277.7,84.418s-7.547,56.2-31.612,55.981S0,146.579,0,146.579Z" transform="translate(2277.699 146.579) rotate(180)" fill="#fff"/></g></svg>
     </div>
@@ -297,6 +296,19 @@
 </section>
 
 <section class="das-team">
+    <div class="firmen-footer">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1438.699" height="189.688" viewBox="0 0 1438.699 189.688">
+            <defs>
+                <clipPath id="team-path">
+                    <rect x="619" width="1438.699" height="189.688" fill="none"/>
+                </clipPath>
+            </defs>
+            <g transform="translate(-619)" clip-path="url(#team-path)" style="isolation: isolate">
+                <path d="M112.635,123.684s95.547,106.859,308.7,104.572S773.1,127.01,1005.358,130.484s461.4,180.613,837.984,177.154S2277.7,130.484,2277.7,130.484s-7.547-117.967-31.612-117.512S0,0,0,0Z" transform="translate(2277.699 307.688) rotate(180)" fill="#f4f8ff"/>
+            </g>
+        </svg>
+    </div>
+
     <div class="team-body">
         <div class="container-xl">
             <div class="wasser-title team-title">
@@ -485,6 +497,25 @@
         </div>
     </div>
 </section>
+
+<div class="vimeo-full-width vimeo-video">
+    <video class="player" controls="controls">
+        <source src="video/eau-moi-h264-acc.mp4" type="video/mp4">
+    </video>
+    <button class="close-video"></button>
+    <div class="controls">
+        <button class="play"><span class="play-icon"></span></button>
+        <button class="mute">mute/unmute</button>
+        <button class="fullscreen">fullscreen</button>
+        <button class="pip">Picture in picture</button>
+        <div class="time">
+            <span class="time--current"></span> / <span class="time--total"></span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+</div>
 
 <?php include 'footer.php'; ?>
 

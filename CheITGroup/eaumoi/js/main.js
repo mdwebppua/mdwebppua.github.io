@@ -115,7 +115,7 @@ $( document ).ready(function() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".bg-head",
-                pin: true,
+                pin: ".title-wiewasser",
                 start: 0,
                 end: "80% bottom",
                 scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
@@ -717,6 +717,43 @@ $( document ).ready(function() {
         $("html, body").removeClass("ov-hidden");
         $(".page-maskload").removeClass("active");
     });
+
+    if ($('.vimeo-video').length > 0) {
+        var video = document.querySelector(".player");
+        var progressBar = document.querySelector('.progress-bar');
+        var progress = document.querySelector('.progress');
+        var tick;
+        var mouse = {x: 0, y: 0};
+
+        $('.abvideo-body').on('click', function () {
+            $('body').addClass('open-video');
+            if (video.paused) {
+                video.play();
+                $('.controls .play').addClass('playing');
+            } else {
+                video.pause();
+                $('.controls .play').removeClass('playing');
+            }
+        });
+
+        $('.player').on('click', function () {
+            if (video.paused) {
+                $(this).closest('.content-video').addClass('content-video-playing');
+                video.play();
+                $('.controls .play').addClass('playing');
+            } else {
+                $(this).closest('.content-video').removeClass('content-video-playing');
+                video.pause();
+                $('.controls .play').removeClass('playing');
+            }
+        });
+
+        $('.close-video').on('click', function () {
+            $('body').removeClass('open-video');
+            video.pause();
+            $('.controls .play').removeClass('playing');
+        });
+    }
 
     /* mobile script */
     var entwederMain = null;

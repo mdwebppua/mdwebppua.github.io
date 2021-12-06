@@ -34,7 +34,7 @@
                     <span class="wasser-title__italic">Sollen wir in</span> <br>
                     Kontakt bleiben?
                 </div>
-            <div class="guten-folgen sollen-folgen">
+            <div class="sollen-folgen">
                 <div class="sollen-newslatter">
                     <div class="gutten-newstlatter__title">
                         Allerfeinster Newsletter

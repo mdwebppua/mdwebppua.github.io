@@ -39,7 +39,8 @@ img {
 }
 input,
 button,
-textarea{
+textarea,
+select {
     outline: none;
     font-family: 'GTWalsheimPro';
 }
@@ -201,7 +202,7 @@ body.page-home {
     background: none;
 }
 body.page-shop .header.menu {
-    z-index: 505;
+    z-index: 525;
     background: none;
 }
 .header-body {
@@ -343,7 +344,6 @@ body.page-shop .header.menu {
 .bg-head {
     background: #F4F8FF;
     padding: 0 0 125px 0;
-    min-height: 200vh;
 }
 .bublle-wiewasser {
     background: #F4F8FF;
@@ -390,6 +390,9 @@ body.page-shop .header.menu {
 }
 
 .section-trigger {
+    height: 200vh;
+}
+.panel-wiewasser {
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -1945,7 +1948,8 @@ body.page-shop .header.menu {
     margin: 120px 0 0 0;
 }
 .wie-item {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     background: #CAEEE8;
     border-radius: 20px 20px 0px 20px;
     font-weight: normal;
@@ -3379,27 +3383,33 @@ html.ov-hidden{
     z-index: 100;
     overflow: auto;
 }
-.warenkorb-head {
+.basket-main {
     background: #F4F8FF;
+}
+.warenkorb-head {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    padding: 24px 0 19px 0;
+}
+.warenkorb-flex {
+    margin-left: auto;
+    width: 50%;
+    display: flex;
     align-items: center;
-    padding: 25px;
 }
 .warenkorb-title {
-    margin: 0 20px 0 20px;
+    margin: 0 0 0 38px;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    letter-spacing: 1.3px;
 }
 .warenkorb-close {
     display: block;
@@ -3422,15 +3432,17 @@ html.ov-hidden{
     transform: rotate(90deg);
 }
 .warenkorb-buttelmax{
-    padding: 25px;
+    padding: 0 29px 50px;
     background: #F4F8FF;
 }
 .warenkorb-buttelbar__title {
     font-size: 12px;
     font-weight: 500;
+    position: relative;
 }
 .warenkorb-buttelbar {
     margin: 5px 0 0 0;
+    position: relative;
 }
 .warenkorb-buttelstatus {
     width: 100%;
@@ -3451,21 +3463,35 @@ html.ov-hidden{
     -o-transition: 0.3s;
     transition: 0.3s;
 }
+.warenkorb-buttelstatus .warenkorb-buttelstatus__ico:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #E27291;
+    position: absolute;
+    right: -5px;
+    top: -4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 .warenkorb-buttelstatus__info {
     font-weight: bold;
-    font-size: 8px;
+    font-size: 12px;
     -webkit-transform: translate(-3%, 3px);
     -ms-transform: translate(-3%, 3px);
     transform: translate(-3%, 3px);
-    position: relative;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     left: 0;
+    position: absolute;
+    bottom: -21px;
 }
 .warenkorb-buttelstatus__info span {}
 .aboshort-header {
-    border-bottom: 1px solid #CED5DD;
     background: #F4F8FF;
 }
 .aboshort-item {
@@ -3473,36 +3499,56 @@ html.ov-hidden{
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #CED5DD;
-    padding: 0 25px 15px 25px;
-    margin: 0 0 15px 0;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    position: relative;
 }
 .aboshort-item:last-child {
     border: none;
     margin: 0;
 }
 .aboshort-header .aboshort-item {
-    border: none;
-    padding: 0 25px 15px 25;
     margin: 0;
 }
+.aboshort-header .aboshort-item:last-child {
+    margin: 0;
+    border: none;
+}
+.aboshort-delete {
+    background: url("../img/close-bezahlung.svg") no-repeat center;
+    max-width: 28px;
+    width: 100%;
+    height: 105px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.aboshort-delete:hover {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 .aboshort-thumb {
-    min-width: 54px;
-    max-width: 54px;
-    height: 62px;
+    max-width: 73px;
+    width: 100%;
+    height: 105px;
     text-align: center;
+    position: relative;
 }
 .aboshort-thumb img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 85px;
 }
 .aboshort-info {
-    width: 100%;
-    margin: 0 0 0 15px;
+    width: calc(100% - 100px);
+    padding: 18px 32px 10px 8px;
 }
 .aboshort-name {
     font-size: 24px;
@@ -3513,6 +3559,8 @@ html.ov-hidden{
 .aboshort-flasche {
     font-size: 13px;
     font-weight: normal;
+    line-height: 1;
+    margin: -4px 0 6px 0;
 }
 .aboshort-flasche a {
     color: #E27291;
@@ -3544,7 +3592,8 @@ html.ov-hidden{
     align-items: center;
 }
 .aboshort-type {
-    margin: 0 20px 0 0;
+    width: 66px;
+    position: relative;
 }
 .aboshort-minus,
 .aboshort-input,
@@ -3555,10 +3604,22 @@ html.ov-hidden{
     border: none;
     text-align: center;
 }
-.aboshort-input {}
+.aboshort-input {
+    width: 66px;
+}
 .aboshort-minus,
 .aboshort-pluse {
-    padding: 0 5px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+}
+.aboshort-minus {
+    left: 0;
+}
+.aboshort-pluse {
+    right: 0;
 }
 .aboshort-button {
     width: 90px;
@@ -3573,7 +3634,8 @@ html.ov-hidden{
     justify-content: space-between;
     font-weight: bold;
     font-size: 15px;
-    padding: 15px 25px;
+    padding: 0 29px 7px 29px;
+    background: #F4F8FF;
 }
 .aboshort-rabattcode {
     display: -webkit-box;
@@ -3585,7 +3647,9 @@ html.ov-hidden{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0 25px 15px 25px;
+    padding: 27px 29px;
+    border-top: 1px solid #CED5DD;
+    position: relative;
 }
 .aboshort-rabattcode__input {
     border-radius: 3px;
@@ -3605,25 +3669,27 @@ html.ov-hidden{
     font-weight: 500;
 }
 .aboshort-rabattcode__button:hover {}
+.basket-totallprice {
+    min-height: 450px;
+}
 .basket-totallist {
-    padding: 15px 25px;
+    padding: 14px 31px 0 29px;
+
 }
 .basket-totalitem {
     font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-weight: normal;
 
 }
 .basket-totalitem__name {
-    width: 25%;
+    width: 50%;
 }
 .basket-totalitem__price {
-    width: 25%;
+    width: 50%;
     text-align: right;
 }
 .basket-totalitem__last {
@@ -3636,7 +3702,7 @@ html.ov-hidden{
     font-weight: 500;
 }
 .basket-buttonbox {
-    padding: 0 25px 15px 25px;
+    margin: 14px 30px 14px 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3653,6 +3719,8 @@ html.ov-hidden{
 
 .aboshort-body {
     background: #F4F8FF;
+    padding: 17px 0 8px 0;
+    border-top: 1px solid #CED5DD;
 }
 
 .warenkorb-deinem {
@@ -3662,6 +3730,7 @@ html.ov-hidden{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 17px 0 0;
 }
 .deinem-leere {
 
@@ -3687,7 +3756,7 @@ html.ov-hidden{
 
 /* start css page-bezahlung.php */
 .bezahlung {
-    padding: 200px 0;
+    padding: 190px 0 161px 0;
 }
 .container-xl {}
 .bezahlung-container {
@@ -3703,6 +3772,7 @@ html.ov-hidden{
     width: 100%;
     font-size: 16px;
     font-weight: normal;
+    margin: 12px 0 0 0;
 }
 .bezahlung-inform {}
 .bezahlung-inform li {
@@ -3718,7 +3788,7 @@ html.ov-hidden{
     font-size: 16px;
     font-weight: normal;
     color: #0D2330;
-    padding: 9px 15px;
+    padding: 9px 13px;
     position: relative;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -3729,23 +3799,28 @@ html.ov-hidden{
     color: #fff;
 }
 .bezahlung-form {
-    margin: 40px 0 0 0;
+    margin: 38px 0 0 0;
 }
 .bezahlung-form__title {
     font-size: 16px;
     font-weight: bold;
+    margin: 0 0 13px 0;
 }
 .bezahlung-type {
-    margin: 20px 0 0 0;
+    margin: 0 0 19px 0;
+    position: relative;
 }
 .bezahlung-type__input {
     border: 1px solid #DBDEE7;
     border-radius: 3px;
     font-size: 16px;
     font-weight: normal;
-    padding: 8px 15px;
+    padding: 11px 17px;
     width: 100%;
     display: block;
+}
+.bezahlung-type__input.bezahlung-req {
+    border-color: #E27291;
 }
 .bezahlung-type__input:focus {}
 .bezahlung-type.dfcol-2 {
@@ -3771,6 +3846,7 @@ html.ov-hidden{
     padding: 8px 15px;
     width: 100%;
     display: block;
+    min-height: 166px;
 }
 .bezahlung-type__checkbox {}
 .bezahlung-type.radio input[type=radio] {
@@ -3845,11 +3921,39 @@ html.ov-hidden{
     border: 1px solid #0D2330;
     background: #fff;
     display: inline-block;
-    margin: 0 10px 0 0;
+    margin: 0 6px 0 0;
 }
 .bezahlung-type.checkbox input[type=checkbox]:checked + label:before {
     background: url("../img/checkbox.svg") no-repeat center, #0D2330;
     background-position: 60% 50%;
+}
+.bezahlung-type__select {
+    display: block;
+    width: 100%;
+}
+.select2-container {
+    display: block;
+    width: 100% !important;
+}
+.select2-container .select2-selection--single {
+
+}
+.select2-container--default .select2-selection--single {
+    color: #0D2330;
+    border: 1px solid #DBDEE7;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    height: 100%;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #0D2330;
+    line-height: 1.375;
+    padding: 11px 17px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 10px;
+    right: 10px;
 }
 
 .bezahlung-deine {
@@ -3905,35 +4009,128 @@ html.ov-hidden{
 
 .bezahlung-listen {
     background: #FCFCFC;
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
+    border-top: 1px solid #F0F2F5;
 }
-.bezahlung-listen .aboshort-item {
-    padding: 15px 10px;
-    margin: 0;
+.bezahlung-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #CED5DD;
 }
-.bezahlung-listen .aboshort-item:nth-child(2n) {
+.bezahlung-thumb {
+    max-width: 73px;
+    width: 100%;
+    height: 105px;
+    text-align: center;
+    position: relative;
+}
+.bezahlung-thumb img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 85px;
+}
+.bezahlung-info {
+    width: calc(100% - 100px);
+    padding: 18px 8px 10px 8px;
+}
+.bezahlung-name {
+    font-size: 24px;
+    font-family: 'FarnhamDisplay';
+    font-weight: 300;
+    line-height: 1.41666;
+}
+.bezahlung-flasche {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1;
+    margin: -4px 0 6px 0;
+}
+.bezahlung-flasche a {
+    color: #E27291;
+    text-decoration: none;
+}
+.bezahlung-rabatt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bezahlung-rabatt__inkl {
+}
+.bezahlung-formprice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.bezahlung-typeprice {
+    width: 66px;
+    position: relative;
+}
+.bezahlung-minus, .bezahlung-input, .bezahlung-pluse {
+    font-weight: 500;
+    font-size: 14px;
+    background: none;
+    border: none;
+    text-align: center;
+}
+.bezahlung-minus,
+.bezahlung-pluse {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: 50%;
+    margin-top: -13px;
+}
+.bezahlung-minus {
+    left: 0;
+}
+.bezahlung-pluse {
+    right: 0;
+}
+.bezahlung-input {
+    width: 66px;
+}
+.bezahlung-button {
+    width: 90px;
+    text-align: right;
+}
+.bezahlung-item:nth-child(2n) {
     background: #fff;
 }
-.aboshort-delete {
+.bezahlung-delete {
     background: url("../img/close-bezahlung.svg") no-repeat center;
-    width: 11px;
-    height: 11px;
+    max-width: 28px;
+    width: 100%;
+    height: 105px;
     border: none;
     cursor: pointer;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    background-size: contain;
-    margin: 0 10px 0 0;
 }
-.aboshort-delete:hover {
+.bezahlung-delete:hover {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-.bezahlung-listen .aboshort-rabatt {
-    font-size: 16px;
-}
+
 .bezahlung-rabattcode {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3941,7 +4138,8 @@ html.ov-hidden{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 35px 0;
+    margin: 39px 0 38px 0;
+    position: relative;
 }
 .bezahlung-rabattcode__input {
     font-weight: normal;
@@ -3950,18 +4148,28 @@ html.ov-hidden{
     border: 1px solid #0D2330;
     background: none;
     width: 100%;
-    max-width: 320px;
-    padding: 0 15px;
+    max-width: 362px;
+    padding: 0 10px;
+    height: 41px;
 }
 .bezahlung-rabattcode__input:focus {}
 .bezahlung-rabattcode__button {
-    height: 40px;
-    width: 120px;
+    height: 41px;
+    width: 111px;
     padding: 0;
     font-size: 14px;
     border-radius: 3px;
 }
 .bezahlung-rabattcode__button:hover {}
+.bezahlung-reqinfo {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #E27291;
+    opacity: 0;
+}
 .bezahlung-total {
     border-bottom: 1px solid #F0F2F5;
     padding: 0 0 30px 0;
@@ -3976,7 +4184,8 @@ html.ov-hidden{
     -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: right;
-    margin: 5px 0 0 0;
+    margin: 0 0 16px 0;
+    line-height: 1;
 }
 .chekout-total__title {
     max-width: 165px;
@@ -3984,7 +4193,7 @@ html.ov-hidden{
 }
 .chekout-total__price {
     text-transform: uppercase;
-    max-width: 135px;
+    max-width: 126px;
     width: 100%;
 }
 .bezahlung-total li.bezahlung-total__zwischensumme {
@@ -4011,11 +4220,11 @@ html.ov-hidden{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 30px 0 0 0;
+    margin: 27px 0 0 0;
 }
 .bezahlung-buylist li .bezahlung-type {
     width: 100%;
-    max-width: 145px;
+    max-width: 160px;
     margin: 0 15px 0 0;
 }
 .bezahlung-buylist li .bezahlung-type.checkbox label {
@@ -4031,7 +4240,8 @@ html.ov-hidden{
 }
 .mit-dieser {
     border-top: 1px solid #F0F2F5;
-    margin: 30px 0 0 0;
+    margin: 42px 0 0 0;
+    padding: 28px 0 0 0;
 }
 .mit-dieser .bezahlung-type.checkbox label {
     font-size: 16px;
@@ -4054,7 +4264,7 @@ html.ov-hidden{
 
 /* start css page-supergemacht.php */
 .supergemacht {
-    padding: 145px 0 170px 0;
+    padding: 215px 0 197px 0;
 }
 .super-gemacht {
     text-align: center;
@@ -4062,7 +4272,8 @@ html.ov-hidden{
 .super-gemacht .wasser-title {
 }
 .super-gemacht .description {
-    margin: 30px 0 0 0;
+    margin: 22px 0 0 0;
+    font-size: 18px;
 }
 .sollen-wir {
     display: -webkit-box;
@@ -4070,16 +4281,21 @@ html.ov-hidden{
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 125px 0 0 0;
+    margin: 130px 0 0 0;
 }
 .sollen-title {
     font-size: 50px;
 }
 .sollen-folgen {
-    margin: 0;
+    width: 100%;
+    max-width: 463px;
+    margin: 15px 0 0 0;
+}
+.sollen-folgen .gutten-newslatter__form {
+    margin: 4px 9px 0 0;
+}
+.sollen-folgen .gutten-social {
+    margin: 19px 0 0 0;
 }
 /* ==================================================== */
 
@@ -6801,8 +7017,8 @@ textarea {
     }
 
     75% {
-        -webkit-transform: translate(1, 1px) scale(1) rotate(-1deg);
-        transform: translate(1, 1px) scale(1) rotate(-1deg)
+        -webkit-transform: translate(1px, 1px) scale(1) rotate(-1deg);
+        transform: translate(1px, 1px) scale(1) rotate(-1deg)
     }
 }
 
@@ -6985,10 +7201,14 @@ textarea {
     .product-gallery {
         max-width: 470px;
     }
+
+    /* page chekout */
+    .bezahlung-sale {
+        margin-right: 30px;
+    }
 }
 @media (max-width: 991.98px) {
     .bublle-wiewasser {
-        height: 500vh;
     }
     .wiewasser-cursor {
         display: none;
@@ -7099,6 +7319,23 @@ textarea {
         width: 1000px;
     }
 
+    /* page chekout */
+    .bezahlung {
+        padding: 100px 0 161px 0;
+    }
+    .bezahlung-sale {
+        margin-right: 0;
+    }
+    .bezahlung-container {
+        flex-direction: column;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bezahlung-deine {
+        max-width: 100%;
+        margin: 66px 0 0 0;
+    }
 
 }
 @media (max-width: 768.98px) {
@@ -7232,7 +7469,7 @@ textarea {
         color: #0D2330;
         font-size: 20px;
         border: 1px solid #0D2330;
-        border-radius: 6px;
+        border-radius: 3px;
         position: relative;
         padding: 15px 35px;
 
@@ -7266,7 +7503,7 @@ textarea {
         color: #fff;
         font-size: 20px;
         border: 1px solid #0D2330;
-        border-radius: 6px;
+        border-radius: 3px;
         position: relative;
         padding: 15px 35px;
         background-image: url("../img/nav-bg-fill-blue.png");
@@ -7390,7 +7627,7 @@ textarea {
     }
     .wasser-rasp__3 {
         width: 168px;
-        bottom: 287px;
+        bottom: 411px;
         left: 149px;
         background-size: contain;
     }
@@ -7678,6 +7915,12 @@ textarea {
     }
     .gutten-social li {
         margin: 0 18px 0 0;
+    }
+    .wie-item {
+        font-weight: 300;
+    }
+    .wie-list .swiper-slide {
+        width: 322px;
     }
     .button-arrtop {}
     .footer {
@@ -8147,6 +8390,10 @@ textarea {
         padding: 21px 23px 20px 23px;
         border-bottom: 1px solid #DBDEE7;
     }
+    .warenkorb-short:last-child {
+        border: none;
+        border-radius: 0 0 6px 6px;
+    }
     .warenkorb-name {
         font-size: 20px;
     }
@@ -8170,5 +8417,89 @@ textarea {
     }
     .konfigurieren-total {
         padding: 7px 0 12px 0;
+    }
+
+    /* page chekout */
+    .bezahlung {
+        padding: 67px 0 161px 0;
+    }
+    .bezahlung-sale {
+        margin: 0;
+    }
+    .bezahlung-inform li {
+        margin: 0 0 6px 0;
+    }
+    .bezahlung-inform li a {
+        padding: 11px 17px;
+    }
+    .bezahlung-form {
+        margin: 39px 0 0 0;
+    }
+    .bezahlung-form__title {
+        margin: 0 0 16px 0;
+    }
+    .bezahlung-type.dfcol-2 {
+        flex-direction: column;
+    }
+    .bezahlung-type.dfcol-2 > div {
+        width: 100%;
+    }
+    .bezahlung-type.dfcol-2 > div:first-child {
+        margin: 0 0 18px 0;
+    }
+    .bezahlung-type {
+        margin: 0 0 15px 0;
+    }
+    .bezahlung-listen {
+        margin: 10px -24px 0 -24px;
+    }
+    .bezahlung-item {
+        padding: 0 24px 0 0;
+    }
+    .bezahlung-info {
+        padding: 18px 0 10px 8px;
+    }
+    .bezahlung-flasche {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .bezahlung-rabattcode {
+        margin: 39px 0 31px 0;
+    }
+    .bezahlung-rabattcode__input {
+        max-width: 224px;
+    }
+    .bezahlung-rabattcode__button {
+        width: 122px;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+    .bezahlung-total {
+        padding: 0 0 11px 0;
+    }
+    .bezahlung-buylist li {
+        margin: 30px 0 0 0;
+    }
+    .bezahlung-type.checkbox label:before {
+        margin: 0 17px 0 0;
+    }
+
+    /* basket modal */
+    .aboshort-rabattcode__input {
+        width: 222px;
+        border-radius: 3px;
+    }
+    .aboshort-rabattcode__button {
+        width: 123px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+    .basket-button {
+        font-size: 15px;
+        width: 100%;
+        display: block;
+        height: 53px;
+        border-radius: 3px;
     }
 }

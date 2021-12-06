@@ -115,13 +115,14 @@ $( document ).ready(function() {
         let tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".bg-head",
+                endTrigger: ".bublle-wiewasser",
                 pin: ".title-wiewasser",
                 start: 0,
-                end: "80% bottom",
+                end: "bottom 0%",
                 scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
                 //markers: true,
                 snap: {
-                    snapTo: 1/2, // snap to the closest label in the timeline
+                    snapTo: 1/2,
                 }
             }
         });
@@ -315,7 +316,7 @@ $( document ).ready(function() {
     }
 
     if ($(".wasser-banner").length) {
-        var wasserBanner = $(".wasser-banner").offset().top + 200;
+        var wasserBanner = $(".wasserhahn").offset().top / 1.25;
         $(window).scroll(function () {
             if ($(window).scrollTop() >= wasserBanner) {
                 $(".wasser-banner").addClass("fadeout");
@@ -323,10 +324,6 @@ $( document ).ready(function() {
             }
         });
     }
-
-
-
-
 
     /* product button count cart */
     $('.productCountDown').on('click', function (e) {
@@ -805,6 +802,8 @@ $( document ).ready(function() {
         $(".abo-mobilesecond").fadeIn();
         $(".abo-mobilefirst").fadeOut();
     });
+
+    $('.select-js').select2();
 });
 
 $(".product-maskload").addClass("load");

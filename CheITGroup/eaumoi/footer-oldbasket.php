@@ -2,43 +2,41 @@
 
 <section class="warenkorb-basket">
     <div class="basket-container">
-        <div class="basket-main">
-            <div class="warenkorb-head">
-                <div class="warenkorb-flex">
-                    <div class="warenkorb-close"></div>
-                    <div class="warenkorb-title">Warenkorb</div>
-                </div>
+        <div class="warenkorb-head">
+            <div class="warenkorb-flex">
+                <div class="warenkorb-close"></div>
+                <div class="warenkorb-title">Warenkorb</div>
             </div>
+        </div>
 
-            <div class="warenkorb-buttelmax">
-                <div class="warenkorb-buttelbar__title">
-                    Mindestbestellmenge 15 Beutel
-                </div>
-                <div class="warenkorb-buttelbar">
-                    <div class="warenkorb-buttelstatus">
-                        <div class="warenkorb-buttelstatus__ico"></div>
-                    </div>
-                    <div class="warenkorb-buttelstatus__info"><span>0</span></div>
-                </div>
+        <div class="warenkorb-buttelmax">
+            <div class="warenkorb-buttelbar__title">
+                Mindestbestellmenge 15 Beutel
             </div>
+            <div class="warenkorb-buttelbar">
+                <div class="warenkorb-buttelstatus">
+                    <div class="warenkorb-buttelstatus__ico"></div>
+                </div>
+                <div class="warenkorb-buttelstatus__info"><span>0</span></div>
+            </div>
+        </div>
 
-            <div class="aboshort-header">
-                <div class="aboshort-item">
-                    <button class="aboshort-delete"></button>
-                    <div class="aboshort-thumb">
-                        <img src="img/aboshort-1.png" alt="">
+        <div class="aboshort-header">
+            <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
+                <div class="aboshort-thumb">
+                    <img src="img/aboshort-1.png" alt="">
+                </div>
+                <div class="aboshort-info">
+                    <div class="aboshort-name">
+                        eau&moi Abo
                     </div>
-                    <div class="aboshort-info">
-                        <div class="aboshort-name">
-                            eau&moi Abo
-                        </div>
-                        <div class="aboshort-flasche">
-                            <a href="#">Abo anpassen</a>
-                        </div>
-                        <div class="aboshort-rabatt">
-                            <div class="aboshort-rabatt__inkl">
-                                inkl. 20% Rabatt
-                            </div>
+                    <div class="aboshort-flasche">
+                        <a href="#">Abo anpassen</a>
+                    </div>
+                    <div class="aboshort-rabatt">
+                        <div class="aboshort-rabatt__inkl">
+                            inkl. 20% Rabatt
                         </div>
                     </div>
                 </div>
@@ -52,80 +50,80 @@
                     CHF 9.90
                 </div>
             </div>
+        </div>
 
-            <div class="aboshort-body">
-                <div class="aboshort-preis">
-                    Bei der 1. Lieferung mit dabei
+        <div class="aboshort-body">
+            <div class="aboshort-preis">
+                Bei der 1. Lieferung mit dabei
+            </div>
+
+            <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
+                <div class="aboshort-thumb">
+                    <img src="img/aboshort-2.png" alt="">
                 </div>
-
-                <div class="aboshort-item">
-                    <button class="aboshort-delete"></button>
-                    <div class="aboshort-thumb">
-                        <img src="img/aboshort-2.png" alt="">
+                <div class="aboshort-info">
+                    <div class="aboshort-name">
+                        Glasflasche
                     </div>
-                    <div class="aboshort-info">
-                        <div class="aboshort-name">
-                            Glasflasche
+                    <div class="aboshort-flasche">
+                        <a href="#">Flasche personalisieren</a>
+                    </div>
+                    <div class="aboshort-rabatt">
+                        <div class="aboshort-rabatt__inkl">
+                            CHF 39.90 / Stk.
                         </div>
-                        <div class="aboshort-flasche">
-                            <a href="#">Flasche personalisieren</a>
-                        </div>
-                        <div class="aboshort-rabatt">
-                            <div class="aboshort-rabatt__inkl">
-                                CHF 39.90 / Stk.
+
+                        <form action="#" class="aboshort-form">
+                            <div class="aboshort-type">
+                                <button class="aboshort-minus productCountDown">-</button>
+                                <input type="number" value="1" class="aboshort-input productCount" min="0" max="20">
+                                <button class="aboshort-pluse productCountUp">+</button>
                             </div>
-
-                            <form action="#" class="aboshort-form">
-                                <div class="aboshort-type">
-                                    <button class="aboshort-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="aboshort-input productCount" min="0" max="20">
-                                    <button class="aboshort-pluse productCountUp">+</button>
-                                </div>
-                                <div class="aboshort-button">
-                                    CHF 39.90
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="aboshort-item">
-                    <button class="aboshort-delete"></button>
-                    <div class="aboshort-thumb">
-                        <img src="img/aboshort-3.png" width="150" height="150" alt="">
-                    </div>
-                    <div class="aboshort-info">
-                        <div class="aboshort-name">
-                            Edelstahlflasche
-                        </div>
-                        <div class="aboshort-flasche">
-                            <a href="#">Flasche personalisieren</a>
-                        </div>
-                        <div class="aboshort-rabatt">
-                            <div class="aboshort-rabatt__inkl">
-                                CHF 34.90 / Stk.
+                            <div class="aboshort-button">
+                                CHF 39.90
                             </div>
-                        </div>
+                        </form>
+
                     </div>
                 </div>
+            </div>
 
-                <div class="aboshort-item">
-                    <button class="aboshort-delete"></button>
-                    <div class="aboshort-thumb">
-                        <img src="img/aboshort-4.png" width="150" height="150" alt="">
+            <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
+                <div class="aboshort-thumb">
+                    <img src="img/aboshort-3.png" width="150" height="150" alt="">
+                </div>
+                <div class="aboshort-info">
+                    <div class="aboshort-name">
+                        Edelstahlflasche
                     </div>
-                    <div class="aboshort-info">
-                        <div class="aboshort-name">
-                            Sieb
+                    <div class="aboshort-flasche">
+                        <a href="#">Flasche personalisieren</a>
+                    </div>
+                    <div class="aboshort-rabatt">
+                        <div class="aboshort-rabatt__inkl">
+                            CHF 34.90 / Stk.
                         </div>
-                        <div class="aboshort-flasche">
-                            <a href="#">Flasche personalisieren</a>
-                        </div>
-                        <div class="aboshort-rabatt">
-                            <div class="aboshort-rabatt__inkl">
-                                CHF 17.40 / Stk.
-                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aboshort-item">
+                <button class="aboshort-delete"></button>
+                <div class="aboshort-thumb">
+                    <img src="img/aboshort-4.png" width="150" height="150" alt="">
+                </div>
+                <div class="aboshort-info">
+                    <div class="aboshort-name">
+                        Sieb
+                    </div>
+                    <div class="aboshort-flasche">
+                        <a href="#">Flasche personalisieren</a>
+                    </div>
+                    <div class="aboshort-rabatt">
+                        <div class="aboshort-rabatt__inkl">
+                            CHF 17.40 / Stk.
                         </div>
                     </div>
                 </div>
@@ -139,48 +137,44 @@
                     CHF 39.90
                 </div>
             </div>
+        </div>
 
+        <div class="aboshort-body">
             <div class="aboshort-rabattcode">
                 <input type="text" class="aboshort-rabattcode__input" placeholder="Hast du einen Rabattcode?">
                 <button class="button-link aboshort-rabattcode__button">anwenden</button>
+            </div>
+        </div>
 
-                <div class="bezahlung-reqinfo">
-                    Dieser Code funktioniert leider nicht, bitte prüfe deine Eingabe!
+        <div class="basket-totallist">
+            <div class="basket-totalitem">
+                <div class="basket-totalitem__name">
+                    Rabatt
+                </div>
+                <div class="basket-totalitem__price">
+                    – CHF 00.00
+                </div>
+            </div>
+            <div class="basket-totalitem">
+                <div class="basket-totalitem__name">
+                    Lieferung gratis
+                </div>
+                <div class="basket-totalitem__price">
+                    CHF 00.00
+                </div>
+            </div>
+            <div class="basket-totalitem basket-totalitem__last">
+                <div class="basket-totalitem__name">
+                    Total <span>inkl. MwSt.</span>
+                </div>
+                <div class="basket-totalitem__price">
+                    CHF 49.80
                 </div>
             </div>
         </div>
 
-        <div class="basket-totallprice">
-            <div class="basket-totallist">
-                <div class="basket-totalitem">
-                    <div class="basket-totalitem__name">
-                        Rabatt
-                    </div>
-                    <div class="basket-totalitem__price">
-                        – CHF 00.00
-                    </div>
-                </div>
-                <div class="basket-totalitem">
-                    <div class="basket-totalitem__name">
-                        Lieferung gratis
-                    </div>
-                    <div class="basket-totalitem__price">
-                        CHF 00.00
-                    </div>
-                </div>
-                <div class="basket-totalitem basket-totalitem__last">
-                    <div class="basket-totalitem__name">
-                        Total <span>inkl. MwSt.</span>
-                    </div>
-                    <div class="basket-totalitem__price">
-                        CHF 49.80
-                    </div>
-                </div>
-            </div>
-
-            <div class="basket-buttonbox">
-                <button class="button-dark basket-button">zur Zahlung</button>
-            </div>
+        <div class="basket-buttonbox">
+            <button class="button-dark basket-button">zur Zahlung</button>
         </div>
 
         <!-- basket empty -->

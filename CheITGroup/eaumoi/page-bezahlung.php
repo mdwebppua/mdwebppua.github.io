@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="page-bezahlung">
@@ -65,10 +66,26 @@
                         </div>
                     </div>
                     <div class="bezahlung-type">
+                        <select class="bezahlung-type__select select-js">
+                            <option>Land</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                        </select>
+                        <div class="bezahlung-reqinfo">
+                            Versand nur innerhalb der Schweiz und nach Liechtenstein
+                        </div>
+                    </div>
+                    <div class="bezahlung-type">
                         <input class="bezahlung-type__input" type="text" placeholder="Telefonnummer*">
+                        <div class="bezahlung-reqinfo">
+                            Bitte prüfe deine Eingabe
+                        </div>
                     </div>
                     <div class="bezahlung-type">
                         <input class="bezahlung-type__input" type="text" placeholder="Email*">
+                        <div class="bezahlung-reqinfo">
+                            Bitte prüfe deine Eingabe
+                        </div>
                     </div>
                     <div class="bezahlung-type checkbox">
                         <input type="checkbox" class="bezahlung-type__checkbox" id="happy" name="happy" checked>
@@ -121,27 +138,26 @@
                     <a href="#">weiter einkaufen</a>
                 </div>
                 <div class="bezahlung-listen">
-                    <div class="aboshort-item">
-                        <div class="aboshort-delete">
+                    <div class="bezahlung-item">
+                        <div class="bezahlung-delete">
                             <i class="fas fa-times"></i>
                         </div>
-                        <div class="aboshort-thumb">
+                        <div class="bezahlung-thumb">
                             <img src="img/aboshort-1.png" alt="">
                         </div>
-                        <div class="aboshort-info">
-                            <div class="aboshort-name">
+                        <div class="bezahlung-info">
+                            <div class="bezahlung-name">
                                 eau&moi Abo
                             </div>
-                            <div class="aboshort-flasche">
+                            <div class="bezahlung-flasche">
                                 <a href="#">Abo anpassen</a>
                             </div>
-                            <div class="aboshort-rabatt">
-                                <div class="aboshort-rabatt__inkl">
+                            <div class="bezahlung-rabatt">
+                                <div class="bezahlung-rabatt__inkl">
                                     inkl. 20% Rabatt
                                 </div>
-                                <form action="#" class="aboshort-form">
-
-                                    <div class="aboshort-button">
+                                <form action="#" class="bezahlung-formprice">
+                                    <div class="bezahlung-button">
                                         CHF 9.00
                                     </div>
                                 </form>
@@ -149,31 +165,31 @@
                         </div>
                     </div>
 
-                    <div class="aboshort-item">
-                        <div class="aboshort-delete">
+                    <div class="bezahlung-item">
+                        <div class="bezahlung-delete">
                             <i class="fas fa-times"></i>
                         </div>
-                        <div class="aboshort-thumb">
+                        <div class="bezahlung-thumb">
                             <img src="img/aboshort-2.png" alt="">
                         </div>
-                        <div class="aboshort-info">
-                            <div class="aboshort-name">
+                        <div class="bezahlung-info">
+                            <div class="bezahlung-name">
                                 Glasflasche
                             </div>
-                            <div class="aboshort-flasche">
+                            <div class="bezahlung-flasche">
                                 <a href="#">Flasche personalisieren</a>
                             </div>
-                            <div class="aboshort-rabatt">
-                                <div class="aboshort-rabatt__inkl">
+                            <div class="bezahlung-rabatt">
+                                <div class="bezahlung-rabatt__inkl">
                                     CHF 1.25 / Stk.
                                 </div>
-                                <form action="#" class="aboshort-form">
-                                    <div class="aboshort-type">
-                                        <button class="aboshort-minus productCountDown">-</button>
-                                        <input type="number" value="1" class="aboshort-input productCount" min="0" max="20">
-                                        <button class="aboshort-pluse productCountUp">+</button>
+                                <form action="#" class="bezahlung-formprice">
+                                    <div class="bezahlung-typeprice">
+                                        <button class="bezahlung-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="bezahlung-input productCount" min="0" max="20">
+                                        <button class="bezahlung-pluse productCountUp">+</button>
                                     </div>
-                                    <div class="aboshort-button">
+                                    <div class="bezahlung-button">
                                         CHF 39.90
                                     </div>
                                 </form>
@@ -181,31 +197,31 @@
                         </div>
                     </div>
 
-                    <div class="aboshort-item">
-                        <div class="aboshort-delete">
+                    <div class="bezahlung-item">
+                        <div class="bezahlung-delete">
                             <i class="fas fa-times"></i>
                         </div>
-                        <div class="aboshort-thumb">
-                            <img src="img/aboshort-3.png" alt="">
+                        <div class="bezahlung-thumb">
+                            <img src="img/warenkorb_3.png" alt="">
                         </div>
-                        <div class="aboshort-info">
-                            <div class="aboshort-name">
+                        <div class="bezahlung-info">
+                            <div class="bezahlung-name">
                                 Around The World
                             </div>
-                            <div class="aboshort-flasche">
+                            <div class="bezahlung-flasche">
                                 Grapefruit • Datteln • Feigen • Szechuanpfeffer
                             </div>
-                            <div class="aboshort-rabatt">
-                                <div class="aboshort-rabatt__inkl">
+                            <div class="bezahlung-rabatt">
+                                <div class="bezahlung-rabatt__inkl">
                                     CHF 1.25 / Stk.
                                 </div>
-                                <form action="#" class="aboshort-form">
-                                    <div class="aboshort-type">
-                                        <button class="aboshort-minus productCountDown">-</button>
-                                        <input type="number" value="1" class="aboshort-input productCount" min="0" max="20">
-                                        <button class="aboshort-pluse productCountUp">+</button>
+                                <form action="#" class="bezahlung-formprice">
+                                    <div class="bezahlung-typeprice">
+                                        <button class="bezahlung-minus productCountDown">-</button>
+                                        <input type="number" value="1" class="bezahlung-input productCount" min="0" max="20">
+                                        <button class="bezahlung-pluse productCountUp">+</button>
                                     </div>
-                                    <div class="aboshort-button">
+                                    <div class="bezahlung-button">
                                         CHF 18.75
                                     </div>
                                 </form>
@@ -218,6 +234,9 @@
                 <form class="bezahlung-rabattcode">
                     <input type="text" class="bezahlung-rabattcode__input" placeholder="Hast du einen Rabattcode?">
                     <button class="button-link bezahlung-rabattcode__button">anwenden</button>
+                    <div class="bezahlung-reqinfo">
+                        Dieser Code funktioniert leider nicht, bitte prüfe deine Eingabe!
+                    </div>
                 </form>
 
                 <ul class="bezahlung-total">

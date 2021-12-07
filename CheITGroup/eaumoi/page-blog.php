@@ -28,10 +28,10 @@
                         <img src="img/blog/blog-1.jpg" alt="">
                     </div>
                     <div class="laden-short__title">
-                        <a href="page-post.php">Warum wir 2.5 Liter Wasser am Tag trinken sollen.</a>
+                        <a href="page-post.php">Warum wir ca. 2 Liter am Tag trinken sollten</a>
                     </div>
                     <div class="laden-short__enter">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque penatibus et magnis ...
+                        Hast du gewusst, dass über 2/3 des menschlichen Körpers aus Wasser besteht? Und dass wir ihn deshalb regelmässig und ausreichend damit versorgen müssen? …
                     </div>
                     <div class="laden-short__link">
                         <a href="page-post.php">Mehr</a>
@@ -45,11 +45,10 @@
                         <img src="img/blog/blog-2.jpg" alt="">
                     </div>
                     <div class="laden-short__title">
-                        <a href="page-post.php">Wie gesund ist Schweizer
-                            Hahnenwasser?</a>
+                        <a href="page-post.php">Gut für die Umwelt, gut für dein Portemonnaie</a>
                     </div>
                     <div class="laden-short__enter">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque penatibus et magnis ...
+                        Weltweit werden pro Minute mehr als eine Million Plastikflaschen verbraucht - dies sind über 500 Milliarden Plastikflaschen im Jahr. …
                     </div>
                     <div class="laden-short__link">
                         <a href="page-post.php">Mehr</a>
@@ -66,7 +65,7 @@
                         <a href="page-post.php">Lorem Ipsum dolor sitamet.</a>
                     </div>
                     <div class="laden-short__enter">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque penatibus et magnis ...
+                        Hast du gewusst, dass über 2/3 des menschlichen Körpers aus Wasser besteht? Und dass wir ihn deshalb regelmässig und ausreichend damit versorgen müssen? …
                     </div>
                     <div class="laden-short__link">
                         <a href="page-post.php">Mehr</a>

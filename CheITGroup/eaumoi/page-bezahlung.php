@@ -276,8 +276,8 @@
 
                 <ul class="bezahlung-buylist">
                     <li class="bezahlung-buylist__kreditkarte">
-                        <div class="bezahlung-type checkbox">
-                            <input type="checkbox" class="bezahlung-type__checkbox" id="Kreditkarte" name="Kreditkarte">
+                        <div class="bezahlung-type checkbox-radio">
+                            <input type="radio" class="bezahlung-type__checkbox-radio" id="Kreditkarte" name="radio-buy">
                             <label for="Kreditkarte">Kreditkarte</label>
                         </div>
                         <div class="bezahlung-buylist__ico">
@@ -286,8 +286,8 @@
                         </div>
                     </li>
                     <li class="bezahlung-buylist__twint">
-                        <div class="bezahlung-type checkbox">
-                            <input type="checkbox" class="bezahlung-type__checkbox" id="TWINT" name="TWINT">
+                        <div class="bezahlung-type checkbox-radio">
+                            <input type="radio" class="bezahlung-type__checkbox-radio" id="TWINT" name="radio-buy">
                             <label for="TWINT">TWINT</label>
                         </div>
                         <div class="bezahlung-buylist__ico">
@@ -295,8 +295,8 @@
                         </div>
                     </li>
                     <li class="bezahlung-buylist__twint">
-                        <div class="bezahlung-type checkbox">
-                            <input type="checkbox" class="bezahlung-type__checkbox" id="PostFinance" name="PostFinance">
+                        <div class="bezahlung-type checkbox-radio">
+                            <input type="radio" class="bezahlung-type__checkbox-radio" id="PostFinance" name="radio-buy">
                             <label for="PostFinance">PostFinance</label>
                         </div>
                         <div class="bezahlung-buylist__ico">
@@ -304,8 +304,8 @@
                         </div>
                     </li>
                     <li class="bezahlung-buylist__twint">
-                        <div class="bezahlung-type checkbox">
-                            <input type="checkbox" class="bezahlung-type__checkbox" id="POWERPAY" name="POWERPAY">
+                        <div class="bezahlung-type checkbox-radio">
+                            <input type="radio" class="bezahlung-type__checkbox-radio" id="POWERPAY" name="radio-buy">
                             <label for="POWERPAY">POWERPAY</label>
                         </div>
                         <div class="bezahlung-buylist__ico">

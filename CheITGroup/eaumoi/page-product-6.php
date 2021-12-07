@@ -95,57 +95,59 @@
 
                     <div class="product-pagination"></div>
                 </div>
-                <ul class="product-naturlich">
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-1.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            100% natürlich
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-2.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            ohne <br>
-                            Zuckerzusatz
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-3.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            fast ohne Kalorien
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-4.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            ohne künstliche Aromen
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-5.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            Vegan
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/naturlich-6.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            Glutenfrei
-                        </div>
-                    </li>
-                </ul>
+                <div class="naturlich-wrapper">
+                    <ul class="product-naturlich">
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-1.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                100% natürlich
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-3.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne Zucker und Süssungsmittel
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-2.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                fast ohne Kalorien
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-4.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne künstliche Zusatzstoffe
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-6.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Glutenfrei
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-5.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Vegan
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="product-summary">
@@ -161,6 +163,60 @@
                 <div class="productfull-descritpion">
                     <b>Püree für Wasser mit Geschmack – hergestellt in der Schweiz</b> <br>
                         Die fruchtige Süsse der Mango, das säuerlich Erfrischende der Yuzu und das mild-würzige des Kurkumas verbinden sich zu einem überraschenden Erfrischungs-Kick. Wasser mit Geschmack, ohne Zuckerzusatz und ganz in Gelb.
+                </div>
+
+                <div class="naturlich-wrapper">
+                    <ul class="product-naturlich">
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-1.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                100% natürlich
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-3.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne Zucker und Süssungsmittel
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-2.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                fast ohne Kalorien
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-4.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne künstliche Zusatzstoffe
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-6.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Glutenfrei
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-5.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Vegan
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="einzelbeutel-imabo">

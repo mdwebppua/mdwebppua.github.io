@@ -23,7 +23,7 @@
                 Newsletter Anmeldung
             </div>
         </div>
-        <form action="#" class="login-form">
+        <form action="#" class="newsletter-form">
             <div class="login-form__type col-2">
                 <div class="col">
                     <input class="login-form__input" type="text" placeholder="Vorname*" required>

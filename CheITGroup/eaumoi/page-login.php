@@ -29,6 +29,8 @@
         <form action="#" class="login-form">
             <div class="login-form__type">
                 <input class="login-form__input" type="text" placeholder="Email*">
+            </div>
+            <div class="login-form__type">
                 <input class="login-form__input" type="text" placeholder="Passwort*">
             </div>
             <div class="login-form__col-2">
@@ -45,6 +47,8 @@
                     Anmelden
                 </button>
             </div>
+
+            <a href="" class="login-vegessen-none">Passwort vegessen?</a>
 
         </form>
     </div>

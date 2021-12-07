@@ -24,8 +24,12 @@
             <span class="wasser-title__italic">Für Wasser mit Geschmack.</span>
         </div>
 
-        <div class="description">
-            Wie wunderbar. Wasser mit fruchtig leichtem Geschmack. Mit einem Beutel aromatisierst du ca. 5–6 dl Wasser mit Fruchtgeschmack, Himbeergeschmack, Lemongeschmack, Birnengeschmack … Lege insgesamt mindestens 15 Sachets in deinen Warenkorb und geniesse dein Waser mit Geschmack. Na dann, zum Wohl!
+        <div class="aromen-description">
+            Wie wunderbar. Wasser mit fruchtig leichtem Geschmack. Mit einem Beutel aromatisierst du ca. 5–6 dl Wasser
+            <br>
+            mit Fruchtgeschmack, Himbeergeschmack, Lemongeschmack, Birnengeschmack … Lege insgesamt mindestens
+            <br>
+            15 Sachets in deinen Warenkorb und geniesse dein Waser mit Geschmack. Na dann, zum Wohl!
         </div>
     </div>
 

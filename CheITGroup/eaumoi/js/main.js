@@ -804,6 +804,15 @@ $( document ).ready(function() {
     });
 
     $('.select-js').select2();
+
+    if($(".konto-dashboard").length) {
+        $(".header").addClass("konto");
+        $(".open-sidebar").addClass("active");
+    }
+    $(".kundenkonto-open").on("click", function() {
+        $(".konto-sidebar").toggleClass("active");
+    });
+
 });
 
 $(".product-maskload").addClass("load");

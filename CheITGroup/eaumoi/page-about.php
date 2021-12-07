@@ -22,7 +22,7 @@
 <section class="schweizer-idee">
     <div class="container-xl">
         <div class="schweizer-body">
-            <div class="wasser-title schweizer-titl">
+            <div class="wasser-title schweizer-title">
                 <span class="wasser-title__italic">
                     Natürlicher Geschmack <br>
                     für dein Wasser.
@@ -188,13 +188,13 @@
 
 <section class="wir-gutes">
     <div class="container-xl">
-        <div class="gutes-container">
-            <div class="gutes-main">
-                <div class="wasser-title gutes-title">
-                    <span class="wasser-title__italic">Weil wir</span> Gutes <br>
-                    für dich <span class="wasser-title__italic">wollen.</span>
-                </div>
+        <div class="gutes-main">
+            <div class="wasser-title gutes-title">
+                <span class="wasser-title__italic">Weil wir</span> Gutes <br>
+                für dich <span class="wasser-title__italic">wollen.</span>
+            </div>
 
+            <div class="gutes-body">
                 <ul class="gutes-list">
                     <li class="gutes-item">
                         <div class="gutes-item__ico">
@@ -262,38 +262,38 @@
             Eine Kurzgeschichte.
         </div>
     </div>
-    <div class="alles-figure">
+    <div class="alles-figure"></div>
 
-    </div>
+    <section class="alles-begann-text">
+        <div class="container-xl">
+            <div class="alles-entry">
+                <p>
+                    Warum sind wir eigentlich nicht früher darauf gekommen? Schliesslich nehmen wir täglich ungefähr 50 Mal einen Schluck Flüssigkeit. Aufs Leben gerechnet, hätten wir auf jeden Fall schon oft daran denken können. Und irgendwann hat jemand gesagt: «Nur Wasser ist manchmal total langweilig.» Ein Fall für das cin cin Innovationsteam. Die Suche nach der Idee, wie wir Menschen in der Schweiz zu mehr leckerem und gutem Hahnenwasserkonsum bringen können, begann.
+                </p>
+                <p>
+                    Das Projekt startete unter dem Codenamen «Flipper» mit mehreren Design-Sprints und einem Hackathon in Zusammenarbeit mit dem Designatelier Altherr/Weiss in Zürich. Über 60 Ideen wurden zu 13 vielversprechenden Prototypen ausgearbeitet. Von autonomen Wasserroboter bis zur 3D-gedruckten Kräuterinfusion war alles dabei. Nach einigen Tests mit potenziellen Konsumenten kristallisierte sich eine Idee klar heraus: ein innovatives Püree mit 100% natürlichen, echten Zutaten für einen feinen, erfrischenden leichten Geschmack im Wasser. Das Ganze in Kombination mit einer edlen Trinkflasche aus hochwertigem Glas: geboren war eau&moi.
+                </p>
+            </div>
+            <div class="alles-slogan">
+                «Nur Wasser ist manchmal <br>
+                total langweilig.»
+            </div>
+            <div class="alles-entry">
+                <p>
+                    Tagelang und nächtelang haben wir verschiedenste Früchte, Kräuter und Gewürze kombiniert. Zusammen mit unserem hausinternen Getränke-Miraculix und Sternekoch Silvio, haben wir die Favoriten erkoren: «Exotisch», «Global» und «unsere Superfrüchte vor der Haustüre». So weit, so geschmacksvoll. Zwei reisefreudige Teammembers tourten kurz darauf quer durch die Schweiz, um einen Produzenten zu finden, der die Pürees schnell, frisch und in der von uns geforderten hohen Qualität produzieren kann. Keine leichte Aufgabe. Denn wir sind pingelig.
+                </p>
+                <p>
+                    Im Seeland sind wir fündig geworden. Der gefundene Schweizer Frucht- und Gemüseprofi beschreitet mit der cin cin Innovationsplattform einmal mehr ganz neue Wege. Kurze Zeit später – und dank vielen Köpfe rauchenden cin cin Kreativmeetings – war das Design geboren, die Verpackung druckfertig, die Fruchtmischungen final kombiniert und als feines Püree in den ersten Sachets verpackt. Dank dem durchwegs positiven Feedback der weiteren Testkonsumenten können wir der Schweiz nun helfen, ausreichend, kalorienarm, nachhaltig und köstlich zu trinken.
+                </p>
+                <p>
+                    <strong>cin cin von eurem cin cin Team!</strong>
+                </p>
+            </div>
+        </div>
+    </section>
 </section>
 
-<section class="alles-begann-text">
-    <div class="container-xl">
-        <div class="alles-entry">
-            <p>
-                Warum sind wir eigentlich nicht früher darauf gekommen? Schliesslich nehmen wir täglich ungefähr 50 Mal einen Schluck Flüssigkeit. Aufs Leben gerechnet, hätten wir auf jeden Fall schon oft daran denken können. Und irgendwann hat jemand gesagt: «Nur Wasser ist manchmal total langweilig.» Ein Fall für das cin cin Innovationsteam. Die Suche nach der Idee, wie wir Menschen in der Schweiz zu mehr leckerem und gutem Hahnenwasserkonsum bringen können, begann.
-            </p>
-            <p>
-                Das Projekt startete unter dem Codenamen «Flipper» mit mehreren Design-Sprints und einem Hackathon in Zusammenarbeit mit dem Designatelier Altherr/Weiss in Zürich. Über 60 Ideen wurden zu 13 vielversprechenden Prototypen ausgearbeitet. Von autonomen Wasserroboter bis zur 3D-gedruckten Kräuterinfusion war alles dabei. Nach einigen Tests mit potenziellen Konsumenten kristallisierte sich eine Idee klar heraus: ein innovatives Püree mit 100% natürlichen, echten Zutaten für einen feinen, erfrischenden leichten Geschmack im Wasser. Das Ganze in Kombination mit einer edlen Trinkflasche aus hochwertigem Glas: geboren war eau&moi.
-            </p>
-        </div>
-        <div class="alles-slogan">
-            «Nur Wasser ist manchmal <br>
-            total langweilig.»
-        </div>
-        <div class="alles-entry">
-            <p>
-                Tagelang und nächtelang haben wir verschiedenste Früchte, Kräuter und Gewürze kombiniert. Zusammen mit unserem hausinternen Getränke-Miraculix und Sternekoch Silvio, haben wir die Favoriten erkoren: «Exotisch», «Global» und «unsere Superfrüchte vor der Haustüre». So weit, so geschmacksvoll. Zwei reisefreudige Teammembers tourten kurz darauf quer durch die Schweiz, um einen Produzenten zu finden, der die Pürees schnell, frisch und in der von uns geforderten hohen Qualität produzieren kann. Keine leichte Aufgabe. Denn wir sind pingelig.
-            </p>
-            <p>
-                Im Seeland sind wir fündig geworden. Der gefundene Schweizer Frucht- und Gemüseprofi beschreitet mit der cin cin Innovationsplattform einmal mehr ganz neue Wege. Kurze Zeit später – und dank vielen Köpfe rauchenden cin cin Kreativmeetings – war das Design geboren, die Verpackung druckfertig, die Fruchtmischungen final kombiniert und als feines Püree in den ersten Sachets verpackt. Dank dem durchwegs positiven Feedback der weiteren Testkonsumenten können wir der Schweiz nun helfen, ausreichend, kalorienarm, nachhaltig und köstlich zu trinken.
-            </p>
-            <p>
-                <strong>cin cin von eurem cin cin Team!</strong>
-            </p>
-        </div>
-    </div>
-</section>
+
 
 <section class="das-team">
     <div class="firmen-footer">
@@ -315,93 +315,109 @@
                 Das fruchtigste<br>
                 <span class="wasser-title__italic">Team der Welt</span>
             </div>
-            <div class="team-main">
-                <div class="team-item">
-                    <div class="team-itembody">
-                        <div class="team-item__thumb">
-                            <img src="img/about/about-4.png" alt="">
-                        </div>
-                        <div class="team-item__title">
-                            Ciydem
-                        </div>
-                        <div class="team-item__content">
-                            Bereitet sich mit eau&moi beim Mittagsspaziergang Schritt für Schritt und Schluck für Schluck auf einen Nachmittag mit frischen Geschäftsideen vor.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-itembody">
-                        <div class="team-item__thumb">
-                            <img src="img/about/about-2.jpg" alt="">
-                        </div>
-                        <div class="team-item__title">
-                            Kathrin
-                        </div>
-                        <div class="team-item__content">
-                            Hat ihren Boost fürs Business entdeckt: Mit dem eau&moi Yellow Booster macht sie ihren Kopf frei, um sich um unsere Business Kunden zu kümmern.
+            <div class="team-wrapper">
+                <div class="team-main">
+                    <div class="team-item">
+                        <div class="team-itembody">
+                            <div class="team-item__thumb">
+                                <img src="img/about/about-4.png" alt="">
+                            </div>
+                            <div class="team-item__title">
+                                Ciydem
+                            </div>
+                            <div class="team-item__content">
+                                Bereitet sich mit eau&moi beim Mittagsspaziergang Schritt für Schritt und Schluck für Schluck auf einen Nachmittag mit frischen Geschäftsideen vor.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team-item">
-                    <div class="team-itembody">
-                        <div class="team-item__thumb">
-                            <img src="img/about/about-4.png" alt="">
-                        </div>
-                        <div class="team-item__title">
-                            Nicolas
-                        </div>
-                        <div class="team-item__content">
-                            Startet raketenmässig in den Tag, mit eau&moi beim Frühstück. Mit diesem natürlichen Motivations-kick kreiert er den ganzen Tag frische Digitalkampagnen… klick klick klick.
+                    <div class="team-item">
+                        <div class="team-itembody">
+                            <div class="team-item__thumb">
+                                <img src="img/about/about-2.jpg" alt="">
+                            </div>
+                            <div class="team-item__title">
+                                Kathrin
+                            </div>
+                            <div class="team-item__content">
+                                Hat ihren Boost fürs Business entdeckt: Mit dem eau&moi Yellow Booster macht sie ihren Kopf frei, um sich um unsere Business Kunden zu kümmern.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team-item">
-                    <div class="team-itembody">
-                        <div class="team-item__thumb">
-                            <img src="img/about/about-4.png" alt="">
-                        </div>
-                        <div class="team-item__title">
-                            Corina
-                        </div>
-                        <div class="team-item__content">
-                            Kommt vor allem nachmittags auf den eau&moi Geschmack, wenn sie sich die nötige Freshness und Fruchtigkeit für Kundenanfragen damit holt.
+                    <div class="team-item">
+                        <div class="team-itembody">
+                            <div class="team-item__thumb">
+                                <img src="img/about/about-4.png" alt="">
+                            </div>
+                            <div class="team-item__title">
+                                Nicolas
+                            </div>
+                            <div class="team-item__content">
+                                Startet raketenmässig in den Tag, mit eau&moi beim Frühstück. Mit diesem natürlichen Motivations-kick kreiert er den ganzen Tag frische Digitalkampagnen… klick klick klick.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team-item">
-                    <div class="team-itembody">
-                        <div class="team-item__thumb">
-                            <img src="img/about/about-4.png" alt="">
-                        </div>
-                        <div class="team-item__title">
-                            Nicolas
-                        </div>
-                        <div class="team-item__content">
-                            Mag keine Langeweile, dafür Beeren, deshalb geniesst er mit eau&moi die nötige geschmack-liche Abwechslung, very berry extraordinary! So tüftelt er den ganzen Tag an neuen beerigen Kombinationen.
+                    <div class="team-item">
+                        <div class="team-itembody">
+                            <div class="team-item__thumb">
+                                <img src="img/about/about-4.png" alt="">
+                            </div>
+                            <div class="team-item__title">
+                                Corina
+                            </div>
+                            <div class="team-item__content">
+                                Kommt vor allem nachmittags auf den eau&moi Geschmack, wenn sie sich die nötige Freshness und Fruchtigkeit für Kundenanfragen damit holt.
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team-item">
-                    <div class="team-itembody">
-                        <div class="team-item__thumb">
-                            <img src="img/about/about-4.png" alt="">
-                        </div>
-                        <div class="team-item__title">
-                            Floriane
-                        </div>
-                        <div class="team-item__content">
-                            Ist den ganzen Tag kreativ: Nachmittags schlürft sie gerne die eau&moi Summer Breeze und wärmt sich morgens mit dem Geschmack der grossen weiten Welt.
+                    <div class="team-item">
+                        <div class="team-itembody">
+                            <div class="team-item__thumb">
+                                <img src="img/about/about-4.png" alt="">
+                            </div>
+                            <div class="team-item__title">
+                                Nicolas
+                            </div>
+                            <div class="team-item__content">
+                                Mag keine Langeweile, dafür Beeren, deshalb geniesst er mit eau&moi die nötige geschmack-liche Abwechslung, very berry extraordinary! So tüftelt er den ganzen Tag an neuen beerigen Kombinationen.
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    <div class="team-item">
+                        <div class="team-itembody">
+                            <div class="team-item__thumb">
+                                <img src="img/about/about-4.png" alt="">
+                            </div>
+                            <div class="team-item__title">
+                                Floriane
+                            </div>
+                            <div class="team-item__content">
+                                Ist den ganzen Tag kreativ: Nachmittags schlürft sie gerne die eau&moi Summer Breeze und wärmt sich morgens mit dem Geschmack der grossen weiten Welt.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="firmen-footer">
+
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.041" height="84.372" viewBox="0 0 1440.041 84.372">
+            <defs>
+                <clipPath id="team-footer">
+                    <rect x="135" y="62" width="1440.041" height="84.372" fill="none"/>
+                </clipPath>
+            </defs>
+            <g transform="translate(-135 -62)" clip-path="url(#team-footer)" style="isolation: isolate">
+                <path d="M160.792,79.3s136.4,68.514,440.682,67.047S905.362,76.792,1219.281,79.3s610.408,10.514,732.95,0c136.125-15.65,304.748-51.289,286.438-51.134C2204.316,28.462,0,0,0,0Z" fill="#f4f8ff"/>
+            </g>
+        </svg>
     </div>
 </section>
 
@@ -410,87 +426,89 @@
         <div class="wasser-title fakten-title">
            <span class="wasser-title__italic"> Fakten, Fakten</span> & Fakten
         </div>
-        <div class="fakten-main">
-            <div class="fakten-item">
-                <div class="fakten-itembody">
-                    <div class="fakten-item__thumb">
-                        <img src="img/about/fakten-1.png" alt="">
-                    </div>
-                    <div class="fakten-item__title">
-                        Schweizer Pionier im Aromatisieren von Wasser
-                    </div>
-                    <div class="fakten-item__content">
-                        Du möchtest deinem Leitungswasser Geschmack geben. Aber auf 100% natürliche Art. Und genau dashat eau&moi geschafft.
-                    </div>
-                </div>
-            </div>
-
-            <div class="fakten-item">
-                <div class="fakten-itembody">
-                    <div class="fakten-item__thumb">
-                        <img src="img/about/fakten-2.png" alt="">
-                    </div>
-                    <div class="fakten-item__title">
-                        Bereits 15’000 eau&moi Abonnenten
-                    </div>
-                    <div class="fakten-item__content">
-                        Die Schweiz ist durstig nach News von eau&moi: Bereits erhalten über 15’000 Fans die neusten Informationen per Newsletter. Und du?
+        <div class="fakten-wrapper">
+            <div class="fakten-main">
+                <div class="fakten-item">
+                    <div class="fakten-itembody">
+                        <div class="fakten-item__thumb">
+                            <img src="img/about/fakten-1.png" alt="">
+                        </div>
+                        <div class="fakten-item__title">
+                            Schweizer Pionier im Aromatisieren von Wasser
+                        </div>
+                        <div class="fakten-item__content">
+                            Du möchtest deinem Leitungswasser Geschmack geben. Aber auf 100% natürliche Art. Und genau dashat eau&moi geschafft.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fakten-item">
-                <div class="fakten-itembody">
-                    <div class="fakten-item__thumb">
-                        <img src="img/about/fakten-3.png" alt="">
-                    </div>
-                    <div class="fakten-item__title">
-                        100’000 Liter Wasser mit Geschmack
-                    </div>
-                    <div class="fakten-item__content">
-                        Innert nur 2 Jahren wurden rund 4.5 Tonnen natürliches Püree hergestellt. Das reicht für weit über 100’000 Liter Leitungswasser mit natürlichem Aroma. Schlürf.
+                <div class="fakten-item">
+                    <div class="fakten-itembody">
+                        <div class="fakten-item__thumb">
+                            <img src="img/about/fakten-2.png" alt="">
+                        </div>
+                        <div class="fakten-item__title">
+                            Bereits 15’000 eau&moi Abonnenten
+                        </div>
+                        <div class="fakten-item__content">
+                            Die Schweiz ist durstig nach News von eau&moi: Bereits erhalten über 15’000 Fans die neusten Informationen per Newsletter. Und du?
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fakten-item">
-                <div class="fakten-itembody">
-                    <div class="fakten-item__thumb">
-                        <img src="img/about/fakten-4.png" alt="">
-                    </div>
-                    <div class="fakten-item__title">
-                        12’500 Trinkflaschen
-                    </div>
-                    <div class="fakten-item__content">
-                        Während die Schweiz noch 1.6 Milliarden PET Getränkeflaschen jährlich verbraucht, haben sich die nachhaltigen eau&moi Kundinnen und Kunden bereits 12’500 Trinkflaschen gekauft. Cin cin!
+                <div class="fakten-item">
+                    <div class="fakten-itembody">
+                        <div class="fakten-item__thumb">
+                            <img src="img/about/fakten-3.png" alt="">
+                        </div>
+                        <div class="fakten-item__title">
+                            100’000 Liter Wasser mit Geschmack
+                        </div>
+                        <div class="fakten-item__content">
+                            Innert nur 2 Jahren wurden rund 4.5 Tonnen natürliches Püree hergestellt. Das reicht für weit über 100’000 Liter Leitungswasser mit natürlichem Aroma. Schlürf.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fakten-item">
-                <div class="fakten-itembody">
-                    <div class="fakten-item__thumb">
-                        <img src="img/about/fakten-5.png" alt="">
-                    </div>
-                    <div class="fakten-item__title">
-                        23’500 kg CO2 gespart
-                    </div>
-                    <div class="fakten-item__content">
-                        Mit dem Trinken von natürlichem Leitungswasser mit Geschmack anstelle von Getränken aus PET-Flaschen konnten bisher ca. 23’500 Kilogramm CO2 gespart werden.
+                <div class="fakten-item">
+                    <div class="fakten-itembody">
+                        <div class="fakten-item__thumb">
+                            <img src="img/about/fakten-4.png" alt="">
+                        </div>
+                        <div class="fakten-item__title">
+                            12’500 Trinkflaschen
+                        </div>
+                        <div class="fakten-item__content">
+                            Während die Schweiz noch 1.6 Milliarden PET Getränkeflaschen jährlich verbraucht, haben sich die nachhaltigen eau&moi Kundinnen und Kunden bereits 12’500 Trinkflaschen gekauft. Cin cin!
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fakten-item">
-                <div class="fakten-itembody">
-                    <div class="fakten-item__thumb">
-                        <img src="img/about/fakten-6.png" alt="">
+                <div class="fakten-item">
+                    <div class="fakten-itembody">
+                        <div class="fakten-item__thumb">
+                            <img src="img/about/fakten-5.png" alt="">
+                        </div>
+                        <div class="fakten-item__title">
+                            23’500 kg CO2 gespart
+                        </div>
+                        <div class="fakten-item__content">
+                            Mit dem Trinken von natürlichem Leitungswasser mit Geschmack anstelle von Getränken aus PET-Flaschen konnten bisher ca. 23’500 Kilogramm CO2 gespart werden.
+                        </div>
                     </div>
-                    <div class="fakten-item__title">
-                        Leitungswasser ist 1000x besser
-                    </div>
-                    <div class="fakten-item__content">
-                        Leitungswasser ist nicht nur das am strengsten kontrollierte Lebensmittel in der Schweiz. Es braucht auch 1000x weniger Energie als abgefülltes Wasser. Damit wäre wohl alles gesagt.
+                </div>
+
+                <div class="fakten-item">
+                    <div class="fakten-itembody">
+                        <div class="fakten-item__thumb">
+                            <img src="img/about/fakten-6.png" alt="">
+                        </div>
+                        <div class="fakten-item__title">
+                            Leitungswasser ist 1000x besser
+                        </div>
+                        <div class="fakten-item__content">
+                            Leitungswasser ist nicht nur das am strengsten kontrollierte Lebensmittel in der Schweiz. Es braucht auch 1000x weniger Energie als abgefülltes Wasser. Damit wäre wohl alles gesagt.
+                        </div>
                     </div>
                 </div>
             </div>

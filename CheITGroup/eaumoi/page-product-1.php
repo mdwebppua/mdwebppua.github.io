@@ -96,52 +96,59 @@
 
                     <div class="product-pagination"></div>
                 </div>
-                <ul class="product-naturlich">
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/kein-1.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            kein schweres
-                            Schleppen
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/kein-2.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            kein mühsames Entsorgen
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/kein-3.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            keine grossen Lagerplätze
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/kein-4.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            kein PET-
-                            Verbrauch
-                        </div>
-                    </li>
-                    <li>
-                        <div class="product-naturlich__ico">
-                            <img src="img/product/kein-5.svg" alt="">
-                        </div>
-                        <div class="product-naturlich__text">
-                            natürliches
-                            Hahnenwasser
-                        </div>
-                    </li>
+                <div class="naturlich-wrapper">
+                    <ul class="product-naturlich">
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-1.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                100% natürlich
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-3.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne Zucker und Süssungsmittel
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-2.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                fast ohne Kalorien
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-4.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne künstliche Zusatzstoffe
+                            </div>
+                        </li>
 
-                </ul>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-6.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Glutenfrei
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-5.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Vegan
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="product-summary">
@@ -159,6 +166,60 @@
                     <br><br>
                     <b>Personalisiere den Bambus-Deckel mit Namen oder Logo!</b> <br>
                     Sende uns deine Anfrage an <a href="#">shop@eau-et-moi.ch</a>
+                </div>
+
+                <div class="naturlich-wrapper">
+                    <ul class="product-naturlich">
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-1.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                100% natürlich
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-3.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne Zucker und Süssungsmittel
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-2.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                fast ohne Kalorien
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-4.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                ohne künstliche Zusatzstoffe
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-6.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Glutenfrei
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product-naturlich__ico">
+                                <img src="img/product/naturlich-5.svg" alt="">
+                            </div>
+                            <div class="product-naturlich__text">
+                                Vegan
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="einzelbeutel-imabo einzelbeutel-imabo__col">

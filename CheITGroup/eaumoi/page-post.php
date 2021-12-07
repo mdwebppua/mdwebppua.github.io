@@ -23,8 +23,7 @@
     <div class="container-xl">
         <article class="fullpost-main">
             <h1 class="fullpost-title">
-                Warum wir 2.5 Liter Waser <br>
-                am Tag trinken sollen.
+                Warum wir ca. 2 Liter am <br> Tag trinken sollten
             </h1>
             <div class="fullpost-thumb">
                 <img src="img/blog/fullpost-1.jpg" alt="">
@@ -32,7 +31,9 @@
             <div class="fullpost-enter">
                 <div class="fullpost-content">
                     <p>
-                        Hast du gewusst, dass über 2/3 des menschlichen Körpers aus Wasser besteht? Und dass wir ihn deshalb regelmässig und ausreichend damit versorgen müssen? Eine Empfehlung lautet: täglich 30–35 Milliliter Wasser pro Kilogramm Körpergewicht zu sich nehmen. Die notwendige Flüssigkeitszufuhr lässt sich somit folgendermassen berechnen:
+                        Hast du gewusst, dass über 2/3 des menschlichen Körpers aus Wasser besteht? Und dass wir ihn deshalb regelmässig und ausreichend damit versorgen müssen?
+                        <br>
+                        Eine Empfehlung lautet: täglich 30–35 Milliliter Wasser pro Kilogramm Körpergewicht zu sich nehmen. Die notwendige Flüssigkeitszufuhr lässt sich somit folgendermassen berechnen:
                     </p>
                     <h2 class="has-text-align-center">
                         26ml Wasser X eigenes Körpergewicht in Kg
@@ -88,7 +89,7 @@
                         <li>vor dem zu Bett gehen, um den Flüssigkeitshaushalt auszugleichen</li>
                     </ul>
                     <figure>
-                        <img src="img/blog/fullpost-2.jpg" alt="">
+                        <img src="img/blog/fullpost-2-1.jpg" alt="">
                     </figure>
                     <p>
                         Am besten trinkst du kontinuierlich über den ganzen Tag verteilt Wasser. Und damit du immer dran denkst, genug zu trinken, stellst du am besten eine stets gefüllte Wasserflasche neben dich, diese kannst du immer und überall auffüllen. Wenn du zu den Menschen gehörst, die sich schwertun, nur Wasser zu trinken, dann haben wir die perfekte Lösung für dich, deinem Wasser zuckerfrei und natürlich aufzupeppen: eau&moi: für Wasser mit Geschmack. Magst du Wasser mit Lemon Geschmack oder mit Himbeergeschmack oder gar mit Birnengeschmack? Et voilà: Mit ihren 100% echten und natürlichen Fruchtpürees zum Aromatisieren des Hahnenwassers, bringt eau&moi Geschmack ins Wasser. Und stylisch ist es auch, mit den hochwertigen und praktischen Glasflaschen. Und das Beste: eau&moi ist Aroma für das Wasser, ohne Zucker.
@@ -97,13 +98,13 @@
                 </div>
                 <div class="fullpost-pagation">
                     <div class="fullpost-pagation__prev">
-                        <a href="">Letzter Beitrag</a>
+                        <a href=""><span>Letzter Beitrag</span></a>
                     </div>
                     <div class="fullpost-pagation__item">
-                        <a href="">Zurück zur Übersicht</a>
+                        <a href=""><span>Zurück zur Übersicht</span></a>
                     </div>
-                    <div class="fullpost-pagation__nav">
-                        <a href="">Nächster Beitrag</a>
+                    <div class="fullpost-pagation__next">
+                        <a href=""><span>Nächster Beitrag</span></a>
                     </div>
                 </div>
             </div>

@@ -23,13 +23,14 @@
                 Neues Passwort setzen
             </div>
         </div>
-        <form action="#" class="login-form">
+        <form action="#" class="neuespass-form">
             <div class="login-form__type">
                 <div class="login-form__password">
                     <input class="login-form__input" type="password" placeholder="Neues Passwort">
                     <button class="show-password"></button>
                 </div>
-
+            </div>
+            <div class="login-form__type">
                 <div class="login-form__password">
                     <input class="login-form__input" type="password" placeholder="Neues Passwort wiederholen">
                     <button class="show-password"></button>

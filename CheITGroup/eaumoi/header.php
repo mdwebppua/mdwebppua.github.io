@@ -25,4 +25,5 @@
             </ul>
         </div>
     </div>
+    <button class="open-sidebar"><span>kundenkonto</span></button>
 </header>

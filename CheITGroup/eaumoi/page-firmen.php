@@ -71,12 +71,12 @@
                     Kein Platz <span class="wasser-title__italic">im Kühlschrank?</span>
                     Nicht mehr!
                 </div>
-                <div class="durstige-enter">
+                <div class="platz-figure">
+                    <img src="img/blog/firmen-1.jpg" alt="">
+                </div>
+                <div class="platz-enter">
                     Firmenkühlschränke sind meist überfüllt mit Getränken, mit Flaschen, mit PET. Aber das nachhaltigste Getränk fliesst bereits aus dem Wasserhahn. Und der Geschmack für das Wasser kommt aus den kleinen Sachets von eau   moi. So einfach habt ihr wieder viel Platz. Und mehr Nachhaltigkeit.
                 </div>
-            </div>
-            <div class="platz-figure">
-                <img src="img/blog/firmen-1.jpg" alt="">
             </div>
         </div>
     </div>
@@ -86,21 +86,21 @@
     <div class="container-xl">
         <div class="mitarbeiter-flow">
             <div class="mitarbeiter-figure">
-                <img src="img/blog/firmen-2.jpg" alt="">
+                <img src="img/blog/firmen-2-1.jpg" alt="">
             </div>
             <div class="mitarbeiter-body">
                 <div class="durstige-title wasser-title">
                     <span class="wasser-title__italic">Mitarbeiter im Flow?</span> <br>
                     Und total vital!
                 </div>
-                <div class="durstige-enter">
+                <div class="mitarbeiter-enter">
                     <p>
                         Wassertrinken ist wichtig für Körper und Kopf. Aber wie bringst du deine Kolleginnen und Kollegen dazu?
                     </p>
-                    <p>
-                        <b>Schritt 1:</b> Eine eigene Flasche immer dabei.<br>
-                        <b>Schritt 2:</b> Leckeres Aroma für Wasser, ohne Zusatz von Zucker, zur Verfügung stellen.
-                    </p>
+                    <ul>
+                        <li><b>Schritt 1:</b> Eine eigene Flasche immer dabei.</li>
+                        <li><b>Schritt 2:</b> Leckeres Aroma für Wasser, ohne Zusatz von Zucker, zur Verfügung stellen.</li>
+                    </ul>
                     <p>
                         Und alle sprudeln vor Vitalität.
                     </p>
@@ -136,7 +136,7 @@
                         <span class="wasser-title__italic">Unser Angebot</span> <br>
                         für deine Firma
                     </div>
-                    <div class="durstige-enter">
+                    <div class="angebot-enter">
                         <ul>
                             <li>
                                 eau&moi Früchtepürees im Abo genau auf <br>

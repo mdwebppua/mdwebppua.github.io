@@ -26,7 +26,7 @@
         <div class="login-description">
             Bitte gebe unten deine E-Mail-Adresse ein, um einen Link für die Zurücksetzung des Passworts zu erhalten.
         </div>
-        <form action="#" class="login-form">
+        <form action="#" class="passwortzur-form">
             <div class="login-form__type">
                 <input class="login-form__input" type="text" placeholder="Email*">
             </div>

@@ -3314,6 +3314,7 @@ html.ov-hidden{
     -ms-flex-pack: center;
     justify-content: center;
     padding: 24px 0 19px 0;
+    background: #F4F8FF;
 }
 .warenkorb-flex {
     margin-left: auto;
@@ -7024,11 +7025,14 @@ textarea {
     margin: 0 20px 0 0;
 }
 .gefunden-buy {
-    background: url("../img/gefunden-1.svg") no-repeat center;
+    background: url("../img/cart_1.svg") no-repeat center bottom;
     width: 20px;
     height: 19px;
     border: none;
     cursor: pointer;
+}
+.gefunden-buy:hover {
+    background: url("../img/cart_1h.svg") no-repeat center bottom;
 }
 .gefunden-lorem {
     border-bottom: 1px solid #CED5DD;
@@ -7467,6 +7471,10 @@ textarea {
         padding: 30px 30px 20px;
         opacity: 1;
         font-size: 16px;
+    }
+    .shop-navlist {
+        position: absolute;
+        top: 100%;
     }
 }
 @media (max-width: 991.98px) {
@@ -8349,26 +8357,29 @@ textarea {
         width: 20px;
     }
     body.page-shop .shop-navlist {
-        overflow: auto;
         width: 100%;
         position: absolute;
         top: -59px;
         background: #0D2330;
         color: #fff;
         left: 0;
+        height: 59px;
     }
     body.page-shop .shop-nav {
+        overflow-x: auto;
         padding-left: 24px;
+        align-items: center;
+        height: 100%;
     }
     .shop-nav li a {
         color: #fff;
         font-weight: 300;
         opacity: 0.5;
-        padding: 20px 0;
+        padding: 10px 0;
     }
-    .shop-nav li a:active,
-    .shop-nav li a:hover {
+    .shop-nav li a:active {
         font-weight: 500;
+        opacity: 1;
     }
     .shop-nav li {
         margin: 0 35px 0 0;

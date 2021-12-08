@@ -78,7 +78,7 @@ button:hover {
 }
 .content a:hover {
     text-decoration: none;
-    color: #0cbfbf;;
+    color: #0cbfbf;
 }
 .content h1,
 .content h2,
@@ -257,6 +257,7 @@ body.page-shop .header.menu {
 }
 .header-shop:hover {
     background: url("../img/shop-h.png") no-repeat center;
+    background: none;
     color: #fff;
 }
 .header.active .header-shop {
@@ -1245,10 +1246,6 @@ body.page-shop .header.menu {
 .zoomshop {
     padding: 0 0 150px 0;
 }
-/* slider amy */
-#ct_amy_main1 {
-;
-}
 /*end slider amy */
 .zumshop-slider {
     height: 600px;
@@ -2170,6 +2167,7 @@ body.page-shop .header.menu {
 }
 .social-facebook:hover {
     background: url("../img/facebook-h.svg") no-repeat center;
+    background-size: cover;
 }
 .social-instagram {
     position: relative;
@@ -2184,6 +2182,7 @@ body.page-shop .header.menu {
 }
 .social-instagram:hover {
     background: url("../img/instagram-h.svg") no-repeat center;
+    background-size: cover;
 }
 .social-linkedin {
     position: relative;
@@ -2198,6 +2197,7 @@ body.page-shop .header.menu {
 }
 .social-linkedin:hover {
     background: url("../img/linkedin-h.svg") no-repeat center;
+    background-size: cover;
 }
 
 .keine-banner {
@@ -7238,7 +7238,7 @@ textarea {
 .cursor--canvas {
     width: 100vw;
     height: 100vh;
-    z-index: 12000;
+    z-index: 504;
 }
 .cursor--canvas.active,
 .cursor--small.active {
@@ -8076,8 +8076,41 @@ textarea {
 }
 
 @media (max-width: 710px) {
+    .konto-sidebar {
+        left: 0;
+        top: 100%;
+        max-width: 100%;
+        padding: 9px 0 0 64px;
+        overflow: auto;
+    }
+    .kundenkonto-body {
+        padding: 20px 0 0 0;
+        height: calc(100vh + 140px);
+    }
+    .konto-nav li {
+        margin: 0 0 34px 0;
+    }
+    .konto-nav li a {
+        font-size: 21px;
+    }
+    .konto-nav li a:before {
+        width: 36px;
+        height: 31px;
+        background-size: contain !important;
+    }
+    .konto-nav li.konto-nav__ico-1 a:before,
+    .konto-nav li.konto-nav__ico-2 a:before,
+    .konto-nav li.konto-nav__ico-3 a:before,
+    .konto-nav li.konto-nav__ico-4 a:before,
+    .konto-nav li.konto-nav__ico-5 a:before,
+    .konto-nav li.konto-nav__ico-6 a:before {
+
+    }
     .kundenkonto-left {
         display: none;
+    }
+    .konto-sidebar.active {
+        top: 0;
     }
     .konto-body {
         margin: 0;

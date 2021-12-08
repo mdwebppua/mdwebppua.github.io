@@ -50,7 +50,7 @@ $( document ).ready(function() {
         $(".entweder-cursor, .cursor--canvas").removeClass("active");
     });
 
-    $('.header, .aktion-box').on("mousemove", function(e) {
+    $('.header, .aktion-box, .cookie-zum').on("mousemove", function(e) {
         $('.wiewasser-cursor').css({
             opacity: 0,
         });
@@ -191,8 +191,8 @@ $( document ).ready(function() {
     /* animation */
     AOS.init({
         once: true,
-        duration: 1500,
-        offset: 50,
+        duration: 1000,
+        offset: 100,
     });
 
     $('.wie-rating__num').each(function () {
@@ -243,10 +243,7 @@ $( document ).ready(function() {
             freeMode: true,
 
         });
-    };
-
-
-
+    }
 
     var trinkLottie = lottie.loadAnimation({
         container: document.getElementById('trink-lottie'),
@@ -256,17 +253,19 @@ $( document ).ready(function() {
         path: 'img/lottie/dein-trink.json'
     });
 
-
     if ($(".dein-trink").length) {
-        var triggerOne = $(".dein-trink").offset().top - 400;
-        $(window).scroll(function () {
-            if ($(window).scrollTop() >= triggerOne) {
-                trinkLottie.play();
-                return false;
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".dein-trink",
+                start: 'top bottom',
+                //markers: true,
+                onEnter: function () {
+                    console.log('111');
+                    trinkLottie.play();
+                }
             }
         });
     }
-
 
     var gutscheinLottie = lottie.loadAnimation({
         container: document.getElementById('gutschein-lottie'),
@@ -280,16 +279,22 @@ $( document ).ready(function() {
     $(window).on('load resize', function () {
         if ($(window).width() <= 769) {
             gutscheinLottie.play();
-        } else {
-            if ($(".ein-gutschein").length) {
-                $(".ein-gutschein").on('mouseenter', function () {
-                    gutscheinLottie.play();
-                }).on('mouseleave', function () {
-                    gutscheinLottie.stop();
-                });
-            }
         }
     });
+
+    if ($(window).width() > 769) {
+        if ($(".ein-gutschein").length) {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".ein-gutschein",
+                    start: 'top 80%',
+                    onEnter: function () {
+                        gutscheinLottie.play();
+                    }
+                }
+            });
+        }
+    }
 
     // if ($(".ein-gutschein").length) {
     //     var einGutschein = $(".ein-gutschein").offset().top - 400;
@@ -771,6 +776,9 @@ $( document ).ready(function() {
         }
     }
     $(window).on('load resize', function () {
+        setTimeout(function (){
+            AOS.refresh();
+        },1500);
         if ($(window).width() <= 769) {
             entwederMainInit();
         } else {
@@ -809,11 +817,18 @@ $( document ).ready(function() {
         $(".header").addClass("konto");
         $(".open-sidebar").addClass("active");
     }
-    $(".kundenkonto-open").on("click", function() {
+    $(".kundenkonto-open, .open-sidebar").on("click", function() {
         $(".konto-sidebar").toggleClass("active");
     });
 
+    replaceAmp('.productfull-descritpion')
+
+    function replaceAmp(el) {
+        if($(el).length == 0 ) return false;
+        let thSt = $(el).html();
+        $(el).html(thSt.replace(/&amp;/g, '<span style="font-family: FarnhamDisplay, sans-serif">&amp;</span>'));
+    }
 });
 
-$(".product-maskload").addClass("load");
+//$(".product-maskload").addClass("load");
 $(".page-maskload").removeClass("none");

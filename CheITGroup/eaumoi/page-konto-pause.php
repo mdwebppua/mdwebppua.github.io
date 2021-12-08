@@ -15,6 +15,8 @@
 </head>
 <body class="page-pausieren">
 
+<?php include 'header.php'; ?>
+
 <section class="abos-pausieren">
     <div class="pausieren-container">
         <div class="abos-title">

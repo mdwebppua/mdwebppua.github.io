@@ -36,7 +36,7 @@
                         <br><br>
                         +78 000 00 00
                     </div>
-                    <div class="erneut-box">
+                    <div class="erneut-box adresse-button">
                         <a href="page-konto-4-1.php" class="button-dark button-erneut">
                             Adresse anpassen
                         </a>
@@ -57,7 +57,7 @@
                         <br><br>
                         +78 000 00 00
                     </div>
-                    <div class="erneut-box">
+                    <div class="erneut-box adresse-button">
                         <a href="page-konto-4-1.php" class="button-dark button-erneut">
                             Adresse anpassen
                         </a>
@@ -75,7 +75,7 @@
                         <br><br>
                         +78 000 00 00
                     </div>
-                    <div class="erneut-box">
+                    <div class="erneut-box adresse-button">
                         <a href="page-konto-4-1.php" class="button-dark button-erneut">
                             Adresse anpassen
                         </a>

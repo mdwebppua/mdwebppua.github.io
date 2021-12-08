@@ -36,6 +36,7 @@ th {
 }
 img {
     max-width: 100%;
+    height: auto;
 }
 input,
 button,
@@ -103,7 +104,6 @@ button:hover {
     margin: 0 0 15px 15px;
     border-left: 3px solid #182947;
 }
-.content blockquote p {}
 .content blockquote cite {
     background: #fff;
     padding: 15px;
@@ -156,15 +156,12 @@ body {
     font-weight: 300;
     font-style: normal;
     line-height: 1.75;
-    /*padding: 73px 0 0 0;*/
     cursor: none;
     max-width: 100%;
     overflow-x: hidden;
 }
 body.page-home {
     padding: 0;
-}
-.description {
 }
 .container {
     max-width: 1368px;
@@ -356,10 +353,6 @@ body.page-shop .header.menu {
     border: none;
     display: none;
 }
-.open-sidebar:hover {
-
-}
-
 .bg-head {
     background: #F4F8FF;
     padding: 0 0 125px 0;
@@ -426,18 +419,11 @@ body.page-shop .header.menu {
     top: 0;
     left: 0;
 }
-.title-wiewasser__tofrom1 {
-}
 .title-wiewasser__tofrom2 {
-    /*transform: scale(.5);*/
     opacity: 0;
     position: absolute;
 }
-
-.section-vs > div.title-wiewasser__tofrom1 {
-}
 .section-vs > div.title-wiewasser__tofrom2 {
-    /*transform: translate(0, 100vh);*/
     top: 100vh;
 }
 .wiewasser-cursor {
@@ -451,11 +437,8 @@ body.page-shop .header.menu {
     margin-left: calc(-315px / 2);
     backdrop-filter: blur(4px);
     border-radius: 100%;
-
     z-index: 51;
-    /*transform: translate(-50%, -50%);*/
     pointer-events: none;
-
     -webkit-animation: bob-about 10s infinite alternate;
     animation: bob-about 10s infinite alternate
 }
@@ -463,11 +446,6 @@ body.page-shop .header.menu {
     display: block;
 }
 .wiewasser-cursor.absolute {
-    /*position: absolute;*/
-    top: 170% !important;
-    left: 0 !important;
-    /*transform: translate(815px, 1750px) !important;*/
-
     top: 1125px !important;
     left: 25px !important;
 }
@@ -661,7 +639,6 @@ body.page-shop .header.menu {
     min-width: 45px;
     margin: 0 15px 0 0;
 }
-.cookie-zum__thumb img {}
 .cookie-zum__descript {
     padding: 0 110px 0 0;
 }
@@ -759,7 +736,6 @@ body.page-shop .header.menu {
     font-weight: 300;
     font-style: italic;
 }
-.wasser-title span {}
 .wasser-description {
     margin: 21px 0 0 3px;
 }
@@ -802,13 +778,14 @@ body.page-shop .header.menu {
     position: relative;
 }
 .wasser-item__ico img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     margin: 0 auto;
+    object-fit: scale-down;
 }
 .wasser-item__text {
     line-height: 1.1666;
@@ -974,7 +951,6 @@ body.page-shop .header.menu {
     display: contents;
 }
 
-.wasserhahn {}
 .wasserhahn-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1052,8 +1028,9 @@ body.page-shop .header.menu {
     position: relative;
 }
 .wasserhahn-item__ico img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1082,8 +1059,6 @@ body.page-shop .header.menu {
     position: relative;
     z-index: 2;
 }
-
-.fruchtepuree {}
 .fruchtepuree .container {
     position: relative;
 }
@@ -1114,7 +1089,6 @@ body.page-shop .header.menu {
     position: relative;
     z-index: 2;
 }
-.fruchtepuree-buttle__img img {}
 .fruchtepuree-rein {
     max-width: 630px;
     width: 100%;
@@ -1183,13 +1157,14 @@ body.page-shop .header.menu {
     position: relative;
 }
 .fruchtepuree-item__ico img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
     margin: 0 auto;
+    object-fit: scale-down;
 }
 .fruchtepuree-item__text {
     margin: 5px 0 0 0;
@@ -1244,15 +1219,13 @@ body.page-shop .header.menu {
 }
 
 .zoomshop {
-    padding: 0 0 150px 0;
+    padding: 150px 0;
 }
 /*end slider amy */
 .zumshop-slider {
     height: 600px;
     width: 100%;
     margin: 0 auto;
-}
-.zumshop-slick {
 }
 .zumshop-swiper {
     /* Center slide text vertically */
@@ -1289,8 +1262,6 @@ body.page-shop .header.menu {
     transition: 0.3s;
     padding: 25px;
 }
-.zumshop-slick__item:hover {
-}
 .zumshop-swiper.not-bg .zumshop-slick__item:hover{
     background: none !important;
 }
@@ -1309,7 +1280,6 @@ body.page-shop .header.menu {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.zumshop-slick__thumb img {}
 .zumshop-hidden {
     max-height: 0;
     overflow: hidden;
@@ -1328,10 +1298,12 @@ body.page-shop .header.menu {
     font-weight: 300;
     font-size: 23px;
     line-height: 1.30434;
+    padding: 0 15px;
 }
 .zumshop-slick__tag {
     font-size: 18px;
     line-height: 1.444;
+    padding: 0 15px;
 }
 .zumshop-slick__buyer {
     font-size: 18px;
@@ -1358,12 +1330,6 @@ body.page-shop .header.menu {
 .zumshop-slick__item:hover .zumshop-slick__buyer {
     opacity: 1;
 }
-.zumshop-slick__price {
-
-}
-.zumshop-slick__numform {}
-.zumshop-slick__button {}
-
 .zumshop-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1371,7 +1337,7 @@ body.page-shop .header.menu {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 100px 0 0 0;
+    margin: 40px 0 0 0;
 }
 .zumshop-prev,
 .zumshop-next {
@@ -1383,11 +1349,9 @@ body.page-shop .header.menu {
 .zumshop-prev {
     background: url("../img/wie-navigation.svg") no-repeat left;
 }
-.zumshop-prev:hover {}
 .zumshop-next {
     background: url("../img/wie-navigation.svg") no-repeat right;
 }
-.zumshop-next:hover {}
 .zumshop-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1397,7 +1361,6 @@ body.page-shop .header.menu {
 .zumshop-dots span {
     margin: 0 5px;
 }
-.zumshop-dots .slick-dots li.slick-active {}
 .zumshop-dots .swiper-pagination-bullet {
     width: 6px;
     height: 6px;
@@ -1411,9 +1374,6 @@ body.page-shop .header.menu {
 .zumshop-dots .swiper-pagination-bullet-active {
     background: #0D2330;
 }
-.zumshop-dots .slick-dots li button:hover {}
-
-.button-inline {}
 .button-center {
     text-align: center;
 }
@@ -1643,10 +1603,6 @@ body.page-shop .header.menu {
     top: -35px;
     pointer-events: none;
 }
-#gutschein-lottie {
-
-}
-
 .dein-trink {
     padding: 303px 0 90px 0;
 }
@@ -1663,7 +1619,6 @@ body.page-shop .header.menu {
     margin: 0 auto;
 }
 .trink-info {
-    max-width: 715px;
     max-width: 760px;
     width: 100%;
     margin: 34px 0 0 49px;
@@ -1674,6 +1629,7 @@ body.page-shop .header.menu {
 
 .entweder-man {
     padding: 77px 0;
+    overflow: hidden;
 }
 .entweder-man .wasser-title {
     max-width: 680px;
@@ -1704,6 +1660,7 @@ body.page-shop .header.menu {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    max-width: 31%;
 }
 .entweder-item:hover {
     background: #F4F8FF;
@@ -1757,7 +1714,6 @@ body.page-shop .header.menu {
     display: block;
     margin: 0 auto;
 }
-.entweder-item__img.person {}
 .entweder-item__img.person:before {
     content: "";
     display: block;
@@ -1798,9 +1754,12 @@ body.page-shop .header.menu {
     font-size: 23px;
     font-family: 'FarnhamDisplay';
     margin: 13px 0;
+    padding: 0 15px;
 }
 .entweder-item__tag {
     font-size: 16px;
+    line-height: 1.3;
+    padding: 0 15px;
 }
 .entweder-item_buyer {
     display: -webkit-box;
@@ -1859,7 +1818,6 @@ body.page-shop .header.menu {
     width: 25px;
     height: 25px;
 }
-.ntweder-minus:hover {}
 .ntweder-input {
     border: none;
     font-weight: 500;
@@ -1868,9 +1826,6 @@ body.page-shop .header.menu {
     text-align: center;
     background: none;
 }
-.ntweder-input:focus {}
-.ntweder-pluse {}
-.ntweder-pluse:hover {}
 .ntweder-button {
     margin: 0 0 0 15px;
 }
@@ -1951,8 +1906,6 @@ body.page-shop .header.menu {
 .wie-review {
     margin: 110px 0 0 0;
 }
-.wie-list {}
-
 /* swiper slider*/
 .wie-list .swiper-slide {
     width: 360px;
@@ -1986,7 +1939,6 @@ body.page-shop .header.menu {
     justify-content: space-between;
     margin: 30px 0 0 0;
 }
-.wie-info {}
 .wie-info__name {
     font-family: 'FarnhamDisplay';
     font-weight: 500;
@@ -2035,12 +1987,9 @@ body.page-shop .header.menu {
 .wie-prev {
     background: url("../img/wie-navigation.svg") no-repeat left;
 }
-.wie-prev:hover {}
 .wie-next {
     background: url("../img/wie-navigation.svg") no-repeat right;
 }
-.wie-next:hover {}
-.wie-dots {}
 .wie-dots .slick-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2049,7 +1998,6 @@ body.page-shop .header.menu {
 .wie-dots .slick-dots li {
     margin: 0 5px;
 }
-.wie-dots .slick-dots li.slick-active {}
 .wie-dots .slick-dots li button {
     width: 6px;
     height: 6px;
@@ -2063,8 +2011,6 @@ body.page-shop .header.menu {
 .wie-dots .slick-dots li.slick-active button {
     background: #0D2330;
 }
-.wie-dots .slick-dots li button:hover {}
-
 .dem-guten {
     padding: 78px 0 208px 0;
 }
@@ -2076,7 +2022,6 @@ body.page-shop .header.menu {
 .guten-foto {
     margin: 0 -178px 0 -125px;
 }
-.guten-foto img {}
 .guten-folgen {
     width: 460px;
     margin: 186px 0 0 0;
@@ -2107,7 +2052,6 @@ body.page-shop .header.menu {
     padding: 19px 140px 19px 15px;
     background: none;
 }
-.gutten-input:focus {}
 .gutten-button {
     font-weight: 500;
     font-size: 16px;
@@ -2134,7 +2078,6 @@ body.page-shop .header.menu {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.gutten-button:hover {}
 .gutten-button:hover:after {
     right: 0;
 }
@@ -2150,10 +2093,6 @@ body.page-shop .header.menu {
 .gutten-social li:last-child {
     margin: 0;
 }
-.gutten-social li a {
-
-}
-.gutten-social li a:hover {}
 .social-facebook {
     position: relative;
     -webkit-transition: 0.3s;
@@ -2251,8 +2190,6 @@ body.page-shop .header.menu {
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.footer-col {}
-.footer-col__1 {}
 .footer-col__2 {
     margin: 0 0 0 -60px;
 }
@@ -2263,7 +2200,6 @@ body.page-shop .header.menu {
     font-size: 32px;
     margin: 0 0 20px 0;
 }
-.footer-nav {}
 .footer-nav li {
     margin: 0 0 10px 0;
 }
@@ -2277,7 +2213,6 @@ body.page-shop .header.menu {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.footer-nav li a:hover {}
 .footer-nav li a:after {
     content: "";
     display: block;
@@ -2360,7 +2295,6 @@ body.page-shop .header.menu {
     border-radius: 0;
     padding: 0 120px 5px 0;
 }
-.footer-newslatter .gutten-input:focus {}
 .footer-newslatter .gutten-input::-webkit-input-placeholder {
     color: #fff;
 }
@@ -2383,7 +2317,6 @@ body.page-shop .header.menu {
     top: 9px;
     right: 0;
 }
-.footer-newslatter .gutten-button:hover {}
 .footer-newslatter .gutten-button:after {
     background: url("../img/form-arr.svg") no-repeat center right;
 }
@@ -2449,7 +2382,6 @@ body.page-shop .header.menu {
 }
 
 /* start css page-shop.php */
-body.page-shop {}
 body.page-shop .header {
     background: #fff;
     transition: 1s;
@@ -2506,11 +2438,8 @@ body.page-shop .shop-nav {
 body.page-shop .header-shop {
     display: none;
 }
-
 .kostliche-aromen {
     padding: 151px 0 135px 0;
-}
-.kostliche-aromen .container {
 }
 .kostliche-aromen .wasser-title {
     text-align: center;
@@ -2525,7 +2454,6 @@ body.page-shop .header-shop {
 .das-konnte-slider {
     margin: 80px 0 0 0;
 }
-.aromen-list {}
 .aromen-list .swiper-slide {
     width: 285px;
     padding: 70px 0 0 0;
@@ -2560,9 +2488,6 @@ body.page-shop .header-shop {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-}
-.aromen-item:hover {
-
 }
 .aromen-item:after {
     /* content: ""; */
@@ -2603,7 +2528,6 @@ body.page-shop .header-shop {
     height: 100%;
     object-fit: none;
 }
-.aromen-item__img.person {}
 .aromen-item__img.person:before {
     content: "";
     display: block;
@@ -2693,8 +2617,6 @@ body.page-shop .header-shop {
     transform: rotate(-15deg);
     top: 15px;
 }
-.aromen-item__price .free-price {}
-.aromen-item__price .free-price:before {}
 .aromen-item__numform {
     font-weight: 500;
     font-size: 18px;
@@ -2728,7 +2650,6 @@ body.page-shop .header-shop {
     width: 25px;
     height: 25px;
 }
-.aromen-minus:hover {}
 .aromen-input {
     border: none;
     font-weight: 500;
@@ -2737,9 +2658,6 @@ body.page-shop .header-shop {
     text-align: center;
     background: none;
 }
-.aromen-input:focus {}
-.aromen-pluse {}
-.aromen-pluse:hover {}
 .aromen-button {
     margin: 0 0 0 15px;
 }
@@ -2825,8 +2743,6 @@ body.page-shop .header-shop {
 .probierpaket-description {
     margin: 30px 0 80px 0;
 }
-.probierpaket-sale {}
-
 .entweder-flotte {
     margin: -111px 0 0 0;
     padding: 0;
@@ -2866,8 +2782,6 @@ body.page-shop .header-shop {
     max-width: 443px;
     width: 100%;
 }
-.geschenk-title {}
-.geschenk-description {}
 .geschenk-sale {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2879,7 +2793,6 @@ body.page-shop .header-shop {
 .geschenk-item:nth-child(2) {
     margin: 0 0 0 30px;
 }
-
 .das-kostlichste {
     padding: 120px 0 90px 0;
 }
@@ -2894,7 +2807,6 @@ body.page-shop .header-shop {
     width: 100%;
     margin: 0 auto;
 }
-.abo-mobilefirst {}
 .abo-title {
     text-align: center;
 }
@@ -2955,7 +2867,6 @@ body.page-shop .header-shop {
     top: 18px;
     margin: 0 5px;
 }
-.konfigurieren-stepline li {}
 .konfigurieren-stepline li a {
     display: block;
     position: relative;
@@ -3026,21 +2937,17 @@ body.page-shop .header-shop {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-
 }
 .konfigurieren-stepcol {
-
     width: calc(50% - 15px);
     border-radius: 6px;
     background: #F4F8FF;
     padding: 30px 15px 30px 30px;
 }
-.konfigurieren-stepitem {}
 .konfigurieren-step__title {
     font-size: 16px;
     font-weight: bold;
 }
-.konfigurieren-stepform {}
 .konfigurieren-steptype {
     margin: 25px 0 0 0;
     font-weight: normal;
@@ -3138,8 +3045,6 @@ body.page-shop .header-shop {
 .du-musst.active {
     display: block;
 }
-.step-form {
-}
 .step-form.active {
 
     pointer-events: none;
@@ -3167,7 +3072,6 @@ body.page-shop .header-shop {
     font-size: 16px;
     line-height: 1.5;
 }
-.bittle-wahle__title span.current {}
 .bittle-wahle__title span.current.active {
     display: none;
 }
@@ -3223,7 +3127,6 @@ body.page-shop .header-shop {
     transition: 0.3s;
     left: 0;
 }
-.warenkorb-market {}
 .warenkorb-short {
     margin: 0 -40px;
     position: relative;
@@ -3289,8 +3192,6 @@ body.page-shop .header-shop {
     justify-content: space-between;
     align-items: center;
 }
-.warenkorb-info {
-}
 .warenkorb-name {
     font-family: 'FarnhamDisplay';
     font-weight: 300;
@@ -3301,7 +3202,6 @@ body.page-shop .header-shop {
     font-size: 16px;
     line-height: 1.625;
 }
-.warenkorb-current {}
 .warenkorb-type {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3310,8 +3210,6 @@ body.page-shop .header-shop {
     -ms-flex-align: center;
     align-items: center;
 }
-.warenkorb-minus {}
-.warenkorb-pluse {}
 .warenkorb-minus,
 .warenkorb-pluse {
     border: none;
@@ -3351,8 +3249,6 @@ body.page-shop .header-shop {
     margin: 0;
     padding: 0;
     border: none;
-}
-.konfigurieren-total__name {
 }
 .konfigurieren-total__price {
     font-weight: 500;
@@ -3514,7 +3410,6 @@ html.ov-hidden{
     position: absolute;
     bottom: -21px;
 }
-.warenkorb-buttelstatus__info span {}
 .aboshort-header {
     background: #F4F8FF;
 }
@@ -3606,7 +3501,6 @@ html.ov-hidden{
     -ms-flex-align: center;
     align-items: center;
 }
-.aboshort-rabatt__inkl {}
 .aboshort-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3685,14 +3579,12 @@ html.ov-hidden{
     padding: 10px;
     font-weight: normal;
 }
-.aboshort-rabattcode__input:focus {}
 .aboshort-rabattcode__button {
     padding: 10px 28px;
     font-size: 14px;
     height: 40px;
     font-weight: 500;
 }
-.aboshort-rabattcode__button:hover {}
 .basket-totallprice {
     min-height: 450px;
 }
@@ -3720,7 +3612,6 @@ html.ov-hidden{
     font-size: 18px;
     font-weight: bold;
 }
-.basket-totalitem__last .basket-totalitem__name {}
 .basket-totalitem__last .basket-totalitem__name span {
     font-size: 12px;
     font-weight: 500;
@@ -3756,9 +3647,6 @@ html.ov-hidden{
     text-align: center;
     padding: 17px 0 0;
 }
-.deinem-leere {
-
-}
 .deinm-title {
     font-family: 'FarnhamDisplay', sans-serif;
     font-size: 30px;
@@ -3782,7 +3670,6 @@ html.ov-hidden{
 .bezahlung {
     padding: 190px 0 161px 0;
 }
-.container-xl {}
 .bezahlung-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3798,7 +3685,6 @@ html.ov-hidden{
     font-weight: normal;
     margin: 12px 0 0 0;
 }
-.bezahlung-inform {}
 .bezahlung-inform li {
     margin: 0 0 5px 0;
 }
@@ -3846,7 +3732,6 @@ html.ov-hidden{
 .bezahlung-type__input.bezahlung-req {
     border-color: #E27291;
 }
-.bezahlung-type__input:focus {}
 .bezahlung-type.dfcol-2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3861,7 +3746,6 @@ html.ov-hidden{
 .bezahlung-type.dfcol-2 > div {
     width: calc(50% - 15px);
 }
-.bezahlung-type__radio {}
 .bezahlung-type__textarea {
     border: 1px solid #DBDEE7;
     border-radius: 3px;
@@ -3872,7 +3756,6 @@ html.ov-hidden{
     display: block;
     min-height: 166px;
 }
-.bezahlung-type__checkbox {}
 .bezahlung-type.radio input[type=radio] {
     display: none;
 }
@@ -3980,9 +3863,6 @@ html.ov-hidden{
 .select2-container {
     display: block;
     width: 100% !important;
-}
-.select2-container .select2-selection--single {
-
 }
 .select2-container--default .select2-selection--single {
     color: #0D2330;
@@ -4115,8 +3995,6 @@ html.ov-hidden{
     -ms-flex-align: center;
     align-items: center;
 }
-.bezahlung-rabatt__inkl {
-}
 .bezahlung-formprice {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4198,7 +4076,6 @@ html.ov-hidden{
     padding: 0 10px;
     height: 41px;
 }
-.bezahlung-rabattcode__input:focus {}
 .bezahlung-rabattcode__button {
     height: 41px;
     width: 111px;
@@ -4206,7 +4083,6 @@ html.ov-hidden{
     font-size: 14px;
     border-radius: 3px;
 }
-.bezahlung-rabattcode__button:hover {}
 .bezahlung-reqinfo {
     position: absolute;
     left: 0;
@@ -4245,20 +4121,12 @@ html.ov-hidden{
 .bezahlung-total li.bezahlung-total__zwischensumme {
     font-size: 16px;
 }
-.bezahlung-total__zwischensumme .chekout-total__title {}
-.bezahlung-total__zwischensumme .chekout-total__price {}
-.bezahlung-total__versand {}
-.bezahlung-total__versand .chekout-total__title {}
-.bezahlung-total__versand .chekout-total__price {}
 .bezahlung-total__total {
     font-weight: 500;
 }
-.bezahlung-total__total .chekout-total__title {}
 .bezahlung-total__total .chekout-total__title span {
     font-size: 12px;
 }
-.bezahlung-total__total .chekout-total__price {}
-.bezahlung-buylist {}
 .bezahlung-buylist li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4315,8 +4183,6 @@ html.ov-hidden{
 .super-gemacht {
     text-align: center;
 }
-.super-gemacht .wasser-title {
-}
 .super-gemacht .description {
     margin: 22px 0 0 0;
     font-size: 18px;
@@ -4371,17 +4237,15 @@ html.ov-hidden{
     height: 3px;
     position: absolute;
     bottom: 0;
-    width: 0;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    width: 100%;
+    opacity: 0;
 }
 .woocommerce-breadcrumb a:hover:after {
-    width: 100%;
+    opacity: 1;
 }
-.woocommerce-breadcrumb a:hover {}
-.woocommerce-breadcrumb span {}
-
 .product {
     margin: 19px 0 0 0;
     position: relative;
@@ -4450,7 +4314,6 @@ html.ov-hidden{
     width: 100%;
     position: relative;
 }
-.product-slider {}
 .product-slider__wrapper {
     align-items: center;
 }
@@ -4474,8 +4337,6 @@ html.ov-hidden{
     z-index: 2;
     display: flex;
 }
-.product-pagination span {
-}
 .product-pagination span.swiper-pagination-bullet {
     background: none;
     border: 1px solid #0D2330;
@@ -4490,7 +4351,6 @@ html.ov-hidden{
 .product-summary .naturlich-wrapper {
     display: none;
 }
-.naturlich-wrapper {}
 .naturlich-wrapper::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -4501,7 +4361,6 @@ html.ov-hidden{
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
     justify-content: space-between;
 }
 .product-naturlich li {
@@ -4594,9 +4453,7 @@ html.ov-hidden{
     justify-content: space-between;
     margin: 25px 0 0 0;
 }
-.einzelbeutel-imabo__col {}
 .einzelbeutel-box {
-
     position: relative;
 }
 .einzelbeutel-imabo__col .einzelbeutel-box {
@@ -4688,8 +4545,6 @@ html.ov-hidden{
     font-weight: 500;
     border-radius: 4px;
 }
-.imabo-box {
-}
 .einim-abo {
     font-size: 15px;
     height: 52px;
@@ -4732,7 +4587,6 @@ html.ov-hidden{
     position: relative;
     z-index: 2;
 }
-.prdetails-thumb img {}
 .prdetails-info {
     max-width: 505px;
     width: 100%;
@@ -4763,7 +4617,6 @@ html.ov-hidden{
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.prdetail-about__col {}
 .prdetails-info__col .prdetail-about__col {
     width: calc(50% - 30px);
     position: relative;
@@ -4778,16 +4631,12 @@ html.ov-hidden{
     left: -30px;
     top: 0;
 }
-
 .das-konnte {
     margin: 180px 0;
 }
 .das-konnte .wasser-title {
     font-size: 40px;
     text-align: center;
-}
-.konnte-slider {
-
 }
 /* ==================================================== */
 
@@ -4993,15 +4842,9 @@ html.ov-hidden{
     height: 60px;
     padding: 0 25px;
 }
-.login-form__input:focus {}
-.login-form__select {
-}
 .login-form__type.type-select .select2-container {
     display: block;
     width: 100% !important;
-}
-.login-form__type.type-select .select2-container .select2-selection--single {
-
 }
 .login-form__type.type-select .select2-container--default .select2-selection--single {
     color: #0D2330;
@@ -5041,7 +4884,6 @@ html.ov-hidden{
 .login-bleiben input {
     display: none;
 }
-.login-bleiben__checkbox {}
 .login-bleiben label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5083,7 +4925,6 @@ html.ov-hidden{
 .login-vegessen-none:hover {
     text-decoration: underline;
 }
-.login-enter {}
 .login-button {
     margin: 39px 0 0 0;
     width: 100%;
@@ -5148,8 +4989,6 @@ html.ov-hidden{
     transform: rotate(90deg);
     display: block;
 }
-.kundenkonto-body {}
-.konto-nav {}
 .konto-nav li {
     margin: 0 0 18px 0;
 }
@@ -5275,14 +5114,11 @@ html.ov-hidden{
 .konto-logout:hover:before {
     background: url("../img/konto/konto-ico-9h.svg") no-repeat center;
 }
-
 .konto-body {
     width: 100%;
     max-width: 810px;
     margin: 0 0 0 135px;
 }
-.konto-hello {}
-
 .konto-mainbox {
     margin: 0 0 80px 0;
 }
@@ -5334,6 +5170,137 @@ html.ov-hidden{
     padding: 0;
 }
 
+/* Konto Bestellungen */
+.bestelldetails-body {
+    display: none;
+}
+.bestelldetails-item {
+    margin: 0 0 68px 0;
+}
+.bestelldetails-details {
+    background: #F4F8FF;
+    border-radius: 11px;
+    padding: 30px 22px;
+}
+.bestelldetails-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DBDEE7;
+    padding: 0 0 8px 0;
+    margin: 0 0 12px 0;
+}
+.bestelldetails-row:last-child {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.bestelldetails-row__name {
+    font-size: 16px;
+    font-weight: bold;
+}
+.bestelldetails-row__info {
+    font-size: 16px;
+    font-weight: normal;
+}
+.bestelldetails-row__info a {
+    color: #E27291;
+}
+.bestelldetails-row__info span {
+    color: #E27291;
+}
+.bestelldetails-anzeigen {
+    display: flex;
+    margin: 19px 0 0 0;
+}
+.button-anzeigen {
+    margin-left: auto;
+    font-size: 15px;
+    width: 161px;
+    height: 45px;
+    border-radius: 4px;
+    padding: 0;
+}
+/* Konto Bestellungen Details */
+.bestellung-diese {
+    background: #F4F8FF;
+    border-radius: 11px;
+    padding: 30px 22px;
+    display: none;
+}
+.bestellung-vom {
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(13 35 48 / 40%);
+    padding: 0 0 24px 0;
+    margin: 0 0 23px 0;
+}
+.blvom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DBDEE7;
+    padding: 0 0 8px 0;
+    margin: 0 0 10px 0;
+}
+.blvom-row:last-child {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.blvom-row__name strong {
+    font-weight: bold;
+}
+.blvom-row__info strong {
+    font-weight: bold;
+}
+.blvom-row__info a {
+    font-weight: bold;
+}
+.bestellung-total {
+    font-size: 16px;
+}
+.bltotal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #DBDEE7;
+    padding: 0 0 11px 0;
+    margin: 0 0 10px 0;
+}
+.bltotal-row:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.bltotal-row__name strong {
+    font-weight: bold;
+}
+.bltotal-row__info strong {
+    font-weight: bold;
+}
+
+/* Konto Abo */
+.konto-konfiguriert {
+    background: #F4F8FF;
+    border-radius: 11px;
+    padding: 30px 22px;
+    font-size: 16px;
+    display: none;
+}
+.knkonf-row {
+    border-bottom: 1px solid rgb(13 35 48 / 40%);
+    padding: 0 0 13px 0;
+    margin: 0 0 13px 0;
+}
+.knkonf-row:last-child {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.knkonf-row strong {
+    font-weight: bold;
+}
 .bestellung-title {
     font-size: 23px;
     font-weight: 500;
@@ -5341,7 +5308,8 @@ html.ov-hidden{
 .bestellung-description {
     font-size: 16px;
     font-weight: normal;
-    margin: 0 0 25px 0;
+    margin: 0 0 20px 0;
+    line-height: 1;
 }
 .bestelldetails-table .td-produkt {
     width: 50%;
@@ -5361,7 +5329,7 @@ html.ov-hidden{
 .button-erneut {
     font-size: 12px;
     font-weight: 500;
-    padding: 0 13px;
+    padding: 0 26px;
     height: 34px;
     border-radius: 4px;
     line-height: 34px;
@@ -5403,7 +5371,7 @@ html.ov-hidden{
 .konto-abothead {
     font-size: 16px;
     font-weight: bold;
-    margin: 15px 0;
+    margin: 19px 0 16px 0;
 }
 .td-abostart {
     font-size: 16px;
@@ -5501,7 +5469,6 @@ body.page-pausieren {
     font-weight: normal;
     margin: 25px 0 0 0;
 }
-.abos-timer {}
 .abos-timer.col-2 {
     display: flex;
     justify-content: space-between;
@@ -5525,7 +5492,6 @@ body.page-pausieren {
     width: 100%;
     padding: 0 24px 0 58px;
 }
-.input-time:focus {}
 .input-time__ico {
     content: "";
     display: flex;
@@ -5543,8 +5509,6 @@ body.page-pausieren {
 .air-datepicker-body--day-name {
     color: #E27291;
 }
-
-.schade-list {}
 .schade-list .login-bleiben {
     font-size: 16px;
     margin: 25px 0 0 0;
@@ -5561,10 +5525,6 @@ body.page-pausieren {
 /* ==================================================== */
 
 /* start css page page-firmen.php */
-.page-firmen {
-
-}
-.fur-unternehmen {}
 .firmen-main {
     padding: 175px 0 62px 0;
     background: #F8F8FA;
@@ -5608,7 +5568,6 @@ body.page-pausieren {
 .durstige-enter p {
     margin: 20px 0 0 0;
 }
-.durstige-enter ul {}
 .durstige-enter ul li {
     display: flex;
     margin: 0 0 18px 0;
@@ -5694,12 +5653,6 @@ body.page-pausieren {
 .mitarbeiter-enter ul {
     margin: 20px 0 0 0;
 }
-.mitarbeiter-enter li {}
-.mitarbeiter-enter li b,
-.mitarbeiter-enter li strong {}
-
-.firmen-unser {}
-.firmen-header {}
 .firmen-header svg {
     width: 100%;
     min-width: 1440px;
@@ -5729,13 +5682,11 @@ body.page-pausieren {
     width: 100%;
     max-width: 570px;
 }
-.angebot-figure img {}
 .angebot-enter {
     margin: 31px 0 0 0;
     position: relative;
     z-index: 2;
 }
-.angebot-enter ul {}
 .angebot-enter ul li {
     display: flex;
     margin: 0 0 18px 0;
@@ -5783,7 +5734,6 @@ body.page-pausieren {
 .laden-shortstory:hover {
     background: #F4F8FF;
 }
-.laden-short {}
 .laden-short__thumb {
     position: relative;
     overflow: hidden;
@@ -5814,7 +5764,6 @@ body.page-pausieren {
 .laden-short__title a {
     color: #0D2330;
 }
-.laden-short__title a:hover {}
 .laden-short__enter {
     margin: 8px 0 0 0;
 }
@@ -5829,7 +5778,6 @@ body.page-pausieren {
     color: #0D2330;
     padding: 0 31px 0 0;
 }
-.laden-short__link a:hover {}
 .laden-short__link a:after {
     content: "";
     display: block;
@@ -5880,7 +5828,6 @@ body.page-pausieren {
 .blog-post {
     padding: 178px 0 85px 0;
 }
-.fullpost-main {}
 .fullpost-title {
     text-align: center;
     font-size: 50px;
@@ -5906,12 +5853,9 @@ body.page-pausieren {
     width: 100%;
     margin: 0 auto;
 }
-.fullpost-content {}
 .fullpost-content h2 {
     font-size: 40px;
 }
-.fullpost-content h3 {}
-.fullpost-content h4 {}
 .fullpost-content h2,
 .fullpost-content h3,
 .fullpost-content h4 {
@@ -5938,15 +5882,11 @@ body.page-pausieren {
     padding: 0 0 0 20px;
     margin: 0 0 50px 0;
 }
-.fullpost-content ul li {}
-.fullpost-content ul li::marker {}
 .fullpost-content ol {
     list-style: decimal;
     padding: 0 0 0 20px;
     margin: 0 0 50px 0;
 }
-.fullpost-content ol li {}
-.fullpost-content ol li::marker {}
 .fullpost-content figure {
     margin: 0 0 50px 0;
 }
@@ -5959,7 +5899,6 @@ body.page-pausieren {
 .fullpost-content blockquote p {
     margin: 0;
 }
-.fullpost-content blockquote cite {}
 .has-text-align-left {
     text-align: left;
 }
@@ -6010,7 +5949,6 @@ body .fullpost-wasser__aus {
     padding: 0;
     margin: 0
 }
-.fullpost-wasser__aus li {}
 .fullpost-wasser__aus li:before {
     content: "";
     display: inline-flex;
@@ -6033,12 +5971,9 @@ body .fullpost-wasser__aus {
     position: relative;
     color: #0D2330;
 }
-.fullpost-pagation a:hover {}
-.fullpost-pagation__prev {}
 .fullpost-pagation__prev a {
     padding: 0 0 0 31px;
 }
-.fullpost-pagation__prev a:hover {}
 .fullpost-pagation__prev a:before {
     content: "";
     display: block;
@@ -6055,10 +5990,6 @@ body .fullpost-wasser__aus {
 .fullpost-pagation__prev a:hover:before {
     left: -5px;
 }
-
-.fullpost-pagation__item {}
-.fullpost-pagation__item a {}
-.fullpost-pagation__item a:hover {}
 .fullpost-pagation__item a:after {
     content: "";
     display: block;
@@ -6071,12 +6002,9 @@ body .fullpost-wasser__aus {
 .fullpost-pagation__item a:hover:after {
     width: 100%;
 }
-
-.fullpost-pagation__next {}
 .fullpost-pagation__next a {
     padding: 0 31px 0 0;
 }
-.fullpost-pagation__next a:hover {}
 .fullpost-pagation__next a:after {
     content: "";
     display: block;
@@ -6111,7 +6039,6 @@ body .fullpost-wasser__aus {
     right: -26px;
     z-index: 1;
 }
-.schweizer-figure img {}
 .schweizer-entery {
     position: relative;
     z-index: 2;
@@ -6154,11 +6081,9 @@ body .fullpost-wasser__aus {
     padding: 40px 25px 40px 50px;
     margin: 0 0 0 35px;
 }
-
 .kommt-item:hover {
     background: #C9EDE8;
 }
-.kommt-so {}
 .kommt-so__ico {
     width: 72px;
     height: 60px;
@@ -6194,8 +6119,6 @@ body .fullpost-wasser__aus {
     font-weight: normal;
     margin: 20px 0 0 0;
 }
-.kommt-so__content p {}
-
 .wir-gutes {
     background: #e5d3ba;
     padding: 100px 0 0 0;
@@ -6221,7 +6144,6 @@ body .fullpost-wasser__aus {
     max-width: 590px;
     width: 100%;
 }
-.gutes-list li {}
 .gutes-item {
     width: calc(100% / 4);
 }
@@ -6568,7 +6490,6 @@ body.open-video {
     z-index: 5;
     margin: 6px 0 0 0;
 }
-.freude-kontaktform {}
 .freude-person {
     display: flex;
     margin: 0 0 32px 0;
@@ -6668,7 +6589,6 @@ textarea {
     align-items: center;
     text-align: center;
 }
-.danke-info {}
 .danke-title {
     font-size: 30px;
 }
@@ -6699,7 +6619,6 @@ textarea {
     max-width: 815px;
     width: 100%;
 }
-.content-eaubox {}
 .content-eaubox p {
     margin: 0 0 30px 0;
 }
@@ -6758,7 +6677,6 @@ textarea {
 .faq-item__info p {
     margin: 0 0 15px 0;
 }
-.faq-ul {}
 .faq-ul li {
     position: relative;
     padding: 0 0 0 15px;
@@ -6777,14 +6695,13 @@ textarea {
 /* start css page 404 */
 .page404 {
     background: #C9EDE8;
-    padding: 69px 0;
+    padding: 69px 24px 96px 24px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.page404-body {}
 .page404-logo {
     font-size: 150px;
     font-family: 'FarnhamDisplay', sans-serif;
@@ -6805,8 +6722,6 @@ textarea {
 .page404-button {
     margin: 40px 0 0 0;
 }
-.page404-button a {}
-
 /* start css menu */
 .header-shop.menu {
     opacity: 0;
@@ -6848,12 +6763,9 @@ textarea {
     z-index: 10;
 }
 .navigation-body {
-    max-width: 395px;
     max-width: 366px;
     width: 100%;
     margin: 0 auto;
-}
-.navigation-menu {
 }
 .navigation-menu li {
     margin: 0 0 24px 0;
@@ -6918,7 +6830,6 @@ textarea {
     margin: -8px 0 0 0;
     border: none;
 }
-.navigation-search__button:hover {}
 .navigation-sosialbox {
     position: absolute;
     left: 24px;
@@ -7075,7 +6986,6 @@ textarea {
 .gefunden-flasche a:hover {
     text-decoration: underline;
 }
-.gefunden-flasche p {}
 .gefunden-rabatt {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7089,7 +6999,6 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
 }
-.gefunden-rabatt__inkl {}
 .gefunden-form {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7121,9 +7030,6 @@ textarea {
     border: none;
     cursor: pointer;
 }
-.gefunden-buy:hover {}
-
-.gefunden-magazin {}
 .gefunden-lorem {
     border-bottom: 1px solid #CED5DD;
     padding: 0 0 15px 0;
@@ -7149,7 +7055,6 @@ textarea {
 .gefunden-lorem__title a {
     color: #0D2330;
 }
-.gefunden-lorem__title a:hover {}
 .gefunden-lorem__info {
     font-size: 14px;
     font-weight: 300;
@@ -7452,6 +7357,9 @@ textarea {
     }
 }
 @media (max-width: 1199.98px) {
+    body, .entweder-body:hover, .link-load:hover {
+        cursor: auto;
+    }
     .container,
     .container-xl {
         padding: 0 24px;
@@ -7514,10 +7422,54 @@ textarea {
         z-index: 0;
         right: 0;
     }
+
+    .zumshop-slider {
+        height: auto;
+    }
+    .zumshop-swiper {
+        max-width: 280px;
+        margin: 0 16px 0;
+    }
+    .zumshop-slick {
+        margin: 100px 0 46px;
+    }
+    .zumshop-slick__item {
+        padding: 0;
+        overflow: visible;
+        border-radius: 10px;
+    }
+    .zumshop-navigation {
+        display: none;
+    }
+    .zumshop-slick__thumb {
+        height: 260px;
+        margin: -50px 0 0 0;
+    }
+    .zumshop-slick__thumb img {
+        height: 100%;
+    }
+    .zumshop-slick__tag {
+        font-size: 16px;
+        line-height: 1.125;
+        margin: 14px 0 0 0;
+        min-height: 36px;
+    }
+    .zumshop-hidden {
+        opacity: 1;
+        max-height: 10em;
+    }
+    .zumshop-slick__name {
+        margin: 12px 0 0;
+    }
+    .zumshop-slick__buyer {
+        justify-content: space-between;
+        margin: 0;
+        padding: 30px 30px 20px;
+        opacity: 1;
+        font-size: 16px;
+    }
 }
 @media (max-width: 991.98px) {
-    .bublle-wiewasser {
-    }
     .wiewasser-cursor {
         display: none;
     }
@@ -7566,7 +7518,9 @@ textarea {
         margin: 0;
         margin-left: auto;
     }
-
+    .zoomshop {
+        padding: 46px 0 150px 0;
+    }
     .footer-main {
         flex-wrap: wrap;
         align-items: baseline;
@@ -7580,7 +7534,6 @@ textarea {
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .footer-nav li {}
     .footer-col__2 {
         margin: 50px 0;
         order: 3;
@@ -7622,6 +7575,7 @@ textarea {
     .keine-banner {
         overflow-x: auto;
         overflow-y: hidden;
+        padding: 8px 0;
     }
     .keine-body {
         width: 1000px;
@@ -7687,7 +7641,6 @@ textarea {
     .kundenkonto-left {
         display: block;
     }
-    .kundenkonto-left.active {}
     .kundenkonto-body {
         width: 100%;
         padding: 100px 0 0 0;
@@ -7769,7 +7722,7 @@ textarea {
     }
 
 }
-@media (max-width: 768.98px) {
+@media (max-width: 767px) {
     .panel-wiewasser {
         padding-bottom: 40%;
     }
@@ -7777,6 +7730,70 @@ textarea {
         left: 52%;
         top: 12px;
     }
+    .header.active .header-shop {
+        top: 12px;
+    }
+    .header {
+        top: initial;
+        bottom: 0;
+        background: #fff;
+        height: 59px;
+    }
+    .header.active {
+        padding: 12px 0;
+    }
+    body.page-shop .header-shop {
+        /*display: block;*/
+    }
+    .logo-top {
+        max-width: 106px;
+    }
+    .header-shop {
+        font-weight: bold;
+        background: none;
+    }
+    .header-shop:hover {
+        color: #0D2330;
+        background: none;
+    }
+    .ico-basket {
+        width: 23px;
+        height: 22px;
+        background-size: cover;
+    }
+    .ico-profile {
+        width: 17px;
+        height: 25px;
+        background-size: cover;
+    }
+    .menu-button span {
+        display: none;
+    }
+    .menu-button .ico-bars {
+        margin: 0;
+    }
+    .ico-bars:before, .ico-bars:after {
+        width: 24px;
+        height: 2px;
+        background-size: cover;
+    }
+
+    /* cookie */
+    .cookie-zum {
+        bottom: 81px;
+        left: 22px;
+        right: 22px;
+    }
+    .cookie-zum__thumb {
+        margin: 0 24px 0 0;
+    }
+    .cookie-zum__link {
+        bottom: 11px;
+    }
+    .cookie-zum__descript {
+        padding: 0 35px 15px 0;
+    }
+
     .wasser-rasp__1 {
         top: -230px;
     }
@@ -7787,59 +7804,69 @@ textarea {
         margin: 67px 0 20px 0;
     }
     .wasserhahn {
-        padding: 120px 0 0 0;
+        padding: 26px 0 0 0;
     }
-
-    .zumshop-slider {
-        height: auto;
-    }
-    .zumshop-swiper {
-        max-width: 280px;
-        margin: 0 11px 0;
-    }
-    .zumshop-slick {
-        margin: 100px 0;
-    }
-    .zumshop-slick__item {
-        padding: 0;
-        overflow: visible;
-    }
-    .zumshop-slick__thumb {
-        height: 260px;
-        margin: -50px 0 0 0;
-    }
-    .zumshop-slick__thumb img {
-        height: 100%;
-    }
-    .zumshop-hidden {
-        opacity: 1;
-        max-height: 10em;
-    }
-    .zumshop-slick__name {
-        margin: 13px 0;
-    }
-    .zumshop-slick__buyer {
-        padding: 15px;
-        justify-content: space-between;
-        margin: 0;
-    }
-
     .gutschein-img {
         position: relative;
         top: 0;
+        height: 250px;
+        margin: 0 -24px;
     }
     #gutschein-lottie {
         width: 1452px;
         margin: -170px 0 -250px -790px;
         height: 704px;
     }
-
     .entweder-list {
         justify-content: inherit;
+        margin: 127px 0 0 0;
+    }
+    .entweder-item__img {
+        position: relative;
+        margin: -60px 0 0 0;
+    }
+    .entweder-item__name {
+        margin: 16px 0 0 0;
+    }
+    .entweder-item__tag {
+        margin: 8px 0 0 0;
+        min-height: 36px;
+    }
+    .ntweder-item__price {
+        font-size: 17px;
+    }
+    .entweder-man {
+        padding: 53px 0 136px;
+    }
+    .entweder-item_buyer {
+        padding: 30px 30px 22px 30px;
+    }
+    .entweder-man .container {
+        max-width: none;
+    }
+    .entweder-man .entweder-main {
+        margin: 0 -24px;
     }
     .entweder-item {
         background: #F4F8FF;
         cursor: none;
+        max-width: none;
+    }
+    .trink-description {
+        margin: 28px 0 36px 0;
+    }
+    .dein-trink {
+        padding: 113px 0 90px 0;
+    }
+    .entweder-man .wasser-title {
+        text-align: left;
+    }
+    .flotte-description {
+        text-align: left;
+    }
+    .entweder-description {
+        text-align: left;
+        margin: 26px auto 0;
     }
     .entweder-item_buyer {
         opacity: 1;
@@ -7852,7 +7879,7 @@ textarea {
         display: none;
     }
     .fruchtepuree {
-        padding: 120px 0;
+        padding: 94px 0;
     }
     .fruchtepuree-buttle {
         margin: 0;
@@ -7863,17 +7890,38 @@ textarea {
     .fruchtepuree-rein {
         margin: 0;
     }
-
     .kleiner-banner {
         position: relative;
         bottom: 0;
         margin: 50px 0 0 auto;
     }
     .prinzip-info {
-        margin: 26px -215px 0 0;
+        order: 2;
+        max-width: 100%;
+        margin: 75px 0 0 0;
+        min-width: auto;
     }
-
-
+    .prinzip-description {
+        margin: 28px 0 35px 0;
+    }
+    .prinzip-body {
+        flex-direction: column;
+    }
+    .prinzip-foto {
+        order: 1;
+        width: auto;
+        margin: 0 -70px;
+        min-height: 416px;
+    }
+    .prinzip-foto img {
+        max-width: 100%;
+    }
+    .prinzip-foto img:nth-child(1),
+    .prinzip-foto img:nth-child(2),
+    .prinzip-foto img:nth-child(3) {
+        top: 0;
+        left: 0;
+    }
     .aktion-gratis {
         flex-direction: column;
         align-items: center;
@@ -7881,6 +7929,10 @@ textarea {
     .aktion-button {
         margin: 15px 0 0 0;
         margin-left: inherit;
+    }
+
+    .footer {
+        padding: 76px 0 150px 0;
     }
 
     .super-gemacht .wasser-title {
@@ -8020,7 +8072,7 @@ textarea {
         pointer-events: none;
         width: 902px;
         height: 816px;
-        background: url(../img/about/kontakt-bg.jpg) no-repeat right top;
+        background: url("../img/about/kontakt-bg.jpg") no-repeat right top;
         position: absolute;
         top: -50px;
         left: -600px;
@@ -8073,9 +8125,25 @@ textarea {
         margin: 43px 0 0 0px;
         line-height: 1.75;
     }
-}
 
-@media (max-width: 710px) {
+    /* Konto Bestellungen */
+    .bestellung-box {
+        display: none;
+    }
+    .bestelldetails-body {
+        display: block;
+    }
+    .wasserhahn-list li, .wasser-list li, .fruchtepuree-list li{
+        -webkit-animation: none!important;
+        -moz-animation: none!important;
+        -o-animation: none!important;
+        animation: none!important;
+    }
+    .fruchtepuree .wasser-title {
+        margin: 4px 0 0 0;
+    }
+
+    /* Konto Sidebar */
     .konto-sidebar {
         left: 0;
         top: 100%;
@@ -8121,63 +8189,189 @@ textarea {
     .open-sidebar.active {
         display: block;
     }
-    .header {
-        top: initial;
-        bottom: 0;
-        background: #fff;
-        height: 59px;
+
+    /* Konto Bestellungen */
+    .konto-dashboard {
+        min-height: 100vh;
+        padding: 46px 0 120px 0;
     }
-    .header.active {
-        padding: 12px 0;
+    .bestellung-title {
+        font-size: 24px;
     }
-    body.page-shop .header-shop {
-        /*display: block;*/
+
+    /* Konto Bestellungen Details */
+    .bestellung-diese {
+        display: block;
     }
-    .logo-top {
-        max-width: 106px;
+    .bestellung-description {
+        font-size: 18px;
+        font-weight: 300;
+        margin: 26px 0 34px 0;
+        line-height: 1.444;
     }
-    .header-shop {
+    .bestellung-adresse {
+        flex-direction: column;
+        margin: 70px 0 0 0;
+    }
+    .adresse-box {
+        width: 100%;
+        border-radius: 11px;
+        padding: 23px 22px 30px;
+        background: #F5F8FD;
+        margin: 0 0 21px 0;
+    }
+    .adresse-title {
+        font-size: 24px;
+    }
+    .adresse-item {
+        padding: 0;
+        margin: 6px 0 0 0;
+        line-height: 1.375;
+    }
+
+    /* Konto Abo */
+    .konto-abothead {
+        margin: 26px 0 17px 0;
+    }
+    .konto-mainbox {
+        margin: 0 0 53px 0;
+    }
+    .konto-konfiguriert {
+        display: block;
+    }
+    .konfiguriert-button .button-dark {
+        background-position: 0 100%;
+        color: #fff;
+        font-size: 15px;
         font-weight: bold;
-        background: none;
+        width: 100%;
+        height: 45px;
+        margin: 0 0 14px 0;
     }
-    .header-shop:hover {
+    .konfiguriert-button .button-dark:hover {
         color: #0D2330;
-        background: none;
+        background-position: 500% -100%;
     }
-    .ico-basket {
-        width: 23px;
-        height: 22px;
-        background-size: cover;
+    .konfiguriert-button .button-link {
+        background-position: 0 -100%;
+        color: #0D2330;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        height: 45px;
+        margin: 0 0 14px 0;
     }
-    .ico-profile {
-        width: 17px;
-        height: 25px;
-        background-size: cover;
+    .konfiguriert-button .button-link:hover {
+        background-position: 500% 100%;
+        color: #fff;
     }
-    .menu-button span {
-        display: none;
+
+    /* Konto Abos – Pausieren */
+    .abos-pausieren {
+        align-items: start;
+        padding: 34px 24px 110px;
     }
-    .menu-button .ico-bars {
+    .abos-description {
+        margin: 23px 0 0 0;
+        line-height: 1.666;
+    }
+    .abos-timer.col-2 {
+        flex-direction: column;
+        margin: 25px 0 0 0;
+    }
+    .abos-timer.col-2 .col {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+    .abos-timer.col-2 .col:last-child {
         margin: 0;
     }
-    .ico-bars:before, .ico-bars:after {
-        width: 24px;
-        height: 2px;
-        background-size: cover;
+    .abos-enter .button-dark {
+        background-position: 0 100%;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+        height: 45px;
+        margin: 0 0 14px 0;
     }
-    .cookie-zum {
-        bottom: 81px;
-        left: 22px;
-        right: 22px;
+
+    /* Konto Adressen */
+    .adressen-top a, .adressen-top__neue {
+        margin: 6px 0 0 0;
     }
-    .cookie-zum__thumb {
-        margin: 0 24px 0 0;
+    .adressen-top {
+        flex-direction: column;
+        align-items: start;
+        margin: 0 0 5px 0;
     }
-    .cookie-zum__link {
-        bottom: 11px;
+    .adresse-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-    .cookie-zum__descript {
-        padding: 0 35px 15px 0;
+    .adresse-button .button-dark {
+        background-position: 0 100%;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        width: calc(50% - 15px);
+        height: 45px;
+        padding: 0;
+        margin: 0;
+    }
+    .adresse-button .button-dark:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
+    }
+    .adresse-button .button-link {
+        background-position: 0 -100%;
+        color: #0D2330;
+        font-size: 15px;
+        font-weight: bold;
+        width: calc(50% - 15px);
+        height: 45px;
+        padding: 0;
+        margin: 0;
+    }
+    .adresse-button .button-link:hover {
+        background-position: 500% 100%;
+        color: #fff;
+    }
+    .ein-gutschein {
+        padding: 90px 0 0 0;
+    }
+    .ntweder-input {
+        font-size: 16px;
+        width: 20px;
+    }
+    .ntweder-minus, .ntweder-pluse {
+        width: 20px;
+    }
+    body.page-shop .shop-navlist {
+        overflow: auto;
+        width: 100%;
+        position: absolute;
+        top: -59px;
+        background: #0D2330;
+        color: #fff;
+        left: 0;
+    }
+    body.page-shop .shop-nav {
+        padding-left: 24px;
+    }
+    .shop-nav li a {
+        color: #fff;
+        font-weight: 300;
+        opacity: 0.5;
+        padding: 20px 0;
+    }
+    .shop-nav li a:active,
+    .shop-nav li a:hover {
+        font-weight: 500;
+    }
+    .shop-nav li {
+        margin: 0 35px 0 0;
     }
 }
 
@@ -8304,7 +8498,10 @@ textarea {
     }
     .wasser-list {
         flex-direction: column;
-        margin: 243px 0 20px 22px;
+        margin: 217px 0 20px 22px;
+    }
+    .wasser-list li:nth-child(3) {
+        margin: 0;
     }
     .wasser-list li:nth-child(2) {
         margin: 21px 0;
@@ -8346,11 +8543,8 @@ textarea {
         background-size: contain;
     }
     .wasser-rasp__4 {
-        bottom: 20px;
+        bottom: 0;
         left: 70px;
-    }
-    .wasserhahn {
-        padding: 0;
     }
     .wasserhahn-auf {
         max-width: 100%;
@@ -8373,8 +8567,8 @@ textarea {
         height: 0;
     }
     .wasserhahn-list {
-        margin: 45px 0 0 0;
-        width: 520px;
+        margin: 49px 0 0 0;
+        width: 510px;
     }
     .wasserhahn-list li:nth-child(1) {
         margin: 26px 0 0 0;
@@ -8403,20 +8597,11 @@ textarea {
     .wasserhahn-buttle__img img {
         max-width: 500px;
     }
-    .fruchtepuree {
-        padding: 97px 0;
-    }
     .fruchtepuree-body {
         flex-direction: column;
     }
     .fruchtepuree-rein {
         order: 1;
-    }
-    .fruchtepuree .wasser-title {
-        margin: 16px 0 0 0;
-    }
-    .fruchtepuree .schritt-description {
-        margin: 16px 0 0 0;
     }
     .fruchtepuree-list {
         margin: 48px 0 0 0;
@@ -8451,25 +8636,6 @@ textarea {
         margin: 0 auto;
         right: 0;
     }
-    .zoomshop {
-        padding: 42px 0 150px 0;
-    }
-    .zumshop-slick__name {
-        margin: 19px 0 0 0;
-    }
-    .zumshop-slick__tag {
-        font-size: 16px;
-        line-height: 1.125;
-        margin: 7px 0 0 0;
-        min-height: 36px;
-    }
-    .zumshop-slick__buyer {
-        padding: 30px;
-        opacity: 1;
-    }
-    .zumshop-slick {
-        margin: 100px 0 38px 0;
-    }
     .zoomshop .button-link {
         font-size: 20px;
         padding: 15px 44px;
@@ -8481,9 +8647,6 @@ textarea {
     .aktion-box.closed {
         display: none;
     }
-    .ein-gutschein {
-        padding: 90px 0 0 0;
-    }
     .ein-gutschein-body {
         padding: 0;
     }
@@ -8494,9 +8657,6 @@ textarea {
         font-size: 60px;
         line-height: 1.08;
     }
-    .gutschein-img {
-        height: 244px;
-    }
     .gutschein-description {
         margin: 30px 0 43px 0;
     }
@@ -8504,76 +8664,8 @@ textarea {
         padding: 10px 31px;
         font-size: 17.5px;
     }
-
-
-    .dein-trink {
-        padding: 70px 0 73px 0;
-    }
-    .trink-img {
-        margin: 0 -24px;
-        width: initial;
-        height: 413px;
-    }
-    .trink-description {
-        margin: 26px 0 35px 0;
-    }
-    .trink-info .button-link {
-        padding: 12px 33px;
-        font-size: 17.5px;
-    }
-    .entweder-man .wasser-title {
-        text-align: left;
-    }
-    .entweder-description {
-        text-align: left;
-        margin: 20px auto 0;
-    }
-    .entweder-list {
-        margin: 127px 0 0 0;
-    }
-    .entweder-item__img {
-        position: relative;
-        margin: -60px 0 0 0;
-    }
-    .entweder-item__name {
-        margin: 18px 0 0 0;
-    }
-    .entweder-item__tag {
-        margin: 5px 0 0 0;
-        min-height: 36px;
-    }
-    .entweder-item_buyer {
-        padding: 30px 30px 22px 30px;
-    }
     .das-prinzip {
         padding: 0 0 94px 0;
-    }
-    .prinzip-body {
-        flex-direction: column;
-    }
-    .prinzip-foto {
-        order: 1;
-        width: auto;
-        margin: 0 -70px;
-        min-height: 416px;
-    }
-    .prinzip-foto img {
-        max-width: 100%;
-    }
-    .prinzip-foto img:nth-child(1),
-    .prinzip-foto img:nth-child(2),
-    .prinzip-foto img:nth-child(3) {
-        top: 0;
-        left: 0;
-    }
-    .prinzip-info {
-        order: 2;
-        max-width: 100%;
-        margin: 75px 0 0 0;
-        min-width: auto;
-    }
-    .prinzip-description {
-        margin: 20px 0 35px 0;
     }
     .wie-schmeckt {
         padding: 69px 0;
@@ -8615,6 +8707,16 @@ textarea {
     .gutten-newslatter__form {
         margin: 5px 0 0 0;
     }
+    .footer-newslatter .gutten-newslatter__form {
+        margin: 17px 0 0;
+    }
+    .footer-newslatter .gutten-button {
+        padding-right: 20px;
+        top: 7px;
+    }
+    .footer-newslatter .gutten-button:after {
+        right: 0;
+    }
     .gutten-input {
         border: 1px solid #0D2330;
         border-radius: 6px;
@@ -8636,9 +8738,8 @@ textarea {
     .wie-list .swiper-slide {
         width: 322px;
     }
-    .button-arrtop {}
     .footer {
-        padding: 41px 0 100px
+        padding: 37px 0 100px
     }
     .footer-title {
         font-size: 31px;
@@ -8651,7 +8752,7 @@ textarea {
     }
     .footer-bottom {
         flex-direction: column;
-        margin: 60px 0 0 0;
+        margin: 25px 0 0 0;
         align-items: start;
     }
     .footer-link {
@@ -8742,31 +8843,6 @@ textarea {
     .aktion-button {
         margin: 45px 0 0 0;
         margin-left: inherit;
-    }
-    body.page-shop .shop-navlist {
-        overflow: auto;
-        width: 100%;
-        position: absolute;
-        top: -59px;
-        background: #0D2330;
-        color: #fff;
-        left: 0;
-    }
-    body.page-shop .shop-nav {
-        width: 580px;
-    }
-    .shop-nav li a {
-        color: #fff;
-        font-weight: 300;
-        opacity: 0.5;
-        padding: 20px 0;
-    }
-    .shop-nav li a:active,
-    .shop-nav li a:hover {
-        font-weight: 500;
-    }
-    .shop-nav li {
-        margin: 0 10px 0 25px;
     }
     #gutschein-lottie {
         width: 1000px;
@@ -9088,7 +9164,10 @@ textarea {
         margin: 25px 0 0 0;
     }
     .konfigurieren-button button.button-link {
-        padding: 15px 36px;
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+        font-weight: bold;
     }
 
     /* step 2 */
@@ -9623,7 +9702,48 @@ textarea {
 
     /* page 404 */
     .page404-logo {
+        font-size: 120px;
+    }
+    .page404-title {
+        margin: 20px 0 0 0;
+    }
+    .page404-title span {
+        display: block;
+    }
+    .page404-info {
         font-size: 20px;
+        padding: 0 50px;
+        line-height: 1.75;
+        margin: 54px 0 0 0;
+    }
+    .page404-info p {
+        margin: 0 0 35px 0;
+    }
+    .page404-button {
+        margin: 35px 0 0 0;
+    }
+
+    /* Konto Bestellungen */
+    .button-anzeigen {
+        margin-left: auto;
+        font-size: 15px;
+        width: 161px;
+        height: 45px;
+        border-radius: 4px;
+        padding: 0;
+    }
+
+    /* Konto Bestellungen Details */
+    .bestellung-button .button-erneut {
+        font-size: 15px;
+        padding: 0;
+        height: 45px;
+        width: 100%;
+        margin: 0;
+        background-image: url("../img/nav-bg-fill-blue.png");
+        background-repeat: repeat-x;
+        background-position: 0 100%;
+        color: #fff;
     }
 
 }

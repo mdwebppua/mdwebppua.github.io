@@ -69,7 +69,7 @@
                             </li>
                             <li class="wasser-item">
                                 <div class="wasser-item__ico">
-                                    <img width="150" height="150" src="img/home/svgico/wasser-item__2.svg" alt="">
+                                    <img width="350" height="250" src="img/home/svgico/wasser-item__2.svg" alt="">
                                 </div>
                                 <div class="wasser-item__text">
                                     In der Schweiz hergestellt
@@ -195,7 +195,7 @@
 
             <div class="wasserhahn-buttle">
                 <div class="wasserhahn-buttle__img">
-                    <img src="img/wasserhahn_buttle.png" alt="">
+                    <img width="765" height="816" src="img/wasserhahn_buttle.png" alt="">
                 </div>
             </div>
         </div>
@@ -306,7 +306,7 @@
             </div>
 
             <div class="swiper-slide zumshop-swiper">
-                <div class="zumshop-slick__item" data-bg="#000">
+                <div class="zumshop-slick__item" data-bg="#EBEEBA">
                     <div class="zumshop-slick__thumb">
                         <img src="img/slidenew.jpg" alt="">
                     </div>
@@ -339,7 +339,7 @@
             </div>
 
             <div class="swiper-slide zumshop-swiper">
-                <div class="zumshop-slick__item" data-bg="#ccc">
+                <div class="zumshop-slick__item" data-bg="#F6D1A0">
                     <div class="zumshop-slick__thumb">
                         <img src="img/slidenew.jpg" alt="">
                     </div>
@@ -372,7 +372,7 @@
             </div>
 
             <div class="swiper-slide zumshop-swiper">
-                <div class="zumshop-slick__item" data-bg="#FAF188">
+                <div class="zumshop-slick__item" data-bg="#CDEDA9">
                     <div class="zumshop-slick__thumb">
                         <img src="img/slidenew.jpg" alt="">
                     </div>
@@ -470,17 +470,17 @@
     <div class="ein-gutschein-body">
         <div class="container-xl">
             <div class="gutschein">
-                <h2 class="gutschein-title" data-aos="fade-up">
+                <h2 class="gutschein-title" data-aos="fade-up" data-aos-offset="-200">
                     <span class="wasser-title__italic">Ein Gutschein,</span> <br>
                     der guttut?
                 </h2>
                 <div class="gutschein-img">
                     <div id="gutschein-lottie"></div>
                 </div>
-                <div class="gutschein-description" data-aos="fade-up">
+                <div class="gutschein-description" data-aos="fade-up" data-aos-offset="-200">
                     Etwas Gutes zu trinken geht natürlich noch leichter mit einem guten Gutschein. Woher auch immer du ihn hast – er wird dir guttun.
                 </div>
-                <div class="button-inline" data-aos="fade-up">
+                <div class="button-inline" data-aos="fade-up" data-aos-offset="-200">
                     <a href="#" class="button-link">Gutschein einlösen</a>
                 </div>
             </div>
@@ -526,7 +526,7 @@
 <section class="entweder-man">
     <div class="container">
         <h2 class="wasser-title" data-aos="fade-up">
-            <span class="wasser-title__italic">Entweder</span> man ist eine. <br>
+            <span class="wasser-title__italic">Entweder</span> man ist eine.
             <span class="wasser-title__italic">Oder</span> man hat eine.
         </h2>
         <div class="entweder-description" data-aos="fade-up">

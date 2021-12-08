@@ -38,6 +38,7 @@
         <li><a href="page-neueskonto.php">Page Neues Konto</a></li>
         <li><a href="page-konto-1.php">Page Konto Dashboard</a></li>
         <li><a href="page-konto-2.php">Page Konto Bestellungen</a></li>
+        <li><a href="page-konto-2-1.php">Page Konto Bestellungen Details</a></li>
         <li><a href="page-konto-3.php">Page Konto Abo</a></li>
         <li><a href="page-konto-3-1.php">Page Konto Abo 1</a></li>
         <li><a href="page-konto-3-2.php">Page Konto Abo 2</a></li>

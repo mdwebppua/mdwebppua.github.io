@@ -73,7 +73,49 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="erneut-box">
+
+                    <div class="konto-konfiguriert">
+                        <div class="knkonf-row">
+                            <strong>Start Abo</strong>
+                            <p>30.09.2021</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Lieferrhythmus</strong>
+                            <p>Alle 2 Wochen</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Menge</strong>
+                            <p>5 x Yellow Booster, 5 x Exotische Fruchtmischung</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Preis</strong>
+                            <p>CHF 12.50</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>-20% Rabatt</strong>
+                            <p>CHF   -2.60</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Versandkosten</strong>
+                            <p>CHF   0.00</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Total im Abo</strong>
+                            <p>CHF   9.90</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Lieferadresse</strong>
+                            <p>
+                                Jane Doe <br>
+                                Musterstrasse 1 <br>
+                                0000 Musterort <br> <br>
+
+                                +78 000 00 00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="erneut-box konfiguriert-button">
                         <a href="page-konto-3-2.php" class="button-dark button-erneut">
                             Abo anpassen
                         </a>
@@ -134,7 +176,49 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="erneut-box">
+
+                    <div class="konto-konfiguriert">
+                        <div class="knkonf-row">
+                            <strong>Start Abo</strong>
+                            <p>30.09.2021</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Lieferrhythmus</strong>
+                            <p>Alle 2 Wochen</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Menge</strong>
+                            <p>5 x Yellow Booster, 5 x Exotische Fruchtmischung</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Preis</strong>
+                            <p>CHF 12.50</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>-20% Rabatt</strong>
+                            <p>CHF   -2.60</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Versandkosten</strong>
+                            <p>CHF   0.00</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Total im Abo</strong>
+                            <p>CHF   9.90</p>
+                        </div>
+                        <div class="knkonf-row">
+                            <strong>Lieferadresse</strong>
+                            <p>
+                                Jane Doe <br>
+                                Musterstrasse 1 <br>
+                                0000 Musterort <br> <br>
+
+                                +78 000 00 00
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="erneut-box konfiguriert-button">
                         <a href="page-konto-3-2.php" class="button-dark button-erneut">
                             Abo anpassen
                         </a>

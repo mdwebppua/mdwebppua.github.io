@@ -380,7 +380,6 @@
 <!-- The cursor elements -->
 <div class="entweder-cursor"></div>
 <div class="cursor cursor--small"></div>
-<canvas class="cursor cursor--canvas" resize></canvas>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
@@ -400,7 +399,6 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <script src="js/customcursor.js"></script>
-<script src="js/magnetizecursor.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.1/air-datepicker.min.js"></script>
 

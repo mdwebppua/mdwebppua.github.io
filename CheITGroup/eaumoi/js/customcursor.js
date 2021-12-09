@@ -13,13 +13,13 @@ const initCursor = () => {
     // transform the innerCursor to the current mouse position
     // use requestAnimationFrame() for smooth performance
     const render = () => {
-        innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+       // innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
         // if you are already using TweenMax in your project, you might as well
         // use TweenMax.set() instead
-        // TweenMax.set(innerCursor, {
-        //   x: clientX,
-        //   y: clientY
-        // });
+        TweenMax.set(innerCursor, {
+          x: clientX,
+          y: clientY
+        });
 
         requestAnimationFrame(render);
     };
@@ -31,6 +31,7 @@ initCursor();
 let lastX = 0;
 let lastY = 0;
 let isStuck = false;
+let filled = false;
 let showCursor = false;
 let group, stuckX, stuckY, fillOuterCursor;
 
@@ -91,16 +92,23 @@ const initCanvas = () => {
             lastX = lerp(lastX, clientX, 0.2);
             lastY = lerp(lastY, clientY, 0.2);
             group.position = new paper.Point(lastX, lastY);
+            polygon.strokeColor = strokeColor;
+            polygon.fillColor = 'transparent';
         } else if (isStuck) {
             // fixed position on a nav item
             lastX = lerp(lastX, stuckX, 0.2);
             lastY = lerp(lastY, stuckY, 0.2);
             group.position = new paper.Point(lastX, lastY);
+            if (filled) {
+                polygon.strokeColor = '#0D2330';
+                polygon.fillColor = '#0D2330';
+            }
         }
 
         if (isStuck && polygon.bounds.width < shapeBounds.width) {
             // scale up the shape
-            polygon.scale(1.03);
+            if (filled) polygon.scale(1.7);
+            else polygon.scale(1.03);
         } else if (!isStuck && polygon.bounds.width > 30) {
             // remove noise
             if (isNoisy) {
@@ -113,6 +121,7 @@ const initCanvas = () => {
             // scale down the shape
             const scaleDown = 0.92;
             polygon.scale(scaleDown);
+            polygon.strokeColor = strokeColor;
         }
 
         // while stuck and big, apply simplex noise
@@ -158,6 +167,7 @@ const initHovers = () => {
     // these are needed to set the position of the noisy circle
     const handleMouseEnter = e => {
         const navItem = e.currentTarget;
+        if (navItem.classList.contains("header-shop")) filled = true;
         const navItemBox = navItem.getBoundingClientRect();
         stuckX = Math.round(navItemBox.left + navItemBox.width / 2);
         stuckY = Math.round(navItemBox.top + navItemBox.height / 2);
@@ -167,11 +177,17 @@ const initHovers = () => {
     // reset isStuck on mouseLeave
     const handleMouseLeave = () => {
         isStuck = false;
+        filled = false;
     };
 
     // add event listeners to all items
     const linkItems = document.querySelectorAll(".link");
     linkItems.forEach(item => {
+        item.addEventListener("mouseenter", handleMouseEnter);
+        item.addEventListener("mouseleave", handleMouseLeave);
+    });
+    const linkItems1 = document.querySelectorAll(".header-shop");
+    linkItems1.forEach(item => {
         item.addEventListener("mouseenter", handleMouseEnter);
         item.addEventListener("mouseleave", handleMouseLeave);
     });

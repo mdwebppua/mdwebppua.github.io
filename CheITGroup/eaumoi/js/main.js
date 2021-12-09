@@ -1,7 +1,17 @@
 $( document ).ready(function() {
 
     $(window).scroll(function(){
-        $('.header').toggleClass('active', $(this).scrollTop() > 0);
+        if ($(window).width() > 1199) {
+            if($('body').hasClass('page-home')) {
+                if($(this).scrollTop() > $('.wasser-aroma').offset().top) {
+                    $('.header').addClass('active');
+                } else {
+                    $('.header').removeClass('active');
+                }
+            } else {
+                $('.header').toggleClass('active', $(this).scrollTop() > 0);
+            }
+        }
     });
 
     /* custom change cursor hover buble */
@@ -37,7 +47,6 @@ $( document ).ready(function() {
 
     /* custom change cursor hover sale */
     $(document).on("mousemove", function(e) {
-
         mouseX = e.pageX;
         mouseY = e.pageY - $(window).scrollTop();
         TweenLite.to('.entweder-cursor', 0, {left: mouseX, top: mouseY});
@@ -45,15 +54,13 @@ $( document ).ready(function() {
 
 
     $(document).on('mouseenter', '.entweder-body, .zumshop-swiper.swiper-slide-active .zumshop-slick__thumb', function () {
-        $('.entweder-cursor, .cursor--canvas').addClass('active');
+        if ($(window).width() > 1199) $('.entweder-cursor, .cursor--canvas').addClass('active');
     }).on('mouseleave', '.entweder-body, .zumshop-swiper.swiper-slide-active .zumshop-slick__thumb', function () {
-        $(".entweder-cursor, .cursor--canvas").removeClass("active");
+        if ($(window).width() > 1199) $(".entweder-cursor, .cursor--canvas").removeClass("active");
     });
 
     $('.header, .aktion-box, .cookie-zum').on("mousemove", function(e) {
-        $('.wiewasser-cursor').css({
-            opacity: 0,
-        });
+        $('.wiewasser-cursor').css('opacity', 0);
         $('.cursor--canvas, .cursor--small').removeClass('active');
     })
 
@@ -258,9 +265,7 @@ $( document ).ready(function() {
             scrollTrigger: {
                 trigger: ".dein-trink",
                 start: 'top bottom',
-                //markers: true,
                 onEnter: function () {
-                    console.log('111');
                     trinkLottie.play();
                 }
             }
@@ -277,11 +282,21 @@ $( document ).ready(function() {
     });
 
     $(window).on('load resize', function () {
-        if ($(window).width() <= 769) {
+        if ($(window).width() <= 767) {
             gutscheinLottie.play();
+        } else {
+            if ($(".ein-gutschein").length) {
+                $(".ein-gutschein").on('mouseenter', function () {
+                    gutscheinLottie.setDirection(1);
+                    gutscheinLottie.play();
+                }).on('mouseleave', function () {
+                    gutscheinLottie.setDirection(-1);
+                    gutscheinLottie.play(0);
+                });
+            }
         }
     });
-
+/*
     if ($(window).width() > 769) {
         if ($(".ein-gutschein").length) {
             gsap.timeline({
@@ -295,6 +310,8 @@ $( document ).ready(function() {
             });
         }
     }
+
+ */
 
     // if ($(".ein-gutschein").length) {
     //     var einGutschein = $(".ein-gutschein").offset().top - 400;
@@ -350,9 +367,9 @@ $( document ).ready(function() {
         return false;
     });
 
-    $("body").on('click', '[href*="#"]', function(e){
+    $(document).on('click', '.shop-nav li a', function(e){
         var fixed_offset = 100;
-        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top}, 1000);
         e.preventDefault();
     });
 
@@ -406,8 +423,8 @@ $( document ).ready(function() {
 
     /* abo warenkorb STEP2 */
     var valueEnter  = $(".warenkorb-input").val();
-    $(".warenkorb-status__info span").html("0");
-    $( ".warenkorb-input" ).change(function() {
+    $(".warenkorb-status__info span").html("15");
+    $(".warenkorb-input").change(function() {
         var total = 0;
 
         $('.warenkorb-input').each(function () {
@@ -416,20 +433,17 @@ $( document ).ready(function() {
         var procent = total * (100 / 15);
         $(".warenkorb-status__ico").css("width", procent + "%");
         $(".warenkorb-status__info").css("left", procent + "%");
-
-        $(".warenkorb-status__info span, .min-15").html(total);
+        $(".warenkorb-status__info span, .min-15").html(15 - total);
 
         if (total >= 15) {
             $(".bittle-wahle__title span").addClass("active");
             $(".du-musst, .step-form").removeClass("active");
-            $(".warenkorb-pluse").removeClass("productCountUp");
-            $(".warenkorb-pluse").attr("disabled", true);
+            $(".warenkorb-pluse").removeClass("productCountUp").attr("disabled", true);
 
         } else {
             $(".bittle-wahle__title span, .du-musst").removeClass("active");
             $(".du-musst, .step-form").addClass("active");
-            $(".warenkorb-pluse").addClass("productCountUp");
-            $(".warenkorb-pluse").removeAttr("disabled");
+            $(".warenkorb-pluse").addClass("productCountUp").removeAttr("disabled");
         }
         console.log(total);
     });
@@ -458,7 +472,7 @@ $( document ).ready(function() {
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
             },
-            speed: 500,
+            speed: 800,
             grabCursor: true,
             slidesPerView: "auto",
             centeredSlides: true,
@@ -501,7 +515,7 @@ $( document ).ready(function() {
 
 
     $(window).on('load resize', function () {
-        if ($(window).width() <= 769) {
+        if ($(window).width() <= 1200) {
             zumshopSlider1();
 
             $(".zumshop-slick__item").each(function() {
@@ -541,9 +555,6 @@ $( document ).ready(function() {
     $(window).load(function(){
         $(".product-maskload, .product-maskload2").addClass("active");
     });
-    setTimeout(function() {
-
-    }, 1000);
 
     $(".link-load").click(function(e) {
         e.preventDefault();
@@ -779,7 +790,7 @@ $( document ).ready(function() {
         setTimeout(function (){
             AOS.refresh();
         },1500);
-        if ($(window).width() <= 769) {
+        if ($(window).width() <= 767) {
             entwederMainInit();
         } else {
             entwederMainDestroy();
@@ -811,7 +822,10 @@ $( document ).ready(function() {
         $(".abo-mobilefirst").fadeOut();
     });
 
-    $('.select-js').select2();
+    if($('.select-js').length) {
+        $('.select-js').select2();
+    }
+
 
     if($(".konto-dashboard").length) {
         $(".header").addClass("konto");
@@ -828,7 +842,66 @@ $( document ).ready(function() {
         let thSt = $(el).html();
         $(el).html(thSt.replace(/&amp;/g, '<span style="font-family: FarnhamDisplay, sans-serif">&amp;</span>'));
     }
+
+    var sectionIds = $('.shop-nav li a');
+
+    $(document).scroll(function(){
+        if($('body').hasClass('page-shop')) {
+            sectionIds.each(function(){
+
+                var container = $(this).attr('href');
+                var containerOffset = $(container).offset().top;
+                var containerHeight = $(container).innerHeight();
+                var containerBottom = containerOffset + containerHeight;
+                var scrollPosition = $(document).scrollTop();
+
+                if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
+                    $(this).addClass('active');
+                } else{
+                    $(this).removeClass('active');
+                }
+            });
+        }
+    });
+
 });
 
 //$(".product-maskload").addClass("load");
 $(".page-maskload").removeClass("none");
+
+/* magnetize cursor */
+var cerchio = document.querySelectorAll('.social');
+
+cerchio.forEach(function(elem){
+    $(document).on('mousemove touch', function(e){
+        magnetize(elem, e);
+    });
+})
+
+function magnetize(el, e){
+    var mX = e.pageX,
+        mY = e.pageY;
+    const item = $(el);
+
+    const customDist = item.data('dist') || 30;
+    const centerX = item.offset().left + (item.width()/2);
+    const centerY = item.offset().top + (item.height()/2);
+
+    var deltaX = Math.floor((centerX - mX)) * -0.45;
+    var deltaY = Math.floor((centerY - mY)) * -0.45;
+
+    var distance = calculateDistance(item, mX, mY);
+
+    if(distance < customDist){
+        TweenMax.to(item, 0.5, {y: deltaY, x: deltaX, scale:1.1});
+        item.addClass('magnet');
+    }
+    else {
+        TweenMax.to(item, 0.6, {y: 0, x: 0, scale:1});
+        item.removeClass('magnet');
+    }
+}
+
+function calculateDistance(elem, mouseX, mouseY) {
+    return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left+(elem.width()/2)), 2) + Math.pow(mouseY - (elem.offset().top+(elem.height()/2)), 2)));
+}

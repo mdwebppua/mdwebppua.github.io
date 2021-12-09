@@ -47,6 +47,8 @@
                         </div>
                         <div class="login-form__type">
                             <input class="login-form__input" type="text" placeholder="Adresse*">
+                        </div>
+                        <div class="login-form__type">
                             <input class="login-form__input" type="text" placeholder="Adresszusatz">
                         </div>
                         <div class="login-form__type col-2">

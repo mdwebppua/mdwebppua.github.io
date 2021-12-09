@@ -2614,6 +2614,11 @@ body.page-shop .header-shop {
 .aromen-slider {
     margin: 130px 0 0 0;
 }
+.wie-review .swiper-wrapper,
+.aromen-slider .swiper-wrapper{
+    -webkit-transition-timing-function:linear!important;
+    transition-timing-function:linear!important;
+}
 .das-konnte-slider {
     margin: 80px 0 0 0;
 }
@@ -3621,6 +3626,9 @@ html.ov-hidden{
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    position: absolute;
+    left: 5px;
+    top: 0;
 }
 .aboshort-delete:hover {
     -webkit-transform: rotate(90deg);
@@ -3633,6 +3641,7 @@ html.ov-hidden{
     height: 105px;
     text-align: center;
     position: relative;
+    margin: 0 0 0 28px;
 }
 .aboshort-thumb img {
     width: auto;
@@ -4133,6 +4142,7 @@ html.ov-hidden{
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #CED5DD;
+    position: relative;
 }
 .bezahlung-thumb {
     max-width: 73px;
@@ -4140,6 +4150,7 @@ html.ov-hidden{
     height: 105px;
     text-align: center;
     position: relative;
+    margin: 0 0 0 28px;
 }
 .bezahlung-thumb img {
     width: auto;
@@ -4242,6 +4253,9 @@ html.ov-hidden{
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    position: absolute;
+    top: 0;
+    left: 5px;
 }
 .bezahlung-delete:hover {
     -webkit-transform: rotate(90deg);
@@ -6961,7 +6975,7 @@ body.open-video {
     font-size: 18px;
     font-weight: 300;
 }
-.freude-forminput.error input {
+.freude-forminput input.error {
     border-bottom: 1px solid #E27291;
 }
 .freude-forminput input:focus + label {
@@ -6981,6 +6995,14 @@ body.open-video {
 .freude-formerror.error {
     opacity: 1;
     visibility: visible;
+}
+.freude-forminput div.error {
+    font-size: 9px;
+    font-weight: 500;
+    color: #E27291;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 .freude-forminput textarea {
     display: block;

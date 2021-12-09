@@ -209,7 +209,6 @@ $( document ).ready(function() {
 
     if ($(".wie-review").length) {
         const wieReview = new Swiper('.wie-review', {
-
             loop: true,
             autoplay: {
                 delay: 0,
@@ -221,30 +220,25 @@ $( document ).ready(function() {
             slidesPerView: "auto",
             centeredSlides: true,
             spaceBetween: 50,
-
             loopPreventsSlide: false,
             freeModeMomentum: false,
             freeMode: true,
-
-            //slidesPerGroupAuto: true,
-
-
         });
-    };
+    }
 
     if ($(".aromen-slider").length) {
-        const aromenSlider = new Swiper('.aromen-slider', {
+        var aromenSlider = new Swiper('.aromen-slider', {
             loop: true,
             autoplay: {
-                delay: 1,
+                delay: 0,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
             },
             centeredSlides: true,
             slidesPerView: "auto",
             spaceBetween: 50,
-
-            speed: 7000,
+            waitForTransition: false,
+            speed: 5000,
             loopPreventsSlide: false,
             freeModeMomentum: false,
             freeMode: true,
@@ -636,7 +630,7 @@ $( document ).ready(function() {
         freeMode: true,
     });
 
-    $('.freude-input').on('blur', function () {
+    $('.freude-input').on('focus', function () {
         if ($(this).val() !== '') {
             $(this).next('.freude-label').addClass('blur');
         } else {
@@ -650,20 +644,6 @@ $( document ).ready(function() {
         this.style.height = "auto";
         this.style.height = (this.scrollHeight) + "px";
     });
-
-    $('.freude-kontaktform').validate({
-        rules: {
-            Vorname: "required",
-            Name: "required",
-            Email: {
-                required: true,
-                email: true
-            },
-            Nachricht: "required"
-        },
-        errorLabelContainer: ".freude-formerror"
-    });
-
 
     /* validator kontakt form
 
@@ -848,18 +828,14 @@ $( document ).ready(function() {
     $(document).scroll(function(){
         if($('body').hasClass('page-shop')) {
             sectionIds.each(function(){
-
                 var container = $(this).attr('href');
                 var containerOffset = $(container).offset().top;
                 var containerHeight = $(container).innerHeight();
                 var containerBottom = containerOffset + containerHeight;
                 var scrollPosition = $(document).scrollTop();
 
-                if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
-                    $(this).addClass('active');
-                } else{
-                    $(this).removeClass('active');
-                }
+                if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20) $(this).addClass('active');
+                else $(this).removeClass('active');
             });
         }
     });

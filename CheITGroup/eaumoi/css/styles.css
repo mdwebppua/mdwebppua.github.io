@@ -256,8 +256,6 @@ body.page-shop .header.menu {
     -webkit-transform: translate(-50%, 0px);
     -ms-transform: translate(-50%, 0px);
     transform: translate(-50%, 0px);
-    -webkit-transform: translate3d(0, 0, 0.01px);
-    transform: translate3d(0, 0, 0.01px);
 }
 .header-shop:hover {
     background: url("../img/shop-h.png") no-repeat center;
@@ -1309,7 +1307,7 @@ body.page-shop .header.menu {
 }
 
 .zoomshop {
-    padding: 150px 0;
+    padding: 150px 0 80px;
 }
 /*end slider amy */
 .zumshop-slider {
@@ -1667,12 +1665,17 @@ body.page-shop .header.menu {
 
 .ein-gutschein {
     position: relative;
-    /*padding: 105px 0 179px 0;*/
-    background-size: contain;
+    background-image: url("../img/blue-bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
+    padding: 105px 0 130px;
+}
+.ein-gutschein .firmen-footer {
+    display: none;
 }
 .ein-gutschein-body {
-    background: #CAEEE8;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1682,7 +1685,6 @@ body.page-shop .header.menu {
 .gutschein {
     position: relative;
     z-index: 5;
-    margin: -100px 0 0 0;
 }
 .gutschein-title {
     font-family: 'FarnhamDisplay';
@@ -1700,7 +1702,7 @@ body.page-shop .header.menu {
     z-index: 3;
 }
 .gutschein .button-link {
-    padding: 11px 14px;
+    padding: 11px 20px;
 }
 .gutschein-img {
     position: absolute;
@@ -1724,7 +1726,7 @@ body.page-shop .header.menu {
     margin: 0 auto;
 }
 .trink-info {
-    max-width: 760px;
+    max-width: 780px;
     width: 100%;
     margin: 34px 0 0 49px;
 }
@@ -2127,7 +2129,7 @@ body.page-shop .header.menu {
     background: #0D2330;
 }
 .dem-guten {
-    padding: 0 0 208px;
+    padding: 70px 0 198px;
 }
 .guten-body {
     display: -webkit-box;
@@ -2219,8 +2221,8 @@ body.page-shop .header.menu {
     transition: 0.3s;
     display: block;
     text-decoration: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-image: url("../img/facebook.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -2237,8 +2239,8 @@ body.page-shop .header.menu {
     transition: 0.3s;
     display: block;
     text-decoration: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-image: url("../img/instagram.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -2254,8 +2256,8 @@ body.page-shop .header.menu {
     transition: 0.3s;
     display: block;
     text-decoration: none;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-image: url("../img/linkedin.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -2332,7 +2334,11 @@ body.page-shop .header.menu {
 }
 .footer-title {
     font-size: 32px;
-    margin: 0 0 20px 0;
+    line-height: 1.2;
+    margin: 0 0 10px 0;
+}
+.footer-nav {
+    line-height: 1.2;
 }
 .footer-nav li {
     margin: 0 0 10px 0;
@@ -2363,7 +2369,7 @@ body.page-shop .header.menu {
     width: 100%;
 }
 .footer-kontakt {
-    margin: 0 0 17px 0;
+    margin: 0 0 17px;
     font-weight: normal;
 }
 .footer-kontakt__link {
@@ -2399,10 +2405,10 @@ body.page-shop .header.menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 15px 0 0 0;
+    padding: 28px 0 0;
 }
 .footer-social li {
-    margin: 0px 27px 0 0;
+    margin: 0 32px 0 0;
 }
 .footer-social li:last-child {
     margin: 0;
@@ -2433,7 +2439,7 @@ body.page-shop .header.menu {
     font-weight: 300;
 }
 .footer-newslatter .gutten-newslatter__form {
-    margin: 15px 11px 0 0;
+    margin: 5px 11px 0 0;
 }
 .footer-newslatter .gutten-input {
     font-size: 16px;
@@ -2857,16 +2863,12 @@ body.page-shop .header-shop {
     background: none;
     position: relative;
     padding: 0;
-    background-size: contain;
-    overflow: hidden;
     z-index: 3;
+    overflow: visible;
 }
-.hast-gutschein  .ein-gutschein-body {
-    padding: 104px 0;
-}
-.hast-gutschein .gutschein {
-    top: 0;
-    margin: 0;
+.hast-gutschein .ein-gutschein-body {
+    padding: 104px 0 204px 0;
+    background: #CAEEE8;
 }
 .hast-gutschein .wasser-title {
     font-size: 80px;
@@ -2875,10 +2877,16 @@ body.page-shop .header-shop {
 }
 
 .das-probierpaket {
-    margin: -137px 0 0 0;
+    margin: -100px 0 0 0;
     position: relative;
-    z-index: 2;
+    z-index: 4;
 }
+.das-pathtop {
+    position: relative;
+    overflow: hidden;
+    height: 100px;
+}
+.das-pathtop svg {}
 .das-probierpaket__container {
     background: #FEF1F1;
     padding: 350px 0 115px 0;
@@ -3942,6 +3950,7 @@ html.ov-hidden{
 }
 .bezahlung-type.dfcol-2 > div {
     width: calc(50% - 15px);
+    position: relative;
 }
 .bezahlung-type__textarea {
     border: 1px solid #DBDEE7;
@@ -4300,6 +4309,17 @@ html.ov-hidden{
     color: #E27291;
     opacity: 0;
 }
+.bezahlung-type div.error {
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    font-size: 11px;
+    font-weight: normal;
+    color: #E27291;
+}
+.bezahlung-type input.error {
+    border-color: #E27291;
+}
 .bezahlung-total {
     border-bottom: 1px solid #F0F2F5;
     padding: 0 0 30px 0;
@@ -4458,8 +4478,8 @@ html.ov-hidden{
     opacity: 1;
 }
 .product {
-    margin: 19px 0 0 0;
     position: relative;
+    overflow: hidden;
 }
 .product .container-xl {
     position: relative;
@@ -4536,6 +4556,7 @@ html.ov-hidden{
     max-width: 600px;
     width: 100%;
     position: relative;
+    margin-right: 15px;
 }
 .product-slider__wrapper {
     -webkit-box-align: center;
@@ -4619,14 +4640,14 @@ html.ov-hidden{
 
 .product-summary {
     width: 100%;
-    max-width: 495px;
+    max-width: 500px;
 }
 .productfull-title {
     font-size: 40px;
     letter-spacing: -0.48px;
     font-family: 'FarnhamDisplay';
     font-weight: 300;
-
+    margin: 0 0 10px;
 }
 .productfull-tag {
     line-height: 1;
@@ -4750,6 +4771,8 @@ html.ov-hidden{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0 10px;
+    margin-right: 5px;
 }
 .einim-type.einim-type__dark {
     background: #0D2330;
@@ -8452,6 +8475,9 @@ textarea {
     .header-shop {
         left: 52%;
         top: 12px;
+        position: absolute;
+        font-weight: bold;
+        background: none;
     }
     .header.active .header-shop {
         top: 12px;
@@ -8470,10 +8496,6 @@ textarea {
     }
     .logo-top {
         max-width: 106px;
-    }
-    .header-shop {
-        font-weight: bold;
-        background: none;
     }
     .header-shop:hover {
         color: #0D2330;
@@ -9176,10 +9198,8 @@ textarea {
         margin: 54px auto 0;
         max-width: 252px;
     }
-
-
     .ein-gutschein {
-        padding: 90px 0 0 0;
+        background-size: 200% 100%;
     }
     .ntweder-input {
         font-size: 16px;
@@ -9529,9 +9549,6 @@ textarea {
     .ein-gutschein-body {
         padding: 0;
     }
-    .gutschein {
-        margin: -284px 0 0 0;
-    }
     .gutschein-title {
         font-size: 60px;
         line-height: 1.08;
@@ -9798,7 +9815,7 @@ textarea {
         padding: 118px 0 0 0;
     }
     .hast-gutschein .ein-gutschein-body {
-        padding: 0;
+        padding: 0 0 220px 0;
     }
     .hast-gutschein .gutschein {
         margin: -97px 0 0 0;
@@ -9808,8 +9825,12 @@ textarea {
         letter-spacing: 0;
         line-height: 1.0833;
     }
+    .das-pathtop.firmen-footer svg {
+        margin-left: -50px;
+        min-width: 120%;
+    }
     .das-probierpaket__container {
-        padding: 319px 0 115px 0;
+        padding: 91px 0 115px 0;
     }
     .probierpaket-main {
         -webkit-box-orient: vertical;

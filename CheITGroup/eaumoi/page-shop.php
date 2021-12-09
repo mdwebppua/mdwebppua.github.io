@@ -16,7 +16,7 @@
 
 <?php include 'header.php'; ?>
 
-<section class="kostliche-aromen">
+<section class="kostliche-aromen" id="sorten">
     <div class="container-xl">
         <h1 class="wasser-title">
             5 köstliche Aromen. <br>
@@ -230,14 +230,22 @@
             </div>
         </div>
     </div>
-    <div class="firmen-footer">
-        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1452" height="137" viewBox="0 0 1452 137">
-            <image width="1452" height="137" xlink:href="data:img/png;base64,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"/>
-        </svg>
-    </div>
+
 </section>
 
 <section class="das-probierpaket" id="probierpaket">
+    <div class="das-pathtop firmen-footer">
+        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.324" height="124.355" viewBox="0 0 1440.324 124.355">
+            <defs>
+                <clipPath id="daspathtop">
+                    <rect x="30" width="1440.324" height="124.355" fill="none"/>
+                </clipPath>
+            </defs>
+            <g transform="translate(-30)" clip-path="url(#daspathtop)" style="isolation: isolate">
+                <path d="M-7227.294-18945.641s-157.055,54.93,56.1,54.076,351.762-37.826,584.023-36.529,449.738,67.662,826.323,66.371c49.816-25.264,0-57.666,0-57.666s24.064-53.928,0-53.758-1474.046-12.912-1474.046-12.912Z" transform="translate(-5738.709 -18861.703) rotate(180)" fill="#fdf0f0"/>
+            </g>
+        </svg>
+    </div>
     <div class="das-probierpaket__container">
         <div class="container">
             <div class="probierpaket-main">
@@ -290,7 +298,7 @@
         </div>
     </div>
 
-    <div class="firmen-footer">
+    <div class="das-pathbottom firmen-footer">
         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.324" height="72.355" viewBox="0 0 1440.324 72.355">
             <defs>
                 <clipPath id="clip-path">
@@ -304,9 +312,9 @@
     </div>
 </section>
 
-<section class="entweder-man entweder-flotte">
+<section class="entweder-man entweder-flotte" id="flaschen">
     <div class="entweder-flotte__container">
-        <div class="container" id="flaschen">
+        <div class="container">
             <h2 class="wasser-title">
                 <span class="wasser-title__italic">Flotte Flaschen.</span> <br>
                 Für dich und die Umwelt.

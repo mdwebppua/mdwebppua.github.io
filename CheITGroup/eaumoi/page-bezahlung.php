@@ -19,6 +19,7 @@
 
 <section class="bezahlung">
     <div class="container-xl">
+        <form action="#" class="bezahlung-form">
         <div class="bezahlung-container">
             <div class="bezahlung-sale">
                 <ul class="bezahlung-inform">
@@ -33,10 +34,10 @@
                     </div>
                     <div class="bezahlung-type dfcol-2">
                         <div class="col">
-                            <input class="bezahlung-type__input" type="text" placeholder="Vorname*">
+                            <input class="bezahlung-type__input" type="text" name="Vorname" placeholder="Vorname*">
                         </div>
                         <div class="col">
-                            <input class="bezahlung-type__input" type="text" placeholder="Name*">
+                            <input class="bezahlung-type__input" type="text" name="Name" placeholder="Name*">
                         </div>
                     </div>
                     <div class="bezahlung-type">
@@ -52,21 +53,21 @@
                         </div>
                     </div>
                     <div class="bezahlung-type">
-                        <input class="bezahlung-type__input" type="text" placeholder="Addresse*">
+                        <input class="bezahlung-type__input" type="text" name="Addresse" placeholder="Addresse*">
                     </div>
                     <div class="bezahlung-type">
                         <input class="bezahlung-type__input" type="text" placeholder="Addresszusatz">
                     </div>
                     <div class="bezahlung-type dfcol-2">
                         <div class="col">
-                            <input class="bezahlung-type__input" type="text" placeholder="Ort*">
+                            <input class="bezahlung-type__input" type="text" name="Ort" placeholder="Ort*">
                         </div>
                         <div class="col">
-                            <input class="bezahlung-type__input" type="text" placeholder="PLZ*">
+                            <input class="bezahlung-type__input" type="text" name="PLZ" placeholder="PLZ*">
                         </div>
                     </div>
                     <div class="bezahlung-type">
-                        <select class="bezahlung-type__select select-js">
+                        <select class="bezahlung-type__select select-js" name="Land">
                             <option>Land</option>
                             <option value="Switzerland">Switzerland</option>
                             <option value="Liechtenstein">Liechtenstein</option>
@@ -76,13 +77,13 @@
                         </div>
                     </div>
                     <div class="bezahlung-type">
-                        <input class="bezahlung-type__input" type="text" placeholder="Telefonnummer*">
+                        <input class="bezahlung-type__input" type="text" name="Telefonnummer" placeholder="Telefonnummer*">
                         <div class="bezahlung-reqinfo">
                             Bitte prüfe deine Eingabe
                         </div>
                     </div>
                     <div class="bezahlung-type">
-                        <input class="bezahlung-type__input" type="text" placeholder="Email*">
+                        <input class="bezahlung-type__input" type="text" name="Email" placeholder="Email*">
                         <div class="bezahlung-reqinfo">
                             Bitte prüfe deine Eingabe
                         </div>
@@ -321,7 +322,7 @@
                 </div>
 
                 <div class="bezahlung-formsubmit">
-                    <button class="button-dark bezahlung-sumit">
+                    <button type="submit" class="button-dark bezahlung-sumit">
                         jetzt bestellen
                     </button>
                 </div>
@@ -329,6 +330,7 @@
             </div>
 
         </div>
+        </form>
     </div>
 </section>
 

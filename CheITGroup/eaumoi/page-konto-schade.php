@@ -12,6 +12,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/air-datepicker@3.0.1/air-datepicker.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        const assetsPath = '';
+    </script>
 </head>
 <body class="page-pausieren">
 

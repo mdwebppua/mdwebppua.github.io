@@ -9,6 +9,10 @@
 
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        const assetsPath = '';
+    </script>
 </head>
 <body>
 

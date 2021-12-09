@@ -14,6 +14,10 @@
 
     <link rel="stylesheet" href="css/amy-slider.css">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        const assetsPath = '';
+    </script>
 </head>
 <body class="page-home">
 

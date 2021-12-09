@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        const assetsPath = '';
+    </script>
 </head>
 <body class="page-product">
 
@@ -110,7 +114,7 @@
                     CHF 56.90
                 </div>
                 <div class="productfull-descritpion">
-                    Schenke deinen Liebsten nicht alte Trauben – als Wein – sondern lieber frische Früchte – als eauspan<em>&</em>moi.  Macht aus jedem Wasserhahn eine Quelle für aromatisiertes Wasser. Wenn du lieber ein reingesiebtes Aromawasser trinkst, ohne natürliche Fruchtbestandteile, dann nimm dir die Geschenkbox mit Sieb.
+                    Schenke deinen Liebsten nicht alte Trauben – als Wein – sondern lieber frische Früchte – als eau&moi.  Macht aus jedem Wasserhahn eine Quelle für aromatisiertes Wasser. Wenn du lieber ein reingesiebtes Aromawasser trinkst, ohne natürliche Fruchtbestandteile, dann nimm dir die Geschenkbox mit Sieb.
                 </div>
 
                 <div class="einzelbeutel-imabo einzelbeutel-imabo__col">

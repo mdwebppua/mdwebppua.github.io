@@ -9,7 +9,7 @@
 
             <div class="shop-navlist">
                 <ul class="shop-nav">
-                    <li><a href="#">SORTEN</a></li>
+                    <li><a href="#sorten">SORTEN</a></li>
                     <li><a href="#probierpaket">PROBIERPAKET</a></li>
                     <li><a href="#flaschen">FLASCHEN</a></li>
                     <li><a href="#geschenk">GESCHENKE</a></li>
@@ -23,6 +23,8 @@
                 <li><a class="menu-button link" href="#"><span>Menu</span> <i class="ico-bars"></i></a></li>
                 <li class="close-menu"></li>
             </ul>
+
+            <canvas class="cursor cursor--canvas" resize></canvas>
         </div>
     </div>
     <button class="open-sidebar"><span>kundenkonto</span></button>

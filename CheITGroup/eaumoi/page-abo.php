@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        const assetsPath = '';
+    </script>
 </head>
 <body class="page-abo">
 
@@ -127,7 +131,7 @@
                                             </div>
                                             <div class="konfigurieren-steptype">
                                                 <input type="radio" id="allewoche" name="woche" value="Alle">
-                                                <label for="allewoche">Alle <input class="allewoche" type="number" min="1" max="12"> Wochen</label>
+                                                <label for="allewoche">Alle <input class="allewoche" type="number" min="1" max="12" maxlength="2" oninput="this.value=this.value.slice(0,this.maxLength)"> Wochen</label>
                                                 <div class="allewoche-max">max. 12 Wochen möglich</div>
                                             </div>
                                         </div>
@@ -157,7 +161,7 @@
                                     <div class="warenkorb-status">
                                         <div class="warenkorb-status__ico"></div>
                                     </div>
-                                    <div class="warenkorb-status__info"><span>8</span> von 15</div>
+                                    <div class="warenkorb-status__info"><span>15</span> von 15</div>
                                 </div>
                                 <div class="warenkorb-market">
                                     <div class="warenkorb-short">

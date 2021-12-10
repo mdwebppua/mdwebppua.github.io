@@ -177,13 +177,12 @@ $( document ).ready(function() {
 
     if ($(".aktion-box").length) {
         var aktionBoxHeigh = ($(window).height());
-        var aktionBox = $(".aktion-box").offset().top - aktionBoxHeigh;
+        var aktionBox = $(".aktion-box-point").offset().top - aktionBoxHeigh;
         $(window).scroll(function () {
             if ($(window).scrollTop() >= aktionBox) {
                 $(".aktion-box").css({
                     "opacity": 1,
                     "z-index": 20,
-                    "transform": "scale(1)",
                     "position": "fixed"
                 })
                     .addClass("active");
@@ -290,33 +289,6 @@ $( document ).ready(function() {
             }
         }
     });
-/*
-    if ($(window).width() > 769) {
-        if ($(".ein-gutschein").length) {
-            gsap.timeline({
-                scrollTrigger: {
-                    trigger: ".ein-gutschein",
-                    start: 'top 80%',
-                    onEnter: function () {
-                        gutscheinLottie.play();
-                    }
-                }
-            });
-        }
-    }
-
- */
-
-    // if ($(".ein-gutschein").length) {
-    //     var einGutschein = $(".ein-gutschein").offset().top - 400;
-    //     $(window).scroll(function () {
-    //         if ($(window).scrollTop() >= einGutschein) {
-    //             gutscheinLottie.play();
-    //             return false;
-    //         }
-    //     });
-    // }
-
 
     if ($(".fruchtepuree").length) {
         var kleinerBanner = $(".fruchtepuree").offset().top;
@@ -460,7 +432,6 @@ $( document ).ready(function() {
 
 
     $(".bezahlung-lieferung").click(function() {
-        $("this")
         $(".bezahlung-lieferung__eine").toggleClass("active");
     });
 
@@ -774,7 +745,7 @@ $( document ).ready(function() {
             Nachricht: "required"
         },
         messages: {
-            rules: "Bitte prüfe deine Eingabe",
+            Vorname: "Bitte prüfe deine Eingabe",
             Name: "Bitte prüfe deine Eingabe",
             Email: {
                 required: "We need your email address to contact you",

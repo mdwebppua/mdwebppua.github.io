@@ -728,6 +728,7 @@ body.page-shop .header.menu {
 }
 .cookie-close {
     display: block;
+    background-color: transparent;
     background-image: url("../img/close.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -1553,7 +1554,7 @@ body.page-shop .header.menu {
 }
 
 .aktion-box {
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 100%;
     left: 0;
@@ -1570,9 +1571,11 @@ body.page-shop .header.menu {
     -o-transition: 2s opacity;
     transition: 2s opacity;
     overflow: auto;
+    pointer-events: none;
 }
 .aktion-box.active {
     position: fixed;
+    pointer-events: auto;
 }
 .aktion-box.closed {
     display: none;
@@ -1929,6 +1932,7 @@ body.page-shop .header.menu {
     font-size: 18px;
     width: 25px;
     height: 25px;
+    color: #0D2330;
 }
 .ntweder-input {
     border: none;
@@ -2736,7 +2740,6 @@ body.page-shop .header-shop {
     -ms-flex-align: center;
     align-items: center;
     line-height: 1.1666;
-    background-size: cover;
 }
 .aromen-perso__text {
     -webkit-transform: rotate(-10deg);
@@ -2830,6 +2833,7 @@ body.page-shop .header-shop {
     font-size: 18px;
     width: 25px;
     height: 25px;
+    color: #0D2330;
 }
 .aromen-input {
     border: none;
@@ -4499,14 +4503,13 @@ html.ov-hidden{
     overflow: hidden;
 }
 .product .container-xl {
-    position: relative;
     z-index: 2;
 }
 
 .product-maskload,
 .product-maskload2 {
     position: absolute;
-    top: 60px;
+    top: 245px;
     left: 0;
     min-width: 1440px;
     width: 100%;
@@ -4657,14 +4660,14 @@ html.ov-hidden{
 
 .product-summary {
     width: 100%;
-    max-width: 500px;
+    max-width: 495px;
+    margin: 18px 0 0 0;
 }
 .productfull-title {
     font-size: 40px;
     letter-spacing: -0.48px;
     font-family: 'FarnhamDisplay';
     font-weight: 300;
-    margin: 0 0 10px;
 }
 .productfull-tag {
     line-height: 1;
@@ -4673,21 +4676,22 @@ html.ov-hidden{
     font-size: 25px;
     letter-spacing: -0.3px;
     font-family: 'FarnhamDisplay';
-    margin: 17px 0 0 0;
+    margin: 27px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    line-height: 1;
 }
 .productfull-price sub {
     font-size: 12px;
     font-family: GTWalsheimPro;
     font-weight: 300;
     margin: 0 0 0 10px;
-    display: inline-block;
-    vertical-align: baseline;
+    line-height: 1.3;
+    align-self: flex-end;
 }
 .productfull-price span {
     margin: 0 0 0 10px;
@@ -4701,8 +4705,10 @@ html.ov-hidden{
 .productfull-descritpion {
     font-size: 18px;
     line-height: 1.9444;
-    margin: 25px 0 0 0;
+    margin: 35px 0 0 0;
     min-height: 226px;
+    position: relative;
+    z-index: 2;
 }
 .productfull-descritpion b,
 .productfull-descritpion strong {
@@ -7500,7 +7506,7 @@ textarea {
     width: 230px;
     height: 224px;
     top: 36%;
-    right: 0;
+    right: 17px;
     background-image: url("../img/raspberry.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -8025,6 +8031,35 @@ textarea {
 
 /* start css mobile version */
 @media (min-width: 1399.98px) {
+    .product-maskload,
+    .product-maskload2 {
+        margin-left: auto;
+    }
+}
+@media (min-width: 1399.98px) and (min-height: 1080px) {
+    .product-maskload,
+    .product-maskload2 {
+        top: 320px;
+        margin-left: auto;
+        min-height: 860px;
+    }
+
+    .breadcrumb {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 1230px;
+        margin: 0 auto;
+    }
+
+    .product-fullsize {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (min-width: 1399.98px) {
     .firmen-footer svg {
         width: 100%;
         min-width: 1440px;
@@ -8032,25 +8067,8 @@ textarea {
         margin: -3px auto;
     }
 
-    .product-maskload,
-    .product-maskload2 {
-        /*min-height: 1000px;*/
-        /*margin-left: auto;*/
 
-        min-height: 960px;
-        margin-left: auto;
-        top: 200px;
-    }
-    .product-full {
-        /*min-height: calc(100vh - 183px);*/
-        /*align-items: center;*/
 
-        min-height: 100vh;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        margin: -180px 0 0 0;
-    }
 }
 @media (max-width: 1299.98px) {
     .konto-dashboard:after {
@@ -8536,9 +8554,8 @@ textarea {
         background: none;
     }
     .ico-basket {
-        width: 23px;
+        width: 24px;
         height: 22px;
-        background-size: cover;
     }
     .ico-profile {
         width: 17px;
@@ -8562,6 +8579,9 @@ textarea {
         bottom: 81px;
         left: 22px;
         right: 22px;
+    }
+    .page-shop .cookie-zum {
+        bottom: 125px;
     }
     .cookie-zum__thumb {
         margin: 0 24px 0 0;
@@ -9248,10 +9268,23 @@ textarea {
     }
     body.page-shop .shop-nav {
         overflow-x: auto;
+        padding: 0;
         padding-left: 24px;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start;
+        padding-right: 24px;
+    }
+    body.page-shop .shop-nav li:last-child {
+        position: relative;
+    }
+    body.page-shop .shop-nav li:last-child::after {
+        position: absolute;
+        content: '';
+        left: 100%;
+        width: 35px;
+        height: 100%;
+        top: 0;
     }
     .wie-review {
         margin: 36px 0 0 0;
@@ -9268,12 +9301,23 @@ textarea {
     .wie-enter {
         min-height: 143px;
     }
+    .aromen-item:after {
+        display: none;
+    }
     .geschenk-item:nth-child(2),
     .geschenk-item {
         margin: 0 24px 0 0;
         -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
         flex: 0 0 auto;
+    }
+    .geschenk-item:last-child::before {
+        position: absolute;
+        content: '';
+        left: 100%;
+        width: 24px;
+        height: 100%;
+        top: 0;
     }
     .geschenk-sale {
         overflow-x: auto;
@@ -9331,6 +9375,113 @@ textarea {
     .navigation-search__input {
         font-size: 20px;
         padding: 0 25px 0 0;
+    }
+    .das-auch {
+        margin: 104px 0;
+    }
+    .das-auch .wasser-title {
+        font-size: 30px;
+        line-height: 1.433;
+    }
+    .das-auch .wasser-title .wasser-title__italic {
+        display: block;
+    }
+    .footer {
+        padding: 37px 0 100px
+    }
+    .footer-title {
+        font-size: 31px;
+        margin: 0 0 12px 0;
+    }
+    .footer-kontakt {
+        margin: 0 0 -3px 0;
+        font-weight: 300;
+        font-size: 18.2px;
+    }
+    .footer-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 25px 0 0 0;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: start;
+    }
+    .footer-link {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .footer-link li:last-child,
+    .footer-link li {
+        margin: 2px 19px 0 0;
+    }
+    .footer-link li a {
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    .footer-paysystem {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .footer-paysystem li:last-child,
+    .footer-paysystem li {
+        margin: 0 19px 18px 0;
+        opacity: 0.5;
+    }
+    .footer-main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer-col__1 {
+        display: none;
+    }
+    .footer-col__2 {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: 0 0 36px 0;
+    }
+    .footer-col__3 {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        min-width: 100%;
+    }
+    .footer-socmain {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .footer-social {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .footer-social li {
+        margin: 0 23px 0 0;
+    }
+    .footer-newslatter {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: 0 0 0 0;
+    }
+    .footer-newslatter .gutten-newstlatter__title {
+        font-size: 18.4px;
+        font-weight: 300;
     }
 }
 
@@ -9390,7 +9541,6 @@ textarea {
         position: relative;
         font-size: 17.5px;
         padding: 12px 33px;
-
         background: transparent;
         background-image: url("../img/nav-bg-fill-blue.png");
         background-repeat: repeat-x;
@@ -9707,99 +9857,6 @@ textarea {
     .gutten-social li {
         margin: 0 18px 0 0;
     }
-    .footer {
-        padding: 37px 0 100px
-    }
-    .footer-title {
-        font-size: 31px;
-        margin: 0 0 12px 0;
-    }
-    .footer-kontakt {
-        margin: 0 0 -3px 0;
-        font-weight: 300;
-        font-size: 18.2px;
-    }
-    .footer-bottom {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin: 25px 0 0 0;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: start;
-    }
-    .footer-link {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-    }
-    .footer-link li {
-        margin: 2px 19px 0 0;
-    }
-    .footer-link li a {
-        font-size: 12px;
-        opacity: 0.5;
-    }
-    .footer-paysystem {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
-    .footer-paysystem li {
-        margin: 0 19px 18px 4px;
-        opacity: 0.5;
-    }
-    .footer-main {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .footer-col__1 {
-        display: none;
-    }
-    .footer-col__2 {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        margin: 0 0 36px 0;
-    }
-    .footer-col__3 {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-        min-width: 100%;
-    }
-    .footer-socmain {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .footer-social {
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-    }
-    .footer-social li {
-        margin: 0 23px 0 0;
-    }
-    .footer-newslatter {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        margin: 0 0 0 0;
-    }
-    .footer-newslatter .gutten-newstlatter__title {
-        font-size: 18.4px;
-        font-weight: 300;
-    }
     .aktion-ten {
         height: 100%;
         padding: 45px 25px;
@@ -10051,13 +10108,6 @@ textarea {
     .prdetails-info__col .prdetail-about__col {
         width: 100%;
         margin: 13px 0 9px 0;
-    }
-    .das-auch {
-        margin: 104px 0;
-    }
-    .das-auch .wasser-title {
-        font-size: 30px;
-        line-height: 1.433;
     }
 
     /* menu 416px */

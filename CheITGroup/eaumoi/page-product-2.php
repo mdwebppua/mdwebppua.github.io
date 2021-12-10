@@ -20,18 +20,6 @@
 
 <?php include 'header.php'; ?>
 
-<section class="breadcrumb">
-    <div class="container-xl">
-        <nav class="woocommerce-breadcrumb">
-            <a href="home.php">Home</a>
-            &nbsp;•&nbsp;
-            <a href="page-shop.php">Shop</a>
-            &nbsp;•&nbsp;
-            Geschenkbox Glas
-        </nav>
-    </div>
-</section>
-
 <section class="product">
     <svg class="product-maskload load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
         <defs>
@@ -71,95 +59,112 @@
         </g>
     </svg>
 
-    <div class="container-xl">
-        <div class="product-full">
-            <div class="product-gallery">
-                <div class="product-slider swiper">
-                    <div class="product-slider__wrapper swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/glas-slider-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/glas-slider-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/glas-slider-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/glas-slider-4.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-pagination"></div>
-                </div>
-
+    <div class="product-fullsize">
+        <div class="container-xl">
+            <div class="breadcrumb">
+                <nav class="woocommerce-breadcrumb">
+                    <a href="home.php">Home</a>
+                    &nbsp;•&nbsp;
+                    <a href="page-shop.php">Shop</a>
+                    &nbsp;•&nbsp;
+                    Yellow Booster
+                </nav>
             </div>
 
-            <div class="product-summary">
-                <h1 class="productfull-title">
-                    Geschenkbox Glas
-                </h1>
-                <div class="productfull-tag">
-                    mit Glasflasche, Probierset und Gutschein
-                </div>
-                <div class="productfull-price">
-                    CHF 56.90
-                </div>
-                <div class="productfull-descritpion">
-                    Schenke deinen Liebsten nicht alte Trauben – als Wein – sondern lieber frische Früchte – als eau&moi.  Macht aus jedem Wasserhahn eine Quelle für aromatisiertes Wasser. Wenn du lieber ein reingesiebtes Aromawasser trinkst, ohne natürliche Fruchtbestandteile, dann nimm dir die Geschenkbox mit Sieb.
-                </div>
-
-                <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
-                    <div class="einzelbeutel-box">
-                        <div class="einim-title">
-                            <b>Geschenkbox ohne Sieb</b>
-                        </div>
-                        <div class="einim-description">
-                            CHF 56.90
-                        </div>
-                        <form action="#" class="einim-sale">
-                            <div class="einim-type">
-                                <button class="einim-minus productCountDown">-</button>
-                                <input type="number" value="1" class="einim-input productCount" min="0" max="20">
-                                <button class="einim-pluse productCountUp">+</button>
+            <div class="product-full">
+                <div class="product-gallery">
+                    <div class="product-slider swiper">
+                        <div class="product-slider__wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/glas-slider-1.jpg" alt="">
+                                </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/glas-slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/glas-slider-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/glas-slider-4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
 
-                            <button class="button-link einim-button">
-                                in den Warenkorb
-                            </button>
-                        </form>
+                        <div class="product-pagination"></div>
                     </div>
-                    <div class="einzelbeutel-box imabo-box">
-                        <div class="einim-title">
-                            <b>Geschenkbox mit Sieb</b>
-                        </div>
-                        <div class="einim-description">
-                            CHF 74.30
-                        </div>
-                        <form action="#" class="einim-sale">
-                            <div class="einim-type einim-type__dark">
-                                <button class="einim-minus productCountDown">-</button>
-                                <input type="number" value="1" class="einim-input productCount" min="0" max="20">
-                                <button class="einim-pluse productCountUp">+</button>
+
+                </div>
+
+                <div class="product-summary">
+                    <h1 class="productfull-title">
+                        Geschenkbox Glas
+                    </h1>
+                    <div class="productfull-tag">
+                        mit Glasflasche, Probierset und Gutschein
+                    </div>
+                    <div class="productfull-price">
+                        CHF 56.90
+                    </div>
+                    <div class="productfull-descritpion">
+                        Schenke deinen Liebsten nicht alte Trauben – als Wein – sondern lieber frische Früchte – als eau&moi.  Macht aus jedem Wasserhahn eine Quelle für aromatisiertes Wasser. Wenn du lieber ein reingesiebtes Aromawasser trinkst, ohne natürliche Fruchtbestandteile, dann nimm dir die Geschenkbox mit Sieb.
+                    </div>
+
+                    <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
+                        <div class="einzelbeutel-box">
+                            <div class="einim-title">
+                                <b>Geschenkbox ohne Sieb</b>
                             </div>
+                            <div class="einim-description">
+                                CHF 56.90
+                            </div>
+                            <form action="#" class="einim-sale">
+                                <div class="einim-type">
+                                    <button class="einim-minus productCountDown">-</button>
+                                    <input type="number" value="1" class="einim-input productCount" min="0" max="20">
+                                    <button class="einim-pluse productCountUp">+</button>
+                                </div>
 
-                            <button class="button-dark einim-button">
-                                in den Warenkorb
-                            </button>
-                        </form>
+                                <button class="button-link einim-button">
+                                    in den Warenkorb
+                                </button>
+                            </form>
+                        </div>
+                        <div class="einzelbeutel-box imabo-box">
+                            <div class="einim-title">
+                                <b>Geschenkbox mit Sieb</b>
+                            </div>
+                            <div class="einim-description">
+                                CHF 74.30
+                            </div>
+                            <form action="#" class="einim-sale">
+                                <div class="einim-type einim-type__dark">
+                                    <button class="einim-minus productCountDown">-</button>
+                                    <input type="number" value="1" class="einim-input productCount" min="0" max="20">
+                                    <button class="einim-pluse productCountUp">+</button>
+                                </div>
 
+                                <button class="button-dark einim-button">
+                                    in den Warenkorb
+                                </button>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
+
+    <div class="container-xl">
+
 
         <div class="product-details">
             <div class="prdetails-thumb">

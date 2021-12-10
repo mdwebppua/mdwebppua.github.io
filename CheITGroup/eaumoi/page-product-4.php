@@ -20,17 +20,6 @@
 
 <?php include 'header.php'; ?>
 
-<section class="breadcrumb">
-    <div class="container-xl">
-        <nav class="woocommerce-breadcrumb">
-            <a href="home.php">Home</a>
-            &nbsp;•&nbsp;
-            <a href="page-shop.php">Shop</a>
-            &nbsp;•&nbsp;
-            Probierpaket
-        </nav>
-    </div>
-</section>
 
 <section class="product">
     <svg class="product-maskload load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
@@ -71,185 +60,199 @@
         </g>
     </svg>
 
-    <div class="container-xl">
-        <div class="product-full">
-            <div class="product-gallery">
-                <div class="product-slider swiper">
-                    <div class="product-slider__wrapper swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/allinone-slider-1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/breeze-slider-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/breeze-slider-3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/product-slider-3.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product-pagination"></div>
-                </div>
-                <div class="naturlich-wrapper">
-                    <ul class="product-naturlich">
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-1.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                100% natürlich
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-3.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne Zucker und Süssungsmittel
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-2.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                fast ohne Kalorien
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-4.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne künstliche Zusatzstoffe
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-6.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Glutenfrei
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-5.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Vegan
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+    <div class="product-fullsize">
+        <div class="container-xl">
+            <div class="breadcrumb">
+                <nav class="woocommerce-breadcrumb">
+                    <a href="home.php">Home</a>
+                    &nbsp;•&nbsp;
+                    <a href="page-shop.php">Shop</a>
+                    &nbsp;•&nbsp;
+                    Yellow Booster
+                </nav>
             </div>
 
-            <div class="product-summary">
-                <h1 class="productfull-title">
-                    All-in-one
-                </h1>
-                <div class="productfull-tag">
-                    4 Sorten im Probierpaket
+            <div class="product-full">
+                <div class="product-gallery">
+                    <div class="product-slider swiper">
+                        <div class="product-slider__wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/allinone-slider-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/breeze-slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/breeze-slider-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/product-slider-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-pagination"></div>
+                    </div>
+                    <div class="naturlich-wrapper">
+                        <ul class="product-naturlich">
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-1.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    100% natürlich
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-3.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne Zucker und Süssungsmittel
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-2.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    fast ohne Kalorien
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-4.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne künstliche Zusatzstoffe
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-6.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Glutenfrei
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-5.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Vegan
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="productfull-price">
-                    CHF 5.00
-                </div>
-                <div class="productfull-descritpion">
-                    <b>Püree für Wasser mit Geschmack – hergestellt in der Schweiz</b> <br>
+
+                <div class="product-summary">
+                    <h1 class="productfull-title">
+                        All-in-one
+                    </h1>
+                    <div class="productfull-tag">
+                        4 Sorten im Probierpaket
+                    </div>
+                    <div class="productfull-price">
+                        CHF 5.00
+                    </div>
+                    <div class="productfull-descritpion">
+                        <b>Püree für Wasser mit Geschmack – hergestellt in der Schweiz</b> <br>
                         Probiere alles auf einmal und finde deine Art, das Wasser zu aromatisieren: <br>
                         «Yellow Booster», «Very berry extraordinary», «Exotische Erfrischung», «Around the world»
-                </div>
-
-                <div class="naturlich-wrapper">
-                    <ul class="product-naturlich">
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-1.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                100% natürlich
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-3.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne Zucker und Süssungsmittel
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-2.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                fast ohne Kalorien
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-4.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne künstliche Zusatzstoffe
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-6.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Glutenfrei
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-5.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Vegan
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
-                    <div class="einzelbeutel-box">
-                        <div class="einim-title">
-                            <b>4 Portionen</b> für 5-6 dl
-                        </div>
-                        <div class="einim-description">
-                            All in one
-                        </div>
-                        <form action="#" class="einim-sale">
-                            <div class="einim-type">
-                                <button class="einim-minus productCountDown">-</button>
-                                <input type="number" value="1" class="einim-input productCount" min="0" max="20">
-                                <button class="einim-pluse productCountUp">+</button>
-                            </div>
-
-                            <button class="button-dark einim-button">
-                                in den Warenkorb
-                            </button>
-                        </form>
                     </div>
 
+                    <div class="naturlich-wrapper">
+                        <ul class="product-naturlich">
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-1.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    100% natürlich
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-3.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne Zucker und Süssungsmittel
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-2.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    fast ohne Kalorien
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-4.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne künstliche Zusatzstoffe
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-6.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Glutenfrei
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-5.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Vegan
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
+                        <div class="einzelbeutel-box">
+                            <div class="einim-title">
+                                <b>4 Portionen</b> für 5-6 dl
+                            </div>
+                            <div class="einim-description">
+                                All in one
+                            </div>
+                            <form action="#" class="einim-sale">
+                                <div class="einim-type">
+                                    <button class="einim-minus productCountDown">-</button>
+                                    <input type="number" value="1" class="einim-input productCount" min="0" max="20">
+                                    <button class="einim-pluse productCountUp">+</button>
+                                </div>
+
+                                <button class="button-dark einim-button">
+                                    in den Warenkorb
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container-xl">
         <div class="product-details">
             <div class="prdetails-thumb">
 

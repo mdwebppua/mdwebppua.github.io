@@ -59,8 +59,8 @@
     </svg>
 
     <div class="product-fullsize">
-        <section class="breadcrumb">
-            <div class="container-xl">
+        <div class="container-xl">
+            <div class="breadcrumb">
                 <nav class="woocommerce-breadcrumb">
                     <a href="home.php">Home</a>
                     &nbsp;•&nbsp;
@@ -69,183 +69,183 @@
                     Edelstahlflasche
                 </nav>
             </div>
-        </section>
-    </div>
 
-    <div class="container-xl">
-        <div class="product-full">
-            <div class="product-gallery">
-                <div class="product-slider swiper">
-                    <div class="product-slider__wrapper swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/product-bottle.png" alt="">
+            <div class="product-full">
+                <div class="product-gallery">
+                    <div class="product-slider swiper">
+                        <div class="product-slider__wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/product-bottle.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/bottle-slider-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/bottle-slider-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-slider__item">
+                                    <img src="img/product/bottle-slider-3.jpg" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/bottle-slider-1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/bottle-slider-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="product-slider__item">
-                                <img src="img/product/bottle-slider-3.jpg" alt="">
-                            </div>
-                        </div>
+
+                        <div class="product-pagination"></div>
+                    </div>
+                    <div class="naturlich-wrapper">
+                        <ul class="product-naturlich">
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-1.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    100% natürlich
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-3.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne Zucker und Süssungsmittel
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-2.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    fast ohne Kalorien
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-4.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne künstliche Zusatzstoffe
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-6.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Glutenfrei
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-5.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Vegan
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="product-summary">
+                    <h1 class="productfull-title">
+                        Edelstahlflasche
+                    </h1>
+                    <div class="productfull-tag">
+                        hält dein Getränk warm oder kalt
+                    </div>
+                    <div class="productfull-price">
+                        CHF 34.90
+                    </div>
+                    <div class="productfull-descritpion">
+                        Trinke eau&moi überall wo du bist. Die doppelwandige Edelstahl-Flasche ist dein nachhaltiger Begleiter für aromatisiertes Wasser. Heiss oder kalt.
+                        <br><br>
+                        <b>Personalisiere den Bambus-Deckel mit Namen oder Logo!</b> <br>
+                        Sende uns deine Anfrage an <a href="#">shop@eau-et-moi.ch</a>
                     </div>
 
-                    <div class="product-pagination"></div>
-                </div>
-                <div class="naturlich-wrapper">
-                    <ul class="product-naturlich">
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-1.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                100% natürlich
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-3.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne Zucker und Süssungsmittel
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-2.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                fast ohne Kalorien
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-4.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne künstliche Zusatzstoffe
-                            </div>
-                        </li>
+                    <div class="naturlich-wrapper">
+                        <ul class="product-naturlich">
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-1.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    100% natürlich
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-3.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne Zucker und Süssungsmittel
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-2.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    fast ohne Kalorien
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-4.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    ohne künstliche Zusatzstoffe
+                                </div>
+                            </li>
 
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-6.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Glutenfrei
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-5.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Vegan
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="product-summary">
-                <h1 class="productfull-title">
-                    Edelstahlflasche
-                </h1>
-                <div class="productfull-tag">
-                    hält dein Getränk warm oder kalt
-                </div>
-                <div class="productfull-price">
-                    CHF 34.90
-                </div>
-                <div class="productfull-descritpion">
-                    Trinke eau&moi überall wo du bist. Die doppelwandige Edelstahl-Flasche ist dein nachhaltiger Begleiter für aromatisiertes Wasser. Heiss oder kalt.
-                    <br><br>
-                    <b>Personalisiere den Bambus-Deckel mit Namen oder Logo!</b> <br>
-                    Sende uns deine Anfrage an <a href="#">shop@eau-et-moi.ch</a>
-                </div>
-
-                <div class="naturlich-wrapper">
-                    <ul class="product-naturlich">
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-1.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                100% natürlich
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-3.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne Zucker und Süssungsmittel
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-2.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                fast ohne Kalorien
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-4.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                ohne künstliche Zusatzstoffe
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-6.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Glutenfrei
-                            </div>
-                        </li>
-                        <li>
-                            <div class="product-naturlich__ico">
-                                <img src="img/product/naturlich-5.svg" alt="">
-                            </div>
-                            <div class="product-naturlich__text">
-                                Vegan
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
-                    <div class="einzelbeutel-box">
-                        <form action="#" class="einim-sale">
-                            <div class="einim-type">
-                                <button class="einim-minus productCountDown">-</button>
-                                <input type="number" value="1" class="einim-input productCount" min="0" max="20">
-                                <button class="einim-pluse productCountUp">+</button>
-                            </div>
-
-                            <button class="button-dark einim-button">
-                                in den Warenkorb
-                            </button>
-                        </form>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-6.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Glutenfrei
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product-naturlich__ico">
+                                    <img src="img/product/naturlich-5.svg" alt="">
+                                </div>
+                                <div class="product-naturlich__text">
+                                    Vegan
+                                </div>
+                            </li>
+                        </ul>
                     </div>
 
+                    <div class="einzelbeutel-imabo einzelbeutel-imabo__col">
+                        <div class="einzelbeutel-box">
+                            <form action="#" class="einim-sale">
+                                <div class="einim-type">
+                                    <button class="einim-minus productCountDown">-</button>
+                                    <input type="number" value="1" class="einim-input productCount" min="0" max="20">
+                                    <button class="einim-pluse productCountUp">+</button>
+                                </div>
+
+                                <button class="button-dark einim-button">
+                                    in den Warenkorb
+                                </button>
+                            </form>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="container-xl">
         <div class="product-details">
             <div class="prdetails-thumb">
                 <img src="img/product/bottle-details.png" alt="">

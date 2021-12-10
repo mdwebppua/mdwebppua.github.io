@@ -528,12 +528,13 @@ $( document ).ready(function() {
         freeMode: true,
     });
 
-    $('.freude-input').on('focus', function () {
-        if ($(this).val() !== '') {
-            $(this).next('.freude-label').addClass('blur');
-        } else {
-            $(this).next('.freude-label').removeClass('blur');
-        }
+    $('.freude-forminput').click(function() {
+        $(this).find('.freude-label').addClass('blur');
+        // if ($(this).find('.freude-label').val() !== '') {
+        //     $(this).find('.freude-label').addClass('blur');
+        // } else {
+        //     $(this).find('.freude-label').removeClass('blur');
+        // }
     });
 
     $("textarea").each(function () {
@@ -787,6 +788,52 @@ $( document ).ready(function() {
                 email: "Your email address must be in the format of name@domain.com"
             },
             Nachricht: "Bitte prüfe deine Eingabe"
+        },
+        errorElement : 'div',
+    });
+
+    $(".neueskonto-form").validate({
+        rules: {
+            billing_first_name: "required",
+            billing_last_name: "required",
+            billing_address_1: "required",
+            billing_city: "required",
+            billing_postcode: "required",
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            billing_first_name: "Bitte prüfe deine Eingabe",
+            billing_last_name: "Bitte prüfe deine Eingabe",
+            billing_address_1: "Bitte prüfe deine Eingabe",
+            billing_city: "Bitte prüfe deine Eingabe",
+            billing_postcode: "Bitte prüfe deine Eingabe",
+            email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            },
+        },
+        errorElement : 'div',
+    });
+
+    $(".login-form").validate({
+        rules: {
+            account_first_name: "required",
+            account_last_name: "required",
+            account_email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            account_first_name: "Bitte prüfe deine Eingabe",
+            account_last_name: "Bitte prüfe deine Eingabe",
+            account_email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            },
         },
         errorElement : 'div',
     });

@@ -9014,6 +9014,15 @@ textarea {
     .konto-nav li.konto-nav__ico-6 a:before {
 
     }
+    .konto-logout {
+        font-size: 21px;
+        margin: 34px 0 0 0;
+    }
+    .konto-logout:before {
+        width: 36px;
+        height: 31px;
+        background-size: contain !important;
+    }
     .kundenkonto-left {
         display: none;
     }

@@ -20,18 +20,6 @@
 
 <?php include 'header.php'; ?>
 
-<section class="breadcrumb">
-    <div class="container-xl">
-        <nav class="woocommerce-breadcrumb">
-            <a href="home.php">Home</a>
-            &nbsp;•&nbsp;
-            <a href="page-shop.php">Shop</a>
-            &nbsp;•&nbsp;
-            Edelstahlflasche
-        </nav>
-    </div>
-</section>
-
 <section class="product">
     <svg class="product-maskload load" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440.162" height="666.518" viewBox="0 0 1440.162 666.518">
         <defs>
@@ -70,6 +58,19 @@
         </g>
     </svg>
 
+    <div class="product-fullsize">
+        <section class="breadcrumb">
+            <div class="container-xl">
+                <nav class="woocommerce-breadcrumb">
+                    <a href="home.php">Home</a>
+                    &nbsp;•&nbsp;
+                    <a href="page-shop.php">Shop</a>
+                    &nbsp;•&nbsp;
+                    Edelstahlflasche
+                </nav>
+            </div>
+        </section>
+    </div>
 
     <div class="container-xl">
         <div class="product-full">

@@ -4866,6 +4866,7 @@ html.ov-hidden{
     pointer-events: none;
     position: relative;
     z-index: 2;
+    align-items: start;
 }
 .prdetails-info {
     max-width: 505px;
@@ -8078,6 +8079,10 @@ textarea {
     .platz-figure {
         max-width: 570px;
     }
+    .konto-body {
+        margin: 0 0 0 59px;
+        max-width: 100%;
+    }
 }
 @media (max-width: 1199.98px) {
     body, .entweder-body:hover, .link-load:hover {
@@ -8223,6 +8228,45 @@ textarea {
     }
     .shop-nav li {
         margin: 0 35px 0 0;
+    }
+
+    /* all page Konto */
+    .header.konto {
+        background: #fff;
+    }
+    .konto-body {
+        margin: 0 0 0 59px;
+    }
+
+    .konto-dashboard:after {
+        display: none;
+    }
+    .konto-sidebar {
+        position: absolute;
+        top: 0;
+        left: -310px;
+        height: 100%;
+        background: #F4F8FF;
+        padding: 0 0 0 24px;
+        max-width: 310px;
+        width: 100%;
+        z-index: 50;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+    }
+    .konto-sidebar.active {
+        left: 0;
+    }
+    .kundenkonto-left {
+        display: block;
+    }
+    .kundenkonto-body {
+        width: 100%;
+        padding: 100px 0 0 0;
     }
 }
 @media (max-width: 991.98px) {
@@ -8395,44 +8439,7 @@ textarea {
         text-align: left;
     }
 
-    /* all page Konto */
-    .header.konto {
-        background: #fff;
-    }
-    .konto-body {
-        margin: 0 0 0 59px;
-    }
 
-    .konto-dashboard:after {
-        display: none;
-    }
-    .konto-sidebar {
-        position: fixed;
-        top: 0;
-        left: -310px;
-        height: 100%;
-        background: #F4F8FF;
-        padding: 0 0 0 24px;
-        max-width: 310px;
-        width: 100%;
-        z-index: 50;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
-    }
-    .konto-sidebar.active {
-        left: 0;
-    }
-    .kundenkonto-left {
-        display: block;
-    }
-    .kundenkonto-body {
-        width: 100%;
-        padding: 100px 0 0 0;
-    }
 
     /* page Für Unternehmen */
     .angebot-body {
@@ -8985,6 +8992,7 @@ textarea {
 
     /* Konto Sidebar */
     .konto-sidebar {
+        position: fixed;
         left: 0;
         top: 100%;
         max-width: 100%;
@@ -9492,6 +9500,9 @@ textarea {
         font-size: 18.4px;
         font-weight: 300;
     }
+    .breadcrumb {
+        padding: 21px 0 0 0;
+    }
 }
 
 @media (max-width: 660px) {
@@ -9996,10 +10007,6 @@ textarea {
     }
 
     /* page product 416px */
-    .breadcrumb {
-        padding: 21px 0 0 0;
-
-    }
     .product-maskload,
     .product-maskload2 {
         height: 1150px;

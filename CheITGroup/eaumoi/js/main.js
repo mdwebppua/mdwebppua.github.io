@@ -250,7 +250,7 @@ $( document ).ready(function() {
         renderer: 'svg',
         loop: false,
         autoplay: false,
-        path: 'img/lottie/dein-trink.json'
+        path: assetsPath +'img/lottie/dein-trink.json'
     });
 
     if ($(".dein-trink").length) {
@@ -271,7 +271,7 @@ $( document ).ready(function() {
         loop: false,
         autoplay: false,
         hover: true,
-        path: 'img/lottie/gutschein.json',
+        path: assetsPath + 'img/lottie/gutschein.json',
     });
 
     $(window).on('load resize', function () {

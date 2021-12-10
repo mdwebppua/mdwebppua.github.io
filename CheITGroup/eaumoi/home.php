@@ -458,7 +458,7 @@
 
 
 
-<section class="ein-gutschein">
+<section class="ein-gutschein aktion-box-point">
     <div class="firmen-footer">
         <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1451.608" height="209" viewBox="0 0 1451.608 209">
             <defs>
@@ -474,17 +474,17 @@
     <div class="ein-gutschein-body">
         <div class="container-xl">
             <div class="gutschein">
-                <h2 class="gutschein-title" data-aos="fade-up" data-aos-offset="-200">
+                <h2 class="gutschein-title" data-aos="fade-up">
                     <span class="wasser-title__italic">Ein Gutschein,</span> <br>
                     der guttut?
                 </h2>
                 <div class="gutschein-img">
                     <div id="gutschein-lottie"></div>
                 </div>
-                <div class="gutschein-description" data-aos="fade-up" data-aos-offset="-200">
+                <div class="gutschein-description" data-aos="fade-up">
                     Etwas Gutes zu trinken geht natürlich noch leichter mit einem guten Gutschein. Woher auch immer du ihn hast – er wird dir guttun.
                 </div>
-                <div class="button-inline" data-aos="fade-up" data-aos-offset="-200">
+                <div class="button-inline" data-aos="fade-up">
                     <a href="#" class="button-link">Gutschein einlösen</a>
                 </div>
             </div>

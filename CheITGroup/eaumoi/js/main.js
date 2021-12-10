@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
     $(window).scroll(function(){
-        if ($(window).width() > 1199) {
+        if ($(window).width() > 767) {
             if($('body').hasClass('page-home')) {
                 if($(this).scrollTop() > $('.wasser-aroma').offset().top) {
                     $('.header').addClass('active');

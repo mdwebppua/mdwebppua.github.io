@@ -1501,11 +1501,8 @@ body.page-shop .header.menu {
     -o-transition: 1.5s ease;
     transition: 1.5s ease;
     text-align: center;
-    white-space: nowrap;
-    /*filter: hue-rotate(360deg);*/
 }
 .button-link:hover {
-    /*background: #0D2330;*/
     color: #fff;
     background-position: 500% 100%;
 }
@@ -1536,10 +1533,8 @@ body.page-shop .header.menu {
     transition: 1.5s ease;
     background-color: transparent;
     text-align: center;
-    white-space: nowrap;
 }
 .button-dark:hover {
-    /*background: #0D2330;*/
     color: #0D2330;
     background-position: 500% -100%;
     background-color: transparent;
@@ -3804,7 +3799,7 @@ html.ov-hidden{
     font-weight: 500;
 }
 .basket-totallprice {
-    min-height: 450px;
+    min-height: 200px;
 }
 .basket-totallist {
     padding: 14px 31px 0 29px;
@@ -4796,7 +4791,7 @@ html.ov-hidden{
     display: -ms-flexbox;
     display: flex;
     padding: 0 10px;
-    margin-right: 5px;
+    margin-right: 12px;
 }
 .einim-type.einim-type__dark {
     background: #0D2330;
@@ -4822,9 +4817,9 @@ html.ov-hidden{
     font-size: 15px;
     padding: 0;
     height: 52px;
-    width: 145px;
     font-weight: 500;
     border-radius: 4px;
+    width: 100%;
 }
 .einim-abo {
     font-size: 15px;
@@ -8402,6 +8397,7 @@ textarea {
     .einim-button {
         width: 100%;
         margin: 0 0 0 15px;
+        padding: 15px 20px;
     }
     .keine-banner {
         overflow-x: auto;
@@ -8541,18 +8537,6 @@ textarea {
     }
     .prdetails-info__col .prdetail-about__col:last-child:before {
         left: -15px;
-    }
-    .einzelbeutel-imabo {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin: 116px 0 0 0;
-    }
-    .einim-description {
-        font-size: 13px;
-        font-weight: 500;
-        margin: 5px 0 0 0;
     }
 }
 @media (max-width: 767px) {
@@ -9421,7 +9405,7 @@ textarea {
         padding: 0 25px 0 0;
     }
     .das-auch {
-        margin: 104px 0;
+        margin: 100px 0 112px;
     }
     .das-auch .wasser-title {
         font-size: 30px;
@@ -9596,6 +9580,14 @@ textarea {
         max-width: none;
         margin: 0 30px 0 0;
     }
+    .product-naturlich l:last-child::after {
+        position: absolute;
+        content: '';
+        left: 100%;
+        width: 30px;
+        height: 100%;
+        top: 0;
+    }
     .product-fullsize .container-xl {
         max-width: none;
     }
@@ -9603,12 +9595,91 @@ textarea {
         margin: 0 -24px;
     }
     .product-naturlich {
-        margin: 37px 0 0;
+        margin: 35px 0 0;
         overflow-x: auto;
         padding: 0 0 20px 24px;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start;
+    }
+    .product-summary {
+        margin: 79px 0 0 0;
+    }
+    .product-full {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .product-gallery {
+        margin: 51px 0 0 0;
+    }
+    .product-slider__item {
+        height: 282px;
+    }
+    .product-slider__item img {
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+    }
+    .productfull-price {
+        margin: 21px 0 0 0;
+    }
+    .product-pagination.swiper-pagination-bullets {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 24px 0 0 0;
+    }
+    .productfull-tag {
+        margin: 6px 0 0;
+    }
+    .productfull-descritpion {
+        font-size: 20px;
+        line-height: 1.475;
+        margin: 45px 0 0 0;
+    }
+    .product-maskload,
+    .product-maskload2 {
+        height: 1210px;
+        margin-left: -300px;
+        top: 0;
+    }
+    .aromen-slider {
+        margin: 35px 0 0 0;
+    }
+    .einim-description ul li {
+        margin: 0 20px 0 0;
+    }
+    .einzelbeutel-imabo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 86px 0 0 0;
+    }
+    .einim-description {
+        font-size: 13px;
+        font-weight: 500;
+        margin: 5px 0 0 0;
+    }
+    .einzelbeutel-imabo__col .einzelbeutel-box {
+        width: 100%;
+    }
+    .imabo-box:before {
+        display: none;
+    }
+    .imabo-box {
+        border-top: 1px solid #585858;
+        margin: 25px 0 0 0;
+        padding: 25px 0 0 0;
+    }
+    .einim-abo {
+        font-size: 15px;
+        max-width: 100%;
     }
 }
 
@@ -9649,10 +9720,8 @@ textarea {
         transition: 1.5s ease;
         text-align: center;
         white-space: nowrap;
-        /*filter: hue-rotate(360deg);*/
     }
     .button-dark:hover {
-        /*background: #0D2330;*/
         color: #fff;
         background-position: 500% 100%;
     }
@@ -9671,7 +9740,7 @@ textarea {
         font-weight: 500;
         color: #fff;
         font-size: 17.5px;
-        padding: 12px 33px;
+        padding: 12px 20px;
         border: 1px solid #0D2330;
         border-radius: 3px;
         position: relative;
@@ -9683,10 +9752,8 @@ textarea {
         transition: 1.5s ease;
         background-color: transparent;
         text-align: center;
-        white-space: nowrap;
     }
     .button-link:hover {
-        /*background: #0D2330;*/
         color: #0D2330;
         background-position: 500% -100%;
         background-color: transparent;
@@ -10015,14 +10082,8 @@ textarea {
     .kostliche-aromen .wasser-title {
         text-align: left;
     }
-    .aromen-slider {
-        margin: 35px 0 0 0;
-    }
     .aromen-item__name {
         margin: 15px 0 0 0;
-    }
-    .aromen-item__tag {
-        margin: 4px 0 0 0;
     }
     .aromen-item_buyer {
         padding: 30px 30px 20px 30px;
@@ -10083,71 +10144,6 @@ textarea {
     }
     .shop-schmeckt {
         padding: 69px 0 156px;
-    }
-
-    /* page product 416px */
-    .product-maskload,
-    .product-maskload2 {
-        height: 1150px;
-        margin-left: -300px;
-        top: 0;
-    }
-    .product-full {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .product-gallery {
-        margin: 51px 0 0 0;
-    }
-    .product-slider__item {
-        height: 282px;
-    }
-    .product-slider__item img {
-        height: 100%;
-        -o-object-fit: contain;
-        object-fit: contain;
-    }
-    .product-pagination.swiper-pagination-bullets {
-        position: relative;
-        bottom: 0;
-        right: 0;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        margin: 24px 0 0 0;
-    }
-    .product-summary {
-        margin: 83px 0 0 0;
-    }
-    .productfull-tag {
-        margin: 3px 0 0 0;
-    }
-    .productfull-descritpion {
-        font-size: 20px;
-        line-height: 1.475;
-        margin: 35px 0 0 0;
-    }
-    .einzelbeutel-imabo__col .einzelbeutel-box {
-        width: 100%;
-    }
-    .imabo-box:before {
-        display: none;
-    }
-    .imabo-box {
-        border-top: 1px solid #585858;
-        margin: 25px 0 0 0;
-        padding: 25px 0 0 0;
-    }
-    .einim-button {
-        font-size: 15px;
-        width: 100%;
-        margin: 0 0 0 15px;
-    }
-    .einim-abo {
-        font-size: 15px;
-        max-width: 100%;
     }
 
     /* menu 416px */

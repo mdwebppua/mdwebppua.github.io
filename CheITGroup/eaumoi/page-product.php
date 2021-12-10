@@ -233,7 +233,7 @@
                             <div class="einim-description">
                                 Gesamte Mindestbestellmenge: 15 Sachets
                             </div>
-                            <form action="#" class="einim-sale">
+                            <form action="#" class="einim-sale einzelbeutel-form">
                                 <div class="einim-type">
                                     <button class="einim-minus productCountDown">-</button>
                                     <input type="number" value="1" class="einim-input productCount" min="0" max="20">
@@ -255,7 +255,7 @@
                                     <li>Jederzeit kündbar</li>
                                 </ul>
                             </div>
-                            <div class="einim-sale">
+                            <div class="einim-sale imabo-form">
                                 <a href="page-abo.php" class="button-dark einim-abo">
                                     Abo konfigurieren
                                 </a>

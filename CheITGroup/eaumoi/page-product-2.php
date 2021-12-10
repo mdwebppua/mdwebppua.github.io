@@ -124,7 +124,7 @@
                             <div class="einim-description">
                                 CHF 56.90
                             </div>
-                            <form action="#" class="einim-sale">
+                            <form action="#" class="einim-sale ohnesieb-form">
                                 <div class="einim-type">
                                     <button class="einim-minus productCountDown">-</button>
                                     <input type="number" value="1" class="einim-input productCount" min="0" max="20">
@@ -143,7 +143,7 @@
                             <div class="einim-description">
                                 CHF 74.30
                             </div>
-                            <form action="#" class="einim-sale">
+                            <form action="#" class="einim-sale mitsieb-form">
                                 <div class="einim-type einim-type__dark">
                                     <button class="einim-minus productCountDown">-</button>
                                     <input type="number" value="1" class="einim-input productCount" min="0" max="20">

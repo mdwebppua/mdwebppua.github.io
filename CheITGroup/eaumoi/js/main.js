@@ -229,21 +229,42 @@ $( document ).ready(function() {
         var aromenSlider = new Swiper('.aromen-slider', {
             loop: true,
             autoplay: {
-                delay: 0,
+                delay: 1,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
             },
             centeredSlides: true,
             slidesPerView: "auto",
             spaceBetween: 50,
-            waitForTransition: false,
             speed: 5000,
             loopPreventsSlide: false,
             freeModeMomentum: false,
-            freeMode: true,
+            freeMode: {
+                enabled: true,
+                momentum: false,
+                momentumBounce: false,
+                sticky: true
+            },
+            on: {
+                init() {
+                    this.el.addEventListener('mouseenter', () => {
+                        this.autoplay.stop();
+                    });
+
+                    this.el.addEventListener('mouseleave', () => {
+                        this.autoplay.start();
+                    });
+                }
+            }
 
         });
     }
+
+    $(".swiper-wrapper").mouseenter(function() {
+        swiper.autoplay.stop();
+    }).mouseleave(function() {
+        swiper.autoplay.start();
+    });
 
     var trinkLottie = lottie.loadAnimation({
         container: document.getElementById('trink-lottie'),

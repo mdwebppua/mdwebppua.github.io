@@ -48,10 +48,10 @@
             </div>
             <div class="login-form__type col-2">
                 <div class="col">
-                    <input class="login-form__input" type="text" placeholder="Vorname*" required>
+                    <input class="login-form__input" type="text" placeholder="Vorname*" name="billing_first_name" required>
                 </div>
                 <div class="col">
-                    <input class="login-form__input" type="text" placeholder="Name*" required>
+                    <input class="login-form__input" type="text" placeholder="Name*" name="billing_last_name" required>
                 </div>
             </div>
             <div class="login-form__type col-2">
@@ -70,17 +70,17 @@
                 <input class="login-form__input" type="text" placeholder="Geburtsdatum*">
             </div>
             <div class="login-form__type">
-                <input class="login-form__input" type="text" placeholder="Adresse*">
+                <input class="login-form__input" type="text" placeholder="Adresse*" name="billing_address_1">
             </div>
             <div class="login-form__type">
                 <input class="login-form__input" type="text" placeholder="Adresszusatz">
             </div>
             <div class="login-form__type col-2">
                 <div class="col">
-                    <input class="login-form__input" type="text" placeholder="Ort*" required>
+                    <input class="login-form__input" type="text" placeholder="Ort*" name="billing_city">
                 </div>
                 <div class="col">
-                    <input class="login-form__input" type="text" placeholder="PLZ*" required>
+                    <input class="login-form__input" type="text" placeholder="PLZ*" name="billing_postcode">
                 </div>
             </div>
             <div class="login-form__type type-select">
@@ -94,13 +94,13 @@
                 </div>
             </div>
             <div class="login-form__type">
-                <input class="login-form__input" type="text" placeholder="Email*" required>
+                <input class="login-form__input" type="text" placeholder="Email*" name="email">
             </div>
             <div class="login-form__type">
-                <input class="login-form__input" type="text" placeholder="Passwort*" required>
+                <input class="login-form__input" type="text" placeholder="Passwort*">
             </div>
             <div class="login-form__type">
-                <input class="login-form__input" type="text" placeholder="Passwort wiederholen*" required>
+                <input class="login-form__input" type="text" placeholder="Passwort wiederholen*">
             </div>
 
             <div class="login-enter">

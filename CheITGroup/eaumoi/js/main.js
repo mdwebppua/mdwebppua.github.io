@@ -737,22 +737,24 @@ $( document ).ready(function() {
     /* page-kontakt.php */
     $('.freude-kontaktform').validate({
         rules: {
-            Vorname: "required",
-            Name: "required",
-            Email: {
+            "your-name": "required",
+            "your-lastname": "required",
+            "your-firm": "required",
+            email: {
                 required: true,
                 email: true
             },
-            Nachricht: "required"
+            "your-message": "required"
         },
         messages: {
-            Vorname: "Bitte prüfe deine Eingabe",
-            Name: "Bitte prüfe deine Eingabe",
-            Email: {
+            "your-name": "Bitte prüfe deine Eingabe",
+            "your-lastname": "Bitte prüfe deine Eingabe",
+            "your-firm": "Bitte prüfe deine Eingabe",
+            email: {
                 required: "We need your email address to contact you",
                 email: "Your email address must be in the format of name@domain.com"
             },
-            Nachricht: "Bitte prüfe deine Eingabe"
+            "your-message": "Bitte prüfe deine Eingabe"
         },
         errorElement : 'div',
         invalidHandler: function(event, validator) {
@@ -763,27 +765,27 @@ $( document ).ready(function() {
     /* page-bezahlung.php */
     $('.bezahlung-form').validate({
         rules: {
-            Vorname: "required",
-            Name: "required",
-            Addresse: "required",
-            Ort: "required",
-            PLZ: "required",
-            Land: "required",
-            Telefonnummer: "required",
-            Email: {
+            billing_first_name: "required",
+            billing_last_name: "required",
+            billing_address_1: "required",
+            billing_city: "required",
+            billing_postcode: "required",
+            billing_country: "required",
+            billing_phone: "required",
+            billing_email: {
                 required: true,
                 email: true
             }
         },
         messages: {
-            Vorname: "Bitte prüfe deine Eingabe",
-            Name: "Bitte prüfe deine Eingabe",
-            Addresse: "Bitte prüfe deine Eingabe",
-            Ort: "Bitte prüfe deine Eingabe",
-            PLZ: "Bitte prüfe deine Eingabe",
-            Land: "Bitte prüfe deine Eingabe",
-            Telefonnummer: "Bitte prüfe deine Eingabe",
-            Email: {
+            billing_first_name: "Bitte prüfe deine Eingabe",
+            billing_last_name: "Bitte prüfe deine Eingabe",
+            billing_address_1: "Bitte prüfe deine Eingabe",
+            billing_city: "Bitte prüfe deine Eingabe",
+            billing_postcode: "Bitte prüfe deine Eingabe",
+            billing_country: "Bitte prüfe deine Eingabe",
+            billing_phone: "Bitte prüfe deine Eingabe",
+            billing_email: {
                 required: "We need your email address to contact you",
                 email: "Your email address must be in the format of name@domain.com"
             },
@@ -792,6 +794,7 @@ $( document ).ready(function() {
         errorElement : 'div',
     });
 
+    /* page-neueskonto.php */
     $(".neueskonto-form").validate({
         rules: {
             billing_first_name: "required",

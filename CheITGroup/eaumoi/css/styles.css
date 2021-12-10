@@ -4326,14 +4326,14 @@ html.ov-hidden{
     opacity: 0;
 }
 .bezahlung-type div.error {
-    position: absolute;
-    left: 0;
-    bottom: -14px;
     font-size: 11px;
     font-weight: normal;
     color: #E27291;
 }
 .bezahlung-type input.error {
+    border-color: #E27291;
+}
+.wpcf7-not-valid {
     border-color: #E27291;
 }
 .bezahlung-total {
@@ -5058,6 +5058,16 @@ html.ov-hidden{
 .login-form__type {
     margin: 0 0 25px 0;
     position: relative;
+}
+.login-form__type input.error,
+.login-form__type select.error,
+.login-form__type textarea.error {
+    border-color: #E27291;
+}
+.login-form__type div.error {
+    font-size: 9px;
+    font-weight: 500;
+    color: #E27291;
 }
 .loginform-reqinfo {
     position: absolute;
@@ -7047,6 +7057,11 @@ body.open-video {
     opacity: 1;
     visibility: visible;
 }
+.wpcf7-not-valid-tip {
+    font-size: 9px;
+    font-weight: 500;
+    color: #E27291;
+}
 .freude-forminput div.error {
     font-size: 9px;
     font-weight: 500;
@@ -8049,7 +8064,7 @@ textarea {
         min-height: 860px;
     }
 
-    .breadcrumb {
+    .product-fullsize .breadcrumb {
         position: absolute;
         top: 0;
         left: 0;

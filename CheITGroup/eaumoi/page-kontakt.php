@@ -77,7 +77,7 @@
                     <div class="freude-formtype col-2">
                         <div class="col">
                             <div class="freude-forminput">
-                                <input class="freude-input rq-vorname" id="Vorname" type="text" name="Vorname">
+                                <input class="freude-input rq-vorname" id="Vorname" type="text" name="your-name">
                                 <label class="freude-label" for="Vorname">Vorname*</label>
 
                                 <div class="freude-formerror">
@@ -87,7 +87,7 @@
                         </div>
                         <div class="col">
                             <div class="freude-forminput">
-                                <input class="freude-input rq-name" id="Name" type="text" name="Name">
+                                <input class="freude-input rq-name" id="Name" type="text" name="your-lastname">
                                 <label class="freude-label" for="Name">Name*</label>
                                 <div class="freude-formerror">
                                     Bitte prüfe deine Eingabe
@@ -97,7 +97,7 @@
                     </div>
                     <div class="freude-formtype">
                         <div class="freude-forminput">
-                            <input class="freude-input" id="Firma" type="text" name="Firma">
+                            <input class="freude-input" id="Firma" type="text" name="your-firm">
                             <label class="freude-label" for="Firma">Firma</label>
                             <div class="freude-formerror">
                                 Bitte prüfe deine Eingabe
@@ -116,7 +116,7 @@
                         </div>
                         <div class="col">
                             <div class="freude-forminput">
-                                <input class="freude-input rq-email" id="Email" type="email" name="Email">
+                                <input class="freude-input rq-email" id="Email" type="email" name="email">
                                 <label class="freude-label" for="Email">Email*</label>
                                 <div class="freude-formerror">
                                     Bitte prüfe deine Eingabe
@@ -126,7 +126,7 @@
                     </div>
                     <div class="freude-formtype">
                         <div class="freude-forminput">
-                            <textarea class="freude-input rq-nachricht" rows="1" name="Nachricht" id="Nachricht"></textarea>
+                            <textarea class="freude-input rq-nachricht" rows="1" name="your-message" id="Nachricht"></textarea>
                             <label class="freude-label" for="Nachricht">Deine Nachricht*</label>
                             <div class="freude-formerror">
                                 Bitte prüfe deine Eingabe

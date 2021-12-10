@@ -32,7 +32,7 @@
         </div>
         <form action="#" class="login-form">
             <div class="login-form__type">
-                <input class="login-form__input" type="text" placeholder="Email*">
+                <input class="login-form__input" type="text" placeholder="Email*" name="account_email">
             </div>
             <div class="login-form__type">
                 <input class="login-form__input" type="text" placeholder="Passwort*">

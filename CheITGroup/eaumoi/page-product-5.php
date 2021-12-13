@@ -34,9 +34,9 @@
         </div>
     </div>
 
-    <div class="aromen-slider swiper">
-        <div class="aromen-list swiper-wrapper">
-            <div class="swiper-slide">
+    <div class="aromen-slider">
+        <div class="aromen-list">
+            <div class="carousel-cell">
                 <div class="aromen-item" style="background: #E2E79D;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#E2E79D">
                         <div class="aromen-item__img">
@@ -76,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="carousel-cell">
                 <div class="aromen-item" style="background: #EA9DB2;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#EA9DB2">
                         <div class="aromen-item__img">
@@ -102,7 +102,7 @@
                         </div>
                         <div class="aromen-item__numform">
                             <form action="#" class="aromen-form">
-                                <div class="aromen-type">
+                                <div class="aromen-type" style="display:none;">
                                     <button class="aromen-minus productCountDown">-</button>
                                     <input type="number" value="1" class="aromen-input productCount">
                                     <button class="aromen-pluse productCountUp">+</button>
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="carousel-cell">
                 <div class="aromen-item" style="background: #FAF188;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#FAF188">
                         <div class="aromen-item__img">
@@ -150,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="carousel-cell">
                 <div class="aromen-item" style="background: #F2BD77;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#F2BD77">
                         <div class="aromen-item__img">
@@ -184,7 +184,7 @@
                 </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="carousel-cell">
                 <div class="aromen-item" style="background: #CEEEAA;">
                     <a href="page-product.php" class="link-load entweder-body" data-bg="#CEEEAA">
                         <div class="aromen-item__img">

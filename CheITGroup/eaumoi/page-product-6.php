@@ -121,7 +121,7 @@
                                     <img src="img/product/naturlich-2.svg" alt="">
                                 </div>
                                 <div class="product-naturlich__text">
-                                    fast ohne Kalorien
+                                    ohne Kalorien
                                 </div>
                             </li>
                             <li>
@@ -161,7 +161,7 @@
                         Gratis mit Gutscheincode
                     </div>
                     <div class="productfull-price">
-                        CHF <span class="free-price">6.25</span>
+                        CHF <span class="free-price">6.25</span> <sub>inkl. MwSt.</sub>
                     </div>
                     <div class="productfull-descritpion">
                         <b>Püree für Wasser mit Geschmack – hergestellt in der Schweiz</b> <br>
@@ -191,7 +191,7 @@
                                     <img src="img/product/naturlich-2.svg" alt="">
                                 </div>
                                 <div class="product-naturlich__text">
-                                    fast ohne Kalorien
+                                    ohne Kalorien
                                 </div>
                             </li>
                             <li>
@@ -272,199 +272,7 @@
     </div>
 </section>
 
-<section class="das-konnte">
-    <div class="container">
-        <div class="wasser-title">
-            Das könnte dir
-            <span class="wasser-title__italic">auch noch gefallen</span>
-        </div>
-    </div>
-
-    <div class="aromen-slider swiper das-konnte-slider">
-        <div class="aromen-list swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="aromen-item" style="background: #E2E79D;">
-                    <a href="page-product.php" class="link-load entweder-body" data-bg="#E2E79D">
-                        <div class="aromen-item__img">
-                            <img src="img/product/giveme-1.png" alt="">
-                            <!--
-                            <div class="aromen-perso">
-                                <div class="aromen-perso__text">
-                                    PERSO-NALISIERBAR!
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="aromen-item__name">
-                            5 x Exotische Erfrischung
-                        </div>
-                        <div class="aromen-item__tag">
-                            Gratis mit Gutscheincode
-                        </div>
-                    </a>
-                    <div class="aromen-item_buyer">
-                        <div class="aromen-item__price">
-                            CHF <span class="free-price">6.25</span>
-                        </div>
-                        <div class="aromen-item__numform">
-                            <form action="#" class="aromen-form">
-                                <div class="aromen-type">
-                                    <button class="aromen-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="aromen-input productCount">
-                                    <button class="aromen-pluse productCountUp">+</button>
-                                </div>
-                                <div class="aromen-button">
-                                    <button class="aromen-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="aromen-item" style="background: #EA9DB2;">
-                    <a href="page-product.php" class="link-load entweder-body" data-bg="#EA9DB2">
-                        <div class="aromen-item__img">
-                            <img src="img/product/giveme-2.png" alt="">
-                            <!--
-                            <div class="aromen-perso">
-                                <div class="aromen-perso__text">
-                                    PERSO-NALISIERBAR!
-                                </div>
-                            </div>
-                            -->
-                        </div>
-                        <div class="aromen-item__name">
-                            5 x Arround The World
-                        </div>
-                        <div class="aromen-item__tag">
-                            Gratis mit Gutscheincode
-                        </div>
-                    </a>
-                    <div class="aromen-item_buyer">
-                        <div class="aromen-item__price">
-                            CHF <span class="free-price">6.25</span>
-                        </div>
-                        <div class="aromen-item__numform">
-                            <form action="#" class="aromen-form">
-                                <div class="aromen-type">
-                                    <button class="aromen-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="aromen-input productCount">
-                                    <button class="aromen-pluse productCountUp">+</button>
-                                </div>
-                                <div class="aromen-button">
-                                    <button class="aromen-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="aromen-item" style="background: #FAF188;">
-                    <a href="page-product.php" class="link-load entweder-body" data-bg="#FAF188">
-                        <div class="aromen-item__img">
-                            <img src="img/product/giveme-3.png" alt="">
-
-                        </div>
-                        <div class="aromen-item__name">
-                            5 x Summer Breeze
-                        </div>
-                        <div class="aromen-item__tag">
-                            Gratis mit Gutscheincode
-                        </div>
-                    </a>
-                    <div class="aromen-item_buyer">
-                        <div class="aromen-item__price">
-                            CHF <span class="free-price">6.25</span>
-                        </div>
-                        <div class="aromen-item__numform">
-                            <form action="#" class="aromen-form">
-                                <div class="aromen-type">
-                                    <button class="aromen-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="aromen-input productCount">
-                                    <button class="aromen-pluse productCountUp">+</button>
-                                </div>
-                                <div class="aromen-button">
-                                    <button class="aromen-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="aromen-item" style="background: #F2BD77;">
-                    <a href="page-product.php" class="link-load entweder-body" data-bg="#F2BD77">
-                        <div class="aromen-item__img">
-                            <img src="img/product/giveme-4.png" alt="">
-
-                        </div>
-                        <div class="aromen-item__name">
-                            5 x jeden Geschmack
-                        </div>
-                        <div class="aromen-item__tag">
-                            Gratis mit Gutscheincode
-                        </div>
-                    </a>
-                    <div class="aromen-item_buyer">
-                        <div class="aromen-item__price">
-                            CHF <span class="free-price">6.25</span>
-                        </div>
-                        <div class="aromen-item__numform">
-                            <form action="#" class="aromen-form">
-                                <div class="aromen-type">
-                                    <button class="aromen-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="aromen-input productCount">
-                                    <button class="aromen-pluse productCountUp">+</button>
-                                </div>
-                                <div class="aromen-button">
-                                    <button class="aromen-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="aromen-item" style="background: #CEEEAA;">
-                    <a href="page-product.php" class="link-load entweder-body" data-bg="#CEEEAA">
-                        <div class="aromen-item__img">
-                            <img src="img/product/giveme-5.png" alt="">
-                        </div>
-                        <div class="aromen-item__name">
-                            Very Berry Extraordinary
-                        </div>
-                        <div class="aromen-item__tag">
-                            Gratis mit Gutscheincode
-                        </div>
-                    </a>
-                    <div class="aromen-item_buyer">
-                        <div class="aromen-item__price">
-                            CHF <span class="free-price">6.25</span>
-                        </div>
-                        <div class="aromen-item__numform">
-                            <form action="#" class="aromen-form">
-                                <div class="aromen-type">
-                                    <button class="aromen-minus productCountDown">-</button>
-                                    <input type="number" value="1" class="aromen-input productCount">
-                                    <button class="aromen-pluse productCountUp">+</button>
-                                </div>
-                                <div class="aromen-button">
-                                    <button class="aromen-submit"></button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php include 'product-carousel.php'; ?>
 
 <?php include 'footer.php'; ?>
 

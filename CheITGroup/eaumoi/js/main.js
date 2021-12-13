@@ -138,16 +138,16 @@ $( document ).ready(function() {
         tl.to(".title-wiewasser__tofrom1", {
             opacity: 0,
         })
-        .to(".title-wiewasser__tofrom2", {
-            opacity: 1,
-        })
-        .to(".title-wiewasser__tofrom2", {
-            opacity: 0,
-        })
-        .to(".wasser-aroma", {
-            opacity: 1,
-            duration: 0.5,
-        })
+            .to(".title-wiewasser__tofrom2", {
+                opacity: 1,
+            })
+            .to(".title-wiewasser__tofrom2", {
+                opacity: 0,
+            })
+            .to(".wasser-aroma", {
+                opacity: 1,
+                duration: 0.5,
+            })
     }
 
 
@@ -225,46 +225,119 @@ $( document ).ready(function() {
         });
     }
 
-    if ($(".aromen-slider").length) {
-        var aromenSlider = new Swiper('.aromen-slider', {
-            loop: true,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true,
-            },
-            centeredSlides: true,
-            slidesPerView: "auto",
-            spaceBetween: 50,
-            speed: 5000,
-            loopPreventsSlide: false,
-            freeModeMomentum: false,
-            freeMode: {
-                enabled: true,
-                momentum: false,
-                momentumBounce: false,
-                sticky: true
-            },
+    if ($(".aromen-list").length) {
+        let clickOn = true;
+        const aromenSlider = new Flickity('.aromen-list', {
+            freeScroll: true,
+            resize: true,
+            wrapAround: true,
+            prevNextButtons: false,
+            pageDots: false,
+            percentPosition: true,
+            setGallerySize: true,
             on: {
-                init() {
-                    this.el.addEventListener('mouseenter', () => {
-                        this.autoplay.stop();
-                    });
-
-                    this.el.addEventListener('mouseleave', () => {
-                        this.autoplay.start();
-                    });
+                dragStart: function (event, pointer) {
+                    clickOn = false;
+                    console.log(event)
+                },
+                dragEnd: function () {
+                    setTimeout(function (event, pointer) {
+                        clickOn = true;
+                        console.log(event)
+                    }, 300)
+                },
+                pointerDown: function (event, pointer) {
+                    console.log(event)
                 }
             }
-
         });
+
+        // Set initial position to be 0
+        aromenSlider.x = 0;
+        // Start the marquee animation
+        play();
+        /*
+		$('.link-load').on('click', function (e) {
+			if (!clickOn) {
+				console.log(clickOn)
+				e.preventDefault();
+				return false;
+			}
+		}) */
+        // Main function that 'plays' the marquee.
+        function play() {
+            // Set the decrement of position x
+            aromenSlider.x -= .5;
+            // Settle position into the slider
+            aromenSlider.settle(aromenSlider.x);
+            // Set the requestId to the local variable
+            requestId = window.requestAnimationFrame(play);
+        }
+
+        // Main function to cancel the animation.
+        function pause() {
+            if(requestId) {
+                // Cancel the animation
+                window.cancelAnimationFrame(requestId)
+                // Reset the requestId for the next animation.
+                requestId = undefined;
+            }
+        }
     }
 
-    $(".swiper-wrapper").mouseenter(function() {
-        swiper.autoplay.stop();
-    }).mouseleave(function() {
-        swiper.autoplay.start();
-    });
+    // Pause on hover/focus
+    $('.aromen-slider').on('mouseenter focusin', function () {
+        pause();
+    }).on('mouseleave',  function () {
+        play();
+    })
+
+    /*
+		if ($(".aromen-slider").length) {
+			var aromenSlider = new Swiper('.aromen-slider', {
+				loop: true,
+				autoplay: {
+					delay: 1,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
+					waitForTransition: false
+				},
+				centeredSlides: true,
+				slidesPerView: "auto",
+				spaceBetween: 50,
+				speed: 5000,
+				//loopPreventsSlide: false,
+				freeModeMomentum: false,
+				freeMode: {
+					enabled: true,
+					momentum: false,
+					momentumBounce: false,
+					sticky: true
+				},
+				on: {
+					init() {
+						this.el.addEventListener('mouseenter', () => {
+							this.autoplay.stop();
+						});
+
+						this.el.addEventListener('mouseleave', () => {
+							this.autoplay.start();
+						});
+					}
+				}
+
+			});
+			$(".aromen-slider").hover(function(){
+				aromenSlider.autoplay.stop();
+				console.log('1')
+			}, function(){
+				aromenSlider.autoplay.start();
+				console.log('2')
+			});
+		}
+
+	 */
+
 
     var trinkLottie = lottie.loadAnimation({
         container: document.getElementById('trink-lottie'),
@@ -295,21 +368,33 @@ $( document ).ready(function() {
         path: assetsPath + 'img/lottie/gutschein.json',
     });
 
-    $(window).on('load resize', function () {
-        if ($(window).width() <= 767) {
-            gutscheinLottie.play();
-        } else {
-            if ($(".ein-gutschein").length) {
-                $(".ein-gutschein").on('mouseenter', function () {
-                    gutscheinLottie.setDirection(1);
+    if ($(".ein-gutschein").length) {
+        gsap.timeline({
+            scrollTrigger: {
+                trigger: ".ein-gutschein",
+                start: 'top 60%',
+                onEnter: function () {
                     gutscheinLottie.play();
-                }).on('mouseleave', function () {
-                    gutscheinLottie.setDirection(-1);
-                    gutscheinLottie.play(0);
-                });
+                }
             }
-        }
-    });
+        });
+    }
+    /*
+        $(window).on('load resize', function () {
+            if ($(window).width() <= 767) {
+                gutscheinLottie.play();
+            } else {
+                if ($(".ein-gutschein").length) {
+                    $(".ein-gutschein").on('mouseenter', function () {
+                        gutscheinLottie.setDirection(1);
+                        gutscheinLottie.play();
+                    }).on('mouseleave', function () {
+                        gutscheinLottie.setDirection(-1);
+                        gutscheinLottie.play(0);
+                    });
+                }
+            }
+        }); */
 
     if ($(".fruchtepuree").length) {
         var kleinerBanner = $(".fruchtepuree").offset().top;
@@ -334,6 +419,8 @@ $( document ).ready(function() {
         });
     }
 
+
+
     /* product button count cart */
     $('.productCountDown').on('click', function (e) {
         e.preventDefault();
@@ -342,6 +429,8 @@ $( document ).ready(function() {
         value = +count.val();
         if (value > 0) count.val(value - 1);
         count.trigger('change');
+        $(this).parents('.aromen-form').find('.aromen-button a').attr('data-quantity', value - 1);
+        $(this).parents('.ntweder-form').find('.ntweder-button a').attr('data-quantity', value - 1);
     });
     $('.productCountUp').on('click', function (e) {
         e.preventDefault();
@@ -349,6 +438,8 @@ $( document ).ready(function() {
             value = +count.val();
         count.val(value + 1);
         count.trigger('change');
+        $(this).parents('.aromen-form').find('.aromen-button a').attr('data-quantity', value + 1);
+        $(this).parents('.ntweder-form').find('.ntweder-button a').attr('data-quantity', value + 1);
     });
     $( ".productCount" ).keypress(function() {
         return false;
@@ -360,7 +451,7 @@ $( document ).ready(function() {
         e.preventDefault();
     });
 
-    $(".open-basket").click(function() {
+    $(document).on("click", ".open-basket", function() {
         $("html, body, .warenkorb-basket").addClass("ov-hidden");
     });
     $(".warenkorb-close, .basket-mask").click(function() {
@@ -386,7 +477,7 @@ $( document ).ready(function() {
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true,
             },
-            speed: 800,
+            speed: 1000,
             grabCursor: true,
             slidesPerView: "auto",
             centeredSlides: true,
@@ -500,7 +591,7 @@ $( document ).ready(function() {
         daysShort: ['Son', 'Mon', 'Die', 'Mit', 'Don', 'Fre', 'Sam'],
         daysMin: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'],
         months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
-        monthsShort: ['Jan', 'Feb', 'Mär', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
+        monthsShort: ['Jan', 'Feb', 'März', 'Apr', 'Mai', 'Jun', 'Jul', 'Aug', 'Sep', 'Okt', 'Nov', 'Dez'],
         today: 'Heute',
         clear: 'Aufräumen',
         dateFormat: 'dd.MM.yyyy',
@@ -529,7 +620,7 @@ $( document ).ready(function() {
     });
     const inputTime = new AirDatepicker('.input-time__enter', {
         locale: localeDe,
-        dateFormat: 'yyyy-MM-dd'
+        dateFormat: 'dd.MM.yyyy'
     });
 
     const kommtBody = new Swiper('.kommt-body', {
@@ -612,10 +703,11 @@ $( document ).ready(function() {
     //$('.faq-name:eq(0)').addClass('active');
     //$('.faq-about:eq(0)').show();
 
+    let menuT;
     $(".menu-button").click(function (e) {
         e.preventDefault();
         $(".header, .header-shop, .user-box").addClass("menu");
-        setTimeout(function() {
+        menuT = setTimeout(function() {
             $(".navigation-page").addClass("menu");
         }, 1000);
         $("html, body").addClass("ov-hidden");
@@ -626,6 +718,7 @@ $( document ).ready(function() {
         });
     });
     $(".close-menu").click(function () {
+        clearTimeout(menuT);
         $(".navigation-page, .header, .header-shop, .user-box").removeClass("menu");
         $("html, body").removeClass("ov-hidden");
         $(".page-maskload").removeClass("active");
@@ -700,7 +793,7 @@ $( document ).ready(function() {
     $('.fruchtepuree-main').scrollLeft(52);
 
     $(".navigation-page").css({
-       "display": "flex"
+        "display": "flex"
     });
 
     $(window).scroll(function() {
@@ -729,14 +822,6 @@ $( document ).ready(function() {
     $(".kundenkonto-open, .open-sidebar").on("click", function() {
         $(".konto-sidebar").toggleClass("active");
     });
-
-    replaceAmp('.productfull-descritpion')
-
-    function replaceAmp(el) {
-        if($(el).length == 0 ) return false;
-        let thSt = $(el).html();
-        $(el).html(thSt.replace(/&amp;/g, '<span style="font-family: FarnhamDisplay, sans-serif">&amp;</span>'));
-    }
 
     var sectionIds = $('.shop-nav li a');
 
@@ -843,6 +928,26 @@ $( document ).ready(function() {
     });
 
     $(".login-form").validate({
+        rules: {
+            account_first_name: "required",
+            account_last_name: "required",
+            account_email: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            account_first_name: "Bitte prüfe deine Eingabe",
+            account_last_name: "Bitte prüfe deine Eingabe",
+            account_email: {
+                required: "We need your email address to contact you",
+                email: "Your email address must be in the format of name@domain.com"
+            },
+        },
+        errorElement : 'div',
+    });
+
+    $(".newsletter-form").validate({
         rules: {
             account_first_name: "required",
             account_last_name: "required",

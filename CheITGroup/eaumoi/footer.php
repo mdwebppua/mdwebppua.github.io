@@ -1,7 +1,7 @@
 
 
 <section class="warenkorb-basket">
-    <div class="basket-container">
+    <div class="widget_shopping_cart_content">
         <div class="basket-main">
             <div class="warenkorb-head">
                 <div class="warenkorb-flex">
@@ -195,8 +195,8 @@
         </div>
 
     </div>
-    <div class="basket-mask"></div>
 </section>
+<div class="basket-mask"></div>
 
 <section class="cookie-zum closed">
     <div class="cookie-zum__thumb">
@@ -269,13 +269,6 @@
 
 
     <div class="menu-scene">
-        <!--
-        <div class="menu-buble menu-buble__1"></div>
-        <div class="menu-buble menu-buble__2"></div>
-        <div class="menu-buble menu-buble__3"></div>
-        <div class="menu-buble menu-buble__4"></div>
-        <div class="menu-buble menu-buble__5"></div>
--->
         <div class="bublle-cir bublle-cir__1"></div>
         <div class="bublle-cir bublle-cir__2"></div>
         <div class="bublle-cir bublle-cir__3"></div>
@@ -405,6 +398,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/script.js"></script>
 

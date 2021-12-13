@@ -7,7 +7,7 @@
     <title>Home eaumoi</title>
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
+    <link rel="icon" href="favicon.png" sizes="32x32">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -278,9 +278,9 @@
         <div class="swiper-wrapper zumshop-slick">
             <div class="swiper-slide zumshop-swiper">
                 <div class="zumshop-slick__item" data-bg="#FAF188">
-                    <div class="zumshop-slick__thumb">
+                    <a href="#" class="zumshop-slick__thumb">
                         <img src="img/slidenew.jpg" alt="">
-                    </div>
+                    </a>
                     <div class="zumshop-hidden">
                         <div class="zumshop-slick__name">
                             Yellow Booster
@@ -311,9 +311,9 @@
 
             <div class="swiper-slide zumshop-swiper">
                 <div class="zumshop-slick__item" data-bg="#EBEEBA">
-                    <div class="zumshop-slick__thumb">
-                        <img src="img/slidenew.jpg" alt="">
-                    </div>
+                    <a href="#" class="zumshop-slick__thumb">
+                        <img src="img/entweder_1.png" alt="">
+                    </a>
                     <div class="zumshop-hidden">
                         <div class="zumshop-slick__name">
                             Yellow Booster
@@ -344,9 +344,9 @@
 
             <div class="swiper-slide zumshop-swiper">
                 <div class="zumshop-slick__item" data-bg="#F6D1A0">
-                    <div class="zumshop-slick__thumb">
+                    <a href="#" class="zumshop-slick__thumb">
                         <img src="img/slidenew.jpg" alt="">
-                    </div>
+                    </a>
                     <div class="zumshop-hidden">
                         <div class="zumshop-slick__name">
                             Yellow Booster
@@ -377,9 +377,9 @@
 
             <div class="swiper-slide zumshop-swiper">
                 <div class="zumshop-slick__item" data-bg="#CDEDA9">
-                    <div class="zumshop-slick__thumb">
+                    <a href="#" class="zumshop-slick__thumb">
                         <img src="img/slidenew.jpg" alt="">
-                    </div>
+                    </a>
                     <div class="zumshop-hidden">
                         <div class="zumshop-slick__name">
                             Yellow Booster
@@ -832,7 +832,7 @@
 
 
 
-<section class="dem-guten">
+<section class="dem-guten" style="background-image: url('img/guten-body.jpg')">
     <div class="container">
         <div class="guten-body">
             <div class="guten-foto">

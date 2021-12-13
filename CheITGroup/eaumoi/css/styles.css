@@ -154,7 +154,7 @@ html {
 body {
     font-size: 20px;
     color: #0D2330;
-    font-family: 'GTWalsheimPro';
+    font-family: 'GTWalsheimPro', 'FarnhamDisplay', sans-serif;
     font-weight: 300;
     font-style: normal;
     line-height: 1.75;
@@ -170,7 +170,7 @@ body.page-home {
     margin: 0 auto;
 }
 .container-xl {
-    max-width: 1278px;
+    max-width: 1280px;
     margin: 0 auto;
     width: 100%;
     padding: 0 24px;
@@ -256,9 +256,9 @@ body.page-shop .header.menu {
     -webkit-transform: translate(-50%, 0px);
     -ms-transform: translate(-50%, 0px);
     transform: translate(-50%, 0px);
+    backface-visibility: hidden;
 }
 .header-shop:hover {
-    background: url("../img/shop-h.png") no-repeat center;
     background: none;
     color: #fff;
     z-index: 10000;
@@ -296,12 +296,13 @@ body.page-shop .header.menu {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    backface-visibility: hidden;
 }
 .ico-profile:hover {
     background-image: url("../img/account_h.svg");
 }
 .ico-basket {
-    display: inline-block;
+    display: none;
     background-image: url("../img/cart_1.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -313,11 +314,42 @@ body.page-shop .header.menu {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-.ico-basket:hover {
-    background-image: url("../img/cart_1h.svg");
+.open-basket {
+    cursor: pointer;
+}
+.open-basket svg {
+    margin-bottom: 9px;
+}
+.open-basket svg * {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.open-basket:hover .cart-curve {
+    stroke: #fff;
+}
+.open-basket:hover .cart-bg {
+    fill: #0D2330;
+}
+.open-basket.added-product .cart-number {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.open-basket.added-product:hover .cart-number {
+    -webkit-transform: translateY(-9px);
+    -moz-transform: translateY(-9px);
+    -ms-transform: translateY(-9px);
+    -o-transform: translateY(-9px);
+    transform: translateY(-9px);
+}
+.open-basket.added-product .cart-number text {
+    fill: #0D2330;
 }
 .ico-bars {
-    margin: 0 0 0 13px;
+    margin: 0 0 0 10px;
 }
 .ico-bars:before,
 .ico-bars:after {
@@ -339,6 +371,7 @@ body.page-shop .header.menu {
     transition: 0.3s;
     position: relative;
     margin: 5px 0;
+    backface-visibility: hidden;
 }
 .menu-button {
     text-transform: uppercase;
@@ -351,11 +384,13 @@ body.page-shop .header.menu {
     align-items: center;
     font-weight: 500;
     font-size: 14px;
+    letter-spacing: 1.4px;
 }
 .menu-button:hover .ico-bars:before,
 .menu-button:hover .ico-bars:after {
     background-image: url("../img/menu2.svg");
     height: 3px;
+    background-size: contain;
 }
 .open-sidebar {
     position: absolute;
@@ -372,7 +407,7 @@ body.page-shop .header.menu {
 }
 .bg-head {
     background: #F4F8FF;
-    padding: 0 0 125px 0;
+    padding: 0 0 225px 0;
 }
 .bublle-wiewasser {
     background: #F4F8FF;
@@ -571,10 +606,10 @@ body.page-shop .header.menu {
     animation: bubble-flowUp-large 4s infinite ease-in -.03s;
 }
 .bublle-cir__1:before {
-    background-image: url("../img/drop.png");
+    background-image: url("../img/bubble/drop-1.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     -webkit-animation: bubble-animate 2s ease-out infinite;
     animation: bubble-animate 2s ease-out infinite;
 }
@@ -587,10 +622,10 @@ body.page-shop .header.menu {
     animation: bubble-flowUp-large 5s infinite ease-in -.03s;
 }
 .bublle-cir__2:before {
-    background-image: url("../img/drop-1.png");
+    background-image: url("../img/bubble/drop-2.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     -webkit-animation: bubble-animate 2s ease-out infinite;
     animation: bubble-animate 2s ease-out infinite;
 }
@@ -603,10 +638,10 @@ body.page-shop .header.menu {
     animation: bubble-flowUp-large 6s infinite ease-in -.03s;
 }
 .bublle-cir__3:before {
-    background-image: url("../img/droplet-1.png");
+    background-image: url("../img/bubble/drop-3.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     -webkit-animation: bubble-animate 2s ease-out infinite;
     animation: bubble-animate 2s ease-out infinite;
 }
@@ -619,10 +654,10 @@ body.page-shop .header.menu {
     animation: bubble-flowUp-large 7s infinite ease-in -.03s;
 }
 .bublle-cir__4:before {
-    background-image: url("../img/droplet-2.png");
+    background-image: url("../img/bubble/drop-4.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     -webkit-animation: bubble-animate 2s ease-out infinite;
     animation: bubble-animate 2s ease-out infinite;
 }
@@ -743,6 +778,7 @@ body.page-shop .header.menu {
     position: absolute;
     right: 10px;
     top: 10px;
+    backface-visibility: hidden;
 }
 .cookie-close:hover {
     -webkit-transform: rotate(90deg);
@@ -755,7 +791,7 @@ body.page-shop .header.menu {
 }
 .wasser-main {
     background: #F4F8FF;
-    padding: 141px 0 158px 0;
+    padding: 257px 0 60px;
     position: relative;
 }
 .wasser-aromatis {
@@ -772,11 +808,11 @@ body.page-shop .header.menu {
     z-index: 10;
 }
 .wasser-container {
-    max-width: 818px;
-    margin: 0 62px 0 0;
+    margin: 0 9% 0 0;
     position: relative;
     z-index: 11;
     width: 100%;
+    max-width: 55%;
 }
 .wasser-title {
     font-family: 'FarnhamDisplay';
@@ -784,13 +820,14 @@ body.page-shop .header.menu {
     font-weight: 500;
     line-height: 1.25;
 }
-.wasser-title__italic {
+.wasser-title i, .wasser-title em, .wasser-title__italic {
     font-family: 'FarnhamDisplay';
     font-weight: 300;
     font-style: italic;
+    letter-spacing: -.7px;
 }
 .wasser-description {
-    margin: 21px 0 0 3px;
+    margin: 28px 0 0 3px;
 }
 .wasser-list {
     display: -webkit-box;
@@ -799,7 +836,8 @@ body.page-shop .header.menu {
     font-weight: 500;
     font-size: 12px;
     text-align: center;
-    margin: 67px 0 20px 276px;
+    margin: 9% 12% 20px auto;
+    justify-content: flex-end;
 }
 .wasser-list li {
     width: 100px;
@@ -896,7 +934,8 @@ body.page-shop .header.menu {
     width: 516px;
     height: 503px;
     left: -43px;
-    top: -29px;
+    top: 10%;
+    max-width: 50%;
 }
 .wasser-rasp__2 {
     background-image: url("../img/raspberry.png");
@@ -906,7 +945,7 @@ body.page-shop .header.menu {
     width: 230px;
     height: 224px;
     right: -53px;
-    top: 29px;
+    top: 17%;
 }
 .wasser-rasp__3 {
     background-image: url("../img/blueberry.png");
@@ -915,7 +954,7 @@ body.page-shop .header.menu {
     background-size: cover;
     width: 218px;
     height: 147px;
-    bottom: -25px;
+    bottom: -15%;
     left: -25px;
 }
 .wasser-rasp__4 {
@@ -925,46 +964,48 @@ body.page-shop .header.menu {
     background-size: cover;
     width: 651px;
     height: 414px;
-    bottom: -112px;
-    left: 280px;
+    bottom: -26%;
+    left: 20%;
+    max-width: 50%;
 }
 .wasser-drop__1 {
-    background-image: url("../img/droplet/drop-1.png");
+    background-image: url("../img/bubble/drop-5.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 100px;
-    height: 91px;
+    background-size: contain;
+    width: 126px;
+    height: 118px;
     bottom: -230px;
     left: -90px;
+    filter: blur(4px);
 }
 .wasser-drop__2 {
-    background-image: url("../img/droplet/drop-2.png");
+    background-image: url("../img/bubble/drop-1.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 43px;
-    height: 38px;
+    background-size: contain;
+    width: 49px;
+    height: 45px;
     bottom: -150px;
     left: 307px;
 }
 .wasser-drop__3 {
-    background-image: url("../img/droplet/drop-3.png");
+    background-image: url("../img/bubble/drop-6.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 30px;
-    height: 27px;
+    background-size: contain;
+    width: 46px;
+    height: 47px;
     bottom: -191px;
     right: 139px;
 }
 .wasser-drop__4 {
-    background-image: url("../img/droplet/drop-4.png");
+    background-image: url("../img/bubble/drop-7.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    width: 46px;
-    height: 53px;
+    background-size: contain;
+    width: 88px;
+    height: 99px;
     bottom: -95px;
     right: -24px;
 }
@@ -1023,9 +1064,6 @@ body.page-shop .header.menu {
 }
 .wasser-banner__item b,
 .wasser-banner__item strong {
-    font-family: 'FarnhamDisplay';
-    font-size: 19px;
-    font-weight: 500;
     display: contents;
 }
 
@@ -1165,7 +1203,7 @@ body.page-shop .header.menu {
     height: 847px;
     position: absolute;
     top: 79px;
-    left: 10px;
+    left: 26px;
 }
 .fruchtepuree-buttle__img {
     margin: 108px 0 0 16px;
@@ -1180,10 +1218,6 @@ body.page-shop .header.menu {
     margin: 157px 0 0 0;
     position: relative;
     z-index: 5;
-}
-.fruchtepuree-main {
-    margin: 0 -24px 0 -24px;
-    overflow: auto;
 }
 .fruchtepuree-main::-webkit-scrollbar {
     width: 0;
@@ -1296,8 +1330,10 @@ body.page-shop .header.menu {
 
     opacity: 1;
 }
-.kleiner-banner span {
+.kleiner-banner__text > span {
     font-family: 'FarnhamDisplay';
+    font-weight: 300;
+    font-style: italic;
 }
 .kleiner-banner__text {
     -webkit-transform: rotate(-3deg);
@@ -1308,11 +1344,11 @@ body.page-shop .header.menu {
 }
 
 .zoomshop {
-    padding: 150px 0 80px;
+    padding: 110px 0 185px;
 }
 /*end slider amy */
 .zumshop-slider {
-    height: 600px;
+    height: 640px;
     width: 100%;
     margin: 0 auto;
 }
@@ -1368,6 +1404,16 @@ body.page-shop .header.menu {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.zumshop-slick__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 .zumshop-hidden {
     max-height: 0;
@@ -1426,7 +1472,7 @@ body.page-shop .header.menu {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 40px 0 0 0;
+    margin: 25px 0 0 0;
 }
 .zumshop-prev,
 .zumshop-next {
@@ -1489,9 +1535,10 @@ body.page-shop .header.menu {
     color: #0D2330;
     font-size: 20px;
     border: 1px solid #0D2330;
-    border-radius: 6px;
+    border-radius: 4px;
     position: relative;
-    padding: 15px 35px;
+    padding: 18px 30px;
+    line-height: 1.1;
 
     background: transparent;
     background-image: url("../img/nav-bg-fill-blue.png");
@@ -1580,7 +1627,7 @@ body.page-shop .header.menu {
     -webkit-box-shadow: 0 15px 15px #0000000B;
     box-shadow: 0 15px 15px #0000000B;
     border-radius: 11px;
-    height: 194px;
+    min-height: 194px;
     position: relative;
     max-width: 1230px;
     margin: 0 auto;
@@ -1604,6 +1651,7 @@ body.page-shop .header.menu {
     right: 10px;
     top: 10px;
     z-index: 5;
+    backface-visibility: hidden;
 }
 .aktion-close:hover {
     -webkit-transform: rotate(90deg);
@@ -1650,7 +1698,8 @@ body.page-shop .header.menu {
     justify-content: space-between;
 }
 .aktion-description {
-    max-width: 560px;
+    max-width: 65%;
+    padding-right: 4%;
     font-weight: normal;
 }
 .aktion-description b {
@@ -1659,6 +1708,7 @@ body.page-shop .header.menu {
 }
 .aktion-button {
     margin: 14px 52px 0 0;
+    flex: 0 0 auto;
 }
 
 .ein-gutschein {
@@ -1668,7 +1718,7 @@ body.page-shop .header.menu {
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    padding: 105px 0 130px;
+    padding: 105px 0 137px;
 }
 .ein-gutschein .firmen-footer {
     display: none;
@@ -1694,13 +1744,10 @@ body.page-shop .header.menu {
     z-index: 3;
 }
 .gutschein-description {
-    margin: 30px 0 70px 0;
+    margin: 30px 0 71px 0;
     max-width: 600px;
     position: relative;
     z-index: 3;
-}
-.gutschein .button-link {
-    padding: 11px 20px;
 }
 .gutschein-img {
     position: absolute;
@@ -1709,13 +1756,13 @@ body.page-shop .header.menu {
     pointer-events: none;
 }
 .dein-trink {
-    padding: 303px 0 90px 0;
+    padding: 277px 0 110px 0;
 }
 .trink-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-
+    align-items: center;
 }
 .trink-img {
     max-width: 480px;
@@ -1724,16 +1771,15 @@ body.page-shop .header.menu {
     margin: 0 auto;
 }
 .trink-info {
-    max-width: 790px;
+    max-width: 782px;
     width: 100%;
     margin: 34px 0 0 49px;
 }
 .trink-description {
-    margin: 28px 0 73px 0;
+    margin: 22px 0 73px 0;
 }
-
 .entweder-man {
-    padding: 77px 0;
+    padding: 91px 0;
     overflow: hidden;
 }
 .entweder-man .wasser-title {
@@ -1745,7 +1791,7 @@ body.page-shop .header.menu {
 .entweder-description {
     max-width: 590px;
     text-align: center;
-    margin: 23px auto 0;
+    margin: 24px auto 0;
 }
 .entweder-list {
     display: -webkit-box;
@@ -1754,7 +1800,7 @@ body.page-shop .header.menu {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 160px 0 0 0;
+    margin: 135px 0 0 0;
 }
 .entweder-item {
     text-align: center;
@@ -1861,7 +1907,7 @@ body.page-shop .header.menu {
 .entweder-item__name {
     font-size: 23px;
     font-family: 'FarnhamDisplay';
-    margin: 13px 0;
+    margin: 16px 0 12px;
     padding: 0 15px;
     line-height: 1.2;
 }
@@ -1959,9 +2005,8 @@ body.page-shop .header.menu {
 .ntweder-submit:hover {
     background-image: url("../img/cart-ico-3.svg");
 }
-
 .das-prinzip {
-    padding: 140px 0 94px 0;
+    padding: 92px 0 94px 0;
 }
 .prinzip-body {
     display: -webkit-box;
@@ -1969,8 +2014,7 @@ body.page-shop .header.menu {
     display: flex;
 }
 .prinzip-info {
-    min-width: 470px;
-    max-width: 470px;
+    max-width: 34%;
     margin: 26px 15px 0 175px;
     position: relative;
     z-index: 5;
@@ -2037,13 +2081,13 @@ body.page-shop .header.menu {
     max-width: 360px;
     width: 100%;
     background: #CAEEE8;
-    border-radius: 20px 20px 0px 20px;
+    border-radius: 20px 20px 0 20px;
     font-weight: normal;
-    padding: 20px;
+    padding: 45px 25px 20px;
     margin: 0 25px;
 }
 .wie-enter {
-    min-height: 175px;
+    min-height: 140px;
 }
 .wie-footer {
     display: -webkit-box;
@@ -2052,7 +2096,7 @@ body.page-shop .header.menu {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 30px 0 0 0;
+    margin: 34px 20px 0 0;
 }
 .wie-info__name {
     font-family: 'FarnhamDisplay';
@@ -2071,15 +2115,18 @@ body.page-shop .header.menu {
 .wie-rating__star {
     position: relative;
     background-image: url("../img/star-line-1.svg");
-    background-repeat: repeat-x;
-    background-position: left;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
     width: 96px;
     height: 15px;
     margin: 4px 0 0 0;
 }
 .wie-rating__num {
     background-image: url("../img/star-line-2.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto 100%;
     height: 15px;
     position: absolute;
     top: 0;
@@ -2130,7 +2177,8 @@ body.page-shop .header.menu {
     background: #0D2330;
 }
 .dem-guten {
-    padding: 70px 0 198px;
+    padding: 90px 0 195px;
+    background-image: none !important;
 }
 .guten-body {
     display: -webkit-box;
@@ -2141,7 +2189,7 @@ body.page-shop .header.menu {
     margin: 0 -178px 0 -125px;
 }
 .guten-folgen {
-    width: 460px;
+    width: 465px;
     margin: 186px 0 0 0;
 }
 .dem-guten .wasser-title {
@@ -2150,7 +2198,7 @@ body.page-shop .header.menu {
     letter-spacing: -0.96px;
 }
 .gutten-newslatter {
-    margin: 150px 0 0 0px;
+    margin: 142px 0 0;
 }
 .gutten-newstlatter__title {
     font-size: 16px;
@@ -2171,6 +2219,7 @@ body.page-shop .header.menu {
     background: none;
 }
 .gutten-button {
+    color: #0D2330;
     font-weight: 500;
     font-size: 16px;
     border: none;
@@ -2186,6 +2235,7 @@ body.page-shop .header.menu {
 }
 .gutten-button:after {
     content: "";
+    top: 0;
     display: inline-block;
     background-image: url("../img/form.svg");
     background-repeat: no-repeat;
@@ -2207,10 +2257,10 @@ body.page-shop .header.menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 32px 0 0 0;
+    margin: 30px 0 0 0;
 }
 .gutten-social li {
-    margin: 0 37px 0 0;
+    margin: 0 43px 0 0;
 }
 .gutten-social li:last-child {
     margin: 0;
@@ -2227,7 +2277,8 @@ body.page-shop .header.menu {
     background-image: url("../img/facebook.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    backface-visibility: hidden;
 }
 .social-facebook:hover {
     background-image: url("../img/facebook-h.svg");
@@ -2245,7 +2296,8 @@ body.page-shop .header.menu {
     background-image: url("../img/instagram.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    backface-visibility: hidden;
 }
 .social-instagram:hover {
     background-image: url("../img/instagram-h.svg");
@@ -2262,7 +2314,8 @@ body.page-shop .header.menu {
     background-image: url("../img/linkedin.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    backface-visibility: hidden;
 }
 .social-linkedin:hover {
     background-image: url("../img/linkedin-h.svg");
@@ -2270,9 +2323,8 @@ body.page-shop .header.menu {
 
 .keine-banner {
     background: #F5F8FD;
-    padding: 6px 0;
+    padding: 5px 0;
     position: relative;
-    /*margin: 133px 0 0 0;*/
 }
 .keine-banner::-webkit-scrollbar {
     width: 0;
@@ -2312,7 +2364,7 @@ body.page-shop .header.menu {
 .footer {
     color: #fff;
     background: #0D2330;
-    padding: 76px 0;
+    padding: 81px 0 39px;
     z-index: 3;
     position: relative;
 }
@@ -2331,7 +2383,7 @@ body.page-shop .header.menu {
     margin: 0 0 0 -60px;
 }
 .footer-col__3 {
-    min-width: 387px;
+    min-width: 390px;
 }
 .footer-title {
     font-size: 32px;
@@ -2360,11 +2412,12 @@ body.page-shop .header.menu {
     background-image: url("../img/hover-menu.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
-    background-size: auto;
-    height: 4px;
+    background-size: auto 100%;
+    height: 3px;
     position: absolute;
     bottom: -5px;
     width: 0;
+    backface-visibility: hidden;
 }
 .footer-nav li a:hover:after {
     width: 100%;
@@ -2394,10 +2447,12 @@ body.page-shop .header.menu {
     height: 10px;
     position: absolute;
     right: 0;
-    top: 9px;
+    top: 50%;
+    margin-top: -5px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    backface-visibility: hidden;
 }
 .footer-kontakt__link:hover:after {
     right: -5px;
@@ -2419,18 +2474,21 @@ body.page-shop .header.menu {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    backface-visibility: hidden;
 }
 .footer-social .social-instagram {
     background-image: url("../img/instagram-w.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    backface-visibility: hidden;
 }
 .footer-social .social-linkedin {
     background-image: url("../img/linkedin-w.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    backface-visibility: hidden;
 }
 .footer-newslatter {
     margin: 45px 0 0 0;
@@ -2440,7 +2498,7 @@ body.page-shop .header.menu {
     font-weight: 300;
 }
 .footer-newslatter .gutten-newslatter__form {
-    margin: 5px 11px 0 0;
+    margin: 5px 30px 0 0;
 }
 .footer-newslatter .gutten-input {
     font-size: 16px;
@@ -2487,7 +2545,7 @@ body.page-shop .header.menu {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 71px 0 0 0;
+    margin: 78px 0 0 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2516,11 +2574,12 @@ body.page-shop .header.menu {
     background-image: url("../img/hover-menu.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
-    background-size: auto;
-    height: 4px;
+    background-size: auto 100%;
+    height: 3px;
     position: absolute;
-    bottom: -5px;
+    bottom: -3px;
     width: 0;
+    backface-visibility: hidden;
 }
 .footer-link li a:hover:after {
     width: 100%;
@@ -2554,14 +2613,17 @@ body.page-shop .shop-navlist {
     display: block;
 }
 .shop-navlist {
-    -webkit-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
     display: none;
+    -webkit-transition: 1s .5s;
+    -o-transition: 1s .5s;
+    transition: 1s .5s;
 }
 .header.menu .shop-navlist {
     opacity: 0;
     pointer-events: none;
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
 }
 .shop-nav li {
     margin: 0 20px;
@@ -2586,8 +2648,8 @@ body.page-shop .shop-navlist {
     background-image: url("../img/menu2.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
-    background-size: auto;
-    height: 4px;
+    background-size: auto 100%;
+    height: 3px;
     position: absolute;
     bottom: -5px;
     -webkit-transition: 0.3s;
@@ -2595,6 +2657,7 @@ body.page-shop .shop-navlist {
     transition: 0.3s;
     width: 100%;
     opacity: 0;
+    backface-visibility: hidden;
 }
 .shop-nav li a.active:after,
 .shop-nav li a:hover:after {
@@ -2619,6 +2682,20 @@ body.page-shop .header-shop {
     margin: 34px auto 0;
     max-width: 1000px;
 }
+.aromen-list {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+.carousel-cell {
+    display: inline-block;
+}
+.aromen-list:focus {
+    outline: 0;
+}
+.aromen-list .aromen-item {
+    margin-top: 60px;
+}
 .aromen-slider {
     margin: 130px 0 0 0;
 }
@@ -2633,6 +2710,8 @@ body.page-shop .header-shop {
 .aromen-list .swiper-slide {
     width: 285px;
     padding: 70px 0 0 0;
+    display: inline-block;
+    margin: 0 15px;
 }
 .aromen-list li {
     display: -webkit-box;
@@ -2794,7 +2873,8 @@ body.page-shop .header-shop {
     -webkit-transform: rotate(-15deg);
     -ms-transform: rotate(-15deg);
     transform: rotate(-15deg);
-    top: 15px;
+    top: 50%;
+    margin-top: -1px;
 }
 .aromen-item__numform {
     font-weight: 500;
@@ -2997,7 +3077,7 @@ body.page-shop .header-shop {
 }
 .konfigurieren-item {
     text-align: center;
-    width: 100px;
+    width: 120px;
     margin: 50px 0 0 0;
 }
 .konfigurieren-item__thumb {
@@ -3171,6 +3251,7 @@ body.page-shop .header-shop {
     text-align: center;
     font-weight: normal;
     font-size: 17px;
+    border-radius: 0;
 }
 .allewoche-max {
     font-size: 10px;
@@ -3202,8 +3283,8 @@ body.page-shop .header-shop {
     background-image: url("../img/info-ico.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    min-width: 22px;
+    background-size: contain;
+    min-width: 23px;
     height: 23px;
     margin: 0 20px 0 0;
 }
@@ -3416,6 +3497,7 @@ body.page-shop .header-shop {
     font-size: 20px;
     width: 25px;
     height: 25px;
+    color: #0D2330;
 }
 .warenkorb-input {
     font-size: 20px;
@@ -3460,46 +3542,56 @@ html.ov-hidden{
 .warenkorb-basket {
     position: fixed;
     top: 0;
-    right: -100%;
-    -webkit-transition: 2s;
-    -o-transition: 2s;
-    transition: 2s;
+    right: 0;
+    -ms-transform: translateX(107%);
+    transform: translateX(107%);
+    -webkit-transform: translateX(107%);
+    -webkit-transition: all .8s cubic-bezier(0.2,1,.3,1);
+    transition: all .8s cubic-bezier(0.2,1,.3,1);
     z-index: 510;
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+    max-width: 535px;
+    overflow: hidden;
 }
 .warenkorb-basket.ov-hidden {
-    right: 0;
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+.widget_shopping_cart_content {
+    background: #C9EDE8;
+    width: 100%;
+    -webkit-transition: all .8s cubic-bezier(0.2,1,.3,1);
+    transition: all .8s cubic-bezier(0.2,1,.3,1);
+    -webkit-transform: translateX(-107%);
+    transform: translateX(-107%);
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+.ov-hidden .widget_shopping_cart_content {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    overflow: auto;
 }
 .basket-mask {
     position: fixed;
-    right: -100%;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background: rgb(13 35 48 / 55%);
-    -webkit-transition: 0.6s;
-    -o-transition: 0.6s;
-    transition: 0.6s;
     opacity: 0;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    z-index: -9;
 }
-.warenkorb-basket.ov-hidden .basket-mask {
-    right: 0;
+.ov-hidden .basket-mask {
     opacity: 1;
-}
-.basket-container {
-    background: #C9EDE8;
-    max-width: 535px;
-    width: 100%;
-    position: relative;
-    z-index: 100;
-    overflow: auto;
+    z-index: 500;
+    -webkit-transition: opacity .4s cubic-bezier(0,.8,1,1);
+    transition: opacity .4s cubic-bezier(0,.8,1,1);
 }
 .basket-main {
     background: #F4F8FF;
@@ -3550,6 +3642,7 @@ html.ov-hidden{
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+    backface-visibility: hidden;
 }
 .warenkorb-close:hover {
     -webkit-transform: rotate(90deg);
@@ -3799,7 +3892,7 @@ html.ov-hidden{
     font-weight: 500;
 }
 .basket-totallprice {
-    min-height: 200px;
+    min-height: 170px;
 }
 .basket-totallist {
     padding: 14px 31px 0 29px;
@@ -3881,9 +3974,7 @@ html.ov-hidden{
 }
 .deimn-button {
     font-size: 14px;
-    padding: 0;
-    width: 125px;
-    height: 42px;
+    padding: 8px 31px;
 }
 /* ==================================================== */
 
@@ -4247,6 +4338,7 @@ html.ov-hidden{
     height: 26px;
     top: 50%;
     margin-top: -13px;
+    color: #0D2330;
 }
 .bezahlung-minus {
     left: 0;
@@ -4326,7 +4418,7 @@ html.ov-hidden{
     opacity: 0;
 }
 .bezahlung-type div.error {
-    font-size: 11px;
+    font-size: 13px;
     font-weight: normal;
     color: #E27291;
 }
@@ -4489,6 +4581,7 @@ html.ov-hidden{
     transition: 0.3s;
     width: 100%;
     opacity: 0;
+    backface-visibility: hidden;
 }
 .woocommerce-breadcrumb a:hover:after {
     opacity: 1;
@@ -4496,6 +4589,9 @@ html.ov-hidden{
 .product {
     position: relative;
     overflow: hidden;
+}
+.product-fullsize {
+    position: relative;
 }
 .product .container-xl {
     z-index: 2;
@@ -4642,8 +4738,9 @@ html.ov-hidden{
     position: relative;
 }
 .product-naturlich__ico img {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -4689,14 +4786,13 @@ html.ov-hidden{
     line-height: 1.3;
     align-self: flex-end;
 }
-.productfull-price span {
+.productfull-price .free-price {
     margin: 0 0 0 10px;
 }
 .productfull-price .free-price:before {
     -webkit-transform: rotate(-25deg);
     -ms-transform: rotate(-25deg);
     transform: rotate(-25deg);
-    top: 18px;
 }
 .productfull-descritpion {
     font-size: 18px;
@@ -4808,6 +4904,8 @@ html.ov-hidden{
     background: none;
     border: none;
     text-align: center;
+    max-width: 55%;
+    color: #0D2330;
 }
 .einim-minus,
 .einim-pluse {
@@ -4815,7 +4913,7 @@ html.ov-hidden{
 }
 .einim-button {
     font-size: 15px;
-    padding: 0;
+    padding: 0 5px;
     height: 52px;
     font-weight: 500;
     border-radius: 4px;
@@ -5065,8 +5163,8 @@ html.ov-hidden{
     border-color: #E27291;
 }
 .login-form__type div.error {
-    font-size: 9px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 400;
     color: #E27291;
 }
 .loginform-reqinfo {
@@ -5092,7 +5190,7 @@ html.ov-hidden{
     background-position: center;
     background-size: contain;
     width: 17px;
-    height: 10px;
+    height: 22px;
     right: 20px;
     top: 50%;
     -webkit-transform: translate(0, -50%);
@@ -5103,13 +5201,12 @@ html.ov-hidden{
     transition: 0.3s;
     border: none;
     text-decoration: none;
+    background-color: transparent;
+    backface-visibility: hidden;
 }
 .show-password.view,
 .show-password:hover {
     background-image: url("../img/konto/konto-ico-8h.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
 }
 .login-form__type.col-2 {
     display: -webkit-box;
@@ -5195,11 +5292,16 @@ html.ov-hidden{
     border: 1px solid #0D2330;
     display: inline-block;
     margin: 0 14px 0 0;
+    flex: 0 0 auto;
 }
 .login-bleiben input:checked + label:before {
     background: #0D2330;
     -webkit-box-shadow: inset 0 0 0 5px #fff;
     box-shadow: inset 0 0 0 5px #fff;
+}
+.abos-pausieren .login-bleiben input:checked + label:before {
+    -webkit-box-shadow: inset 0 0 0 5px #F5F8FD;
+    box-shadow: inset 0 0 0 5px #F5F8FD;
 }
 .login-vegessen {
     color: #0D2330;
@@ -5224,6 +5326,15 @@ html.ov-hidden{
     margin: 39px 0 0 0;
     width: 100%;
     border-radius: 4px;
+}
+.login-button:hover {
+    background-position: 200% 50%;
+}
+.button-dark.login-button:hover {
+    background-position: 200% -80%;
+}
+.button-dark.button-detail:hover {
+    background-position: 300% -20%;
 }
 
 .neueskonto-form .login-form__type {
@@ -5517,6 +5628,8 @@ html.ov-hidden{
 .bestelldetails-row__info {
     font-size: 16px;
     font-weight: normal;
+    padding-left: 10px;
+    text-align: right;
 }
 .bestelldetails-row__info a {
     color: #E27291;
@@ -5656,19 +5769,18 @@ html.ov-hidden{
     margin: 20px 0 0 0;
 }
 .button-erneut {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
-    padding: 0 26px;
-    height: 34px;
+    padding: 9px 26px;
     border-radius: 4px;
-    line-height: 34px;
+    line-height: 1;
     margin: 0 20px 0 0;
-    -webkit-transition: 2.2s ease;
-    -o-transition: 2.2s ease;
-    transition: 2.2s ease;
 }
 .button-erneut:hover {
-    background-position: 300% 100%;
+    background-position: 300% 40%;
+}
+.button-erneut.button-dark:hover {
+    background-position: 300% -40%;
 }
 .bestellung-adresse {
     display: -webkit-box;
@@ -5698,7 +5810,7 @@ html.ov-hidden{
     font-weight: normal;
     padding: 20px;
     background: #F5F8FD;
-    margin: 15px 0 0 0;
+    margin: 15px 0 0;
     height: 100%;
 }
 .konto-aboinfo {
@@ -5711,7 +5823,7 @@ html.ov-hidden{
 .konto-abothead {
     font-size: 16px;
     font-weight: bold;
-    margin: 19px 0 16px 0;
+    margin: 19px 0 16px;
 }
 .td-abostart {
     font-size: 16px;
@@ -5734,7 +5846,7 @@ html.ov-hidden{
     margin: 0 0 25px 0;
 }
 .konfigurieren-button button.button-link.button-erneut {
-    padding: 0 25px;
+    padding: 9px 25px;
 }
 .konto-adressen {
     max-width: 495px;
@@ -5759,11 +5871,30 @@ html.ov-hidden{
 }
 .adressen-top a,
 .adressen-top__neue {
-    font-size: 16px;
+    font-size: 15px;
+    display: inline-flex;
+    position: relative;
+}
+.adressen-top a:after,
+.adressen-top__neue:after {
+    content: "";
+    display: block;
+    background-color: #E27291;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s;
 }
 .adressen-top a:hover,
 .adressen-top__neue:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+.adressen-top a:hover:after,
+.adressen-top__neue:hover:after {
+    opacity: 1;
 }
 .adressen-body {
     padding: 15px;
@@ -5879,6 +6010,7 @@ body.page-pausieren {
     width: 100%;
     font-size: 16px;
     font-weight: normal;
+    border-radius: 0;
 }
 /* ==================================================== */
 
@@ -5974,7 +6106,7 @@ body.page-pausieren {
     position: relative;
 }
 .platz-body {
-    max-width: 620px;
+    max-width: 51%;
     width: 100%;
     margin: 57px 40px 0 0;
 }
@@ -6148,6 +6280,8 @@ body.page-pausieren {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    display: block;
+    backface-visibility: hidden;
 }
 .laden-shortstory:hover .laden-short__thumb img {
     -webkit-transform: scale(1.2);
@@ -6198,6 +6332,7 @@ body.page-pausieren {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    backface-visibility: hidden;
 }
 .laden-short__link a:hover:after {
     right: -5px;
@@ -6207,12 +6342,8 @@ body.page-pausieren {
 }
 .laden-link {
     font-size: 18px;
-    border-radius: 6px;
-    padding: 0;
-    width: 175px;
-    height: 60px;
+    padding: 19px 40px;
 }
-
 .social-laden {
     padding: 49px 0 200px 0;
 }
@@ -6435,6 +6566,7 @@ body .fullpost-wasser__aus {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    backface-visibility: hidden;
 }
 .fullpost-pagation__prev a:hover:before {
     left: -5px;
@@ -6450,6 +6582,7 @@ body .fullpost-wasser__aus {
     position: absolute;
     bottom: 0;
     width: 0;
+    backface-visibility: hidden;
 }
 .fullpost-pagation__item a:hover:after {
     width: 100%;
@@ -6473,6 +6606,7 @@ body .fullpost-wasser__aus {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    backface-visibility: hidden;
 }
 .fullpost-pagation__next a:hover:after {
     right: -5px;
@@ -6521,6 +6655,10 @@ body .fullpost-wasser__aus {
 }
 .kommt-body {
     margin: 62px 0 0 0;
+}
+.kommt-body .kommt-wrapper {
+    -webkit-transition-timing-function:linear!important;
+    transition-timing-function:linear!important;
 }
 .kommt-wrapper {
     position: relative;
@@ -6610,14 +6748,33 @@ body .fullpost-wasser__aus {
 .gutes-item {
     width: calc(100% / 4);
 }
+.gutes-item:nth-child(1) {
+    -webkit-animation: wasser-float 6s ease-in-out infinite;
+    animation: wasser-float 6s ease-in-out infinite;
+}
 .gutes-item:nth-child(2) {
     margin: -25px 0 0 0;
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-animation: wasser-float 4s ease-in-out infinite;
+    animation: wasser-float 4s ease-in-out infinite;
 }
 .gutes-item:nth-child(3) {
     margin: 14px 0 0 0;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-animation: wasser-float 3s ease-in-out infinite;
+    animation: wasser-float 3s ease-in-out infinite;
 }
 .gutes-item:nth-child(4) {
     margin: -35px 0 0 0;
+    -webkit-transition-delay: 1.5s;
+    -o-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+    -webkit-animation: wasser-float 7s ease-in-out infinite;
+    animation: wasser-float 7s ease-in-out infinite;
 }
 .gutes-item__ico {
     width: 56px;
@@ -7041,6 +7198,7 @@ body.open-video {
     border-bottom: 1px solid #0D2330;
     font-size: 18px;
     font-weight: 300;
+    border-radius: 0;
 }
 .freude-forminput input.error {
     border-bottom: 1px solid #E27291;
@@ -7064,12 +7222,12 @@ body.open-video {
     visibility: visible;
 }
 .wpcf7-not-valid-tip {
-    font-size: 9px;
+    font-size: 13px;
     font-weight: 500;
     color: #E27291;
 }
 .freude-forminput div.error {
-    font-size: 9px;
+    font-size: 13px;
     font-weight: 500;
     color: #E27291;
     -webkit-transition: 0.3s;
@@ -7085,6 +7243,7 @@ body.open-video {
     font-size: 18px;
     font-weight: 300;
     padding: 0 0 5px 0;
+    border-radius: 0;
 }
 .freude-forminput.error textarea {
     border-bottom: 1px solid #E27291;
@@ -7101,7 +7260,7 @@ textarea {
     resize: none;
 }
 .freude-button {
-    margin: 147px 0 0 0;
+    margin: 60px 0 0 0;
 }
 .freude-button .button-link {
     width: 163px;
@@ -7110,7 +7269,7 @@ textarea {
 
 /* start css page danke */
 .dankefur {
-    height: 100vh;
+    min-height: 570px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7183,7 +7342,6 @@ textarea {
     -o-transition: 0.3s;
     transition: 0.3s;
     padding: 15px 50px 15px 20px;
-    font-weight: 500;
 }
 .faq-item__name:hover {
     color: #E27291;
@@ -7192,6 +7350,7 @@ textarea {
 }
 .faq-item__name.active {
     background: #F4F8FF;
+    font-weight: 500;
 }
 .faq-item__name:after {
     content: "";
@@ -7216,7 +7375,7 @@ textarea {
     transform: rotate(180deg);
 }
 .faq-item__info {
-    padding: 0 15px 20px 15px;
+    padding: 0 50px 20px 15px;
     background: #F4F8FF;
     display: none;
 }
@@ -7237,7 +7396,6 @@ textarea {
     top: 0;
     left: 0;
 }
-.faq-item__info ul {}
 .faq-item__info ul li {
     position: relative;
     padding: 0 0 0 15px;
@@ -7256,8 +7414,7 @@ textarea {
 /* start css page 404 */
 .page404 {
     background: #C9EDE8;
-    padding: 69px 24px 96px 24px;
-    min-height: 100vh;
+    padding: 180px 24px 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7305,6 +7462,7 @@ textarea {
     width: 15px;
     height: 15px;
     cursor: pointer;
+    backface-visibility: hidden;
 }
 .user-box.menu li.close-menu {
     display: block;
@@ -7319,9 +7477,7 @@ textarea {
     -webkit-transition: 1s;
     -o-transition: 1s;
     transition: 1s;
-    overflow-y: auto;
     overflow-x: hidden;
-    padding: 93px 0;
     opacity: 0;
     pointer-events: none;
     display: none;
@@ -7333,11 +7489,27 @@ textarea {
     opacity: 1;
     pointer-events: visible;
 }
-.navigation-container {
+.navigation-page .navigation-container {
     position: relative;
     z-index: 10;
+    overflow-y: auto;
+    padding: 60px 24px 60px;
+    scrollbar-width: thin;
+    scrollbar-color: #f1f2f5;
+}
+.navigation-container::-webkit-scrollbar {
+    width: 6px;
+    background: #f4f8ff;
+    border-radius: 4px;
+}
+.navigation-container::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #f1f2f5;
 }
 .navigation-body {
+    position: relative;
+}
+.navigation-menu {
     max-width: 366px;
     width: 100%;
     margin: 0 auto;
@@ -7364,23 +7536,24 @@ textarea {
     background-image: url("../img/menu2.svg");
     background-repeat: repeat-x;
     background-position: center bottom;
-    background-size: auto;
-    height: 4px;
+    background-size: auto 100%;
+    height: 3px;
     position: absolute;
-    bottom: 5px;
+    bottom: -1px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
     width: 100%;
     opacity: 0;
+    backface-visibility: hidden;
 }
 .navigation-menu li a:hover:after {
     opacity: 1;
 }
 .navigation-search {
     position: relative;
-    margin: 100px 0 0 0;
-    max-width: 305px;
+    margin: 100px auto 0;
+    max-width: 366px;
 }
 .navigation-search__input {
     font-family: 'FarnhamDisplay', sans-serif;
@@ -7392,6 +7565,7 @@ textarea {
     border: none;
     border-bottom: 1px solid transparent;
     background: none;
+    border-radius: 0;
 }
 .navigation-search__input:focus {
     border-color: #0D2330;
@@ -7648,6 +7822,7 @@ textarea {
     height: 26px;
     top: 50%;
     margin-top: -13px;
+    color: #0D2330;
 }
 .gefunden-input {
     width: 66px;
@@ -8062,6 +8237,12 @@ textarea {
     .product-maskload2 {
         margin-left: auto;
     }
+    .firmen-footer svg {
+        width: 100%;
+        min-width: 1440px;
+        display: block;
+        margin: -3px auto;
+    }
 }
 @media (min-width: 1399.98px) and (min-height: 1080px) {
     .product-maskload,
@@ -8085,17 +8266,6 @@ textarea {
         display: flex;
         align-items: center;
     }
-}
-@media (min-width: 1399.98px) {
-    .firmen-footer svg {
-        width: 100%;
-        min-width: 1440px;
-        display: block;
-        margin: -3px auto;
-    }
-
-
-
 }
 @media (max-width: 1299.98px) {
     .konto-dashboard:after {
@@ -8176,7 +8346,6 @@ textarea {
         z-index: 0;
         right: 0;
     }
-
     .zumshop-slider {
         height: auto;
     }
@@ -8185,7 +8354,7 @@ textarea {
         margin: 0 16px 0;
     }
     .zumshop-slick {
-        margin: 100px 0 46px;
+        margin: 100px 0 18px;
     }
     .zumshop-slick__item {
         padding: 0;
@@ -8199,9 +8368,6 @@ textarea {
         height: 260px;
         margin: -50px 0 0 0;
     }
-    .zumshop-slick__thumb img {
-        height: 100%;
-    }
     .zumshop-slick__tag {
         font-size: 16px;
         line-height: 1.125;
@@ -8213,7 +8379,7 @@ textarea {
         max-height: 10em;
     }
     .zumshop-slick__name {
-        margin: 12px 0 0;
+        margin: 15px 0 0;
     }
     .zumshop-slick__buyer {
         -webkit-box-pack: justify;
@@ -8293,6 +8459,7 @@ textarea {
     .kundenkonto-body {
         width: 100%;
         padding: 100px 0 0 0;
+        overflow: auto;
     }
 }
 @media (max-width: 991.98px) {
@@ -8312,9 +8479,8 @@ textarea {
         margin: 0 -105px 0 -120px;
     }
     .zoomshop {
-        padding: 150px 0;
+        padding: 46px 0 50px 0;
     }
-
     .trink-box {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -8327,7 +8493,7 @@ textarea {
 
     .aktion-ten {
         height: 100%;
-        padding: 15px;
+        padding: 20px;
     }
     .aktion-img {
         margin: 0;
@@ -8348,9 +8514,6 @@ textarea {
     .aktion-button {
         margin: 0;
         margin-left: auto;
-    }
-    .zoomshop {
-        padding: 46px 0 150px 0;
     }
     .footer-main {
         -ms-flex-wrap: wrap;
@@ -8560,8 +8723,16 @@ textarea {
     .prdetails-info__col .prdetail-about__col:last-child:before {
         left: -15px;
     }
+    .geschenk-wrapper {
+        max-width: 100%;
+    }
+    .wasser-title {
+        font-size: 50px;
+        line-height: 1.2;
+    }
 }
 @media (max-width: 767px) {
+
     .panel-wiewasser {
         padding-bottom: 40%;
     }
@@ -8576,7 +8747,7 @@ textarea {
         top: 12px;
     }
     .header {
-        top: initial;
+        top: auto!important;
         bottom: 0;
         background: #fff;
         height: 59px;
@@ -8633,23 +8804,57 @@ textarea {
     .cookie-zum__descript {
         padding: 0 35px 15px 0;
     }
-
+    .wasser-title i, .wasser-title em, .wasser-title__italic {
+        letter-spacing: 0;
+    }
     .wasser-rasp__1 {
         top: -230px;
+        max-width: none;
+    }
+    .wasser-rasp__1 {
+        left: -186px;
+        top: -214px;
+    }
+    .wasser-rasp__2 {
+        right: -15px;
+        top: 245px;
+        background-size: contain;
+        width: 160px;
+    }
+    .wasser-rasp__3 {
+        width: 168px;
+        bottom: 393px;
+        left: 149px;
+        background-size: contain;
+    }
+    .wasser-rasp__4 {
+        bottom: 0;
+        left: 70px;
+        max-width: none;
     }
     .wasser-container {
         margin: 0;
+        max-width: none;
     }
     .wasser-list {
         margin: 67px 0 20px 0;
     }
     .wasserhahn {
-        padding: 26px 0 0 0;
+        padding: 23px 0 0 0;
+    }
+    .schritt {
+        font-size: 11px;
+    }
+    .schritt-description {
+        margin: 26px 0 0 0;
+    }
+    .wasserhahn .wasser-title {
+        margin: 5px 0 0 0;
     }
     .gutschein-img {
         position: relative;
         top: 0;
-        height: 250px;
+        height: 235px;
         margin: 0 -24px;
     }
     #gutschein-lottie {
@@ -8663,22 +8868,14 @@ textarea {
         justify-content: inherit;
         margin: 127px 0 0 0;
     }
-    .entweder-item__img {
-        position: relative;
-        margin: -60px 0 0 0;
-    }
-    .entweder-item__name {
-        margin: 16px 0 0 0;
-    }
     .entweder-item__tag {
-        margin: 8px 0 0 0;
         min-height: 36px;
     }
     .ntweder-item__price {
         font-size: 17px;
     }
     .entweder-man {
-        padding: 53px 0 0;
+        padding: 55px 0 0;
     }
     .entweder-item_buyer {
         padding: 30px 30px 22px 30px;
@@ -8695,10 +8892,10 @@ textarea {
         max-width: none;
     }
     .trink-description {
-        margin: 28px 0 36px 0;
+        margin: 31px 0 36px;
     }
     .dein-trink {
-        padding: 113px 0 90px 0;
+        padding: 32px 0 90px;
     }
     .entweder-man .wasser-title {
         text-align: left;
@@ -8743,7 +8940,7 @@ textarea {
         -ms-flex-order: 2;
         order: 2;
         max-width: 100%;
-        margin: 75px 0 0 0;
+        margin: 68px 0 0 0;
         min-width: auto;
     }
     .prinzip-description {
@@ -8845,9 +9042,9 @@ textarea {
         max-width: 380px;
         position: relative;
         top: 0;
-        right: 0;
+        right: -50px;
         margin-left: auto;
-        margin-top: -50px;
+        margin-bottom: 30px;
     }
     .mitarbeiter-flow {
         -webkit-box-orient: vertical;
@@ -8900,7 +9097,7 @@ textarea {
 
     /* blog magazine */
     .mehr-laden {
-        padding: 80px 0 60px 0;
+        padding: 67px 0 60px 0;
     }
     .laden-main {
         -webkit-box-orient: vertical;
@@ -8910,9 +9107,36 @@ textarea {
         max-width: 550px;
         margin: 0 auto;
     }
+    .laden-shortstory:hover {
+        background: none;
+    }
     .laden-shortstory {
         max-width: 100%;
         padding: 0;
+        margin: 0 0 76px 0;
+    }
+    .laden-short__title {
+        font-size: 35px;
+        line-height: 1.285;
+        margin: 26px 0 0 0;
+        min-height: auto;
+    }
+    .laden-short__enter {
+        margin: 10px 0 0 0;
+    }
+    .laden-short__link {
+        margin: 18px 0 0 0;
+    }
+    .laden-linkbox {
+        text-align: left;
+    }
+    .social-laden {
+        padding: 71px 0 200px 0;
+    }
+    .social-shortstory {
+        max-width: calc(50% - 5px);
+        width: 100%;
+        margin: 0 0 5px 0;
     }
     .user-box li {
         margin: 0 0 0 7vw;
@@ -9019,6 +9243,22 @@ textarea {
     .wasserhahn-list li, .wasser-list li, .fruchtepuree-list li{
         -webkit-animation: none!important;
         animation: none!important;
+        flex: 0 0 auto;
+    }
+    .wasserhahn-list li, .fruchtepuree-list li{
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+    }
+    .fruchtepuree-list {
+        margin: 48px 0 0 0;
+    }
+    .fruchtepuree-list li:nth-child(3),
+    .fruchtepuree-list li:nth-child(1) {
+        margin: 23px 20px 0;
+    }
+    .fruchtepuree-list li:nth-child(4) {
+        margin: 0 20px;
     }
     .fruchtepuree .wasser-title {
         margin: 4px 0 0 0;
@@ -9034,8 +9274,8 @@ textarea {
         overflow: auto;
     }
     .kundenkonto-body {
-        padding: 20px 0 0 0;
-        height: calc(100vh + 140px);
+        padding: 20px 0 140px;
+        height: 100%;
     }
     .konto-nav li {
         margin: 0 0 34px 0;
@@ -9075,7 +9315,8 @@ textarea {
         margin: 0;
     }
     .open-sidebar {
-
+        padding: 0 24px;
+        text-align: left;
     }
     .open-sidebar.active {
         display: block;
@@ -9227,7 +9468,7 @@ textarea {
         font-weight: bold;
         width: calc(50% - 15px);
         height: 45px;
-        padding: 0;
+        padding: 0 5px;
         margin: 0;
     }
     .adresse-button .button-dark:hover {
@@ -9241,7 +9482,7 @@ textarea {
         font-weight: bold;
         width: calc(50% - 15px);
         height: 45px;
-        padding: 0;
+        padding: 0 5px;
         margin: 0;
     }
     .adresse-button .button-link:hover {
@@ -9305,7 +9546,9 @@ textarea {
         max-width: 252px;
     }
     .ein-gutschein {
-        background-size: 200% 100%;
+        padding: 105px 0 160px;
+        background-size: 300% 78%;
+        background-position: 35% 100%;
     }
     .ntweder-input {
         font-size: 16px;
@@ -9353,21 +9596,6 @@ textarea {
     }
     .aromen-item:after {
         display: none;
-    }
-    .geschenk-item:nth-child(2),
-    .geschenk-item {
-        margin: 0 24px 0 0;
-        -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-    }
-    .geschenk-item:last-child::before {
-        position: absolute;
-        content: '';
-        left: 100%;
-        width: 24px;
-        height: 100%;
-        top: 0;
     }
     .geschenk-sale {
         overflow-x: auto;
@@ -9426,22 +9654,23 @@ textarea {
         font-size: 20px;
         padding: 0 25px 0 0;
     }
-    .das-auch {
+    .das-konnte {
         margin: 100px 0 112px;
     }
-    .das-auch .wasser-title {
+    .das-konnte .wasser-title {
         font-size: 30px;
         line-height: 1.433;
     }
-    .das-auch .wasser-title .wasser-title__italic {
+    .das-konnte .wasser-title i,
+    .das-konnte .wasser-title .wasser-title__italic {
         display: block;
     }
     .footer {
-        padding: 37px 0 100px
+        padding: 41px 0 100px
     }
     .footer-title {
         font-size: 31px;
-        margin: 0 0 12px 0;
+        margin: 0 0 17px 0;
     }
     .footer-kontakt {
         margin: 0 0 -3px 0;
@@ -9519,9 +9748,10 @@ textarea {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2;
+        padding: 20px 0 0;
     }
     .footer-social li {
-        margin: 0 23px 0 0;
+        margin: 0 28px 0 0;
     }
     .footer-newslatter {
         -webkit-box-ordinal-group: 2;
@@ -9566,6 +9796,7 @@ textarea {
     }
     .prdetails-thumb {
         max-width: 100%;
+        margin-bottom: 20px;
     }
     .prdetails-info__col {
         max-width: 100%;
@@ -9667,9 +9898,10 @@ textarea {
     }
     .product-maskload,
     .product-maskload2 {
-        height: 1210px;
-        margin-left: -300px;
-        top: 0;
+        height: 60%;
+        margin-left: -56%;
+        top: 2%;
+        min-width: 1200px;
     }
     .aromen-slider {
         margin: 35px 0 0 0;
@@ -9704,7 +9936,279 @@ textarea {
         font-size: 15px;
         max-width: 100%;
     }
+    .kostliche5-aromen .description,
+    .kostliche5-aromen .wasser-title {
+        text-align: left;
+    }
+    .kostliche5-aromen {
+        padding: 64px 0 120px;
+    }
+    .aromen-item__name {
+        margin: 15px 0 0 0;
+    }
+    .aromen-item_buyer {
+        padding: 30px 30px 20px 30px;
+    }
+    .aromen-item__price {
+        font-size: 16px;
+    }
+    .aromen-input {
+        font-size: 16px;
+    }
+    .firmen-platz {
+        padding: 40px 0 0;
+    }
+    .gutes-item:nth-child(1),.gutes-item:nth-child(2), .gutes-item:nth-child(3),.gutes-item:nth-child(4) {
+        -webkit-animation: none!important;
+        animation: none!important;
+    }
+    .page404 {
+        padding: 72px 24px 87px;
+    }
 
+    /* page 404 */
+    .page404-logo {
+        font-size: 120px;
+    }
+    .page404-title {
+        margin: 20px 0 0 0;
+    }
+    .page404-title span {
+        display: block;
+    }
+    .page404-info {
+        font-size: 20px;
+        padding: 0 20px;
+        line-height: 1.75;
+        margin: 54px 0 0 0;
+    }
+    .page404-info p {
+        margin: 0 0 35px 0;
+    }
+    .page404-button {
+        margin: 35px 0 0 0;
+    }
+    .header.menu .open-sidebar {
+        opacity: 0;
+        pointer-events: none;
+    }
+    .navigation-page {
+        padding: 30px 0 90px;
+    }
+    .navigation-page .navigation-container {
+        padding: 0 24px;
+    }
+    body.page-shop .header.menu {
+        background: #fff;
+    }
+    .navigation-body {
+        max-width: 310px;
+        margin: 0 auto;
+    }
+    .navigation-menu li {
+        margin: 0 0 16px 0;
+    }
+    .navigation-menu li a {
+        font-size: 33px;
+    }
+    .navigation-search {
+        margin: 35px 0 0 0;
+        max-width: 181px;
+    }
+    .menu-rasp__1,
+    .menu-rasp__2 {
+        display: none;
+    }
+    .navigation-search__button {
+        width: 17px;
+        height: 15px;
+        margin: -7px 0 0 0;
+        background-size: cover;
+    }
+    .aromen-item {
+        margin: 0 15px;
+    }
+    .aktion-description {
+        max-width: none;
+        padding-right: 0;
+    }
+    .wasser-main {
+        padding: 154px 0 0
+    }
+    .wasser-title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    .wasser-description {
+        line-height: 1.475;
+        margin: 27px 0 0;
+    }
+    .geschenk-item:nth-child(2),
+    .geschenk-item {
+        margin: 40px 24px 0 0;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    .geschenk-item:last-child::before {
+        position: absolute;
+        content: '';
+        left: 100%;
+        width: 24px;
+        height: 100%;
+        top: 0;
+    }
+    .warenkorb-status__info {
+        font-size: 10px;
+        -webkit-transform: translate(-6%, 9px);
+        -ms-transform: translate(-6%, 9px);
+        transform: translate(-6%, 9px);
+    }
+    .warenkorb-info {
+        padding: 0;
+    }
+    .bg-head {
+        padding: 0 0 21px 0;
+    }
+    .wasser-aromatis {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .wasser-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 217px 0 20px 22px;
+    }
+    .wasser-list li:nth-child(3) {
+        margin: 0;
+    }
+    .wasser-list li:nth-child(2) {
+        margin: 21px 0;
+    }
+    .trink-img {
+        width: auto;
+        margin: 0 -24px;
+    }
+    .wie-schmeckt {
+        padding: 64px 0;
+    }
+    .gutten-newslatter {
+        margin: 31px 0 0;
+    }
+    .gutten-input {
+        border: 1px solid #0D2330;
+        border-radius: 6px;
+        font-weight: normal;
+        font-size: 16px;
+        width: 100%;
+        padding: 14px 140px 14px 15px;
+        background: none;
+    }
+    .gutten-button {
+        top: 13px;
+    }
+    .gutten-social li {
+        margin: 0 23px 0 0;
+    }
+    .dem-guten {
+        background-repeat: no-repeat;
+        min-height: 1133px;
+        background-position: 45% 55%;
+        overflow: hidden;
+        position: relative;
+        padding: 98px 0 265px;
+    }
+    .guten-body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .guten-foto {
+        margin: 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        position: absolute;
+        width: 180%;
+        left: -34%;
+        top: 36%;
+        display: none;
+    }
+    .guten-folgen {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin: 0;
+        width: auto;
+        position: relative;
+        z-index: 3;
+    }
+    .dem-guten .wasser-title {
+        font-size: 55px;
+        letter-spacing: -0.5px;
+    }
+    .gutten-newslatter__form {
+        margin: 5px 0 0 0;
+    }
+
+    /* hidden button top*/
+    .page-abo .button-top {
+        display: none;
+    }
+    .konto-aboinfo b,
+    .konto-aboinfo strong {
+        font-size: 24px;
+        display: block;
+    }
+    .fruchtepuree-main, .wasserhahn-body {
+        margin: 0 -24px ;
+        overflow: auto;
+    }
+    .wasserhahn-body::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    .wasserhahn-list {
+        margin: 49px 0 0 0;
+    }
+    .wasserhahn-list li:nth-child(1) {
+        margin: 26px 20px 0;
+    }
+    .wasserhahn-list li:nth-child(3) {
+        margin: 28px 20px 0;
+    }
+    .fruchtepuree-list li:last-child::after,
+    .wasserhahn-list li:last-child::after {
+        position: absolute;
+        content: '';
+        left: 100%;
+        width: 20px;
+        height: 100%;
+        top: 0;
+    }
+    /* page FAQ */
+    .content-eau {
+        margin: 47px -24px 0;
+        width: auto;
+    }
+    .faq-title {
+        padding: 0 24px;
+        margin: 0 0 18px 0;
+    }
+    .faq-item__name {
+        padding: 15px 50px 15px 24px;
+    }
+    .content-eaubox {
+        padding: 0 24px;
+    }
+    .faq-item__info {
+        padding: 0 50px 10px 24px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -9743,78 +10247,27 @@ textarea {
         -o-transition: 1.5s ease;
         transition: 1.5s ease;
         text-align: center;
-        white-space: nowrap;
     }
     .button-dark:hover {
         color: #fff;
         background-position: 500% 100%;
     }
     .button-link {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 500;
         color: #fff;
-        font-size: 17.5px;
-        padding: 12px 20px;
+        font-size: 18px;
+        padding: 14px 28px;
         border: 1px solid #0D2330;
-        border-radius: 3px;
-        position: relative;
         background-image: url("../img/nav-bg-fill-blue.png");
         background-repeat: repeat-x;
         background-position: 0 100%;
         -webkit-transition: 1.5s ease;
         -o-transition: 1.5s ease;
         transition: 1.5s ease;
-        background-color: transparent;
-        text-align: center;
     }
     .button-link:hover {
         color: #0D2330;
         background-position: 500% -100%;
         background-color: transparent;
-    }
-    .bg-head {
-        padding: 0 0 21px 0;
-    }
-    .wasser-main {
-        padding: 154px 0px 0
-    }
-    .wasser-title {
-        font-size: 40px;
-        line-height: 1.2;
-    }
-    .wasser-description {
-        line-height: 1.475;
-        margin: 27px 0 0 0px;
-    }
-
-    .wasser-aromatis {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .wasser-list {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin: 217px 0 20px 22px;
-    }
-    .wasser-list li:nth-child(3) {
-        margin: 0;
-    }
-    .wasser-list li:nth-child(2) {
-        margin: 21px 0;
     }
     .keine-body {
         width: 720px;
@@ -9836,58 +10289,14 @@ textarea {
         width: 33px;
         height: 25px;
     }
-    .wasser-rasp__1 {
-        left: -186px;
-        top: -214px;
-    }
-    .wasser-rasp__2 {
-        right: -15px;
-        top: 245px;
-        background-size: contain;
-        width: 160px;
-    }
-    .wasser-rasp__3 {
-        width: 168px;
-        bottom: 411px;
-        left: 149px;
-        background-size: contain;
-    }
-    .wasser-rasp__4 {
-        bottom: 0;
-        left: 70px;
-    }
     .wasserhahn-auf {
         max-width: 100%;
-    }
-    .schritt {
-        font-size: 11px;
-    }
-    .schritt-description {
-        margin: 29px 0 0 0;
     }
     .wasserhahn-main {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-    }
-    .wasserhahn-body {
-        margin: 0 -24px 0 -24px;
-        overflow: auto;
-    }
-    .wasserhahn-body::-webkit-scrollbar {
-        width: 0;
-        height: 0;
-    }
-    .wasserhahn-list {
-        margin: 49px 0 0 0;
-        width: 510px;
-    }
-    .wasserhahn-list li:nth-child(1) {
-        margin: 26px 0 0 0;
-    }
-    .wasserhahn-list li:nth-child(3) {
-        margin: 28px 0 0 0;
     }
     .wasserhahn-buttle {
         margin: 70px 0 0 0;
@@ -9921,16 +10330,6 @@ textarea {
         -ms-flex-order: 1;
         order: 1;
     }
-    .fruchtepuree-list {
-        margin: 48px 0 0 0;
-        width: 520px;
-    }
-    .fruchtepuree-list li:nth-child(1) {
-        margin: 23px 0 0 0;
-    }
-    .fruchtepuree-list li:nth-child(4) {
-        margin: 0;
-    }
     .fruchtepuree-buttle {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -9958,7 +10357,7 @@ textarea {
     }
     .zoomshop .button-link {
         font-size: 20px;
-        padding: 15px 44px;
+        padding: 18px 44px;
     }
     .aktion-box.active {
         display: block;
@@ -9974,53 +10373,8 @@ textarea {
         font-size: 60px;
         line-height: 1.08;
     }
-    .gutschein .button-link {
-        padding: 10px 31px;
-        font-size: 17.5px;
-    }
     .das-prinzip {
-        padding: 0 0 94px 0;
-    }
-    .wie-schmeckt {
-        padding: 69px 0;
-    }
-    .dem-guten {
-        background: url("../img/guten-body.jpg") no-repeat center bottom;
-        min-height: 873px;
-        margin: 97px 0 154px 0;
-        background-position-x: 44%;
-        padding: 0;
-    }
-    .guten-body {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-    .guten-foto {
-        margin: 0;
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        order: 2;
-        display: none;
-    }
-    .guten-folgen {
-        -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-        order: 1;
-        margin: 0;
-        width: auto;
-    }
-
-    .dem-guten .wasser-title {
-        font-size: 55px;
-        letter-spacing: -0.5px;
-    }
-    .gutten-newslatter {
-        margin: 23px 0 0 0px;
-    }
-    .gutten-newslatter__form {
-        margin: 5px 0 0 0;
+        padding: 140px 0 94px;
     }
     .footer-newslatter .gutten-newslatter__form {
         margin: 17px 0 0;
@@ -10031,21 +10385,6 @@ textarea {
     }
     .footer-newslatter .gutten-button:after {
         right: 0;
-    }
-    .gutten-input {
-        border: 1px solid #0D2330;
-        border-radius: 6px;
-        font-weight: normal;
-        font-size: 16px;
-        width: 100%;
-        padding: 13px 140px 13px 15px;
-        background: none;
-    }
-    .gutten-button {
-        top: 13px;
-    }
-    .gutten-social li {
-        margin: 0 18px 0 0;
     }
     .aktion-ten {
         height: 100%;
@@ -10067,9 +10406,9 @@ textarea {
         padding: 0;
     }
     .aktion-img {
-        max-width: inherit;
         position: relative;
-        margin: 15px 0 0 0;
+        max-width: 70%;
+        margin: 15px auto 0;
     }
     .aktion-title {
         text-align: center;
@@ -10093,7 +10432,7 @@ textarea {
         font-size: 12px;
     }
     .aktion-button {
-        margin: 45px 0 0 0;
+        margin: 35px 0 0 0;
         margin-left: inherit;
     }
     #gutschein-lottie {
@@ -10105,18 +10444,6 @@ textarea {
     }
     .kostliche-aromen .wasser-title {
         text-align: left;
-    }
-    .aromen-item__name {
-        margin: 15px 0 0 0;
-    }
-    .aromen-item_buyer {
-        padding: 30px 30px 20px 30px;
-    }
-    .aromen-item__price {
-        font-size: 16px;
-    }
-    .aromen-input {
-        font-size: 16px;
     }
     .hast-gutschein .ein-gutschein-body {
         padding: 0 0 220px 0;
@@ -10170,34 +10497,6 @@ textarea {
         padding: 69px 0 156px;
     }
 
-    /* menu 416px */
-    body.page-shop .header.menu {
-        background: #fff;
-    }
-    .navigation-body {
-        margin: 0 0 0 56px;
-    }
-    .navigation-menu li {
-        margin: 0 0 16px 0;
-    }
-    .navigation-menu li a {
-        font-size: 33px;
-    }
-    .navigation-search {
-        margin: 35px 0 0 0;
-        max-width: 181px;
-    }
-    .menu-rasp__1,
-    .menu-rasp__2 {
-        display: none;
-    }
-    .navigation-search__button {
-        width: 17px;
-        height: 15px;
-        margin: -7px 0 0 0;
-        background-size: cover;
-    }
-
     /* page abo */
     .abo-konfigurieren {
         padding: 21px 0 100px 0;
@@ -10215,7 +10514,7 @@ textarea {
         justify-content: center;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin: 57px 0 0 0;
+        margin: 57px -24px 0 -24px;
     }
     .konfigurieren-item {
         text-align: center;
@@ -10237,6 +10536,8 @@ textarea {
     }
     .konfigurieren-stepline li a span {
         top: 43px;
+        font-size: 12px;
+        font-weight: 400;
     }
     .konfigurieren-tab {
         margin: 81px 0 0 0;
@@ -10271,6 +10572,17 @@ textarea {
         font-weight: bold;
     }
 
+    .laden-link {
+        background: none;
+        color: #0D2330;
+        border: none;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+        border-bottom: 2px solid #0D2330;
+        border-radius: 0;
+    }
     /* step 2 */
     .bittle-wahle {
         padding: 20px 23px 0 23px;
@@ -10283,7 +10595,7 @@ textarea {
         -ms-flex-align: start;
         align-items: start;
         margin: 0 -23px;
-        padding: 21px 23px 20px 23px;
+        padding: 18px 23px 20px 23px;
         border-bottom: 1px solid #DBDEE7;
     }
     .warenkorb-short:last-child {
@@ -10304,7 +10616,6 @@ textarea {
     }
     .warenkorb-current {
         margin: 21px 0 0 auto;
-        margin-left: auto;
     }
     .warenkorb-price {
         font-size: 14px;
@@ -10374,6 +10685,7 @@ textarea {
     }
     .bezahlung-rabattcode__input {
         max-width: 224px;
+        margin: 0 20px 0 0;
     }
     .bezahlung-rabattcode__button {
         width: 122px;
@@ -10394,11 +10706,18 @@ textarea {
     .aboshort-rabattcode__input {
         width: 222px;
         border-radius: 3px;
+        margin: 0 20px 0 0;
     }
     .aboshort-rabattcode__button {
         width: 123px;
         font-size: 14px;
+        color: #0D2330;
         border-radius: 3px;
+        background-position: 0 -100%;
+    }
+    .aboshort-rabattcode__button:hover {
+        color: #fff;
+        background-position: 500% 100%;
     }
     .basket-button {
         font-size: 15px;
@@ -10406,6 +10725,13 @@ textarea {
         display: block;
         height: 53px;
         border-radius: 3px;
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .basket-button:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
+        background-color: transparent;
     }
 
     /* supergemacht page */
@@ -10442,6 +10768,12 @@ textarea {
     }
     .login-button {
         margin: 33px 0 0 0;
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .login-button:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
     }
     .login-vegessen-none {
         display: block;
@@ -10461,6 +10793,12 @@ textarea {
     }
     .passwortzur-form .login-button {
         margin: 23px 0 0 0;
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .passwortzur-form .login-button:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
     }
 
     /* Neues Passwort */
@@ -10469,6 +10807,12 @@ textarea {
     }
     .neuespass-form .login-button {
         margin: 21px 0 0 0;
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .neuespass-form .login-button:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
     }
 
     /* News Letter*/
@@ -10492,6 +10836,12 @@ textarea {
     }
     .newsletter-form .login-button {
         margin: 27px 0 0 0;
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .newsletter-form .login-button:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
     }
 
     .vielen-description {
@@ -10555,14 +10905,6 @@ textarea {
         margin-left: -160px;
         min-width: 1000px;
     }
-    .firmen-platz {
-        padding: 0;
-    }
-    .platz-figure {
-        right: -67px;
-        margin-top: -66px;
-        width: 379px;
-    }
     .platz-enter {
         margin: 35px 0 0 0;
     }
@@ -10571,9 +10913,6 @@ textarea {
     }
     .mitarbeiter-figure {
         width: 439px
-    }
-    .mitarbeiter-figure img {
-        margin: 0px 0 0 -40px;
     }
     .mitarbeiter-enter {
         margin: 21px 0 0 0;
@@ -10605,48 +10944,6 @@ textarea {
     }
     .angebot-button {
         margin: 45px 0 0 0;
-    }
-
-    /* blog magazine */
-    .mehr-laden {
-        padding: 67px 0 60px 0;
-    }
-    .laden-short__title {
-        font-size: 35px;
-        line-height: 1.285;
-        margin: 26px 0 0 0;
-        min-height: auto;
-    }
-    .laden-short__enter {
-        margin: 10px 0 0 0;
-    }
-    .laden-short__link {
-        margin: 18px 0 0 0;
-    }
-    .laden-shortstory {
-        margin: 0 0 76px 0;
-    }
-    .laden-linkbox {
-        text-align: left;
-    }
-    .laden-link {
-        background: none;
-        color: #0D2330;
-        border: none;
-        padding: 0;
-        margin: 0;
-        width: auto;
-        height: auto;
-        border-bottom: 3px solid #0D2330;
-        border-radius: 0;
-    }
-    .social-laden {
-        padding: 71px 0 200px 0;
-    }
-    .social-shortstory {
-        max-width: calc(50% - 5px);
-        width: 100%;
-        margin: 0 0 5px 0;
     }
 
     /* page About */
@@ -10800,6 +11097,7 @@ textarea {
     .fullpost-pagation__prev a,
     .fullpost-pagation__next a{
         padding: 0;
+        display: block;
     }
     .fullpost-pagation__prev a:before,
     .fullpost-pagation__next a:before{
@@ -10809,45 +11107,6 @@ textarea {
     }
     .fullpost-pagation__item a {
         border-bottom: 2px solid #0D2330;
-    }
-
-    /* page FAQ */
-    .content-eau {
-        margin: 47px -24px 0 -24px;
-        width: auto;
-    }
-    .faq-title {
-        padding: 0 24px;
-        margin: 0 0 18px 0;
-    }
-    .faq-item__name {
-        padding: 15px 50px 15px 24px;
-    }
-    .content-eaubox {
-        padding: 0 24px;
-    }
-
-    /* page 404 */
-    .page404-logo {
-        font-size: 120px;
-    }
-    .page404-title {
-        margin: 20px 0 0 0;
-    }
-    .page404-title span {
-        display: block;
-    }
-    .page404-info {
-        font-size: 20px;
-        padding: 0 50px;
-        line-height: 1.75;
-        margin: 54px 0 0 0;
-    }
-    .page404-info p {
-        margin: 0 0 35px 0;
-    }
-    .page404-button {
-        margin: 35px 0 0 0;
     }
 
     /* Konto Bestellungen */
@@ -10906,11 +11165,74 @@ textarea {
         background-position: 500% -100%;
     }
 
+    /* Konto Abeau - noch kein Abo */
+    .erneut-box .button-dark {
+        width: 100%;
+        background-position: 0 100%;
+        color: #fff;
+        font-size: 15px;
+        min-height: 45px;
+    }
+    .erneut-box .button-dark:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
+    }
+    .adresse-button .button-dark {
+        background-position: 0 100%;
+        color: #fff;
+        font-size: 15px;
+        font-weight: bold;
+        width: calc(50% - 15px);
+        height: 45px;
+        padding: 0 5px;
+        margin: 0;
+    }
+
+    /* empty basket */
+    .warenkorb-deinem {
+        padding: 17px 24px 0 24px;
+    }
+    .deimn-button {
+        background-position: 0 100%;
+        color: #fff;
+    }
+    .deimn-button:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
+        background-color: transparent;
+    }
+
+    .bezahlung-sumit {
+        background-position: 0 100%;
+        color: #fff;
+        height: 50px;
+    }
+    .bezahlung-sumit:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
+        background-color: transparent;
+    }
+
+    .button-erneut {
+        background-position: 0 100%;
+        color: #fff;
+        height: 50px;
+        width: 100%;
+    }
+    .button-erneut:hover {
+        color: #0D2330;
+        background-position: 500% -100%;
+        background-color: transparent;
+    }
+
 }
 
 @media (max-width: 350px) {
     .user-box li {
         margin: 0 0 0 5vw;
+    }
+    .navigation-menu li a {
+        font-size: 28px;
     }
 }
 
